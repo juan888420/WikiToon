@@ -1,3 +1,4 @@
+import { resolveSeriesSlug } from "@/lib/import/series-slug";
 import { prisma } from "@/lib/prisma";
 import {
   getTvSeasonDetails,
@@ -81,16 +82,28 @@ export async function importTmdbSeries(tmdbSeriesId: number) {
         posterPath: details.poster_path,
         tmdbSyncedAt: syncedAt,
       };
-      const series = await tx.series.upsert({
+      // An existing series keeps its slug; only a new one gets a slug resolved against collisions.
+      const existing = await tx.series.findUnique({
         where: { tmdbId: details.id },
-        update: seriesData,
-        create: {
-          ...seriesData,
-          tmdbId: details.id,
-          title: details.name,
-          slug: slugify(details.name),
-        },
+        select: { id: true },
       });
+      const series = existing
+        ? await tx.series.update({ where: { id: existing.id }, data: seriesData })
+        : await tx.series.create({
+            data: {
+              ...seriesData,
+              tmdbId: details.id,
+              title: details.name,
+              slug: await resolveSeriesSlug(
+                {
+                  baseSlug: slugify(details.name),
+                  firstAirYear: seriesData.firstAirYear,
+                  tmdbId: details.id,
+                },
+                (slug) => tx.series.findUnique({ where: { slug }, select: { tmdbId: true } }),
+              ),
+            },
+          });
 
       let episodeCount = 0;
       for (const season of seasons) {

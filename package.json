@@ -8,13 +8,15 @@
     "start": "next start",
     "lint": "eslint",
     "typecheck": "next typegen && tsc --noEmit",
+    "test": "tsx --test \"src/**/*.test.ts\"",
     "postinstall": "prisma generate",
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev",
     "postdb:migrate": "prisma generate",
     "db:deploy": "prisma migrate deploy",
     "db:seed": "prisma db seed",
-    "db:import:ben10": "tsx --env-file=.env scripts/import-ben10.ts",
+    "db:import:series": "tsx --env-file=.env scripts/import-series.ts",
+    "db:import:ben10": "tsx --env-file=.env scripts/import-series.ts --title \"Ben 10\" --year 2005 --channel cartoon-network",
     "db:studio": "prisma studio"
   },
   "dependencies": {

@@ -10,7 +10,15 @@ WikiToon is an archive and exploration platform for Latin American children's TV
 
 ## Project status
 
-Data layer defined (schema + initial migration), no seed data, no API routes, no UI yet. `src/app/page.tsx` is a placeholder.
+- Data layer: schema with 3 migrations, idempotent seed (7 channels), generic TMDB series importer with tests.
+- UI: global layout, Series module (`/series`, `/series/[slug]`), Channels module (`/canales`, `/canales/[slug]` + sections), Blocks module (`/bloques`, `/bloques/[canal]/[slug]`), Schedule module (`/programacion`, `/programacion/[canal]/[fecha]`) and Timeline (`/timeline`). See "UI" below.
+- Not built yet: home page content (`src/app/page.tsx` is still a placeholder), API routes.
+- Catalog in `dev.db` (as of 2026-09-24):
+  - 7 channels (seed), all with `logoPath` null.
+  - 10 series imported from TMDB (Ben 10, The Powerpuff Girls, Dexter's Laboratory, Courage the Cowardly Dog, Ed, Edd n Eddy, Johnny Bravo, Samurai Jack, Codename: Kids Next Door, Foster's Home for Imaginary Friends, The Grim Adventures of Billy and Mandy): 62 seasons, 1427 episodes. Titles/slugs come from TMDB `es-MX` names (e.g. `el-laboratorio-de-dexter`).
+  - 10 `SeriesChannel` rows, all to Cartoon Network, with `startYear`/`endYear`/`sourceName`/`sourceUrl` null. They are catalog links, not verified airing records.
+  - 0 blocks and 0 series-block rows (so `/bloques` shows its empty state and no block pages are generated), 0 schedules (so `/programacion` shows its empty state and no day pages are generated), 0 timeline events (so `/timeline` and every channel timeline show their empty state).
+- Infrastructure pending: the app reads a local SQLite file (`dev.db`, gitignored), and `next build` reads it to prerender pages. This is not ready for a real Vercel deploy (no DB in the build/runtime environment, read-only filesystem); the production database strategy is still undecided.
 
 ## Stack
 
@@ -22,7 +30,7 @@ Data layer defined (schema + initial migration), no seed data, no API routes, no
 - Lucide (`lucide-react`)
 - Prisma 7 + SQLite via the `better-sqlite3` driver adapter
 - TMDB API (series metadata and artwork only; typed client in `src/lib/tmdb/`, see below)
-- Deploy on Vercel
+- Deploy target: Vercel (not deployable yet; see "Project status")
 
 ## Commands
 
@@ -31,18 +39,22 @@ npm run dev          # dev server (Turbopack)
 npm run build        # production build
 npm run lint         # ESLint (flat config, eslint.config.mjs)
 npm run typecheck    # next typegen && tsc --noEmit
+npm test             # node:test via tsx (see below)
 npm run db:generate  # prisma generate (also runs on postinstall)
 npm run db:migrate   # prisma migrate dev, then `postdb:migrate` hook runs prisma generate
 npm run db:deploy    # prisma migrate deploy (apply existing migrations, no prompts)
 npm run db:seed      # prisma db seed -> runs `tsx prisma/seed.ts` (configured in prisma.config.ts)
 npm run db:studio    # prisma studio
+npm run db:import:series -- --tmdb-id <id> [--channel <slug>]
+npm run db:import:series -- --title "<title>" --year <first air year> [--channel <slug>]
+npm run db:import:ben10  # wrapper: --title "Ben 10" --year 2005 --channel cartoon-network
 ```
 
 Reset the dev DB from scratch: `npx prisma migrate reset`, then `npm run db:seed`. Always run the seed explicitly; it's idempotent (upserts by `slug`), so re-running is safe. Prisma's CLI refuses `migrate reset` when invoked by an AI agent without explicit user consent. Don't bypass that guard; ask the user.
 
 Create schema changes with `npm run db:migrate -- --name <change>`. Don't use `prisma db push`; the DB is managed only through committed migrations in `prisma/migrations`. In Prisma 7, `migrate dev` no longer runs `generate` automatically, so the `postdb:migrate` npm hook runs it. Don't chain with `&&` inside `db:migrate`: npm appends `-- --name` args to the end of the script, so they'd go to `generate`, and `migrate dev` would hang waiting for an interactive name prompt.
 
-No test framework is set up yet.
+Tests: `npm test` runs `src/**/*.test.ts` with Node's built-in `node:test` through `tsx` (no test framework dependency). Import tests apply the real migrations to a throwaway SQLite DB in the OS temp dir and mock `fetch`, so they never touch `dev.db` or call TMDB.
 
 `typecheck` runs `next typegen` first because globals like `LayoutProps<"/">` come from generated route types in `.next/`; plain `tsc` fails on a fresh clone.
 
@@ -78,23 +90,60 @@ No test framework is set up yet.
 
 ## TMDB integration (`src/lib/tmdb/`)
 
-- Public API via `@/lib/tmdb`: `searchTvSeries(query, { page, firstAirDateYear, language })`, `getTvSeriesDetails(id, { language })`, `tmdbImageUrl(path, size)`, `TmdbError`, plus response types in `types.ts` (only the fields we consume).
+- Public API via `@/lib/tmdb`: `searchTvSeries(query, { page, firstAirDateYear, language })`, `getTvSeriesDetails(id, { language })`, `getTvSeasonDetails(id, seasonNumber, { language })`, `tmdbImageUrl(path, size)`, `TmdbError`, plus response types in `types.ts` (only the fields we consume).
 - Native `fetch`, 10s timeout, default language `es-MX` (Latin American Spanish titles/overviews when TMDB has them).
 - Auth: `TMDB_READ_ACCESS_TOKEN` (TMDB "API Read Access Token", sent as `Authorization: Bearer`). Server-side only; never expose it with `NEXT_PUBLIC_`. The client throws at call time if it's missing, so builds don't need it.
 - Intended flow: TMDB client -> pick a series -> write `Series`/`Season`/`Episode` rows via Prisma. Pages read from our DB, never from TMDB at render time. The client stays framework-agnostic and Prisma-free so it can run from `tsx` scripts. That's why it has no `server-only` import, which throws outside Next's server environment.
 - Import: `src/lib/import/tmdb-series.ts` (the Prisma-aware layer; `src/lib/tmdb/` stays Prisma-free).
   - `findTmdbSeriesByExactTitle(title, firstAirYear)` requires exactly one match on normalized title + first-air year from page 1 of search. Otherwise it throws with the candidate list, so it never guesses.
-  - `importTmdbSeries(tmdbId)` fetches everything first, then upserts Series/Seasons/Episodes by `tmdbId` in one transaction. It's idempotent and atomic. `Series.title`/`slug` are set only on create.
-  - Channel links (`SeriesChannel`) are never derived from TMDB; import scripts create them explicitly with null years/source unless verified.
-  - Scripts live in `scripts/` and run via `tsx --env-file=.env` (e.g. `npm run db:import:ben10`); never call TMDB from a page render.
-- Store TMDB image **paths** (`posterPath`, `stillPath`) in the DB and build URLs with `tmdbImageUrl`. `next/image` will need `image.tmdb.org` in `images.remotePatterns` when UI uses it.
+  - `importTmdbSeries(tmdbId)` fetches everything first, then upserts Series/Seasons/Episodes by `tmdbId` in one transaction. It's idempotent and atomic. `Series.title`/`slug` are set only on create; an existing series never gets its slug changed.
+  - Slug collisions on create are resolved by `resolveSeriesSlug` (`src/lib/import/series-slug.ts`), first free candidate wins: `{base}` -> `{base}-{firstAirYear}` -> `{base}-{firstAirYear}-{tmdbId}` (`{base}-{tmdbId}` when there's no year). A candidate owned by the same `tmdbId` counts as free; if all are taken it throws rather than guess.
+  - Channel links (`SeriesChannel`) are never derived from TMDB. `linkSeriesToChannel` (`src/lib/import/series-channel.ts`) creates one with null years/source only when the caller passes a channel explicitly, and leaves existing rows untouched.
+  - One generic CLI, `scripts/import-series.ts` (`db:import:series`), for every series; don't add per-series scripts (`db:import:ben10` is just an npm alias with fixed args). It validates `--channel` before calling TMDB. Imported TMDB text is stored as delivered (e.g. placeholder titles like "Episodio 1"); curation is a separate, future step.
+  - Scripts live in `scripts/` and run via `tsx --env-file=.env`; never call TMDB from a page render.
+- Store TMDB image **paths** (`posterPath`, `stillPath`) in the DB and build URLs with `tmdbImageUrl`. `next.config.ts` allows `https://image.tmdb.org/t/p/**` in `images.remotePatterns`, so `next/image` can render them. There is no backdrop field in the schema; series pages show the poster only.
+
+## UI
+
+- Pages read only from Prisma through `src/lib/data/` (`series.ts`, `channels.ts`, `blocks.ts`, `schedules.ts`, `timeline.ts`); never from TMDB at render time. Detail lookups are wrapped in React `cache()` so `generateMetadata`, layouts and pages share one query per request.
+- Historical data (channel and block airing years, blocks, schedules, timeline events and their dates) is never invented or derived from TMDB. Historical dates are never turned into `Date` objects or shifted by timezone: `Schedule.airDate`/`startTime`/`endTime` and `TimelineEvent` year/month/day are formatted from their stored strings/numbers only (`formatScheduleDate`, `formatTimeRange`, `formatPartialDate`). Only `formatAirDate` (TMDB episode dates) and `formatDate` (`tmdbSyncedAt`) use `Intl` with UTC. Sections without data render an empty state; `SeriesChannel`/`SeriesBlock` years are shown only when documented, and TMDB years are labeled as the original run ("Emisión original"), not Latin American airing. Records show their source (`SourceNote`) when present.
+- Rendering: all current pages are static. Dynamic routes (`[slug]`, `[canal]/[slug]`, `[canal]/[fecha]`) use `generateStaticParams` + `dynamicParams = false`, so unknown slugs return a real 404 and **new imports, seed or historical data only appear after a new build**. (On-demand rendering with a `loading.tsx` boundary streams a 200 before `notFound()` runs.) `next start` logs `Error: Internal: NoFallbackError` for those 404s; the responses are correct.
+- Routes:
+  - `/`: placeholder.
+  - `/series`: poster grid (`SeriesCard`), sorted with an `es` collator; `loading.tsx`, `error.tsx`.
+  - `/series/[slug]`: archive record: poster, title, facts (original run, seasons, episodes, specials), overview, TMDB link + sync date, season accordion (specials last, `hiddenUntilFound` so find-in-page reaches closed seasons), TMDB placeholder titles shown as delivered; `loading.tsx`.
+  - `/canales`: channel cards with distinct series count and block count; `error.tsx`.
+  - `/canales/[slug]`: shared `layout.tsx` (logo, name, section nav with counts) and one route per section: `/canales/[slug]` (Series), `/canales/[slug]/bloques` (the channel's blocks as `BlockCard`s linking to `/bloques/[canal]/[slug]`), `/canales/[slug]/programacion` (the channel's dates with schedule data, grouped by year, linking to `/programacion/[canal]/[fecha]`), `/canales/[slug]/timeline` (see Timeline below).
+  - `/bloques`: global block catalog (`BlockCard`: name, channel, documented years, distinct series count), sorted by name then channel; `error.tsx`.
+  - `/bloques/[canal]/[slug]`: block record: name, linked channel, documented years, description, source, and its series as `SeriesCard`s whose caption is the documented period(s) in the block (`formatRuns`), never TMDB years. The URL carries the channel slug because `Block.slug` is only unique per channel (`@@unique([channelId, slug])`); build links with `blockHref`. `/bloques/[canal]` alone is a 404.
+  - `/programacion`: global schedule index: one section per channel with schedule data, its dates grouped by year (`ScheduleDayLinks`, slot count per date); `error.tsx`.
+  - `/programacion/[canal]/[fecha]`: one channel's slots for one `YYYY-MM-DD` date, sorted by `startTime` string (`ScheduleSlotList`). Each slot shows start/end time, linked series, `listedTitle` verbatim (`whitespace-pre-wrap`; shown as the title when there's no series, as "En la fuente: …" when there is), linked block, feed ("Señal X") and source; a slot may have a series, a block, both or neither. Only (channel, date) pairs with real rows are generated; other pairs, malformed dates and `/programacion/[canal]` are 404. Multiple feeds on one day are interleaved by time; no date filter, pagination or prev/next navigation yet.
+  - `/timeline` and `/canales/[slug]/timeline`: see Timeline below.
+  - `not-found.tsx` (Spanish 404). All main nav links now resolve.
+- Timeline:
+  - `/timeline` is the global timeline; `/canales/[slug]/timeline` is filtered by channel. Both use `listTimelineEvents` (`src/lib/data/timeline.ts`) and the `TimelineList` component (`src/components/timeline/`), so they look the same.
+  - Grouped by year; ordered by year, month, day (then id). Month/day may be null and the event is still valid: within a year, events with no month come first, then month without day, then full dates (`nulls: "first"`). Dates are shown with the precision available: "1997", "mar 1997", "4 mar 1997".
+  - `TimelineEventType` labels (in `TimelineList`): CHANNEL_LAUNCH "Lanzamiento de canal", CHANNEL_CLOSURE "Cierre de canal", REBRAND "Cambio de imagen", BLOCK_LAUNCH "Estreno de bloque", BLOCK_END "Fin de bloque", SERIES_PREMIERE "Estreno de serie", SERIES_FINALE "Final de serie", OTHER "Otro".
+  - Each event shows date, type, title, description and source when present; its related channel, series and block link to `/canales/[slug]`, `/series/[slug]` and `/bloques/[canal]/[slug]` (the channel link is hidden inside that channel's own timeline).
+  - Channel timeline rule (`channelTimelineWhere`): events with that `channelId`, plus events of the channel's blocks (a block belongs to exactly one channel), even when their `channelId` is null. Series-only events are not included, because a series can be linked to several channels. The channel nav "Timeline" count uses the same `channelTimelineWhere`, so it always matches the list.
+  - No search, filters or pagination yet.
+- Shared data/format helpers (reuse them instead of duplicating):
+  - `src/lib/data/blocks.ts`: one block summary select for both the global catalog (`listBlocks`) and the channel section (`listChannelBlocks`), with distinct series counts; `getBlock(channelSlug, blockSlug)`, `listBlockParams`, `blockHref`.
+  - `src/lib/data/series.ts`: `seriesCardSelect` (fields a `SeriesCard` needs) and `groupSeriesRuns` (groups `SeriesChannel`/`SeriesBlock` rows per series, keeping every run), used by series, channels and blocks.
+  - `src/lib/data/schedules.ts`: `listScheduleChannels` (global index), `listChannelScheduleDays` (channel section), `listScheduleDayParams`, `getScheduleDay`, `scheduleDayHref`; dates come from a `groupBy` on `(channelId, airDate)`.
+  - `src/lib/data/timeline.ts`: `listTimelineEvents({ channelId? })` and `channelTimelineWhere` (also used by the channel count in `channels.ts`).
+  - `src/lib/format.ts`: `formatYearRange`, `formatRuns` (documented runs only), `formatScheduleDate`, `formatTimeRange`, `formatPartialDate` (no `Date`), `formatAirDate`, `formatDate`, `pluralize`.
+- Layout (`src/app/layout.tsx`): sticky `SiteHeader` (brand + main nav: Inicio, Canales, Series, Bloques, Programación, Timeline; horizontal scroll on mobile), `SiteFooter` with the TMDB attribution required by TMDB's terms, title template `%s · WikiToon`.
+- Components: app components in `src/components/` (`container`, `site-header`, `site-footer`, `empty-state`, `source-note`, `route-error`), plus `series/`, `channels/`, `blocks/`, `schedule/` and `timeline/`. `ChannelLogo` expects `logoPath` to be a local path under `public/` and shows initials while it's null.
+- Motion (`motion/react`) is used only for the active-item indicators (`layoutId`) in the main nav and the channel section nav, both client components.
+- Design: dark-only for now, minimal (Linear/Vercel style), neutral base-nova tokens with a single amber accent (`--primary`/`--ring`), used for small labels, the brand dot, focus and active indicators. Subtle borders; hover darkens or changes border, never scales. Mobile-first.
 
 ## shadcn/ui
 
-- Config in `components.json`. Add components with `npx shadcn@latest add <name>`; they land in `src/components/ui`. No components are installed yet.
+- Config in `components.json`. Add components with `npx shadcn@latest add <name>`; they land in `src/components/ui`. Installed: `accordion`, `button`, `skeleton`.
 - Primitives are **Base UI** (`@base-ui/react`), not Radix. Composition uses Base UI's `render` prop, not Radix's `asChild`. Check the generated component source before assuming a Radix API.
 - `cn()` comes from the `cn` package (by shadcn, replaces `clsx` + `tailwind-merge`); `src/lib/utils.ts` re-exports it.
-- Theme tokens (oklch CSS variables, light in `:root`, dark in `.dark`) live in `src/app/globals.css`, which also imports `tw-animate-css` and `shadcn/tailwind.css`. Dark mode is class-based (`@custom-variant dark`), and nothing sets the `.dark` class yet.
+- Theme tokens (oklch CSS variables, light in `:root`, dark in `.dark`) live in `src/app/globals.css`, which also imports `tw-animate-css` and `shadcn/tailwind.css`. Dark mode is class-based (`@custom-variant dark`); `layout.tsx` sets `dark scheme-dark` on `<html>`, so the app is always dark (no theme toggle). The light `:root` tokens are unused but kept, with the amber accent in both.
 - Font: Geist via `next/font/google` in `src/app/layout.tsx`, exposed as `--font-sans`.
 
 ## Conventions
