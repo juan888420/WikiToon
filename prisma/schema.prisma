@@ -1,0 +1,240 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+enum TimelineEventType {
+  CHANNEL_LAUNCH
+  CHANNEL_CLOSURE
+  REBRAND
+  BLOCK_LAUNCH
+  BLOCK_END
+  SERIES_PREMIERE
+  SERIES_FINALE
+  OTHER
+}
+
+/// A Latin American TV channel (e.g. the LatAm feed of Cartoon Network, or a national broadcaster).
+model Channel {
+  id         Int      @id @default(autoincrement())
+  slug       String   @unique
+  name       String
+  /// ISO 3166-1 alpha-2 for national channels; null means pan-regional.
+  country    String?
+  logoPath   String?  @map("logo_path")
+  sourceName String?  @map("source_name")
+  sourceUrl  String?  @map("source_url")
+  notes      String?
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+
+  blocks         Block[]
+  seriesChannels SeriesChannel[]
+  schedules      Schedule[]
+  timelineEvents TimelineEvent[]
+
+  @@map("channels")
+}
+
+model Series {
+  id            Int       @id @default(autoincrement())
+  slug          String    @unique
+  /// Title as known in Latin America; curated by WikiToon, not overwritten by TMDB.
+  title         String
+  originalTitle String?   @map("original_title")
+  overview      String?
+  firstAirYear  Int?      @map("first_air_year")
+  lastAirYear   Int?      @map("last_air_year")
+  posterPath    String?   @map("poster_path")
+  /// TMDB TV id (TV namespace only).
+  tmdbId        Int?      @unique @map("tmdb_id")
+  tmdbSyncedAt  DateTime? @map("tmdb_synced_at")
+  sourceName    String?   @map("source_name")
+  sourceUrl     String?   @map("source_url")
+  notes         String?
+  createdAt     DateTime  @default(now()) @map("created_at")
+  updatedAt     DateTime  @updatedAt @map("updated_at")
+
+  seasons        Season[]
+  seriesChannels SeriesChannel[]
+  seriesBlocks   SeriesBlock[]
+  schedules      Schedule[]
+  timelineEvents TimelineEvent[]
+
+  @@map("series")
+}
+
+/// A run of a Series on a Channel. Multiple rows allowed for separate runs (e.g. reruns years later).
+model SeriesChannel {
+  id         Int      @id @default(autoincrement())
+  seriesId   Int      @map("series_id")
+  channelId  Int      @map("channel_id")
+  startYear  Int?     @map("start_year")
+  endYear    Int?     @map("end_year")
+  sourceName String?  @map("source_name")
+  sourceUrl  String?  @map("source_url")
+  notes      String?
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+
+  series  Series  @relation(fields: [seriesId], references: [id], onDelete: Cascade)
+  channel Channel @relation(fields: [channelId], references: [id], onDelete: Cascade)
+
+  @@index([seriesId, channelId])
+  @@index([channelId, startYear])
+  @@map("series_channels")
+}
+
+model Season {
+  id           Int       @id @default(autoincrement())
+  seriesId     Int       @map("series_id")
+  /// 0 is specials, following TMDB.
+  number       Int
+  name         String?
+  overview     String?
+  airYear      Int?      @map("air_year")
+  posterPath   String?   @map("poster_path")
+  tmdbId       Int?      @unique @map("tmdb_id")
+  tmdbSyncedAt DateTime? @map("tmdb_synced_at")
+  createdAt    DateTime  @default(now()) @map("created_at")
+  updatedAt    DateTime  @updatedAt @map("updated_at")
+
+  series   Series    @relation(fields: [seriesId], references: [id], onDelete: Cascade)
+  episodes Episode[]
+
+  @@unique([seriesId, number])
+  @@map("seasons")
+}
+
+model Episode {
+  id              Int       @id @default(autoincrement())
+  seasonId        Int       @map("season_id")
+  number          Int
+  /// Latin American title when known.
+  title           String?
+  originalTitle   String?   @map("original_title")
+  overview        String?
+  /// Original premiere date (YYYY-MM-DD, usually from TMDB), not the Latin American airing.
+  originalAirDate String?   @map("original_air_date")
+  stillPath       String?   @map("still_path")
+  tmdbId          Int?      @unique @map("tmdb_id")
+  tmdbSyncedAt    DateTime? @map("tmdb_synced_at")
+  createdAt       DateTime  @default(now()) @map("created_at")
+  updatedAt       DateTime  @updatedAt @map("updated_at")
+
+  season Season @relation(fields: [seasonId], references: [id], onDelete: Cascade)
+
+  @@unique([seasonId, number])
+  @@map("episodes")
+}
+
+/// A named programming block within a Channel (e.g. Toonami on Cartoon Network).
+model Block {
+  id          Int      @id @default(autoincrement())
+  channelId   Int      @map("channel_id")
+  slug        String
+  name        String
+  description String?
+  startYear   Int?     @map("start_year")
+  endYear     Int?     @map("end_year")
+  sourceName  String?  @map("source_name")
+  sourceUrl   String?  @map("source_url")
+  notes       String?
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  channel        Channel         @relation(fields: [channelId], references: [id], onDelete: Restrict)
+  seriesBlocks   SeriesBlock[]
+  schedules      Schedule[]
+  timelineEvents TimelineEvent[]
+
+  @@unique([channelId, slug])
+  @@map("blocks")
+}
+
+/// A Series being part of a Block's lineup. Multiple rows allowed for separate periods.
+model SeriesBlock {
+  id         Int      @id @default(autoincrement())
+  seriesId   Int      @map("series_id")
+  blockId    Int      @map("block_id")
+  startYear  Int?     @map("start_year")
+  endYear    Int?     @map("end_year")
+  sourceName String?  @map("source_name")
+  sourceUrl  String?  @map("source_url")
+  notes      String?
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+
+  series Series @relation(fields: [seriesId], references: [id], onDelete: Cascade)
+  block  Block  @relation(fields: [blockId], references: [id], onDelete: Cascade)
+
+  @@index([seriesId, blockId])
+  @@index([blockId, startYear])
+  @@map("series_blocks")
+}
+
+/// A concrete historical airing slot. Dates and times are local wall-clock as published by the source.
+model Schedule {
+  id          Int      @id @default(autoincrement())
+  channelId   Int      @map("channel_id")
+  seriesId    Int?     @map("series_id")
+  blockId     Int?     @map("block_id")
+  /// YYYY-MM-DD
+  airDate     String   @map("air_date")
+  /// HH:MM (24h)
+  startTime   String   @map("start_time")
+  /// HH:MM (24h)
+  endTime     String?  @map("end_time")
+  /// Free-form feed/region code (e.g. "MX", "Sur"); null means unknown or pan-regional.
+  feed        String?
+  /// Title exactly as listed in the source; required in practice when seriesId is null.
+  listedTitle String?  @map("listed_title")
+  sourceName  String?  @map("source_name")
+  sourceUrl   String?  @map("source_url")
+  notes       String?
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  channel Channel @relation(fields: [channelId], references: [id], onDelete: Restrict)
+  series  Series? @relation(fields: [seriesId], references: [id], onDelete: SetNull)
+  block   Block?  @relation(fields: [blockId], references: [id], onDelete: SetNull)
+
+  @@index([channelId, airDate, startTime])
+  @@index([seriesId, airDate])
+  @@index([blockId, airDate])
+  @@index([airDate, startTime])
+  @@map("schedules")
+}
+
+model TimelineEvent {
+  id          Int               @id @default(autoincrement())
+  type        TimelineEventType @default(OTHER)
+  title       String
+  description String?
+  /// Partial-date support: month and day are optional when the source only gives a year or month.
+  year        Int
+  month       Int?
+  day         Int?
+  channelId   Int?              @map("channel_id")
+  seriesId    Int?              @map("series_id")
+  blockId     Int?              @map("block_id")
+  sourceName  String?           @map("source_name")
+  sourceUrl   String?           @map("source_url")
+  notes       String?
+  createdAt   DateTime          @default(now()) @map("created_at")
+  updatedAt   DateTime          @updatedAt @map("updated_at")
+
+  channel Channel? @relation(fields: [channelId], references: [id], onDelete: SetNull)
+  series  Series?  @relation(fields: [seriesId], references: [id], onDelete: SetNull)
+  block   Block?   @relation(fields: [blockId], references: [id], onDelete: SetNull)
+
+  @@index([year, month, day])
+  @@index([channelId, year])
+  @@index([seriesId, year])
+  @@index([blockId, year])
+  @@map("timeline_events")
+}
