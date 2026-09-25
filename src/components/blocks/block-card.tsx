@@ -6,10 +6,10 @@ import { formatYearRange, pluralize } from "@/lib/format";
 type BlockCardProps = {
   block: BlockSummary;
   /** Hidden inside a channel page, where the channel is already the context. */
-  showChannel?: boolean;
+  showChannels?: boolean;
 };
 
-export function BlockCard({ block, showChannel = true }: BlockCardProps) {
+export function BlockCard({ block, showChannels = true }: BlockCardProps) {
   const years = formatYearRange(block.startYear, block.endYear);
 
   return (
@@ -23,7 +23,11 @@ export function BlockCard({ block, showChannel = true }: BlockCardProps) {
           <h3 className="font-medium">{block.name}</h3>
           {years && <span className="text-xs text-muted-foreground tabular-nums">{years}</span>}
         </div>
-        {showChannel && <p className="mt-0.5 text-sm text-muted-foreground">{block.channel.name}</p>}
+        {showChannels && (
+          <p className="mt-0.5 text-sm text-muted-foreground">
+            {block.channels.map((channel) => channel.name).join(" · ")}
+          </p>
+        )}
         {block.description && (
           <p className="mt-2 line-clamp-2 max-w-prose text-sm leading-relaxed text-muted-foreground">
             {block.description}

@@ -12,9 +12,9 @@ const tempDir = mkdtempSync(path.join(tmpdir(), "wikitoon-test-"));
 process.env.DATABASE_URL = `file:${path.join(tempDir, "test.db")}`;
 
 const cartoonCartoons: BlockData = {
-  channelSlug: "cartoon-network",
   slug: "cartoon-cartoons",
   name: "Cartoon Cartoons",
+  channelSlugs: ["cartoon-network"],
   description: "Original series.",
   seriesTmdbIds: [1, 2],
 };
@@ -23,6 +23,7 @@ describe("loadBlocks", () => {
   let prisma: typeof import("@/lib/prisma").prisma;
   let loadBlocks: typeof import("@/lib/import/blocks").loadBlocks;
   let channelId: number;
+  let otherChannelId: number;
 
   before(async () => {
     execFileSync(
@@ -36,11 +37,15 @@ describe("loadBlocks", () => {
     ({ id: channelId } = await prisma.channel.create({
       data: { slug: "cartoon-network", name: "Cartoon Network" },
     }));
+    // Stands in for the successor channel of a shared block (Fox Kids -> Jetix).
+    ({ id: otherChannelId } = await prisma.channel.create({
+      data: { slug: "boomerang", name: "Boomerang" },
+    }));
     for (const tmdbId of [1, 2, 3]) {
       const series = await prisma.series.create({
         data: { tmdbId, slug: `series-${tmdbId}`, title: `Series ${tmdbId}` },
       });
-      // Series 3 is deliberately not linked to the channel.
+      // Series 3 is deliberately not linked to any channel.
       if (tmdbId !== 3) {
         await prisma.seriesChannel.create({ data: { seriesId: series.id, channelId } });
       }
@@ -53,15 +58,19 @@ describe("loadBlocks", () => {
   });
 
   async function counts() {
-    return { blocks: await prisma.block.count(), seriesBlocks: await prisma.seriesBlock.count() };
+    return {
+      blocks: await prisma.block.count(),
+      blockChannels: await prisma.blockChannel.count(),
+      seriesBlocks: await prisma.seriesBlock.count(),
+    };
   }
 
-  it("creates blocks and series links with null years and source", async () => {
+  it("creates blocks, channel links and series links with null years and source", async () => {
     const [loaded] = await loadBlocks([cartoonCartoons]);
 
-    assert.deepEqual(await counts(), { blocks: 1, seriesBlocks: 2 });
+    assert.deepEqual(await counts(), { blocks: 1, blockChannels: 1, seriesBlocks: 2 });
     assert.equal(loaded.blockCreated, true);
-    assert.equal(loaded.linksCreated, 2);
+    assert.deepEqual([loaded.channelsCreated, loaded.linksCreated], [1, 2]);
     const block = await prisma.block.findUniqueOrThrow({ where: { id: loaded.blockId } });
     assert.equal(block.description, "Original series.");
     assert.deepEqual([block.startYear, block.endYear, block.sourceName], [null, null, null]);
@@ -72,14 +81,42 @@ describe("loadBlocks", () => {
   it("re-runs without duplicating rows", async () => {
     const [loaded] = await loadBlocks([cartoonCartoons]);
 
-    assert.deepEqual(await counts(), { blocks: 1, seriesBlocks: 2 });
+    assert.deepEqual(await counts(), { blocks: 1, blockChannels: 1, seriesBlocks: 2 });
     assert.equal(loaded.blockCreated, false);
+    assert.deepEqual([loaded.channelsCreated, loaded.channelsExisting], [0, 1]);
     assert.deepEqual([loaded.linksCreated, loaded.linksExisting], [0, 2]);
+  });
+
+  it("keeps one block for a lineup shared by two channels", async () => {
+    const shared: BlockData = {
+      slug: "mysteria",
+      name: "Mysteria",
+      channelSlugs: ["cartoon-network", "boomerang"],
+      // Series 1 only airs on cartoon-network, which is enough for a block on both channels.
+      seriesTmdbIds: [1],
+    };
+    const [loaded] = await loadBlocks([shared]);
+
+    assert.equal(loaded.channelsCreated, 2);
+    const block = await prisma.block.findUniqueOrThrow({
+      where: { slug: "mysteria" },
+      select: { id: true, blockChannels: { select: { channelId: true } } },
+    });
+    assert.deepEqual(
+      block.blockChannels.map((link) => link.channelId).sort(),
+      [channelId, otherChannelId].sort(),
+    );
+    // Re-running adds neither a second block nor duplicate channel links.
+    await loadBlocks([shared]);
+    assert.equal(await prisma.block.count({ where: { slug: "mysteria" } }), 1);
+    assert.equal(await prisma.blockChannel.count({ where: { blockId: block.id } }), 2);
+
+    await prisma.block.delete({ where: { id: block.id } });
   });
 
   it("updates name, description and logo but keeps years, sources and notes", async () => {
     const block = await prisma.block.update({
-      where: { channelId_slug: { channelId, slug: "cartoon-cartoons" } },
+      where: { slug: "cartoon-cartoons" },
       data: { startYear: 1997, sourceName: "Source", notes: "Curated note" },
     });
     await prisma.seriesBlock.updateMany({ where: { blockId: block.id }, data: { startYear: 1998 } });
@@ -106,16 +143,20 @@ describe("loadBlocks", () => {
     assert.ok(links.every((link) => link.startYear === 1998));
   });
 
-  it("never deletes blocks or series links missing from the data", async () => {
+  it("never deletes blocks, channel links or series links missing from the data", async () => {
     const other = await prisma.block.create({
-      data: { channelId, slug: "other", name: "Other" },
+      data: { slug: "other", name: "Other", blockChannels: { create: { channelId } } },
     });
     const series = await prisma.series.findUniqueOrThrow({ where: { tmdbId: 1 } });
     await prisma.seriesBlock.create({ data: { seriesId: series.id, blockId: other.id } });
+    // A channel link the data file no longer lists is left alone too.
+    await prisma.blockChannel.create({
+      data: { blockId: other.id, channelId: otherChannelId },
+    });
 
     await loadBlocks([{ ...cartoonCartoons, seriesTmdbIds: [1] }]);
 
-    assert.deepEqual(await counts(), { blocks: 2, seriesBlocks: 3 });
+    assert.deepEqual(await counts(), { blocks: 2, blockChannels: 3, seriesBlocks: 3 });
   });
 
   it("rejects invalid data without writing anything", async () => {
@@ -127,7 +168,9 @@ describe("loadBlocks", () => {
         valid,
         { ...cartoonCartoons, slug: "missing-series", seriesTmdbIds: [99] },
         { ...cartoonCartoons, slug: "unlinked-series", seriesTmdbIds: [3] },
-        { ...cartoonCartoons, channelSlug: "unknown", seriesTmdbIds: [1] },
+        { ...cartoonCartoons, slug: "unknown-channel", channelSlugs: ["unknown"] },
+        { ...cartoonCartoons, slug: "no-channel", channelSlugs: [] },
+        { ...cartoonCartoons, slug: "repeated-channel", channelSlugs: ["boomerang", "boomerang"] },
         { ...cartoonCartoons, slug: "valid-new", seriesTmdbIds: [1, 1] },
         { ...cartoonCartoons, slug: "remote-logo", logoPath: "https://example.com/logo.svg" },
       ]),
@@ -136,7 +179,9 @@ describe("loadBlocks", () => {
         assert.match(error.message, /no series with TMDB id 99/);
         assert.match(error.message, /"Series 3" \(TMDB 3\) has no SeriesChannel/);
         assert.match(error.message, /channel "unknown" not found/);
-        assert.match(error.message, /cartoon-network\/valid-new is listed more than once/);
+        assert.match(error.message, /no-channel: at least one channel is required/);
+        assert.match(error.message, /repeated-channel lists a channel more than once/);
+        assert.match(error.message, /valid-new is listed more than once/);
         assert.match(error.message, /lists a series more than once/);
         assert.match(error.message, /remote-logo: logoPath must be a local path/);
         return true;

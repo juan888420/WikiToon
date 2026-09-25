@@ -28,7 +28,7 @@ export default async function ChannelBlocksPage({ params }: PageProps<"/canales/
         <ul className="space-y-3">
           {blocks.map((block) => (
             <li key={block.id}>
-              <BlockCard block={block} showChannel={false} />
+              <BlockCard block={block} showChannels={false} />
             </li>
           ))}
         </ul>

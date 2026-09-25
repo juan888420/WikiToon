@@ -6,15 +6,18 @@ import type { BlockData } from "../../src/lib/import/blocks";
 // Boomerang and Discovery Kids have no blocks yet because their Latin American blocks are not
 // documented; don't fill them with guessed names. Block names without a description were provided
 // by the project owner; their description stays null until it is documented.
+// `slug` is globally unique: a block can run on several channels (`channelSlugs`), which is how the
+// Fox Kids blocks that continued after the Jetix rebrand are recorded, as one block on both.
 // `logoPath` is optional and must point to a local asset under `public/logos/blocks/`, named
-// `{channel-slug}-{block-slug}`. Document its source in `public/logos/blocks/SOURCES.md`, which
-// also lists why each pending block has no logo yet. Blocks without it show initials.
+// `{block-slug}`. Document its source in `public/logos/blocks/SOURCES.md`, which also lists why
+// each pending block has no logo yet. Blocks without it show initials.
 export const blocks: BlockData[] = [
   {
-    channelSlug: "cartoon-network",
     slug: "cartoon-cartoons",
     name: "Cartoon Cartoons",
+    channelSlugs: ["cartoon-network"],
     description: "Sello de las series animadas originales de Cartoon Network.",
+    logoPath: "/logos/blocks/cartoon-cartoons.png",
     seriesTmdbIds: [
       4229, // El laboratorio de Dexter
       607, // Las chicas superpoderosas
@@ -27,19 +30,20 @@ export const blocks: BlockData[] = [
     ],
   },
   {
-    channelSlug: "cartoon-network",
     slug: "toonami",
     name: "Toonami",
+    channelSlugs: ["cartoon-network"],
     description: "Bloque de series de acción y anime.",
-    logoPath: "/logos/blocks/cartoon-network-toonami.svg",
+    logoPath: "/logos/blocks/toonami.svg",
     // Los jóvenes titanes and Samurai Jack are dubious for the Latin American Toonami.
     seriesTmdbIds: [],
   },
   {
-    channelSlug: "nickelodeon",
     slug: "nicktoons",
     name: "Nicktoons",
+    channelSlugs: ["nickelodeon"],
     description: "Sello de las series animadas originales de Nickelodeon.",
+    logoPath: "/logos/blocks/nicktoons.png",
     seriesTmdbIds: [
       3022, // Rugrats: Aventuras en Pañales
       537, // ¡Oye, Arnold!
@@ -55,51 +59,57 @@ export const blocks: BlockData[] = [
     ],
   },
   {
-    channelSlug: "nickelodeon",
-    slug: "nick-jr",
-    name: "Nick Jr.",
-    description: "Bloque de programación preescolar.",
-    seriesTmdbIds: [],
-  },
-  {
-    channelSlug: "nickelodeon",
     slug: "nick-at-nite",
     name: "Nick at Nite",
-    logoPath: "/logos/blocks/nickelodeon-nick-at-nite.svg",
+    channelSlugs: ["nickelodeon"],
+    logoPath: "/logos/blocks/nick-at-nite.svg",
     seriesTmdbIds: [],
   },
   {
-    channelSlug: "disney-channel",
     slug: "zapping-zone",
     name: "Zapping Zone",
+    channelSlugs: ["disney-channel"],
     description: "Bloque con conductores.",
+    logoPath: "/logos/blocks/zapping-zone.png",
     // Which catalog series aired inside the block is not documented.
     seriesTmdbIds: [],
   },
+  // Fox Kids was succeeded by Jetix, and these blocks continued across the rebrand, so each one is
+  // a single block on both channels rather than two independent blocks. Which catalog series aired
+  // in them is not documented, so they stay empty: never infer a lineup from a block's name.
   {
-    channelSlug: "disney-channel",
-    slug: "playhouse-disney",
-    name: "Playhouse Disney",
-    description: "Bloque de programación preescolar.",
+    slug: "mysteria",
+    name: "Mysteria",
+    channelSlugs: ["fox-kids", "jetix"],
+    logoPath: "/logos/blocks/mysteria.png",
     seriesTmdbIds: [],
   },
-  { channelSlug: "fox-kids", slug: "mysteria", name: "Mysteria", seriesTmdbIds: [] },
-  { channelSlug: "fox-kids", slug: "insomnio", name: "Insomnio", seriesTmdbIds: [] },
   {
-    channelSlug: "fox-kids",
+    slug: "insomnio",
+    name: "Insomnio",
+    channelSlugs: ["fox-kids", "jetix"],
+    logoPath: "/logos/blocks/insomnio.png",
+    seriesTmdbIds: [],
+  },
+  {
     slug: "quien-tiene-el-control",
     name: "¿Quién tiene el control?",
+    channelSlugs: ["fox-kids", "jetix"],
+    logoPath: "/logos/blocks/quien-tiene-el-control.png",
     seriesTmdbIds: [],
   },
-  { channelSlug: "fox-kids", slug: "doble-carga", name: "Doble Carga", seriesTmdbIds: [] },
-  { channelSlug: "fox-kids", slug: "invasion-anime", name: "Invasión Animé", seriesTmdbIds: [] },
-  { channelSlug: "jetix", slug: "invasion-anime", name: "Invasión Animé", seriesTmdbIds: [] },
-  { channelSlug: "jetix", slug: "mysteria", name: "Mysteria", seriesTmdbIds: [] },
   {
-    channelSlug: "jetix",
-    slug: "quien-tiene-el-control",
-    name: "¿Quién tiene el control?",
+    slug: "doble-carga",
+    name: "Doble Carga",
+    channelSlugs: ["fox-kids", "jetix"],
+    logoPath: "/logos/blocks/doble-carga.png",
     seriesTmdbIds: [],
   },
-  { channelSlug: "jetix", slug: "doble-carga", name: "Doble Carga", seriesTmdbIds: [] },
+  {
+    slug: "invasion-anime",
+    name: "Invasión Animé",
+    channelSlugs: ["fox-kids", "jetix"],
+    logoPath: "/logos/blocks/invasion-anime.png",
+    seriesTmdbIds: [],
+  },
 ];

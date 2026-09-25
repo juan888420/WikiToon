@@ -18,21 +18,19 @@ export function generateStaticParams() {
   return listBlockParams();
 }
 
-export async function generateMetadata({
-  params,
-}: PageProps<"/bloques/[canal]/[slug]">): Promise<Metadata> {
-  const { canal, slug } = await params;
-  const block = await getBlock(canal, slug);
+export async function generateMetadata({ params }: PageProps<"/bloques/[slug]">): Promise<Metadata> {
+  const { slug } = await params;
+  const block = await getBlock(slug);
   if (!block) return {};
   return {
-    title: `${block.name} · ${block.channel.name}`,
+    title: `${block.name} · ${block.channels.map((channel) => channel.name).join(", ")}`,
     description: block.description ?? undefined,
   };
 }
 
-export default async function BlockPage({ params }: PageProps<"/bloques/[canal]/[slug]">) {
-  const { canal, slug } = await params;
-  const block = await getBlock(canal, slug);
+export default async function BlockPage({ params }: PageProps<"/bloques/[slug]">) {
+  const { slug } = await params;
+  const block = await getBlock(slug);
   if (!block) notFound();
 
   const years = formatYearRange(block.startYear, block.endYear);
@@ -60,18 +58,24 @@ export default async function BlockPage({ params }: PageProps<"/bloques/[canal]/
             <h1 className="mt-2 text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
               {block.name}
             </h1>
-            <Link
-              href={`/canales/${block.channel.slug}`}
-              className="mt-3 inline-flex items-center gap-2.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
-            >
-              <ChannelLogo
-                logoPath={block.channel.logoPath}
-                name={block.channel.name}
-                sizes="32px"
-                className="size-8 rounded-md [&_span]:text-[10px]"
-              />
-              {block.channel.name}
-            </Link>
+            {/* A block can run on several channels; each one links to its own page. */}
+            <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-2">
+              {block.channels.map((channel) => (
+                <Link
+                  key={channel.slug}
+                  href={`/canales/${channel.slug}`}
+                  className="inline-flex items-center gap-2.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  <ChannelLogo
+                    logoPath={channel.logoPath}
+                    name={channel.name}
+                    sizes="32px"
+                    className="size-8 rounded-md [&_span]:text-[10px]"
+                  />
+                  {channel.name}
+                </Link>
+              ))}
+            </div>
           </div>
         </header>
 
@@ -82,6 +86,10 @@ export default async function BlockPage({ params }: PageProps<"/bloques/[canal]/
               <dd className="mt-0.5 text-sm font-medium tabular-nums">{years}</dd>
             </div>
           )}
+          <div className="rounded-lg border border-border px-3 py-2.5">
+            <dt className="text-xs text-muted-foreground">Canales</dt>
+            <dd className="mt-0.5 text-sm font-medium tabular-nums">{block.channels.length}</dd>
+          </div>
           <div className="rounded-lg border border-border px-3 py-2.5">
             <dt className="text-xs text-muted-foreground">Series</dt>
             <dd className="mt-0.5 text-sm font-medium tabular-nums">{block.series.length}</dd>

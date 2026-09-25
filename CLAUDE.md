@@ -10,8 +10,8 @@ WikiToon is an archive and exploration platform for Latin American children's TV
 
 ## Project status
 
-- Data layer: schema with 4 migrations, idempotent seed (7 channels), generic TMDB series importer, curated series catalog loader (`db:load:series`) and curated block loader (`db:load:blocks`), all with tests. The whole catalog is reproducible from the repo: seed, then `prisma/data/series.ts`, then `prisma/data/blocks.ts`.
-- UI: global layout, Series module (`/series`, `/series/[slug]`), Channels module (`/canales`, `/canales/[slug]` + sections), Blocks module (`/bloques`, `/bloques/[canal]/[slug]`), Schedule module (`/programacion`, `/programacion/[canal]/[fecha]`) and Timeline (`/timeline`). See "UI" below.
+- Data layer: schema with 5 migrations, idempotent seed (7 channels), generic TMDB series importer, curated series catalog loader (`db:load:series`) and curated block loader (`db:load:blocks`), all with tests. The whole catalog is reproducible from the repo: seed, then `prisma/data/series.ts`, then `prisma/data/blocks.ts`.
+- UI: global layout, Series module (`/series`, `/series/[slug]`), Channels module (`/canales`, `/canales/[slug]` + sections), Blocks module (`/bloques`, `/bloques/[slug]`), Schedule module (`/programacion`, `/programacion/[canal]/[fecha]`) and Timeline (`/timeline`). See "UI" below.
 - Not built yet: home page content (`src/app/page.tsx` is still a placeholder), API routes.
 - Catalog in `dev.db` (as of 2026-09-24):
   - 7 channels (seed), all with a local `logoPath` (`/logos/{slug}.svg`, Jetix `.png`).
@@ -24,12 +24,12 @@ WikiToon is an archive and exploration platform for Latin American children's TV
     - Jetix (6): W.I.T.C.H., Súper Escuadrón Ciber Monos, Pucca, Galactik Football, Oban Star Racers, Yin, Yang, Yo!
     - Boomerang and Discovery Kids: none.
   - 12 series deliberately have no channel link: Hanna-Barbera classics (Don Gato y su Pandilla, ¡Scooby-Doo, dónde estás!, Los Picapiedra, Los supersónicos, La Carrera de Los Autos Locos, El Show de Maguila Gorila, El Show del Oso Yogui) and preschool series (Caillou, Clifford, Dragon Tales, Bob, el constructor, Arthur). Their Latin American channel history (Boomerang, Discovery Kids, others) is not documented, and general knowledge is not turned into historical data.
-  - 16 blocks from `prisma/data/blocks.ts`, all with null years/source/notes, and 19 `SeriesBlock` rows with null years/source. 2 blocks have a logo (Toonami, Nick at Nite); the other 14 have a null `logoPath`, pending a logo from the project owner (reasons in `public/logos/blocks/SOURCES.md`):
+  - 10 blocks from `prisma/data/blocks.ts`, all with null years/source/notes, 15 `BlockChannel` rows and 19 `SeriesBlock` rows with null years/source. Every block has a `logoPath` (sources and caveats in `public/logos/blocks/SOURCES.md`):
     - Cartoon Network: Cartoon Cartoons (8 series), Toonami (empty).
-    - Nickelodeon: Nicktoons (11 series), Nick Jr., Nick at Nite (empty).
-    - Disney Channel: Zapping Zone, Playhouse Disney (empty).
-    - Fox Kids: Mysteria, Insomnio, ¿Quién tiene el control?, Doble Carga, Invasión Animé (empty).
-    - Jetix: Invasión Animé, Mysteria, ¿Quién tiene el control?, Doble Carga (empty). Insomnio is intentionally not on Jetix for now.
+    - Nickelodeon: Nicktoons (11 series), Nick at Nite (empty).
+    - Disney Channel: Zapping Zone (empty).
+    - Fox Kids **and** Jetix, one block each shared by both channels: Mysteria, Insomnio, ¿Quién tiene el control?, Doble Carga, Invasión Animé (all empty). Fox Kids was succeeded by Jetix and these blocks continued across the rebrand, so each is one block on two channels, not two blocks, with a single page reachable from both.
+    - Removed for editorial scope (preschool content is not being expanded for now): Nick Jr. (Nickelodeon) and Playhouse Disney (Disney Channel). Neither had series, schedules or timeline events. Don't re-add them without asking.
     - Cartoon Cartoons and Nicktoons are described as labels for each channel's original animated series, not dated time slots. Their series are the ones clearly branded as such.
     - Deliberately left out as dubious:
       - Billy y Mandy, KND and Samurai Jack from Cartoon Cartoons, because they premiered as the label was being retired.
@@ -94,17 +94,20 @@ Tests: `npm test` runs `src/**/*.test.ts` with Node's built-in `node:test` throu
 
 - WikiToon's own DB is the source of truth for historical programming (channels, blocks, lineups, schedules, timeline). TMDB only enriches `Series`/`Season`/`Episode` (`tmdbId`, `overview`, `posterPath`, `stillPath`, `tmdbSyncedAt`); never let a TMDB sync overwrite curated fields like `Series.title` (the Latin American title).
 - `SeriesChannel` is the canonical "series aired on channel" record. `SeriesBlock` (block lineup) and `Schedule` (concrete slots) add detail but don't replace it, so a series in a block should also have a `SeriesChannel` row. Both join tables allow multiple rows per pair to represent separate runs.
+- `Block` is not owned by a `Channel`: `BlockChannel` (`block_channels`, composite primary key `@@id([blockId, channelId])`, no provenance columns) records which channels ran it, and `Block.slug` is globally unique. This exists because Fox Kids was succeeded by Jetix and five blocks continued across the rebrand; they are one block on two channels. Unlike the other join tables it allows only one row per pair: it records membership, not runs. Per-channel airing years are not modelled; if they are ever needed they belong on `BlockChannel` and require a migration.
 - `Channel` is intentionally minimal (name, slug, country, `logoPath`, provenance). `logoPath` is a local path under `public/` set by the seed (including on `update`, so re-seeding restores it); assets live in `public/logos/` and each one's source, license and modifications are documented in `public/logos/SOURCES.md` (keep it in sync when a logo changes). Never store external URLs in `logoPath`. No description or launch/close years: channel history is not a feature at this stage; historical milestones go in `TimelineEvent` if needed.
 - Seed (`prisma/seed.ts`) contains only the 7 base pan-regional channels. Don't add invented dates or source URLs to seed data.
-- Curated blocks live in `prisma/data/blocks.ts` (channel slug, block slug, name, optional description, optional `logoPath`, series by `tmdbId`), not in the seed, because their series must be imported first. `loadBlocks` (`src/lib/import/blocks.ts`) is run by `scripts/load-blocks.ts` (`db:load:blocks`):
-  - It validates everything before writing: channels exist, series exist, each series has a `SeriesChannel` to the block's channel, no duplicate blocks or series. On any problem it throws listing all of them and writes nothing. It runs in one transaction.
-  - It upserts `Block` by `(channelId, slug)`. The data file owns `name`, `description` and `logoPath` (omitted means null, so removing a logo from the file clears it); `startYear`/`endYear`/`sourceName`/`sourceUrl`/`notes` are never touched.
-  - `Block.logoPath`, like `Channel.logoPath`, is a local asset path, never a URL. The loader rejects anything outside `/logos/blocks/`. Block assets live in `public/logos/blocks/`, named `{channel-slug}-{block-slug}` because block slugs are only unique per channel. Each one is documented in `public/logos/blocks/SOURCES.md`, which also lists the pending blocks and why they have no logo.
+- Curated blocks live in `prisma/data/blocks.ts` (block slug, name, `channelSlugs`, optional description, optional `logoPath`, series by `tmdbId`), not in the seed, because their series must be imported first. `loadBlocks` (`src/lib/import/blocks.ts`) is run by `scripts/load-blocks.ts` (`db:load:blocks`):
+  - It validates everything before writing: channels exist, series exist, each block has at least one channel, each series has a `SeriesChannel` to **at least one** of the block's channels, no duplicate blocks, channels or series. On any problem it throws listing all of them and writes nothing. It runs in one transaction.
+  - It upserts `Block` by `slug`, which is globally unique. The data file owns `name`, `description` and `logoPath` (omitted means null, so removing a logo from the file clears it); `startYear`/`endYear`/`sourceName`/`sourceUrl`/`notes` are never touched.
+  - It creates a `BlockChannel` row only when the pair has none, so re-running is a no-op.
+  - `Block.logoPath`, like `Channel.logoPath`, is a local asset path, never a URL. The loader rejects anything outside `/logos/blocks/`. Block assets live in `public/logos/blocks/`, named `{block-slug}` (globally unique, so no channel prefix). Each one is documented in `public/logos/blocks/SOURCES.md`.
   - Rule for adding a block logo: there must be evidence of Latin American use (Logopedia, used only as evidence), a file with a verifiable license (Wikimedia Commons), and a visual match between the two. Otherwise leave it null.
   - Never substitute another region's version, a Logopedia file (no free license) or a user recreation claiming its own license.
+  - Exception on record: the current PNGs were supplied by the project owner and do **not** meet that rule (broadcast captures, no license). They are listed in a separate section of `SOURCES.md`, which also notes that `mysteria.png` and `doble-carga.png` carry no visible wordmark and were assigned on the file name alone, at the owner's instruction. Don't treat them as precedent for sourcing new logos.
   - It creates a `SeriesBlock` (null years/source) only when the pair has none, leaving existing rows (any run) untouched.
-  - It is additive: blocks and `SeriesBlock` rows missing from the file are never deleted or unlinked. Removing something means deleting it explicitly.
-  - Only add blocks and series associations that are clear. Leave out dubious ones rather than adding them. A block may be empty (`seriesTmdbIds: []`), but the block itself must be one known to have existed on that channel; never create one from a guessed name.
+  - It is additive: blocks, `BlockChannel` and `SeriesBlock` rows missing from the file are never deleted or unlinked. Removing something means deleting it explicitly.
+  - Only add blocks and series associations that are clear. Leave out dubious ones rather than adding them. A block may be empty (`seriesTmdbIds: []`), but the block itself must be one known to have existed on those channels; never create one from a guessed name.
 - Hanna-Barbera or any other studio is not an entity. Its shows are plain `Series` linked to channels (e.g. Boomerang). No Studio, Genre, Person, User, etc. unless explicitly requested.
 - Provenance: historical records (`Channel`, `Series`, `Block`, `SeriesChannel`, `SeriesBlock`, `Schedule`, `TimelineEvent`) carry `sourceName`, `sourceUrl`, `notes`. There is no separate Source table yet.
 - Date formats:
@@ -114,7 +117,7 @@ Tests: `npm test` runs `src/**/*.test.ts` with Node's built-in `node:test` throu
 - Regional feeds: `Schedule.feed` is a free-form code (e.g. `"MX"`, `"Sur"`), null meaning unknown or pan-regional. It's the hook for a future `Feed` model; don't build one without asking. `Channel.country` (ISO alpha-2, null = pan-regional) distinguishes national broadcasters.
 - `Schedule.seriesId` is optional. When it's null, `listedTitle` should hold the title as printed in the source. That rule is enforced in app code; SQLite has no CHECK constraint for it.
 - Delete behavior:
-  - Deleting a `Channel` that has `Block`s or `Schedule`s is blocked (`Restrict`).
+  - Deleting a `Channel` that has `BlockChannel`s or `Schedule`s is blocked (`Restrict`). Deleting a `Block` cascades its `BlockChannel` rows.
   - Join rows cascade.
   - Optional references on `Schedule`/`TimelineEvent` are set to null.
 - `TimelineEventType` is a Prisma enum, stored as TEXT in SQLite and validated by the client, not by the DB.
@@ -150,9 +153,9 @@ Tests: `npm test` runs `src/**/*.test.ts` with Node's built-in `node:test` throu
   - `/series`: poster grid (`SeriesCard`), sorted with an `es` collator; `loading.tsx`, `error.tsx`.
   - `/series/[slug]`: archive record: poster, title, facts (original run, seasons, episodes, specials), overview, TMDB link + sync date, season accordion (specials last, `hiddenUntilFound` so find-in-page reaches closed seasons), TMDB placeholder titles shown as delivered; `loading.tsx`.
   - `/canales`: channel cards with distinct series count and block count; `error.tsx`.
-  - `/canales/[slug]`: shared `layout.tsx` (logo, name, section nav with counts) and one route per section: `/canales/[slug]` (Series), `/canales/[slug]/bloques` (the channel's blocks as `BlockCard`s linking to `/bloques/[canal]/[slug]`), `/canales/[slug]/programacion` (the channel's dates with schedule data, grouped by year, linking to `/programacion/[canal]/[fecha]`), `/canales/[slug]/timeline` (see Timeline below).
-  - `/bloques`: global block catalog (`BlockCard`: name, channel, documented years, distinct series count), sorted by name then channel; `error.tsx`.
-  - `/bloques/[canal]/[slug]`: block record: name, linked channel, documented years, description, source, and its series as `SeriesCard`s whose caption is the documented period(s) in the block (`formatRuns`), never TMDB years. The URL carries the channel slug because `Block.slug` is only unique per channel (`@@unique([channelId, slug])`); build links with `blockHref`. `/bloques/[canal]` alone is a 404.
+  - `/canales/[slug]`: shared `layout.tsx` (logo, name, section nav with counts) and one route per section: `/canales/[slug]` (Series), `/canales/[slug]/bloques` (the channel's blocks as `BlockCard`s linking to `/bloques/[slug]`; a block shared with another channel appears in both channels' sections and links to the same page), `/canales/[slug]/programacion` (the channel's dates with schedule data, grouped by year, linking to `/programacion/[canal]/[fecha]`), `/canales/[slug]/timeline` (see Timeline below).
+  - `/bloques`: global block catalog (`BlockCard`: name, its channels joined with " · ", documented years, distinct series count), sorted by name; `error.tsx`.
+  - `/bloques/[slug]`: block record: name, every channel that ran it (each linked, with its logo), channel count, documented years, description, source, and its series as `SeriesCard`s whose caption is the documented period(s) in the block (`formatRuns`), never TMDB years. One page per block, shared by all of its channels, because `Block.slug` is globally unique; build links with `blockHref(block)`, which needs only the slug. The old `/bloques/[canal]/[slug]` URL is gone; the app was never deployed, so there is nothing to redirect.
   - `/programacion`: global schedule index: one section per channel with schedule data, its dates grouped by year (`ScheduleDayLinks`, slot count per date); `error.tsx`.
   - `/programacion/[canal]/[fecha]`: one channel's slots for one `YYYY-MM-DD` date, sorted by `startTime` string (`ScheduleSlotList`). Each slot shows start/end time, linked series, `listedTitle` verbatim (`whitespace-pre-wrap`; shown as the title when there's no series, as "En la fuente: …" when there is), linked block, feed ("Señal X") and source; a slot may have a series, a block, both or neither. Only (channel, date) pairs with real rows are generated; other pairs, malformed dates and `/programacion/[canal]` are 404. Multiple feeds on one day are interleaved by time; no date filter, pagination or prev/next navigation yet.
   - `/timeline` and `/canales/[slug]/timeline`: see Timeline below.
@@ -161,11 +164,11 @@ Tests: `npm test` runs `src/**/*.test.ts` with Node's built-in `node:test` throu
   - `/timeline` is the global timeline; `/canales/[slug]/timeline` is filtered by channel. Both use `listTimelineEvents` (`src/lib/data/timeline.ts`) and the `TimelineList` component (`src/components/timeline/`), so they look the same.
   - Grouped by year; ordered by year, month, day (then id). Month/day may be null and the event is still valid: within a year, events with no month come first, then month without day, then full dates (`nulls: "first"`). Dates are shown with the precision available: "1997", "mar 1997", "4 mar 1997".
   - `TimelineEventType` labels (in `TimelineList`): CHANNEL_LAUNCH "Lanzamiento de canal", CHANNEL_CLOSURE "Cierre de canal", REBRAND "Cambio de imagen", BLOCK_LAUNCH "Estreno de bloque", BLOCK_END "Fin de bloque", SERIES_PREMIERE "Estreno de serie", SERIES_FINALE "Final de serie", OTHER "Otro".
-  - Each event shows date, type, title, description and source when present; its related channel, series and block link to `/canales/[slug]`, `/series/[slug]` and `/bloques/[canal]/[slug]` (the channel link is hidden inside that channel's own timeline).
-  - Channel timeline rule (`channelTimelineWhere`): events with that `channelId`, plus events of the channel's blocks (a block belongs to exactly one channel), even when their `channelId` is null. Series-only events are not included, because a series can be linked to several channels. The channel nav "Timeline" count uses the same `channelTimelineWhere`, so it always matches the list.
+  - Each event shows date, type, title, description and source when present; its related channel, series and block link to `/canales/[slug]`, `/series/[slug]` and `/bloques/[slug]` (the channel link is hidden inside that channel's own timeline).
+  - Channel timeline rule (`channelTimelineWhere`): events with that `channelId`, plus events of the blocks that ran on the channel (`block: { blockChannels: { some: { channelId } } }`), even when their `channelId` is null. A block shared by Fox Kids and Jetix therefore surfaces its events in both timelines. Series-only events are not included, because a series can be linked to several channels. The channel nav "Timeline" count uses the same `channelTimelineWhere`, so it always matches the list.
   - No search, filters or pagination yet.
 - Shared data/format helpers (reuse them instead of duplicating):
-  - `src/lib/data/blocks.ts`: one block summary select for both the global catalog (`listBlocks`) and the channel section (`listChannelBlocks`), with distinct series counts; `getBlock(channelSlug, blockSlug)`, `listBlockParams`, `blockHref`.
+  - `src/lib/data/blocks.ts`: one block summary select for both the global catalog (`listBlocks`) and the channel section (`listChannelBlocks`), with each block's channels and distinct series counts; `getBlock(blockSlug)`, `listBlockParams`, `blockHref`.
   - `src/lib/data/series.ts`: `seriesCardSelect` (fields a `SeriesCard` needs) and `groupSeriesRuns` (groups `SeriesChannel`/`SeriesBlock` rows per series, keeping every run), used by series, channels and blocks.
   - `src/lib/data/schedules.ts`: `listScheduleChannels` (global index), `listChannelScheduleDays` (channel section), `listScheduleDayParams`, `getScheduleDay`, `scheduleDayHref`; dates come from a `groupBy` on `(channelId, airDate)`.
   - `src/lib/data/timeline.ts`: `listTimelineEvents({ channelId? })` and `channelTimelineWhere` (also used by the channel count in `channels.ts`).
@@ -185,6 +188,6 @@ Tests: `npm test` runs `src/**/*.test.ts` with Node's built-in `node:test` throu
 
 ## Conventions
 
-- Prisma schema: DB tables (plural, e.g. `series_channels`) and columns follow `snake_case` via `@map`/`@@map`; Prisma model and field names stay `camelCase` in application code. IDs are autoincrement `Int`; public URLs should use `slug` (`Channel`/`Series` globally unique, `Block` unique per channel).
+- Prisma schema: DB tables (plural, e.g. `series_channels`) and columns follow `snake_case` via `@map`/`@@map`; Prisma model and field names stay `camelCase` in application code. IDs are autoincrement `Int`; public URLs should use `slug` (`Channel`, `Series` and `Block` all globally unique).
 - shadcn/ui components go in `src/components/ui`; app-specific components live outside that folder.
 - Path alias `@/*` maps to `src/*`.

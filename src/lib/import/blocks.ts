@@ -1,9 +1,11 @@
 import { prisma } from "@/lib/prisma";
 
 export type BlockData = {
-  channelSlug: string;
+  /** Globally unique: a block can run on several channels, so the slug can't be per-channel. */
   slug: string;
   name: string;
+  /** Channels the block ran on, by slug. At least one; several for blocks shared across a rebrand. */
+  channelSlugs: string[];
   description?: string;
   /** Local asset under `public/logos/blocks/` (e.g. "/logos/blocks/toonami.svg"); never a URL. */
   logoPath?: string;
@@ -12,42 +14,49 @@ export type BlockData = {
 };
 
 export type LoadedBlock = {
-  channelSlug: string;
   slug: string;
   blockId: number;
   blockCreated: boolean;
+  channelsCreated: number;
+  channelsExisting: number;
   linksCreated: number;
   linksExisting: number;
 };
 
 /**
- * Loads curated blocks and their series. Everything is validated before the first write and runs
- * in one transaction, so invalid data writes nothing. Additive only: blocks and SeriesBlock rows
- * missing from `blocks` are never deleted. The data owns a block's `name`, `description` and
- * `logoPath` (omitted means null); years, sources and notes are never touched, and new SeriesBlock
- * rows get null years/source.
- * Every series must already be linked to the block's channel (SeriesChannel), since a block
- * appearance implies the series aired on that channel.
+ * Loads curated blocks, their channels and their series. Everything is validated before the first
+ * write and runs in one transaction, so invalid data writes nothing. Additive only: blocks,
+ * BlockChannel and SeriesBlock rows missing from `blocks` are never deleted. The data owns a
+ * block's `name`, `description` and `logoPath` (omitted means null); years, sources and notes are
+ * never touched, and new SeriesBlock rows get null years/source.
+ * Every series must already be linked (SeriesChannel) to at least one of the block's channels,
+ * since a block appearance implies the series aired on the channel that ran the block. It is not
+ * required on all of them: a block shared by Fox Kids and Jetix may have aired a series on only one.
  */
 export async function loadBlocks(blocks: BlockData[]): Promise<LoadedBlock[]> {
   return prisma.$transaction(async (tx) => {
     const problems: string[] = [];
 
-    const blockKeys = new Set<string>();
+    const blockSlugs = new Set<string>();
     for (const block of blocks) {
-      const key = `${block.channelSlug}/${block.slug}`;
-      if (blockKeys.has(key)) problems.push(`Block ${key} is listed more than once.`);
-      blockKeys.add(key);
+      if (blockSlugs.has(block.slug)) problems.push(`Block ${block.slug} is listed more than once.`);
+      blockSlugs.add(block.slug);
+      if (block.channelSlugs.length === 0) {
+        problems.push(`Block ${block.slug}: at least one channel is required.`);
+      }
+      if (new Set(block.channelSlugs).size !== block.channelSlugs.length) {
+        problems.push(`Block ${block.slug} lists a channel more than once.`);
+      }
       if (new Set(block.seriesTmdbIds).size !== block.seriesTmdbIds.length) {
-        problems.push(`Block ${key} lists a series more than once.`);
+        problems.push(`Block ${block.slug} lists a series more than once.`);
       }
       if (block.logoPath !== undefined && !block.logoPath.startsWith("/logos/blocks/")) {
-        problems.push(`Block ${key}: logoPath must be a local path under /logos/blocks/.`);
+        problems.push(`Block ${block.slug}: logoPath must be a local path under /logos/blocks/.`);
       }
     }
 
     const channels = await tx.channel.findMany({
-      where: { slug: { in: blocks.map((block) => block.channelSlug) } },
+      where: { slug: { in: blocks.flatMap((block) => block.channelSlugs) } },
       select: { id: true, slug: true },
     });
     const channelIdBySlug = new Map(channels.map((channel) => [channel.slug, channel.id]));
@@ -65,19 +74,25 @@ export async function loadBlocks(blocks: BlockData[]): Promise<LoadedBlock[]> {
     const linkedPairs = new Set(seriesChannels.map((link) => `${link.seriesId}:${link.channelId}`));
 
     for (const block of blocks) {
-      const key = `${block.channelSlug}/${block.slug}`;
-      const channelId = channelIdBySlug.get(block.channelSlug);
-      if (channelId === undefined) {
-        problems.push(`Block ${key}: channel "${block.channelSlug}" not found.`);
-        continue;
+      const channelIds: number[] = [];
+      for (const channelSlug of block.channelSlugs) {
+        const channelId = channelIdBySlug.get(channelSlug);
+        if (channelId === undefined) {
+          problems.push(`Block ${block.slug}: channel "${channelSlug}" not found.`);
+        } else {
+          channelIds.push(channelId);
+        }
       }
+      if (channelIds.length === 0) continue;
+
       for (const tmdbId of block.seriesTmdbIds) {
         const row = seriesByTmdbId.get(tmdbId);
         if (!row) {
-          problems.push(`Block ${key}: no series with TMDB id ${tmdbId}. Import it first.`);
-        } else if (!linkedPairs.has(`${row.id}:${channelId}`)) {
+          problems.push(`Block ${block.slug}: no series with TMDB id ${tmdbId}. Import it first.`);
+        } else if (!channelIds.some((channelId) => linkedPairs.has(`${row.id}:${channelId}`))) {
           problems.push(
-            `Block ${key}: "${row.title}" (TMDB ${tmdbId}) has no SeriesChannel for "${block.channelSlug}".`,
+            `Block ${block.slug}: "${row.title}" (TMDB ${tmdbId}) has no SeriesChannel for ` +
+              `${block.channelSlugs.join(" or ")}.`,
           );
         }
       }
@@ -89,19 +104,31 @@ export async function loadBlocks(blocks: BlockData[]): Promise<LoadedBlock[]> {
 
     const loaded: LoadedBlock[] = [];
     for (const block of blocks) {
-      const channelId = channelIdBySlug.get(block.channelSlug)!;
       const blockData = {
         name: block.name,
         description: block.description ?? null,
         logoPath: block.logoPath ?? null,
       };
       const existing = await tx.block.findUnique({
-        where: { channelId_slug: { channelId, slug: block.slug } },
+        where: { slug: block.slug },
         select: { id: true },
       });
       const saved = existing
         ? await tx.block.update({ where: { id: existing.id }, data: blockData })
-        : await tx.block.create({ data: { ...blockData, channelId, slug: block.slug } });
+        : await tx.block.create({ data: { ...blockData, slug: block.slug } });
+
+      let channelsCreated = 0;
+      for (const channelSlug of block.channelSlugs) {
+        const channelId = channelIdBySlug.get(channelSlug)!;
+        const link = await tx.blockChannel.findUnique({
+          where: { blockId_channelId: { blockId: saved.id, channelId } },
+          select: { blockId: true },
+        });
+        if (!link) {
+          await tx.blockChannel.create({ data: { blockId: saved.id, channelId } });
+          channelsCreated++;
+        }
+      }
 
       let linksCreated = 0;
       for (const tmdbId of block.seriesTmdbIds) {
@@ -118,10 +145,11 @@ export async function loadBlocks(blocks: BlockData[]): Promise<LoadedBlock[]> {
       }
 
       loaded.push({
-        channelSlug: block.channelSlug,
         slug: block.slug,
         blockId: saved.id,
         blockCreated: !existing,
+        channelsCreated,
+        channelsExisting: block.channelSlugs.length - channelsCreated,
         linksCreated,
         linksExisting: block.seriesTmdbIds.length - linksCreated,
       });

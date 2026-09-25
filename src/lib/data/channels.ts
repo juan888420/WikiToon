@@ -25,7 +25,7 @@ export async function listChannels() {
         slug: true,
         name: true,
         logoPath: true,
-        _count: { select: { blocks: true } },
+        _count: { select: { blockChannels: true } },
       },
     }),
     countSeriesByChannel(),
@@ -35,7 +35,7 @@ export async function listChannels() {
     .map(({ id, _count, ...channel }) => ({
       ...channel,
       seriesCount: seriesCounts.get(id) ?? 0,
-      blockCount: _count.blocks,
+      blockCount: _count.blockChannels,
     }))
     .sort((a, b) => nameCollator.compare(a.name, b.name));
 }
@@ -55,7 +55,7 @@ export const getChannelBySlug = cache(async (slug: string) => {
       slug: true,
       name: true,
       logoPath: true,
-      _count: { select: { blocks: true, schedules: true } },
+      _count: { select: { blockChannels: true, schedules: true } },
     },
   });
   if (!channel) return null;
@@ -69,7 +69,7 @@ export const getChannelBySlug = cache(async (slug: string) => {
     ...rest,
     counts: {
       series: seriesCounts.get(channel.id) ?? 0,
-      blocks: _count.blocks,
+      blocks: _count.blockChannels,
       schedules: _count.schedules,
       timelineEvents,
     },

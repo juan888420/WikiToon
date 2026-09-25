@@ -6,8 +6,9 @@ async function main() {
   const loaded = await loadBlocks(blocks);
   for (const block of loaded) {
     console.log(
-      `${block.blockCreated ? "Created" : "Updated"} block ${block.channelSlug}/${block.slug} ` +
-        `(id ${block.blockId}): ${block.linksCreated} series linked, ${block.linksExisting} already linked.`,
+      `${block.blockCreated ? "Created" : "Updated"} block ${block.slug} (id ${block.blockId}): ` +
+        `${block.channelsCreated} channels linked, ${block.channelsExisting} already linked, ` +
+        `${block.linksCreated} series linked, ${block.linksExisting} already linked.`,
     );
   }
 }

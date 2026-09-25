@@ -81,7 +81,7 @@ export const getScheduleDay = cache(async (channelSlug: string, airDate: string)
       sourceName: true,
       sourceUrl: true,
       series: { select: { slug: true, title: true } },
-      block: { select: { slug: true, name: true, channel: { select: { slug: true } } } },
+      block: { select: { slug: true, name: true } },
     },
   });
   if (slots.length === 0) return null;

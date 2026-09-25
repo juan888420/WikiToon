@@ -32,7 +32,7 @@ model Channel {
   createdAt  DateTime @default(now()) @map("created_at")
   updatedAt  DateTime @updatedAt @map("updated_at")
 
-  blocks         Block[]
+  blockChannels  BlockChannel[]
   seriesChannels SeriesChannel[]
   schedules      Schedule[]
   timelineEvents TimelineEvent[]
@@ -132,11 +132,11 @@ model Episode {
   @@map("episodes")
 }
 
-/// A named programming block within a Channel (e.g. Toonami on Cartoon Network).
+/// A named programming block (e.g. Toonami). It can run on more than one channel: Fox Kids was
+/// succeeded by Jetix, and blocks that continued across the rebrand are one block, not two.
 model Block {
   id          Int      @id @default(autoincrement())
-  channelId   Int      @map("channel_id")
-  slug        String
+  slug        String   @unique
   name        String
   description String?
   /// Local path under `public/` (e.g. "/logos/blocks/toonami.svg"); null until an asset is chosen.
@@ -149,13 +149,27 @@ model Block {
   createdAt   DateTime @default(now()) @map("created_at")
   updatedAt   DateTime @updatedAt @map("updated_at")
 
-  channel        Channel         @relation(fields: [channelId], references: [id], onDelete: Restrict)
+  blockChannels  BlockChannel[]
   seriesBlocks   SeriesBlock[]
   schedules      Schedule[]
   timelineEvents TimelineEvent[]
 
-  @@unique([channelId, slug])
   @@map("blocks")
+}
+
+/// A Block running on a Channel. One row per pair: a block appears on a channel once, unlike
+/// SeriesChannel/SeriesBlock, which allow several rows to record separate runs.
+model BlockChannel {
+  blockId   Int @map("block_id")
+  channelId Int @map("channel_id")
+
+  block   Block   @relation(fields: [blockId], references: [id], onDelete: Cascade)
+  /// Restrict keeps the previous rule: a channel with blocks can't be deleted.
+  channel Channel @relation(fields: [channelId], references: [id], onDelete: Restrict)
+
+  @@id([blockId, channelId])
+  @@index([channelId])
+  @@map("block_channels")
 }
 
 /// A Series being part of a Block's lineup. Multiple rows allowed for separate periods.
