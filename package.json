@@ -16,7 +16,8 @@
     "db:deploy": "prisma migrate deploy",
     "db:seed": "prisma db seed",
     "db:import:series": "tsx --env-file=.env scripts/import-series.ts",
-    "db:import:ben10": "tsx --env-file=.env scripts/import-series.ts --title \"Ben 10\" --year 2005 --channel cartoon-network",
+    "db:load:series": "tsx --env-file=.env scripts/load-series.ts",
+    "db:load:blocks": "tsx --env-file=.env scripts/load-blocks.ts",
     "db:studio": "prisma studio"
   },
   "dependencies": {

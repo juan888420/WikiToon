@@ -1,3 +1,4 @@
+import type { Prisma } from "@/generated/prisma/client";
 import { resolveSeriesSlug } from "@/lib/import/series-slug";
 import { prisma } from "@/lib/prisma";
 import {
@@ -5,6 +6,8 @@ import {
   getTvSeriesDetails,
   searchTvSeries,
   type TmdbTvSearchResult,
+  type TmdbTvSeasonDetails,
+  type TmdbTvSeriesDetails,
 } from "@/lib/tmdb";
 
 function normalizeTitle(title: string) {
@@ -60,89 +63,108 @@ export async function findTmdbSeriesByExactTitle(
   return matches[0];
 }
 
-/**
- * Imports a TMDB series with all its seasons and episodes, upserting by TMDB id.
- * All TMDB requests happen before the DB transaction, so a network failure writes nothing and a
- * DB failure rolls everything back. `Series.title` and `slug` are only set on create: they are
- * curated by WikiToon afterwards and must not be overwritten by later syncs.
- */
-export async function importTmdbSeries(tmdbSeriesId: number) {
+export type TmdbSeriesPayload = {
+  details: TmdbTvSeriesDetails;
+  seasons: TmdbTvSeasonDetails[];
+  syncedAt: Date;
+};
+
+/** Fetches a TMDB series with every season (and its episodes). Makes no DB writes. */
+export async function fetchTmdbSeries(tmdbSeriesId: number): Promise<TmdbSeriesPayload> {
   const details = await getTvSeriesDetails(tmdbSeriesId);
   const seasons = await Promise.all(
     details.seasons.map((season) => getTvSeasonDetails(tmdbSeriesId, season.season_number)),
   );
-  const syncedAt = new Date();
+  return { details, seasons, syncedAt: new Date() };
+}
 
-  return prisma.$transaction(
-    async (tx) => {
-      const seriesData = {
-        overview: textOrNull(details.overview),
-        firstAirYear: yearOf(details.first_air_date),
-        lastAirYear: yearOf(details.last_air_date),
-        posterPath: details.poster_path,
+/**
+ * Upserts a fetched series with its seasons and episodes by TMDB id, inside the caller's
+ * transaction. `Series.title` and `slug` are only set on create: they are curated by WikiToon
+ * afterwards and must not be overwritten by later syncs.
+ */
+export async function writeTmdbSeries(
+  tx: Prisma.TransactionClient,
+  { details, seasons, syncedAt }: TmdbSeriesPayload,
+) {
+  const seriesData = {
+    overview: textOrNull(details.overview),
+    firstAirYear: yearOf(details.first_air_date),
+    lastAirYear: yearOf(details.last_air_date),
+    posterPath: details.poster_path,
+    tmdbSyncedAt: syncedAt,
+  };
+  // An existing series keeps its slug; only a new one gets a slug resolved against collisions.
+  const existing = await tx.series.findUnique({
+    where: { tmdbId: details.id },
+    select: { id: true },
+  });
+  const series = existing
+    ? await tx.series.update({ where: { id: existing.id }, data: seriesData })
+    : await tx.series.create({
+        data: {
+          ...seriesData,
+          tmdbId: details.id,
+          title: details.name,
+          slug: await resolveSeriesSlug(
+            {
+              baseSlug: slugify(details.name),
+              firstAirYear: seriesData.firstAirYear,
+              tmdbId: details.id,
+            },
+            (slug) => tx.series.findUnique({ where: { slug }, select: { tmdbId: true } }),
+          ),
+        },
+      });
+
+  let episodeCount = 0;
+  for (const season of seasons) {
+    const seasonData = {
+      seriesId: series.id,
+      number: season.season_number,
+      name: textOrNull(season.name),
+      overview: textOrNull(season.overview),
+      airYear: yearOf(season.air_date),
+      posterPath: season.poster_path,
+      tmdbSyncedAt: syncedAt,
+    };
+    const savedSeason = await tx.season.upsert({
+      where: { tmdbId: season.id },
+      update: seasonData,
+      create: { ...seasonData, tmdbId: season.id },
+    });
+
+    for (const episode of season.episodes) {
+      const episodeData = {
+        seasonId: savedSeason.id,
+        number: episode.episode_number,
+        title: textOrNull(episode.name),
+        overview: textOrNull(episode.overview),
+        originalAirDate: textOrNull(episode.air_date),
+        stillPath: episode.still_path,
         tmdbSyncedAt: syncedAt,
       };
-      // An existing series keeps its slug; only a new one gets a slug resolved against collisions.
-      const existing = await tx.series.findUnique({
-        where: { tmdbId: details.id },
-        select: { id: true },
+      await tx.episode.upsert({
+        where: { tmdbId: episode.id },
+        update: episodeData,
+        create: { ...episodeData, tmdbId: episode.id },
       });
-      const series = existing
-        ? await tx.series.update({ where: { id: existing.id }, data: seriesData })
-        : await tx.series.create({
-            data: {
-              ...seriesData,
-              tmdbId: details.id,
-              title: details.name,
-              slug: await resolveSeriesSlug(
-                {
-                  baseSlug: slugify(details.name),
-                  firstAirYear: seriesData.firstAirYear,
-                  tmdbId: details.id,
-                },
-                (slug) => tx.series.findUnique({ where: { slug }, select: { tmdbId: true } }),
-              ),
-            },
-          });
+    }
+    episodeCount += season.episodes.length;
+  }
 
-      let episodeCount = 0;
-      for (const season of seasons) {
-        const seasonData = {
-          seriesId: series.id,
-          number: season.season_number,
-          name: textOrNull(season.name),
-          overview: textOrNull(season.overview),
-          airYear: yearOf(season.air_date),
-          posterPath: season.poster_path,
-          tmdbSyncedAt: syncedAt,
-        };
-        const savedSeason = await tx.season.upsert({
-          where: { tmdbId: season.id },
-          update: seasonData,
-          create: { ...seasonData, tmdbId: season.id },
-        });
+  return { series, created: !existing, seasonCount: seasons.length, episodeCount };
+}
 
-        for (const episode of season.episodes) {
-          const episodeData = {
-            seasonId: savedSeason.id,
-            number: episode.episode_number,
-            title: textOrNull(episode.name),
-            overview: textOrNull(episode.overview),
-            originalAirDate: textOrNull(episode.air_date),
-            stillPath: episode.still_path,
-            tmdbSyncedAt: syncedAt,
-          };
-          await tx.episode.upsert({
-            where: { tmdbId: episode.id },
-            update: episodeData,
-            create: { ...episodeData, tmdbId: episode.id },
-          });
-        }
-        episodeCount += season.episodes.length;
-      }
-
-      return { series, seasonCount: seasons.length, episodeCount };
-    },
+/**
+ * Imports one TMDB series with all its seasons and episodes, upserting by TMDB id.
+ * All TMDB requests happen before the DB transaction, so a network failure writes nothing and a
+ * DB failure rolls everything back.
+ */
+export async function importTmdbSeries(tmdbSeriesId: number) {
+  const payload = await fetchTmdbSeries(tmdbSeriesId);
+  return prisma.$transaction(
+    (tx) => writeTmdbSeries(tx, payload),
     // Interactive transactions default to a 5s timeout; large series can take longer.
     { timeout: 60_000 },
   );

@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { ChannelLogo } from "@/components/channels/channel-logo";
 import { Container } from "@/components/container";
 import { EmptyState } from "@/components/empty-state";
+import { LogoTile } from "@/components/logo-tile";
 import { SeriesCard } from "@/components/series/series-card";
 import { SourceNote } from "@/components/source-note";
 import { getBlock, listBlockParams } from "@/lib/data/blocks";
@@ -47,23 +48,31 @@ export default async function BlockPage({ params }: PageProps<"/bloques/[canal]/
       </Link>
 
       <article className="mt-6">
-        <header>
-          <p className="text-xs font-medium tracking-wider text-primary uppercase">Bloque</p>
-          <h1 className="mt-2 text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
-            {block.name}
-          </h1>
-          <Link
-            href={`/canales/${block.channel.slug}`}
-            className="mt-3 inline-flex items-center gap-2.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
-          >
-            <ChannelLogo
-              logoPath={block.channel.logoPath}
-              name={block.channel.name}
-              sizes="32px"
-              className="size-8 rounded-md [&_span]:text-[10px]"
-            />
-            {block.channel.name}
-          </Link>
+        <header className="flex items-center gap-4 sm:gap-5">
+          <LogoTile
+            logoPath={block.logoPath}
+            name={block.name}
+            sizes="80px"
+            className="size-16 sm:size-20"
+          />
+          <div className="min-w-0">
+            <p className="text-xs font-medium tracking-wider text-primary uppercase">Bloque</p>
+            <h1 className="mt-2 text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
+              {block.name}
+            </h1>
+            <Link
+              href={`/canales/${block.channel.slug}`}
+              className="mt-3 inline-flex items-center gap-2.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
+            >
+              <ChannelLogo
+                logoPath={block.channel.logoPath}
+                name={block.channel.name}
+                sizes="32px"
+                className="size-8 rounded-md [&_span]:text-[10px]"
+              />
+              {block.channel.name}
+            </Link>
+          </div>
         </header>
 
         <dl className="mt-6 grid max-w-xl grid-cols-2 gap-3">

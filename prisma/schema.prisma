@@ -139,6 +139,8 @@ model Block {
   slug        String
   name        String
   description String?
+  /// Local path under `public/` (e.g. "/logos/blocks/toonami.svg"); null until an asset is chosen.
+  logoPath    String?  @map("logo_path")
   startYear   Int?     @map("start_year")
   endYear     Int?     @map("end_year")
   sourceName  String?  @map("source_name")

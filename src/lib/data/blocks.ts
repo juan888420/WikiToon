@@ -11,6 +11,7 @@ const blockSummarySelect = {
   slug: true,
   name: true,
   description: true,
+  logoPath: true,
   startYear: true,
   endYear: true,
   channel: { select: { slug: true, name: true } },
@@ -65,6 +66,7 @@ export const getBlock = cache(async (channelSlug: string, blockSlug: string) => 
     select: {
       name: true,
       description: true,
+      logoPath: true,
       startYear: true,
       endYear: true,
       sourceName: true,

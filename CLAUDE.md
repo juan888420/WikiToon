@@ -10,14 +10,34 @@ WikiToon is an archive and exploration platform for Latin American children's TV
 
 ## Project status
 
-- Data layer: schema with 3 migrations, idempotent seed (7 channels), generic TMDB series importer with tests.
+- Data layer: schema with 4 migrations, idempotent seed (7 channels), generic TMDB series importer, curated series catalog loader (`db:load:series`) and curated block loader (`db:load:blocks`), all with tests. The whole catalog is reproducible from the repo: seed, then `prisma/data/series.ts`, then `prisma/data/blocks.ts`.
 - UI: global layout, Series module (`/series`, `/series/[slug]`), Channels module (`/canales`, `/canales/[slug]` + sections), Blocks module (`/bloques`, `/bloques/[canal]/[slug]`), Schedule module (`/programacion`, `/programacion/[canal]/[fecha]`) and Timeline (`/timeline`). See "UI" below.
 - Not built yet: home page content (`src/app/page.tsx` is still a placeholder), API routes.
 - Catalog in `dev.db` (as of 2026-09-24):
   - 7 channels (seed), all with a local `logoPath` (`/logos/{slug}.svg`, Jetix `.png`).
-  - 10 series imported from TMDB (Ben 10, The Powerpuff Girls, Dexter's Laboratory, Courage the Cowardly Dog, Ed, Edd n Eddy, Johnny Bravo, Samurai Jack, Codename: Kids Next Door, Foster's Home for Imaginary Friends, The Grim Adventures of Billy and Mandy): 62 seasons, 1427 episodes. Titles/slugs come from TMDB `es-MX` names (e.g. `el-laboratorio-de-dexter`).
-  - 10 `SeriesChannel` rows, all to Cartoon Network, with `startYear`/`endYear`/`sourceName`/`sourceUrl` null. They are catalog links, not verified airing records.
-  - 0 blocks and 0 series-block rows (so `/bloques` shows its empty state and no block pages are generated), 0 schedules (so `/programacion` shows its empty state and no day pages are generated), 0 timeline events (so `/timeline` and every channel timeline show their empty state).
+  - 59 series from `prisma/data/series.ts`, imported from TMDB: 338 seasons, 8138 episodes. Titles/slugs come from TMDB `es-MX` names (e.g. `el-laboratorio-de-dexter`), stored as delivered (e.g. Caillou keeps TMDB's empty seasons).
+  - 47 `SeriesChannel` rows, all with `startYear`/`endYear`/`sourceName`/`sourceUrl` null. They are catalog links, not verified airing records. Criterion: the series was produced for (or originally aired by) that channel brand.
+    - Cartoon Network (17): Ben 10, Las chicas superpoderosas, El laboratorio de Dexter, Coraje, Ed, Edd y Eddy, Johnny Bravo, Samurai Jack, KND, Mansión Foster, Billy y Mandy, La Vaca y el Pollito, Los jóvenes titanes, Soy la Comadreja, Mike, Lu y Og, El Campamento de Lazlo, Mi compañero de clase es un mono, Hi Hi Puffy AmiYumi.
+    - Nickelodeon (11): Rugrats, ¡Oye, Arnold!, Bob Esponja, Los Padrinos Mágicos, La vida moderna de Rocko, CatDog, Los Thornberrys, Invasor Zim, Danny Phantom, Avatar: La leyenda de Aang, Jimmy Neutron.
+    - Disney Channel (7): Kim Possible, Phineas y Ferb, Jake Long, Lilo & Stitch: La serie, La Familia Proud, Las nuevas locuras del emperador, Los Sustitutos.
+    - Fox Kids (6): X-Men, El Hombre Araña, Digimon (TMDB 31654), El Mundo de Bobby, La Vida con Louie, Eek! The Cat.
+    - Jetix (6): W.I.T.C.H., Súper Escuadrón Ciber Monos, Pucca, Galactik Football, Oban Star Racers, Yin, Yang, Yo!
+    - Boomerang and Discovery Kids: none.
+  - 12 series deliberately have no channel link: Hanna-Barbera classics (Don Gato y su Pandilla, ¡Scooby-Doo, dónde estás!, Los Picapiedra, Los supersónicos, La Carrera de Los Autos Locos, El Show de Maguila Gorila, El Show del Oso Yogui) and preschool series (Caillou, Clifford, Dragon Tales, Bob, el constructor, Arthur). Their Latin American channel history (Boomerang, Discovery Kids, others) is not documented, and general knowledge is not turned into historical data.
+  - 16 blocks from `prisma/data/blocks.ts`, all with null years/source/notes, and 19 `SeriesBlock` rows with null years/source. 2 blocks have a logo (Toonami, Nick at Nite); the other 14 have a null `logoPath`, pending a logo from the project owner (reasons in `public/logos/blocks/SOURCES.md`):
+    - Cartoon Network: Cartoon Cartoons (8 series), Toonami (empty).
+    - Nickelodeon: Nicktoons (11 series), Nick Jr., Nick at Nite (empty).
+    - Disney Channel: Zapping Zone, Playhouse Disney (empty).
+    - Fox Kids: Mysteria, Insomnio, ¿Quién tiene el control?, Doble Carga, Invasión Animé (empty).
+    - Jetix: Invasión Animé, Mysteria, ¿Quién tiene el control?, Doble Carga (empty). Insomnio is intentionally not on Jetix for now.
+    - Cartoon Cartoons and Nicktoons are described as labels for each channel's original animated series, not dated time slots. Their series are the ones clearly branded as such.
+    - Deliberately left out as dubious:
+      - Billy y Mandy, KND and Samurai Jack from Cartoon Cartoons, because they premiered as the label was being retired.
+      - Cartoon Network series from 2004 on, because they postdate the label.
+    - The time-slot blocks (Toonami, Zapping Zone, all Fox Kids/Jetix blocks) are empty because their Latin American lineups are not known. Don't infer a lineup from a block's name, such as Digimon in Invasión Animé. Add series there only when the project owner provides them. Nick at Nite and the Fox Kids/Jetix blocks were provided by the project owner by name only, so their description is null.
+    - Pending decisions: Nick Hits (Nickelodeon) is not added yet. Boomerang and Discovery Kids have no blocks because their Latin American blocks are not documented, and guessed names would be invented historical records.
+  - 0 schedules (so `/programacion` shows its empty state and no day pages are generated), 0 timeline events (so `/timeline` and every channel timeline show their empty state).
+- Current focus: catalog and exploration. Detailed historical research (airing dates, schedules, Timeline) is not a priority; those features stay technically ready but empty.
 - Infrastructure pending: the app reads a local SQLite file (`dev.db`, gitignored), and `next build` reads it to prerender pages. This is not ready for a real Vercel deploy (no DB in the build/runtime environment, read-only filesystem); the production database strategy is still undecided.
 
 ## Stack
@@ -45,16 +65,18 @@ npm run db:migrate   # prisma migrate dev, then `postdb:migrate` hook runs prism
 npm run db:deploy    # prisma migrate deploy (apply existing migrations, no prompts)
 npm run db:seed      # prisma db seed -> runs `tsx prisma/seed.ts` (configured in prisma.config.ts)
 npm run db:studio    # prisma studio
-npm run db:import:series -- --tmdb-id <id> [--channel <slug>]
+npm run db:load:series   # load the curated series catalog from prisma/data/series.ts (idempotent, additive)
+npm run db:load:series -- --refresh  # same, but re-sync every listed series from TMDB
+npm run db:import:series -- --tmdb-id <id> [--channel <slug>]  # one-off import/test, not reproducible
 npm run db:import:series -- --title "<title>" --year <first air year> [--channel <slug>]
-npm run db:import:ben10  # wrapper: --title "Ben 10" --year 2005 --channel cartoon-network
+npm run db:load:blocks   # load curated blocks from prisma/data/blocks.ts (idempotent, additive)
 ```
 
-Reset the dev DB from scratch: `npx prisma migrate reset`, then `npm run db:seed`. Always run the seed explicitly; it's idempotent (upserts by `slug`), so re-running is safe. Prisma's CLI refuses `migrate reset` when invoked by an AI agent without explicit user consent. Don't bypass that guard; ask the user.
+Reset the dev DB from scratch: `npx prisma migrate reset`, then `npm run db:seed`, then `npm run db:load:series`, then `npm run db:load:blocks`. The order matters: series need the seeded channels, and blocks need the series and their `SeriesChannel` rows. Each loader fails without writing anything when a dependency is missing. The same order builds any fresh DB; set `DATABASE_URL` in the environment to target another file (`--env-file` and `process.loadEnvFile` don't override it). Always run the seed explicitly; it's idempotent (upserts by `slug`), so re-running is safe. Prisma's CLI refuses `migrate reset` when invoked by an AI agent without explicit user consent. Don't bypass that guard; ask the user.
 
 Create schema changes with `npm run db:migrate -- --name <change>`. Don't use `prisma db push`; the DB is managed only through committed migrations in `prisma/migrations`. In Prisma 7, `migrate dev` no longer runs `generate` automatically, so the `postdb:migrate` npm hook runs it. Don't chain with `&&` inside `db:migrate`: npm appends `-- --name` args to the end of the script, so they'd go to `generate`, and `migrate dev` would hang waiting for an interactive name prompt.
 
-Tests: `npm test` runs `src/**/*.test.ts` with Node's built-in `node:test` through `tsx` (no test framework dependency). Import tests apply the real migrations to a throwaway SQLite DB in the OS temp dir and mock `fetch`, so they never touch `dev.db` or call TMDB.
+Tests: `npm test` runs `src/**/*.test.ts` with Node's built-in `node:test` through `tsx` (no test framework dependency). Import, series-catalog and block-loader tests apply the real migrations to a throwaway SQLite DB in the OS temp dir (the TMDB ones also mock `fetch`), so they never touch `dev.db` or call TMDB.
 
 `typecheck` runs `next typegen` first because globals like `LayoutProps<"/">` come from generated route types in `.next/`; plain `tsc` fails on a fresh clone.
 
@@ -74,6 +96,15 @@ Tests: `npm test` runs `src/**/*.test.ts` with Node's built-in `node:test` throu
 - `SeriesChannel` is the canonical "series aired on channel" record. `SeriesBlock` (block lineup) and `Schedule` (concrete slots) add detail but don't replace it, so a series in a block should also have a `SeriesChannel` row. Both join tables allow multiple rows per pair to represent separate runs.
 - `Channel` is intentionally minimal (name, slug, country, `logoPath`, provenance). `logoPath` is a local path under `public/` set by the seed (including on `update`, so re-seeding restores it); assets live in `public/logos/` and each one's source, license and modifications are documented in `public/logos/SOURCES.md` (keep it in sync when a logo changes). Never store external URLs in `logoPath`. No description or launch/close years: channel history is not a feature at this stage; historical milestones go in `TimelineEvent` if needed.
 - Seed (`prisma/seed.ts`) contains only the 7 base pan-regional channels. Don't add invented dates or source URLs to seed data.
+- Curated blocks live in `prisma/data/blocks.ts` (channel slug, block slug, name, optional description, optional `logoPath`, series by `tmdbId`), not in the seed, because their series must be imported first. `loadBlocks` (`src/lib/import/blocks.ts`) is run by `scripts/load-blocks.ts` (`db:load:blocks`):
+  - It validates everything before writing: channels exist, series exist, each series has a `SeriesChannel` to the block's channel, no duplicate blocks or series. On any problem it throws listing all of them and writes nothing. It runs in one transaction.
+  - It upserts `Block` by `(channelId, slug)`. The data file owns `name`, `description` and `logoPath` (omitted means null, so removing a logo from the file clears it); `startYear`/`endYear`/`sourceName`/`sourceUrl`/`notes` are never touched.
+  - `Block.logoPath`, like `Channel.logoPath`, is a local asset path, never a URL. The loader rejects anything outside `/logos/blocks/`. Block assets live in `public/logos/blocks/`, named `{channel-slug}-{block-slug}` because block slugs are only unique per channel. Each one is documented in `public/logos/blocks/SOURCES.md`, which also lists the pending blocks and why they have no logo.
+  - Rule for adding a block logo: there must be evidence of Latin American use (Logopedia, used only as evidence), a file with a verifiable license (Wikimedia Commons), and a visual match between the two. Otherwise leave it null.
+  - Never substitute another region's version, a Logopedia file (no free license) or a user recreation claiming its own license.
+  - It creates a `SeriesBlock` (null years/source) only when the pair has none, leaving existing rows (any run) untouched.
+  - It is additive: blocks and `SeriesBlock` rows missing from the file are never deleted or unlinked. Removing something means deleting it explicitly.
+  - Only add blocks and series associations that are clear. Leave out dubious ones rather than adding them. A block may be empty (`seriesTmdbIds: []`), but the block itself must be one known to have existed on that channel; never create one from a guessed name.
 - Hanna-Barbera or any other studio is not an entity. Its shows are plain `Series` linked to channels (e.g. Boomerang). No Studio, Genre, Person, User, etc. unless explicitly requested.
 - Provenance: historical records (`Channel`, `Series`, `Block`, `SeriesChannel`, `SeriesBlock`, `Schedule`, `TimelineEvent`) carry `sourceName`, `sourceUrl`, `notes`. There is no separate Source table yet.
 - Date formats:
@@ -96,10 +127,16 @@ Tests: `npm test` runs `src/**/*.test.ts` with Node's built-in `node:test` throu
 - Intended flow: TMDB client -> pick a series -> write `Series`/`Season`/`Episode` rows via Prisma. Pages read from our DB, never from TMDB at render time. The client stays framework-agnostic and Prisma-free so it can run from `tsx` scripts. That's why it has no `server-only` import, which throws outside Next's server environment.
 - Import: `src/lib/import/tmdb-series.ts` (the Prisma-aware layer; `src/lib/tmdb/` stays Prisma-free).
   - `findTmdbSeriesByExactTitle(title, firstAirYear)` requires exactly one match on normalized title + first-air year from page 1 of search. Otherwise it throws with the candidate list, so it never guesses.
-  - `importTmdbSeries(tmdbId)` fetches everything first, then upserts Series/Seasons/Episodes by `tmdbId` in one transaction. It's idempotent and atomic. `Series.title`/`slug` are set only on create; an existing series never gets its slug changed.
+  - `fetchTmdbSeries(tmdbId)` only calls TMDB (details plus every season). `writeTmdbSeries(tx, payload)` only writes: it upserts Series/Seasons/Episodes by `tmdbId` inside the caller's transaction. `importTmdbSeries(tmdbId)` composes both for a single series, idempotent and atomic. `Series.title`/`slug` are set only on create; an existing series never gets its slug changed.
   - Slug collisions on create are resolved by `resolveSeriesSlug` (`src/lib/import/series-slug.ts`), first free candidate wins: `{base}` -> `{base}-{firstAirYear}` -> `{base}-{firstAirYear}-{tmdbId}` (`{base}-{tmdbId}` when there's no year). A candidate owned by the same `tmdbId` counts as free; if all are taken it throws rather than guess.
-  - Channel links (`SeriesChannel`) are never derived from TMDB. `linkSeriesToChannel` (`src/lib/import/series-channel.ts`) creates one with null years/source only when the caller passes a channel explicitly, and leaves existing rows untouched.
-  - One generic CLI, `scripts/import-series.ts` (`db:import:series`), for every series; don't add per-series scripts (`db:import:ben10` is just an npm alias with fixed args). It validates `--channel` before calling TMDB. Imported TMDB text is stored as delivered (e.g. placeholder titles like "Episodio 1"); curation is a separate, future step.
+  - Channel links (`SeriesChannel`) are never derived from TMDB. `linkSeriesToChannel` (`src/lib/import/series-channel.ts`) creates one with null years/source only when the caller passes a channel explicitly, and leaves existing rows untouched. It takes an optional transaction client.
+  - The curated catalog is `prisma/data/series.ts`: entries of `tmdbId` plus optional `channelSlugs`, loaded in file order (so slug collision resolution is deterministic). To add a series to the catalog, add an entry there and run `db:load:series`. `loadSeriesCatalog` (`src/lib/import/series-catalog.ts`) is run by `scripts/load-series.ts`:
+    1. It validates first: no duplicate `tmdbId`s or channels, and every channel exists. On any problem it throws listing all of them and writes nothing.
+    2. It fetches from TMDB before any write. By default it only fetches series missing from the DB; `--refresh` re-fetches every entry. Any TMDB failure aborts before writing.
+    3. It writes everything (series, seasons, episodes, channel links) in one transaction, so there is never a partial load.
+    - It is idempotent and additive: series and `SeriesChannel` rows missing from the file are never deleted, and existing links are never modified. Removing something means deleting it explicitly.
+    - Titles/slugs are not pinned in the file yet. After a reset they are recreated from TMDB's current `es-MX` names, so a TMDB rename would change a slug. Pinning them belongs to the future curation step.
+  - `scripts/import-series.ts` (`db:import:series`) stays for one-off imports and tests; what it imports is not in the catalog file, so it's not reproducible. Don't add per-series scripts. It validates `--channel` before calling TMDB. Imported TMDB text is stored as delivered (e.g. placeholder titles like "Episodio 1"); curation is a separate, future step.
   - Scripts live in `scripts/` and run via `tsx --env-file=.env`; never call TMDB from a page render.
 - Store TMDB image **paths** (`posterPath`, `stillPath`) in the DB and build URLs with `tmdbImageUrl`. `next.config.ts` allows `https://image.tmdb.org/t/p/**` in `images.remotePatterns`, so `next/image` can render them. There is no backdrop field in the schema; series pages show the poster only.
 
@@ -134,7 +171,7 @@ Tests: `npm test` runs `src/**/*.test.ts` with Node's built-in `node:test` throu
   - `src/lib/data/timeline.ts`: `listTimelineEvents({ channelId? })` and `channelTimelineWhere` (also used by the channel count in `channels.ts`).
   - `src/lib/format.ts`: `formatYearRange`, `formatRuns` (documented runs only), `formatScheduleDate`, `formatTimeRange`, `formatPartialDate` (no `Date`), `formatAirDate`, `formatDate`, `pluralize`.
 - Layout (`src/app/layout.tsx`): sticky `SiteHeader` (brand + main nav: Inicio, Canales, Series, Bloques, Programación, Timeline; horizontal scroll on mobile), `SiteFooter` with the TMDB attribution required by TMDB's terms, title template `%s · WikiToon`.
-- Components: app components in `src/components/` (`container`, `site-header`, `site-footer`, `empty-state`, `source-note`, `route-error`), plus `series/`, `channels/`, `blocks/`, `schedule/` and `timeline/`. `ChannelLogo` expects `logoPath` to be a local path under `public/` and shows initials when it's null. Logos render inside a dark `bg-muted` tile, so dark/black logos need a light variant (Disney Channel and Boomerang use white-recolored variants for this reason).
+- Components: app components in `src/components/` (`container`, `site-header`, `site-footer`, `empty-state`, `source-note`, `route-error`), plus `series/`, `channels/`, `blocks/`, `schedule/` and `timeline/`. `LogoTile` (`src/components/logo-tile.tsx`) renders channel and block logos: it expects `logoPath` to be a local path under `public/` and shows the name's initials (first letter or digit of the first two words) when it's null. `ChannelLogo` is an alias of it. Block logos appear in `BlockCard` (`/bloques`, `/canales/[slug]/bloques`) and the block page header. Schedule slots and timeline events link blocks as text only. Logos render inside a dark `bg-muted` tile, so dark/black logos need a light variant (Disney Channel and Boomerang use white-recolored variants for this reason).
 - Motion (`motion/react`) is used only for the active-item indicators (`layoutId`) in the main nav and the channel section nav, both client components.
 - Design: dark-only for now, minimal (Linear/Vercel style), neutral base-nova tokens with a single amber accent (`--primary`/`--ring`), used for small labels, the brand dot, focus and active indicators. Subtle borders; hover darkens or changes border, never scales. Mobile-first.
 
