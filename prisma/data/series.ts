@@ -42,11 +42,18 @@ export const seriesCatalog: SeriesCatalogEntry[] = [
   { tmdbId: 3611, channelSlugs: ["cartoon-network"] }, // La Vaca y el Pollito
   { tmdbId: 604, channelSlugs: ["cartoon-network"] }, // Los jóvenes titanes
 
-  // No channel yet: Latin American channel history (Boomerang, Discovery Kids) not documented.
-  { tmdbId: 4232 }, // Don Gato y su Pandilla
-  { tmdbId: 926 }, // ¡Scooby-Doo, dónde estás!
-  { tmdbId: 1996 }, // Los Picapiedra
-  { tmdbId: 3218 }, // Caillou
+  // Hanna-Barbera classics, linked to Boomerang in the third batch (see the note there).
+  { tmdbId: 4232, channelSlugs: ["boomerang"] }, // Don Gato y su Pandilla
+  { tmdbId: 926, channelSlugs: ["boomerang"] }, // ¡Scooby-Doo, dónde estás!
+  { tmdbId: 1996, channelSlugs: ["boomerang"] }, // Los Picapiedra
+
+  // Caillou was a defining title of Discovery Kids Latin America's preschool schedule, the same
+  // basis on which Barney, Franklin, Hi-5 and Bananas en pijamas are linked to it.
+  { tmdbId: 3218, channelSlugs: ["discovery-kids"] }, // Caillou
+
+  // No channel: the Latin American channel of these preschool series is not documented. Clifford,
+  // Arthur and Dragon Tales are PBS titles and Bob, el constructor is a BBC one; which Latin
+  // American channel carried them is not established, and recollection is not historical data.
   { tmdbId: 8379 }, // Clifford
 
   // Second batch. Channel links follow the same criterion as the first batch: series produced for
@@ -74,11 +81,30 @@ export const seriesCatalog: SeriesCatalogEntry[] = [
   { tmdbId: 557, channelSlugs: ["cartoon-network"] }, // El Campamento de Lazlo
   { tmdbId: 234, channelSlugs: ["cartoon-network"] }, // Mi compañero de clase es un mono
   { tmdbId: 255, channelSlugs: ["cartoon-network"] }, // Hi Hi Puffy AmiYumi
-  { tmdbId: 2362 }, // Los supersónicos
-  { tmdbId: 985 }, // La Carrera de Los Autos Locos
-  { tmdbId: 11167 }, // El Show de Maguila Gorila
-  { tmdbId: 30773 }, // El Show del Oso Yogui
+  // Hanna-Barbera classics, linked to Boomerang in the third batch (see the note there).
+  { tmdbId: 2362, channelSlugs: ["boomerang"] }, // Los supersónicos
+  { tmdbId: 985, channelSlugs: ["boomerang"] }, // La Carrera de Los Autos Locos
+  { tmdbId: 11167, channelSlugs: ["boomerang"] }, // El Show de Maguila Gorila
+  { tmdbId: 30773, channelSlugs: ["boomerang"] }, // El Show del Oso Yogui
   { tmdbId: 1585 }, // Dragon Tales
   { tmdbId: 10938 }, // Bob, el constructor
   { tmdbId: 2153 }, // Arthur
+
+  // Third batch. Same criterion for channel links, plus one addition: Boomerang Latin America
+  // launched as the channel for the Hanna-Barbera library, so the seven classics already in the
+  // catalog are now linked to it. The links stay catalog links, with null years and source; no
+  // Latin American airing dates are claimed.
+  { tmdbId: 5687, channelSlugs: ["boomerang"] }, // Los Pitufos
+  { tmdbId: 1371, channelSlugs: ["discovery-kids"] }, // Hi-5
+  { tmdbId: 4887, channelSlugs: ["discovery-kids"] }, // Barney y sus amigos
+  { tmdbId: 3103, channelSlugs: ["discovery-kids"] }, // Bananas en pijamas
+  { tmdbId: 1458, channelSlugs: ["discovery-kids"] }, // Franklin
+  // Premiered in the Fox Kids era and continued on Jetix, like the blocks shared by both channels.
+  { tmdbId: 2808, channelSlugs: ["fox-kids", "jetix"] }, // Tres Espías Sin Límite
+  { tmdbId: 5835, channelSlugs: ["fox-kids"] }, // Escalofríos
+  { tmdbId: 10926, channelSlugs: ["jetix"] }, // Sonic X
+  { tmdbId: 12971, channelSlugs: ["cartoon-network"] }, // Dragon Ball Z
+  { tmdbId: 504, channelSlugs: ["nickelodeon"] }, // Ren y Stimpy
+  { tmdbId: 3579, channelSlugs: ["nickelodeon"] }, // Los Castores Cascarrabias
+  { tmdbId: 1546, channelSlugs: ["disney-channel"] }, // Recreo
 ];

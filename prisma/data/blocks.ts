@@ -112,4 +112,28 @@ export const blocks: BlockData[] = [
     logoPath: "/logos/blocks/invasion-anime.png",
     seriesTmdbIds: [],
   },
+  // Boomerang blocks provided by the project owner by name only, so description, years and sources
+  // stay null. Which catalog series aired in them is not documented, so they stay empty: a block
+  // name is never a lineup. Their logos were also supplied by the owner (see SOURCES.md).
+  {
+    slug: "rodeo-cartoon-de-hanna-barbera",
+    name: "Rodeo Cartoon de Hanna-Barbera",
+    channelSlugs: ["boomerang"],
+    logoPath: "/logos/blocks/rodeo-cartoon-de-hanna-barbera.png",
+    seriesTmdbIds: [],
+  },
+  {
+    slug: "boomeraction",
+    name: "Boomeraction",
+    channelSlugs: ["boomerang"],
+    logoPath: "/logos/blocks/boomeraction.png",
+    seriesTmdbIds: [],
+  },
+  {
+    slug: "boombox",
+    name: "BoomBox",
+    channelSlugs: ["boomerang"],
+    logoPath: "/logos/blocks/boombox.png",
+    seriesTmdbIds: [],
+  },
 ];

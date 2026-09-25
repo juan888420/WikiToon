@@ -13,29 +13,33 @@ WikiToon is an archive and exploration platform for Latin American children's TV
 - Data layer: schema with 5 migrations, idempotent seed (7 channels), generic TMDB series importer, curated series catalog loader (`db:load:series`) and curated block loader (`db:load:blocks`), all with tests. The whole catalog is reproducible from the repo: seed, then `prisma/data/series.ts`, then `prisma/data/blocks.ts`.
 - UI: global layout, Series module (`/series`, `/series/[slug]`), Channels module (`/canales`, `/canales/[slug]` + sections), Blocks module (`/bloques`, `/bloques/[slug]`), Schedule module (`/programacion`, `/programacion/[canal]/[fecha]`) and Timeline (`/timeline`). See "UI" below.
 - Not built yet: home page content (`src/app/page.tsx` is still a placeholder), API routes.
-- Catalog in `dev.db` (as of 2026-09-24):
+- Catalog in `dev.db` (as of 2026-09-25):
   - 7 channels (seed), all with a local `logoPath` (`/logos/{slug}.svg`, Jetix `.png`).
-  - 59 series from `prisma/data/series.ts`, imported from TMDB: 338 seasons, 8138 episodes. Titles/slugs come from TMDB `es-MX` names (e.g. `el-laboratorio-de-dexter`), stored as delivered (e.g. Caillou keeps TMDB's empty seasons).
-  - 47 `SeriesChannel` rows, all with `startYear`/`endYear`/`sourceName`/`sourceUrl` null. They are catalog links, not verified airing records. Criterion: the series was produced for (or originally aired by) that channel brand.
-    - Cartoon Network (17): Ben 10, Las chicas superpoderosas, El laboratorio de Dexter, Coraje, Ed, Edd y Eddy, Johnny Bravo, Samurai Jack, KND, Mansión Foster, Billy y Mandy, La Vaca y el Pollito, Los jóvenes titanes, Soy la Comadreja, Mike, Lu y Og, El Campamento de Lazlo, Mi compañero de clase es un mono, Hi Hi Puffy AmiYumi.
-    - Nickelodeon (11): Rugrats, ¡Oye, Arnold!, Bob Esponja, Los Padrinos Mágicos, La vida moderna de Rocko, CatDog, Los Thornberrys, Invasor Zim, Danny Phantom, Avatar: La leyenda de Aang, Jimmy Neutron.
-    - Disney Channel (7): Kim Possible, Phineas y Ferb, Jake Long, Lilo & Stitch: La serie, La Familia Proud, Las nuevas locuras del emperador, Los Sustitutos.
-    - Fox Kids (6): X-Men, El Hombre Araña, Digimon (TMDB 31654), El Mundo de Bobby, La Vida con Louie, Eek! The Cat.
-    - Jetix (6): W.I.T.C.H., Súper Escuadrón Ciber Monos, Pucca, Galactik Football, Oban Star Racers, Yin, Yang, Yo!
-    - Boomerang and Discovery Kids: none.
-  - 12 series deliberately have no channel link: Hanna-Barbera classics (Don Gato y su Pandilla, ¡Scooby-Doo, dónde estás!, Los Picapiedra, Los supersónicos, La Carrera de Los Autos Locos, El Show de Maguila Gorila, El Show del Oso Yogui) and preschool series (Caillou, Clifford, Dragon Tales, Bob, el constructor, Arthur). Their Latin American channel history (Boomerang, Discovery Kids, others) is not documented, and general knowledge is not turned into historical data.
-  - 10 blocks from `prisma/data/blocks.ts`, all with null years/source/notes, 15 `BlockChannel` rows and 19 `SeriesBlock` rows with null years/source. Every block has a `logoPath` (sources and caveats in `public/logos/blocks/SOURCES.md`):
+  - 71 series from `prisma/data/series.ts`, imported from TMDB: 430 seasons, 10677 episodes. Titles/slugs come from TMDB `es-MX` names (e.g. `el-laboratorio-de-dexter`), stored as delivered (e.g. Caillou keeps TMDB's empty seasons).
+  - 68 `SeriesChannel` rows, all with `startYear`/`endYear`/`sourceName`/`sourceUrl` null. They are catalog links, not verified airing records. Criterion: the series was produced for (or originally aired by) that channel brand. Boomerang is the one exception, added in the third batch: the channel launched as the home of the Hanna-Barbera library, so the classics are linked to it on that basis, still with no airing dates claimed.
+    - Cartoon Network (18): Ben 10, Las chicas superpoderosas, El laboratorio de Dexter, Coraje, Ed, Edd y Eddy, Johnny Bravo, Samurai Jack, KND, Mansión Foster, Billy y Mandy, La Vaca y el Pollito, Los jóvenes titanes, Soy la Comadreja, Mike, Lu y Og, El Campamento de Lazlo, Mi compañero de clase es un mono, Hi Hi Puffy AmiYumi, Dragon Ball Z.
+    - Nickelodeon (13): Rugrats, ¡Oye, Arnold!, Bob Esponja, Los Padrinos Mágicos, La vida moderna de Rocko, CatDog, Los Thornberrys, Invasor Zim, Danny Phantom, Avatar: La leyenda de Aang, Jimmy Neutron, Ren y Stimpy, Los Castores Cascarrabias.
+    - Disney Channel (8): Kim Possible, Phineas y Ferb, Jake Long, Lilo & Stitch: La serie, La Familia Proud, Las nuevas locuras del emperador, Los Sustitutos, Recreo.
+    - Fox Kids (8): X-Men, El Hombre Araña, Digimon (TMDB 31654), El Mundo de Bobby, La Vida con Louie, Eek! The Cat, Tres Espías Sin Límite, Escalofríos.
+    - Jetix (8): W.I.T.C.H., Súper Escuadrón Ciber Monos, Pucca, Galactik Football, Oban Star Racers, Yin, Yang, Yo!, Tres Espías Sin Límite, Sonic X.
+    - Boomerang (8): Don Gato y su Pandilla, ¡Scooby-Doo, dónde estás!, Los Picapiedra, Los supersónicos, La Carrera de Los Autos Locos, El Show de Maguila Gorila, El Show del Oso Yogui, Los Pitufos.
+    - Discovery Kids (5): Hi-5, Barney y sus amigos, Bananas en pijamas, Franklin, Caillou. Unlike every other channel, these are acquisitions, not productions: the link records that Discovery Kids Latin America carried them, which is the criterion for this channel.
+    - Tres Espías Sin Límite is the only series on two channels (Fox Kids and Jetix), for the same reason the five blocks are shared: it premiered in the Fox Kids era and continued after the rebrand.
+  - 4 series deliberately have no channel link, all preschool: Clifford, Dragon Tales, Arthur (PBS) and Bob, el constructor (BBC). Which Latin American channel carried them is not established; Discovery Kids is plausible for all four but was not documented, and recollection is not turned into historical data. Reviewed on 2026-09-25: don't link them without a source.
+  - 13 blocks from `prisma/data/blocks.ts`, all with null years/source/notes, 18 `BlockChannel` rows and 19 `SeriesBlock` rows with null years/source. All 13 have a `logoPath` (sources and caveats in `public/logos/blocks/SOURCES.md`):
     - Cartoon Network: Cartoon Cartoons (8 series), Toonami (empty).
     - Nickelodeon: Nicktoons (11 series), Nick at Nite (empty).
     - Disney Channel: Zapping Zone (empty).
     - Fox Kids **and** Jetix, one block each shared by both channels: Mysteria, Insomnio, ¿Quién tiene el control?, Doble Carga, Invasión Animé (all empty). Fox Kids was succeeded by Jetix and these blocks continued across the rebrand, so each is one block on two channels, not two blocks, with a single page reachable from both.
+    - Boomerang: Rodeo Cartoon de Hanna-Barbera, Boomeraction, BoomBox (all empty). Provided by the project owner by name only, so their description is null; the Rodeo Cartoon logo confirms that block's full name. Hora Boomerang was added and then removed in the same uncommitted batch, so no migration records it; don't re-add it without asking.
+    - Discovery Kids: none.
     - Removed for editorial scope (preschool content is not being expanded for now): Nick Jr. (Nickelodeon) and Playhouse Disney (Disney Channel). Neither had series, schedules or timeline events. Don't re-add them without asking.
     - Cartoon Cartoons and Nicktoons are described as labels for each channel's original animated series, not dated time slots. Their series are the ones clearly branded as such.
     - Deliberately left out as dubious:
       - Billy y Mandy, KND and Samurai Jack from Cartoon Cartoons, because they premiered as the label was being retired.
       - Cartoon Network series from 2004 on, because they postdate the label.
     - The time-slot blocks (Toonami, Zapping Zone, all Fox Kids/Jetix blocks) are empty because their Latin American lineups are not known. Don't infer a lineup from a block's name, such as Digimon in Invasión Animé. Add series there only when the project owner provides them. Nick at Nite and the Fox Kids/Jetix blocks were provided by the project owner by name only, so their description is null.
-    - Pending decisions: Nick Hits (Nickelodeon) is not added yet. Boomerang and Discovery Kids have no blocks because their Latin American blocks are not documented, and guessed names would be invented historical records.
+    - Pending decisions: Nick Hits (Nickelodeon) is not added yet. Discovery Kids has no blocks because its Latin American blocks are not documented, and guessed names would be invented historical records.
   - 0 schedules (so `/programacion` shows its empty state and no day pages are generated), 0 timeline events (so `/timeline` and every channel timeline show their empty state).
 - Current focus: catalog and exploration. Detailed historical research (airing dates, schedules, Timeline) is not a priority; those features stay technically ready but empty.
 - Infrastructure pending: the app reads a local SQLite file (`dev.db`, gitignored), and `next build` reads it to prerender pages. This is not ready for a real Vercel deploy (no DB in the build/runtime environment, read-only filesystem); the production database strategy is still undecided.

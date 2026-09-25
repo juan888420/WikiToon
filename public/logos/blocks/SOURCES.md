@@ -37,10 +37,13 @@ Every one of them is a candidate for replacement if a properly licensed file eve
 | `insomnio.png` | Insomnio (Fox Kids, Jetix) | A title card with the Fox Kids logo. **The artwork reads "INSOMNIA", not "Insomnio"**, the name the block is recorded under. Worth confirming which name the Latin American block used. |
 | `mysteria.png` | Mysteria (Fox Kids, Jetix) | A Fox Kids logo with bat wings and claws. **No "Mysteria" wordmark appears**; assigned on the file name alone, at the owner's instruction. |
 | `doble-carga.png` | Doble Carga (Fox Kids, Jetix) | A Fox Kids schedule bumper: a robot with a panel reading "HOY / 11:00 ARG / 10:00 CHI". **Nothing in the image says "Doble Carga"**; assigned on the file name alone, at the owner's instruction. |
+| `rodeo-cartoon-de-hanna-barbera.png` | Rodeo Cartoon de Hanna-Barbera (Boomerang) | A title card reading "Hanna Barbera's RODEO CARTOON". Unambiguous, and it confirms the block's full name. |
+| `boomeraction.png` | Boomeraction (Boomerang) | The "BOOMERACTION" wordmark over a metallic bumper. Unambiguous. |
+| `boombox.png` | BoomBox (Boomerang) | The "boom box" wordmark on a cube. Unambiguous, but the caption reads "NO ESTUDIO", so it is the **Brazilian** Boomerang feed, not the Spanish-language one. Latin American, but not the version this Spanish-language catalog otherwise documents. |
 
 ## Pending blocks (`logoPath = null`)
 
-None: every block in the catalog has a logo. The rejected candidates below are kept as a record, so the same files are not proposed again.
+None: all 13 blocks in the catalog have a logo. The rejected candidates below are kept as a record, so the same files are not proposed again.
 
 | Block | Why a sourced logo was rejected |
 |---|---|
@@ -48,12 +51,14 @@ None: every block in the catalog has a logo. The rejected candidates below are k
 | Nicktoons | No Latin American logo for the label. Commons only has logos of the Nicktoons TV channel (United States, United Kingdom), which is a different thing. |
 | Zapping Zone | Latin American logos exist only on Logopedia (640x480 PNG), with no free license. |
 | Mysteria, Insomnio, ¿Quién tiene el control?, Doble Carga, Invasión Animé | No logo found on Commons or Logopedia. |
+| Rodeo Cartoon de Hanna-Barbera, Boomeraction, BoomBox | Not searched: the owner supplied the files directly. |
 
 Blocks removed from the catalog (see `prisma/data/blocks.ts`), with the candidates that had been checked for them:
 
 | Block | Why it had no logo |
 |---|---|
 | Nick Jr. (Nickelodeon) | The Latin American block used the "Nick JR" wordmark (Logopedia: Nick Jr. (Latin America), 1996-2010). Commons only has other variants: `Nick-Jr-old-logo.png` (circles) and `Nick Jr 1988.webp` (figures, a user recreation). Neither matches. |
+| Hora Boomerang (Boomerang) | Removed from the catalog before a logo was looked for. |
 | Playhouse Disney (Disney Channel) | The Latin American block used the Mickey-ears logo (Logopedia: Disney Jr. (Latin America), 2003-2011). `2000 Playhouse Disney logo.svg` on Commons is a different design. `Playhouse Disney logo 2002.png` matches the design, but it is a user recreation uploaded as "own work" under CC0, a license the uploader can't grant for Disney's graphic logo. It is also a 3840x2160 PNG that is mostly padding. |
 
 When a logo is provided for a new block:
