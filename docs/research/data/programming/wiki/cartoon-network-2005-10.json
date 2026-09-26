@@ -1,0 +1,1343 @@
+{
+ "source": {
+  "name": "Cartoon Network Wiki (Fandom): Grilla de Cartoon Network, Octubre de 2005",
+  "url": "https://cartoonnetwork.fandom.com/es/wiki/Grilla_de_Cartoon_Network,_Octubre_de_2005"
+ },
+ "references": [
+  "https://web.archive.org/web/20051013073550/http://alt.cartoonnetwork.com.br/portuguese/votatoonla",
+  "https://www.foromedios.com/topic/126235-programación-cartoon-network-año-2005-febrero-abril-septiembre-octubre-y-noviembre/",
+  "https://www.foromedios.com/topic/144571-programacion-de-los-diversos-canales-de-cable-octubre-del-2005/",
+  "https://web.archive.org/web/20051013061542/http://alt.cartoonnetworkla.com:80/english/schedule",
+  "https://www.youtube.com/watch?v=7AoYcXLcbKk",
+  "https://www1.folha.uol.com.br/fsp/ilustrad/fq0910200505.htm#cartoon",
+  "https://www.youtube.com/watch?v=_UXqSVyd4pE",
+  "http://memoria.bn.gov.br/DocReader/028274_05/111995"
+ ],
+ "tables": [
+  {
+   "feed": "Cartoon Network",
+   "days": [
+    "Lunes a jueves",
+    "Viernes",
+    "Sábado",
+    "Domingo"
+   ],
+   "slots": [
+    {
+     "day": "Lunes a jueves",
+     "start": "06:00",
+     "end": "06:30",
+     "text": "Coraje, el perro cobarde",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "06:00",
+     "end": "06:30",
+     "text": "Coraje, el perro cobarde",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "06:00",
+     "end": "07:00",
+     "text": "Hora ACME",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "06:00",
+     "end": "06:30",
+     "text": "Tiny Toons",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "06:30",
+     "end": "07:00",
+     "text": "Las sombrías aventuras de Billy y Mandy",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "06:30",
+     "end": "07:00",
+     "text": "Las sombrías aventuras de Billy y Mandy",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "06:30",
+     "end": "07:00",
+     "text": "La pequeña Lulú",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "07:00",
+     "end": "08:00",
+     "text": "Pequeño Mundo",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "07:00",
+     "end": "08:00",
+     "text": "Pequeño Mundo",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "07:00",
+     "end": "07:30",
+     "text": "Mona, la vampira",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "07:00",
+     "end": "07:30",
+     "text": "Pecola",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "07:30",
+     "end": "08:00",
+     "text": "Jacobo Dos Dos",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "07:30",
+     "end": "08:00",
+     "text": "Max y Ruby",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "08:00",
+     "end": "08:30",
+     "text": "Sagwa, la gatita siamesa",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "08:00",
+     "end": "08:30",
+     "text": "Sagwa, la gatita siamesa",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "08:00",
+     "end": "08:30",
+     "text": "Arturo",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "08:00",
+     "end": "08:30",
+     "text": "Las aventuras de Arañita",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "08:30",
+     "end": "09:00",
+     "text": "Los osos Berenstains",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "08:30",
+     "end": "09:00",
+     "text": "Los osos Berenstains",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "08:30",
+     "end": "09:00",
+     "text": "Hamtaro",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "08:30",
+     "end": "09:00",
+     "text": "Los osos Berenstains",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "09:00",
+     "end": "09:30",
+     "text": "Jacobo Dos Dos",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "09:00",
+     "end": "09:30",
+     "text": "Jacobo Dos Dos",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "09:00",
+     "end": "09:30",
+     "text": "Krypto, el superperro",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "09:00",
+     "end": "09:30",
+     "text": "Betty Toons",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "09:30",
+     "end": "10:00",
+     "text": "Las chicas superpoderosas",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "09:30",
+     "end": "10:00",
+     "text": "Las chicas superpoderosas",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "09:30",
+     "end": "10:00",
+     "text": "El club Winx",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "09:30",
+     "end": "10:00",
+     "text": "Pinky y Cerebro",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "10:00",
+     "end": "10:30",
+     "text": "El show de Cartoon Cartoons",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "10:00",
+     "end": "10:30",
+     "text": "El show de Cartoon Cartoons",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "10:00",
+     "end": "10:30",
+     "text": "Hi Hi Puffy AmiYumi → Ed, Edd y Eddy (sábado 29)",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "10:00",
+     "end": "10:30",
+     "text": "El show de los Looney Tunes",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "10:30",
+     "end": "11:00",
+     "text": "KND: Los chicos del barrio",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "10:30",
+     "end": "11:00",
+     "text": "KND: Los chicos del barrio",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "10:30",
+     "end": "11:00",
+     "text": "Las sombrías aventuras de Billy y Mandy",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "10:30",
+     "end": "11:00",
+     "text": "La pandilla del Río Canguro",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "11:00",
+     "end": "11:30",
+     "text": "Ed, Edd y Eddy",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "11:00",
+     "end": "11:30",
+     "text": "Ed, Edd y Eddy",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "11:00",
+     "end": "12:00",
+     "text": "Cartoon Cartoons",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "11:00",
+     "end": "11:30",
+     "text": "Jacobo Dos Dos",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "11:30",
+     "end": "12:00",
+     "text": "Hi Hi Puffy AmiYumi",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "11:30",
+     "end": "12:00",
+     "text": "Hi Hi Puffy AmiYumi",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "11:30",
+     "end": "12:00",
+     "text": "Las chicas superpoderosas",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "12:00",
+     "end": "12:30",
+     "text": "Malo con Carne",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "12:00",
+     "end": "12:30",
+     "text": "Malo con Carne",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "12:00",
+     "end": "12:30",
+     "text": "Pixcodelics → Mascotas extraterrestres",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "12:00",
+     "end": "12:30",
+     "text": "Las sombrías aventuras de Billy y Mandy",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "12:30",
+     "end": "13:00",
+     "text": "Mucha Lucha",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "12:30",
+     "end": "13:00",
+     "text": "Mucha Lucha",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "12:30",
+     "end": "13:00",
+     "text": "Las aventuras de Jackie Chan",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "12:30",
+     "end": "13:00",
+     "text": "Mansión Foster para amigos imaginarios",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "13:00",
+     "end": "13:30",
+     "text": "Duelo Xiaolin",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "13:00",
+     "end": "13:30",
+     "text": "Duelo Xiaolin",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "13:00",
+     "end": "13:30",
+     "text": "Transformers Energon → Los jóvenes titanes",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "13:00",
+     "end": "13:30",
+     "text": "El laboratorio de Dexter",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "13:30",
+     "end": "14:00",
+     "text": "Coraje, el perro cobarde",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "13:30",
+     "end": "14:00",
+     "text": "Coraje, el perro cobarde",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "13:30",
+     "end": "14:00",
+     "text": "Batman (2004)",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "13:30",
+     "end": "14:00",
+     "text": "Hi Hi Puffy AmiYumi",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "14:00",
+     "end": "14:30",
+     "text": "¿Qué hay de nuevo, Scooby-Doo?",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "14:00",
+     "end": "14:30",
+     "text": "¿Qué hay de nuevo, Scooby-Doo?",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "14:00",
+     "end": "14:30",
+     "text": "Liga de la Justicia Ilimitada → Hombres X: Evolución",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "14:00",
+     "end": "16:00",
+     "text": "Teatro Cartoon",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "14:30",
+     "end": "15:00",
+     "text": "Las sombrías aventuras de Billy y Mandy",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "14:30",
+     "end": "15:00",
+     "text": "Las sombrías aventuras de Billy y Mandy",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "14:30",
+     "end": "15:00",
+     "text": "Pokémon",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "15:00",
+     "end": "15:30",
+     "text": "El club Winx",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "15:00",
+     "end": "15:30",
+     "text": "El club Winx",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "15:00",
+     "end": "18:00",
+     "text": "Votatoon",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "15:30",
+     "end": "16:00",
+     "text": "Hi Hi Puffy AmiYumi",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "15:30",
+     "end": "16:00",
+     "text": "Hi Hi Puffy AmiYumi",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "16:00",
+     "end": "16:30",
+     "text": "Mascotas extraterrestres",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "16:00",
+     "end": "16:30",
+     "text": "Mascotas extraterrestres",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "16:00",
+     "end": "16:30",
+     "text": "Duelo Xiaolin",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "16:30",
+     "end": "17:00",
+     "text": "Malo con Carne",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "16:30",
+     "end": "17:00",
+     "text": "Malo con Carne",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "16:30",
+     "end": "17:00",
+     "text": "Mucha Lucha",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "17:00",
+     "end": "17:30",
+     "text": "Ed, Edd y Eddy",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "17:00",
+     "end": "17:30",
+     "text": "Ed, Edd y Eddy",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "17:00",
+     "end": "17:30",
+     "text": "Los jóvenes titanes",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "17:30",
+     "end": "18:00",
+     "text": "Las sombrías aventuras de Billy y Mandy",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "17:30",
+     "end": "18:00",
+     "text": "Las sombrías aventuras de Billy y Mandy",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "17:30",
+     "end": "18:00",
+     "text": "Duck Dodgers",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "18:00",
+     "end": "18:30",
+     "text": "Investigadores de fantasmas",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "18:00",
+     "end": "18:30",
+     "text": "Investigadores de fantasmas",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "18:00",
+     "end": "20:00",
+     "text": "Teatro Cartoon",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "18:00",
+     "end": "18:30",
+     "text": "Hi Hi Puffy AmiYumi → Ed, Edd y Eddy (domingo 30)",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "18:30",
+     "end": "19:00",
+     "text": "¿Qué hay de nuevo, Scooby-Doo?",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "18:30",
+     "end": "19:00",
+     "text": "¿Qué hay de nuevo, Scooby-Doo?",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "18:30",
+     "end": "19:00",
+     "text": "Las sombrías aventuras de Billy y Mandy",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "19:00",
+     "end": "19:30",
+     "text": "Malo con Carne",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "19:00",
+     "end": "19:30",
+     "text": "Hi Hi Puffy AmiYumi → Ed, Edd y Eddy (viernes 28)",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "19:00",
+     "end": "20:00",
+     "text": "Cartoon Cartoons",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "19:30",
+     "end": "20:00",
+     "text": "Coraje, el perro cobarde",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "19:30",
+     "end": "20:00",
+     "text": "Las sombrías aventuras de Billy y Mandy",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "20:00",
+     "end": "20:30",
+     "text": "KND: Los chicos del barrio",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "20:00",
+     "end": "21:00",
+     "text": "Cartoon Cartoons",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "20:00",
+     "end": "20:30",
+     "text": "Malo con Carne",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "20:00",
+     "end": "20:30",
+     "text": "Mascotas Extraterrestres",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "20:30",
+     "end": "21:00",
+     "text": "Ed, Edd y Eddy",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "20:30",
+     "end": "21:00",
+     "text": "El laboratorio de Dexter",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "20:30",
+     "end": "21:00",
+     "text": "Ed, Edd y Eddy",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "21:00",
+     "end": "21:30",
+     "text": "Las sombrías aventuras de Billy y Mandy",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "21:00",
+     "end": "21:30",
+     "text": "Las sombrías aventuras de Billy y Mandy",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "21:00",
+     "end": "21:30",
+     "text": "Ozzy y Drix",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "21:00",
+     "end": "21:30",
+     "text": "¿Qué hay de nuevo, Scooby-Doo?",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "21:30",
+     "end": "22:00",
+     "text": "¿Qué hay de nuevo, Scooby-Doo?",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "21:30",
+     "end": "22:00",
+     "text": "¿Qué hay de nuevo, Scooby-Doo?",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "21:30",
+     "end": "22:00",
+     "text": "Mascotas Extraterrestres",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "21:30",
+     "end": "22:00",
+     "text": "Malo con Carne",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "22:00",
+     "end": "22:30",
+     "text": "Pokémon",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "22:00",
+     "end": "22:30",
+     "text": "Pokémon",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "22:00",
+     "end": "22:30",
+     "text": "Duck Dodgers",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "22:00",
+     "end": "22:30",
+     "text": "Tom y Jerry",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "22:30",
+     "end": "23:00",
+     "text": "Bugs Bunny y el Pato Lucas",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "22:30",
+     "end": "23:00",
+     "text": "Locos Dieciseis",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Sábado",
+     "start": "22:30",
+     "end": "23:00",
+     "text": "Locos Dieciseis",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Domingo",
+     "start": "22:30",
+     "end": "23:00",
+     "text": "Locos Dieciseis",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "23:00",
+     "end": "23:30",
+     "text": "Tom y Jerry",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "23:00",
+     "end": "01:00",
+     "text": "Adult Swim",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Sábado",
+     "start": "23:00",
+     "end": "01:00",
+     "text": "Adult Swim",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Domingo",
+     "start": "23:00",
+     "end": "01:00",
+     "text": "Adult Swim",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "23:30",
+     "end": "00:00",
+     "text": "Historias de fantasmas",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "00:00",
+     "end": "00:30",
+     "text": "Inuyasha → Samurai Jack",
+     "block": "Toonami",
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "00:30",
+     "end": "01:00",
+     "text": "Yu-Yu Hakusho",
+     "block": "Toonami",
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "01:00",
+     "end": "01:30",
+     "text": "Duel Masters → Los caballeros del zodiaco",
+     "block": "Toonami",
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "01:00",
+     "end": "03:00",
+     "text": "Adult Swim (repetición)",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Sábado",
+     "start": "01:00",
+     "end": "03:00",
+     "text": "Adult Swim (repetición)",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Domingo",
+     "start": "01:00",
+     "end": "03:00",
+     "text": "Adult Swim (repetición)",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "01:30",
+     "end": "02:00",
+     "text": "Pokémon (hasta miércoles 12) → La guerra de Sakura",
+     "block": "Toonami",
+     "premiere": true
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "02:00",
+     "end": "02:30",
+     "text": "Batman del futuro",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "02:30",
+     "end": "03:00",
+     "text": "Los jóvenes titanes",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "03:00",
+     "end": "03:30",
+     "text": "Superman: La serie animada",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "03:00",
+     "end": "05:00",
+     "text": "Adult Swim (repetición)",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Sábado",
+     "start": "03:00",
+     "end": "05:00",
+     "text": "Adult Swim (repetición)",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Domingo",
+     "start": "03:00",
+     "end": "05:00",
+     "text": "Adult Swim (repetición)",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "03:30",
+     "end": "03:45",
+     "text": "Hombre-X: Evolución",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "03:45",
+     "end": "04:00",
+     "text": "Batman: La serie animada",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "04:00",
+     "end": "04:30",
+     "text": "Samurai Jack",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "04:30",
+     "end": "05:00",
+     "text": "Las aventuras de Jackie Chan",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "05:00",
+     "end": null,
+     "text": "Hora ACME",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "05:00",
+     "end": null,
+     "text": "Hora ACME",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "05:00",
+     "end": null,
+     "text": "Hora ACME",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "05:00",
+     "end": "05:30",
+     "text": "Las sombrías aventuras de Billy y Mandy",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "05:30",
+     "end": null,
+     "text": "La vaca y el pollito",
+     "block": null,
+     "premiere": false
+    }
+   ]
+  },
+  {
+   "feed": "Adult Swim",
+   "days": [
+    "Viernes",
+    "Sábado",
+    "Domingo"
+   ],
+   "slots": [
+    {
+     "day": "Viernes",
+     "start": "23:00",
+     "end": "23:15",
+     "text": "Harvey Birdman, abogado",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Sábado",
+     "start": "23:00",
+     "end": "23:30",
+     "text": "Aqua Teen Hunger Force",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Domingo",
+     "start": "23:00",
+     "end": "23:15",
+     "text": "Laboratorio Submarino 2021",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Viernes",
+     "start": "23:15",
+     "end": "23:30",
+     "text": "Aqua Teen Hunger Force",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Domingo",
+     "start": "23:15",
+     "end": "23:30",
+     "text": "Harvey Birdman, abogado",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Viernes",
+     "start": "23:30",
+     "end": "00:00",
+     "text": "Secundaria de clones",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Sábado",
+     "start": "23:30",
+     "end": "00:00",
+     "text": "Universitarios",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Domingo",
+     "start": "23:30",
+     "end": "00:00",
+     "text": "Películas caseras",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Viernes",
+     "start": "00:00",
+     "end": "00:30",
+     "text": "Mission Hill",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Sábado",
+     "start": "00:00",
+     "end": "00:30",
+     "text": "Mission Hill",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Domingo",
+     "start": "00:00",
+     "end": "00:30",
+     "text": "Mission Hill",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Viernes",
+     "start": "00:30",
+     "end": "00:45",
+     "text": "Bob y Margaret",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Sábado",
+     "start": "00:30",
+     "end": "00:45",
+     "text": "Bob y Margaret",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Domingo",
+     "start": "00:30",
+     "end": "00:45",
+     "text": "Bob y Margaret",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Viernes",
+     "start": "00:45",
+     "end": null,
+     "text": "El show de Brak",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Sábado",
+     "start": "00:45",
+     "end": null,
+     "text": "Cortos",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Domingo",
+     "start": "00:45",
+     "end": null,
+     "text": "El show de Brak",
+     "block": null,
+     "premiere": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,3174 @@
+{
+ "source": {
+  "name": "Sitio oficial del canal (Wayback Machine)",
+  "url": "https://web.archive.org/web/20001018141410/http://www.cartoonnetworkla.com/spanish/toonin/grid.html"
+ },
+ "grids": [
+  {
+   "label": "ToonNews para recibir lo último en información / Haz Click Aquí Conoce cuando Dexter llega a tu ciudad. / Haz Click Aquí",
+   "days": [
+    "Lunes",
+    "Martes",
+    "Miercoles",
+    "Jueves",
+    "Viernes",
+    "Sabado",
+    "Domingo"
+   ],
+   "slots": [
+    {
+     "day": "Lunes",
+     "start": "06:00",
+     "end": "07:00",
+     "text": "Cartoon-A-Doodle-Doo"
+    },
+    {
+     "day": "Martes",
+     "start": "06:00",
+     "end": "07:00",
+     "text": "Cartoon-A-Doodle-Doo"
+    },
+    {
+     "day": "Miercoles",
+     "start": "06:00",
+     "end": "07:00",
+     "text": "Cartoon-A-Doodle-Doo"
+    },
+    {
+     "day": "Jueves",
+     "start": "06:00",
+     "end": "07:00",
+     "text": "Cartoon-A-Doodle-Doo"
+    },
+    {
+     "day": "Viernes",
+     "start": "06:00",
+     "end": "07:00",
+     "text": "Cartoon-A-Doodle-Doo"
+    },
+    {
+     "day": "Sabado",
+     "start": "06:00",
+     "end": "07:00",
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Domingo",
+     "start": "06:00",
+     "end": "07:00",
+     "text": "Cartoon-A-Doodle-Doo"
+    },
+    {
+     "day": "Lunes",
+     "start": "07:00",
+     "end": "08:00",
+     "text": "Pequeño Mundo"
+    },
+    {
+     "day": "Martes",
+     "start": "07:00",
+     "end": "08:00",
+     "text": "Pequeño Mundo"
+    },
+    {
+     "day": "Miercoles",
+     "start": "07:00",
+     "end": "08:00",
+     "text": "Pequeño Mundo"
+    },
+    {
+     "day": "Jueves",
+     "start": "07:00",
+     "end": "08:00",
+     "text": "Pequeño Mundo"
+    },
+    {
+     "day": "Viernes",
+     "start": "07:00",
+     "end": "08:00",
+     "text": "Pequeño Mundo"
+    },
+    {
+     "day": "Sabado",
+     "start": "07:00",
+     "end": "07:30",
+     "text": "Chicos Tom y Jerry"
+    },
+    {
+     "day": "Domingo",
+     "start": "07:00",
+     "end": "07:30",
+     "text": "Kipper"
+    },
+    {
+     "day": "Sabado",
+     "start": "07:30",
+     "end": "08:00",
+     "text": "Garfield y sus Amigos"
+    },
+    {
+     "day": "Domingo",
+     "start": "07:30",
+     "end": "08:00",
+     "text": "Fievel"
+    },
+    {
+     "day": "Lunes",
+     "start": "08:00",
+     "end": "08:30",
+     "text": "Las Tres Mellizas"
+    },
+    {
+     "day": "Martes",
+     "start": "08:00",
+     "end": "08:30",
+     "text": "Las Tres Mellizas"
+    },
+    {
+     "day": "Miercoles",
+     "start": "08:00",
+     "end": "08:30",
+     "text": "Las Tres Mellizas"
+    },
+    {
+     "day": "Jueves",
+     "start": "08:00",
+     "end": "08:30",
+     "text": "Las Tres Mellizas"
+    },
+    {
+     "day": "Viernes",
+     "start": "08:00",
+     "end": "08:30",
+     "text": "Las Tres Mellizas"
+    },
+    {
+     "day": "Sabado",
+     "start": "08:00",
+     "end": "08:30",
+     "text": "Las Tres Mellizas"
+    },
+    {
+     "day": "Domingo",
+     "start": "08:00",
+     "end": "08:30",
+     "text": "Las Tres Mellizas"
+    },
+    {
+     "day": "Lunes",
+     "start": "08:30",
+     "end": "09:00",
+     "text": "La Pequeña Lulu"
+    },
+    {
+     "day": "Martes",
+     "start": "08:30",
+     "end": "09:00",
+     "text": "La Pequeña Lulu"
+    },
+    {
+     "day": "Miercoles",
+     "start": "08:30",
+     "end": "09:00",
+     "text": "La Pequeña Lulu"
+    },
+    {
+     "day": "Jueves",
+     "start": "08:30",
+     "end": "09:00",
+     "text": "La Pequeña Lulu"
+    },
+    {
+     "day": "Viernes",
+     "start": "08:30",
+     "end": "09:00",
+     "text": "La Pequeña Lulu"
+    },
+    {
+     "day": "Sabado",
+     "start": "08:30",
+     "end": "09:00",
+     "text": "Franklin"
+    },
+    {
+     "day": "Domingo",
+     "start": "08:30",
+     "end": "09:00",
+     "text": "Las Aventuras de Tiny Toons"
+    },
+    {
+     "day": "Lunes",
+     "start": "09:00",
+     "end": "09:30",
+     "text": "Franklin"
+    },
+    {
+     "day": "Martes",
+     "start": "09:00",
+     "end": "09:30",
+     "text": "Franklin"
+    },
+    {
+     "day": "Miercoles",
+     "start": "09:00",
+     "end": "09:30",
+     "text": "Franklin"
+    },
+    {
+     "day": "Jueves",
+     "start": "09:00",
+     "end": "09:30",
+     "text": "Franklin"
+    },
+    {
+     "day": "Viernes",
+     "start": "09:00",
+     "end": "09:30",
+     "text": "Franklin"
+    },
+    {
+     "day": "Sabado",
+     "start": "09:00",
+     "end": "10:00",
+     "text": "Cinetoon"
+    },
+    {
+     "day": "Domingo",
+     "start": "09:00",
+     "end": "09:30",
+     "text": "Chicos Tom y Jerry"
+    },
+    {
+     "day": "Lunes",
+     "start": "09:30",
+     "end": "10:00",
+     "text": "Scooby Doo el Cachorro"
+    },
+    {
+     "day": "Martes",
+     "start": "09:30",
+     "end": "10:00",
+     "text": "Scooby Doo el Cachorro"
+    },
+    {
+     "day": "Miercoles",
+     "start": "09:30",
+     "end": "10:00",
+     "text": "Scooby Doo el Cachorro"
+    },
+    {
+     "day": "Jueves",
+     "start": "09:30",
+     "end": "10:00",
+     "text": "Scooby Doo el Cachorro"
+    },
+    {
+     "day": "Viernes",
+     "start": "09:30",
+     "end": "10:00",
+     "text": "Scooby Doo el Cachorro"
+    },
+    {
+     "day": "Domingo",
+     "start": "09:30",
+     "end": "10:00",
+     "text": "Pequeños Picapiedras"
+    },
+    {
+     "day": "Lunes",
+     "start": "10:00",
+     "end": "10:30",
+     "text": "Los Picapiedras"
+    },
+    {
+     "day": "Martes",
+     "start": "10:00",
+     "end": "10:30",
+     "text": "Los Picapiedras"
+    },
+    {
+     "day": "Miercoles",
+     "start": "10:00",
+     "end": "10:30",
+     "text": "Los Picapiedras"
+    },
+    {
+     "day": "Jueves",
+     "start": "10:00",
+     "end": "10:30",
+     "text": "Los Picapiedras"
+    },
+    {
+     "day": "Viernes",
+     "start": "10:00",
+     "end": "10:30",
+     "text": "Los Picapiedras"
+    },
+    {
+     "day": "Sabado",
+     "start": "10:00",
+     "end": "10:30",
+     "text": "Ed, Edd y Eddy"
+    },
+    {
+     "day": "Domingo",
+     "start": "10:00",
+     "end": "11:00",
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Lunes",
+     "start": "10:30",
+     "end": "11:00",
+     "text": "Los Supersónicos"
+    },
+    {
+     "day": "Martes",
+     "start": "10:30",
+     "end": "11:00",
+     "text": "Los Supersónicos"
+    },
+    {
+     "day": "Miercoles",
+     "start": "10:30",
+     "end": "11:00",
+     "text": "Los Supersónicos"
+    },
+    {
+     "day": "Jueves",
+     "start": "10:30",
+     "end": "11:00",
+     "text": "Los Supersónicos"
+    },
+    {
+     "day": "Viernes",
+     "start": "10:30",
+     "end": "11:00",
+     "text": "Los Supersónicos"
+    },
+    {
+     "day": "Sabado",
+     "start": "10:30",
+     "end": "11:00",
+     "text": "Las Chicas Superpoderosas"
+    },
+    {
+     "day": "Lunes",
+     "start": "11:00",
+     "end": "12:00",
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Martes",
+     "start": "11:00",
+     "end": "12:00",
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Miercoles",
+     "start": "11:00",
+     "end": "12:00",
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Jueves",
+     "start": "11:00",
+     "end": "12:00",
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Viernes",
+     "start": "11:00",
+     "end": "12:00",
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Sabado",
+     "start": "11:00",
+     "end": "13:00",
+     "text": "Cartoon Cartoons"
+    },
+    {
+     "day": "Domingo",
+     "start": "11:00",
+     "end": "11:30",
+     "text": "Garfield y Amigos"
+    },
+    {
+     "day": "Domingo",
+     "start": "11:30",
+     "end": "12:00",
+     "text": "Don Gato"
+    },
+    {
+     "day": "Lunes",
+     "start": "12:00",
+     "end": "12:30",
+     "text": "El Laboratorio de Dexter"
+    },
+    {
+     "day": "Martes",
+     "start": "12:00",
+     "end": "12:30",
+     "text": "El Laboratorio de Dexter"
+    },
+    {
+     "day": "Miercoles",
+     "start": "12:00",
+     "end": "12:30",
+     "text": "El Laboratorio de Dexter"
+    },
+    {
+     "day": "Jueves",
+     "start": "12:00",
+     "end": "12:30",
+     "text": "El Laboratorio de Dexter"
+    },
+    {
+     "day": "Viernes",
+     "start": "12:00",
+     "end": "12:30",
+     "text": "El Laboratorio de Dexter"
+    },
+    {
+     "day": "Domingo",
+     "start": "12:00",
+     "end": "12:30",
+     "text": "Las Aventuras de Tiny Toons"
+    },
+    {
+     "day": "Lunes",
+     "start": "12:30",
+     "end": "13:00",
+     "text": "Garfield y Amigos"
+    },
+    {
+     "day": "Martes",
+     "start": "12:30",
+     "end": "13:00",
+     "text": "Garfield y Amigos"
+    },
+    {
+     "day": "Miercoles",
+     "start": "12:30",
+     "end": "13:00",
+     "text": "Garfield y Amigos"
+    },
+    {
+     "day": "Jueves",
+     "start": "12:30",
+     "end": "13:00",
+     "text": "Garfield y Amigos"
+    },
+    {
+     "day": "Viernes",
+     "start": "12:30",
+     "end": "13:00",
+     "text": "Garfield y Amigos"
+    },
+    {
+     "day": "Domingo",
+     "start": "12:30",
+     "end": "13:00",
+     "text": "El Lagartijo de Ned"
+    },
+    {
+     "day": "Lunes",
+     "start": "13:00",
+     "end": "13:30",
+     "text": "La Vaca y el Pollito"
+    },
+    {
+     "day": "Martes",
+     "start": "13:00",
+     "end": "13:30",
+     "text": "La Vaca y el Pollito"
+    },
+    {
+     "day": "Miercoles",
+     "start": "13:00",
+     "end": "13:30",
+     "text": "La Vaca y el Pollito"
+    },
+    {
+     "day": "Jueves",
+     "start": "13:00",
+     "end": "13:30",
+     "text": "La Vaca y el Pollito"
+    },
+    {
+     "day": "Viernes",
+     "start": "13:00",
+     "end": "13:30",
+     "text": "La Vaca y el Pollito"
+    },
+    {
+     "day": "Sabado",
+     "start": "13:00",
+     "end": "13:30",
+     "text": "Hombres de Negro"
+    },
+    {
+     "day": "Domingo",
+     "start": "13:00",
+     "end": "13:30",
+     "text": "Nuevos Cuentos Félix el Gato"
+    },
+    {
+     "day": "Lunes",
+     "start": "13:30",
+     "end": "14:00",
+     "text": "Pinky y Cerebro"
+    },
+    {
+     "day": "Martes",
+     "start": "13:30",
+     "end": "14:00",
+     "text": "Pinky y Cerebro"
+    },
+    {
+     "day": "Miercoles",
+     "start": "13:30",
+     "end": "14:00",
+     "text": "Pinky y Cerebro"
+    },
+    {
+     "day": "Jueves",
+     "start": "13:30",
+     "end": "14:00",
+     "text": "Pinky y Cerebro"
+    },
+    {
+     "day": "Viernes",
+     "start": "13:30",
+     "end": "14:00",
+     "text": "Pinky y Cerebro"
+    },
+    {
+     "day": "Sabado",
+     "start": "13:30",
+     "end": "14:00",
+     "text": "La Conspiración Roswell"
+    },
+    {
+     "day": "Domingo",
+     "start": "13:30",
+     "end": "14:00",
+     "text": "Beetlejuice"
+    },
+    {
+     "day": "Lunes",
+     "start": "14:00",
+     "end": "14:30",
+     "text": "Johnny Bravo"
+    },
+    {
+     "day": "Martes",
+     "start": "14:00",
+     "end": "14:30",
+     "text": "Johnny Bravo"
+    },
+    {
+     "day": "Miercoles",
+     "start": "14:00",
+     "end": "14:30",
+     "text": "Johnny Bravo"
+    },
+    {
+     "day": "Jueves",
+     "start": "14:00",
+     "end": "14:30",
+     "text": "Johnny Bravo"
+    },
+    {
+     "day": "Viernes",
+     "start": "14:00",
+     "end": "14:30",
+     "text": "Johnny Bravo"
+    },
+    {
+     "day": "Sabado",
+     "start": "14:00",
+     "end": "14:30",
+     "text": "Guerra de Bestias"
+    },
+    {
+     "day": "Domingo",
+     "start": "14:00",
+     "end": "16:00",
+     "text": "Teatro Cartoon"
+    },
+    {
+     "day": "Lunes",
+     "start": "14:30",
+     "end": "15:00",
+     "text": "Ace Ventura"
+    },
+    {
+     "day": "Martes",
+     "start": "14:30",
+     "end": "15:00",
+     "text": "Ace Ventura"
+    },
+    {
+     "day": "Miercoles",
+     "start": "14:30",
+     "end": "15:00",
+     "text": "Ace Ventura"
+    },
+    {
+     "day": "Jueves",
+     "start": "14:30",
+     "end": "15:00",
+     "text": "Ace Ventura"
+    },
+    {
+     "day": "Viernes",
+     "start": "14:30",
+     "end": "15:00",
+     "text": "Ace Ventura"
+    },
+    {
+     "day": "Sabado",
+     "start": "14:30",
+     "end": "15:00",
+     "text": "Pokémon"
+    },
+    {
+     "day": "Lunes",
+     "start": "15:00",
+     "end": "15:30",
+     "text": "Beetlejuice"
+    },
+    {
+     "day": "Martes",
+     "start": "15:00",
+     "end": "15:30",
+     "text": "Beetlejuice"
+    },
+    {
+     "day": "Miercoles",
+     "start": "15:00",
+     "end": "15:30",
+     "text": "Beetlejuice"
+    },
+    {
+     "day": "Jueves",
+     "start": "15:00",
+     "end": "15:30",
+     "text": "Beetlejuice"
+    },
+    {
+     "day": "Viernes",
+     "start": "15:00",
+     "end": "15:30",
+     "text": "Beetlejuice"
+    },
+    {
+     "day": "Sabado",
+     "start": "15:00",
+     "end": "18:00",
+     "text": "Votatoon"
+    },
+    {
+     "day": "Lunes",
+     "start": "15:30",
+     "end": "16:00",
+     "text": "Las Aventuras de Tiny Toons"
+    },
+    {
+     "day": "Martes",
+     "start": "15:30",
+     "end": "16:00",
+     "text": "Las Aventuras de Tiny Toons"
+    },
+    {
+     "day": "Miercoles",
+     "start": "15:30",
+     "end": "16:00",
+     "text": "Las Aventuras de Tiny Toons"
+    },
+    {
+     "day": "Jueves",
+     "start": "15:30",
+     "end": "16:00",
+     "text": "Las Aventuras de Tiny Toons"
+    },
+    {
+     "day": "Viernes",
+     "start": "15:30",
+     "end": "16:00",
+     "text": "Las Aventuras de Tiny Toons"
+    },
+    {
+     "day": "Lunes",
+     "start": "16:00",
+     "end": "16:30",
+     "text": "Scooby Doo Donde Estás?"
+    },
+    {
+     "day": "Martes",
+     "start": "16:00",
+     "end": "16:30",
+     "text": "Scooby Doo Donde Estás?"
+    },
+    {
+     "day": "Miercoles",
+     "start": "16:00",
+     "end": "16:30",
+     "text": "Scooby Doo Donde Estás?"
+    },
+    {
+     "day": "Jueves",
+     "start": "16:00",
+     "end": "16:30",
+     "text": "Scooby Doo Donde Estás?"
+    },
+    {
+     "day": "Viernes",
+     "start": "16:00",
+     "end": "16:30",
+     "text": "Scooby Doo Donde Estás?"
+    },
+    {
+     "day": "Domingo",
+     "start": "16:00",
+     "end": "16:30",
+     "text": "Aventuras Silvestre y Piolín"
+    },
+    {
+     "day": "Lunes",
+     "start": "16:30",
+     "end": "17:00",
+     "text": "Que Historia Tan Maravillosa"
+    },
+    {
+     "day": "Martes",
+     "start": "16:30",
+     "end": "17:00",
+     "text": "Que Historia Tan Maravillosa"
+    },
+    {
+     "day": "Miercoles",
+     "start": "16:30",
+     "end": "17:00",
+     "text": "Que Historia Tan Maravillosa"
+    },
+    {
+     "day": "Jueves",
+     "start": "16:30",
+     "end": "17:00",
+     "text": "Que Historia Tan Maravillosa"
+    },
+    {
+     "day": "Viernes",
+     "start": "16:30",
+     "end": "17:00",
+     "text": "Que Historia Tan Maravillosa"
+    },
+    {
+     "day": "Domingo",
+     "start": "16:30",
+     "end": "17:00",
+     "text": "Bugs Bunny y el Pato Lucas"
+    },
+    {
+     "day": "Lunes",
+     "start": "17:00",
+     "end": "17:30",
+     "text": "Pokémon"
+    },
+    {
+     "day": "Martes",
+     "start": "17:00",
+     "end": "17:30",
+     "text": "Pokémon"
+    },
+    {
+     "day": "Miercoles",
+     "start": "17:00",
+     "end": "17:30",
+     "text": "Pokémon"
+    },
+    {
+     "day": "Jueves",
+     "start": "17:00",
+     "end": "17:30",
+     "text": "Pokémon"
+    },
+    {
+     "day": "Viernes",
+     "start": "17:00",
+     "end": "17:30",
+     "text": "Pokémon"
+    },
+    {
+     "day": "Domingo",
+     "start": "17:00",
+     "end": "17:30",
+     "text": "Tom y Jerry"
+    },
+    {
+     "day": "Lunes",
+     "start": "17:30",
+     "end": "18:00",
+     "text": "Guerra de Bestias"
+    },
+    {
+     "day": "Martes",
+     "start": "17:30",
+     "end": "18:00",
+     "text": "Guerra de Bestias"
+    },
+    {
+     "day": "Miercoles",
+     "start": "17:30",
+     "end": "18:00",
+     "text": "Guerra de Bestias"
+    },
+    {
+     "day": "Jueves",
+     "start": "17:30",
+     "end": "18:00",
+     "text": "Guerra de Bestias"
+    },
+    {
+     "day": "Viernes",
+     "start": "17:30",
+     "end": "18:00",
+     "text": "Guerra de Bestias"
+    },
+    {
+     "day": "Domingo",
+     "start": "17:30",
+     "end": "18:00",
+     "text": "Pinky, Elmyra y Cerebro"
+    },
+    {
+     "day": "Lunes",
+     "start": "18:00",
+     "end": "18:30",
+     "text": "Conspiracion Roswell/Lavender"
+    },
+    {
+     "day": "Martes",
+     "start": "18:00",
+     "end": "18:30",
+     "text": "Conspiracion Roswell/Lavender"
+    },
+    {
+     "day": "Miercoles",
+     "start": "18:00",
+     "end": "18:30",
+     "text": "Conspiracion Roswell/Lavender"
+    },
+    {
+     "day": "Jueves",
+     "start": "18:00",
+     "end": "18:30",
+     "text": "Conspiracion Roswell/Lavender"
+    },
+    {
+     "day": "Viernes",
+     "start": "18:00",
+     "end": "18:30",
+     "text": "Conspiracion"
+    },
+    {
+     "day": "Sabado",
+     "start": "18:00",
+     "end": "18:30",
+     "text": "Garfield y Amigos"
+    },
+    {
+     "day": "Domingo",
+     "start": "18:00",
+     "end": "18:30",
+     "text": "Mike, Lu y Og"
+    },
+    {
+     "day": "Lunes",
+     "start": "18:30",
+     "end": "19:00",
+     "text": "Increíbles Aventuras J. Quest"
+    },
+    {
+     "day": "Martes",
+     "start": "18:30",
+     "end": "19:00",
+     "text": "Increíbles Aventuras J. Quest"
+    },
+    {
+     "day": "Miercoles",
+     "start": "18:30",
+     "end": "19:00",
+     "text": "Increíbles Aventuras J. Quest"
+    },
+    {
+     "day": "Jueves",
+     "start": "18:30",
+     "end": "19:00",
+     "text": "Increíbles Aventuras J. Quest"
+    },
+    {
+     "day": "Viernes",
+     "start": "18:30",
+     "end": "19:00",
+     "text": "Increíbles Aventuras J. Quest"
+    },
+    {
+     "day": "Sabado",
+     "start": "18:30",
+     "end": "19:00",
+     "text": "Aventuras Silvestre y Piolín"
+    },
+    {
+     "day": "Domingo",
+     "start": "18:30",
+     "end": "19:00",
+     "text": "Las Chicas Superpoderosas"
+    },
+    {
+     "day": "Lunes",
+     "start": "19:00",
+     "end": "19:30",
+     "text": "Pinky y Cerebro"
+    },
+    {
+     "day": "Martes",
+     "start": "19:00",
+     "end": "19:30",
+     "text": "Pinky y Cerebro"
+    },
+    {
+     "day": "Miercoles",
+     "start": "19:00",
+     "end": "19:30",
+     "text": "Pinky y Cerebro"
+    },
+    {
+     "day": "Jueves",
+     "start": "19:00",
+     "end": "19:30",
+     "text": "Pinky y Cerebro"
+    },
+    {
+     "day": "Viernes",
+     "start": "19:00",
+     "end": "19:30",
+     "text": "Ed, Edd y Eddy"
+    },
+    {
+     "day": "Sabado",
+     "start": "19:00",
+     "end": "19:30",
+     "text": "2 Perros Tontos"
+    },
+    {
+     "day": "Domingo",
+     "start": "19:00",
+     "end": "21:00",
+     "text": "Cartoon Cartoons"
+    },
+    {
+     "day": "Lunes",
+     "start": "19:30",
+     "end": "20:00",
+     "text": "Mike, Lu y Og"
+    },
+    {
+     "day": "Martes",
+     "start": "19:30",
+     "end": "20:00",
+     "text": "Mike, Lu y Og"
+    },
+    {
+     "day": "Miercoles",
+     "start": "19:30",
+     "end": "20:00",
+     "text": "Mike, Lu y Og"
+    },
+    {
+     "day": "Jueves",
+     "start": "19:30",
+     "end": "20:00",
+     "text": "Mike, Lu y Og"
+    },
+    {
+     "day": "Viernes",
+     "start": "19:30",
+     "end": "20:00",
+     "text": "Las Chicas Superpoderosas"
+    },
+    {
+     "day": "Sabado",
+     "start": "19:30",
+     "end": "20:00",
+     "text": "Tom y Jerry"
+    },
+    {
+     "day": "Lunes",
+     "start": "20:00",
+     "end": "20:30",
+     "text": "Las Aventuras de Tiny Toons"
+    },
+    {
+     "day": "Martes",
+     "start": "20:00",
+     "end": "20:30",
+     "text": "Las Aventuras de Tiny Toons"
+    },
+    {
+     "day": "Miercoles",
+     "start": "20:00",
+     "end": "20:30",
+     "text": "Las Aventuras de Tiny Toons"
+    },
+    {
+     "day": "Jueves",
+     "start": "20:00",
+     "end": "20:30",
+     "text": "Las Aventuras de Tiny Toons"
+    },
+    {
+     "day": "Viernes",
+     "start": "20:00",
+     "end": "20:30",
+     "text": "Cartoon Cartoons"
+    },
+    {
+     "day": "Sabado",
+     "start": "20:00",
+     "end": "20:30",
+     "text": "Los Picapiedras"
+    },
+    {
+     "day": "Lunes",
+     "start": "20:30",
+     "end": "21:00",
+     "text": "Johnny Bravo"
+    },
+    {
+     "day": "Martes",
+     "start": "20:30",
+     "end": "21:00",
+     "text": "Johnny Bravo"
+    },
+    {
+     "day": "Miercoles",
+     "start": "20:30",
+     "end": "21:00",
+     "text": "Johnny Bravo"
+    },
+    {
+     "day": "Jueves",
+     "start": "20:30",
+     "end": "21:00",
+     "text": "Johnny Bravo"
+    },
+    {
+     "day": "Viernes",
+     "start": "20:30",
+     "end": "21:00",
+     "text": "Cartoon Cartoons"
+    },
+    {
+     "day": "Sabado",
+     "start": "20:30",
+     "end": "21:00",
+     "text": "Los Supersónicos"
+    },
+    {
+     "day": "Lunes",
+     "start": "21:00",
+     "end": "21:30",
+     "text": "El Laboratorio de Dexter"
+    },
+    {
+     "day": "Martes",
+     "start": "21:00",
+     "end": "21:30",
+     "text": "El Laboratorio de Dexter"
+    },
+    {
+     "day": "Miercoles",
+     "start": "21:00",
+     "end": "21:30",
+     "text": "El Laboratorio de Dexter"
+    },
+    {
+     "day": "Jueves",
+     "start": "21:00",
+     "end": "21:30",
+     "text": "El Laboratorio de Dexter"
+    },
+    {
+     "day": "Viernes",
+     "start": "21:00",
+     "end": "21:30",
+     "text": "Cartoon Cartoons"
+    },
+    {
+     "day": "Sabado",
+     "start": "21:00",
+     "end": "23:00",
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Domingo",
+     "start": "21:00",
+     "end": "21:30",
+     "text": "Aventuras Silvestre y Piolín"
+    },
+    {
+     "day": "Lunes",
+     "start": "21:30",
+     "end": "22:00",
+     "text": "La Vaca y el Pollito"
+    },
+    {
+     "day": "Martes",
+     "start": "21:30",
+     "end": "22:00",
+     "text": "La Vaca y el Pollito"
+    },
+    {
+     "day": "Miercoles",
+     "start": "21:30",
+     "end": "22:00",
+     "text": "La Vaca y el Pollito"
+    },
+    {
+     "day": "Jueves",
+     "start": "21:30",
+     "end": "22:00",
+     "text": "La Vaca y el Pollito"
+    },
+    {
+     "day": "Viernes",
+     "start": "21:30",
+     "end": "22:00",
+     "text": "Cartoon Cartoons"
+    },
+    {
+     "day": "Domingo",
+     "start": "21:30",
+     "end": "22:00",
+     "text": "Pinky, Elmyra y Cerebro"
+    },
+    {
+     "day": "Lunes",
+     "start": "22:00",
+     "end": "22:30",
+     "text": "Pokémon"
+    },
+    {
+     "day": "Martes",
+     "start": "22:00",
+     "end": "22:30",
+     "text": "Pokémon"
+    },
+    {
+     "day": "Miercoles",
+     "start": "22:00",
+     "end": "22:30",
+     "text": "Pokémon"
+    },
+    {
+     "day": "Jueves",
+     "start": "22:00",
+     "end": "22:30",
+     "text": "Pokémon"
+    },
+    {
+     "day": "Viernes",
+     "start": "22:00",
+     "end": "22:30",
+     "text": "Pokémon"
+    },
+    {
+     "day": "Domingo",
+     "start": "22:00",
+     "end": "23:00",
+     "text": "Tom y Jerry"
+    },
+    {
+     "day": "Lunes",
+     "start": "22:30",
+     "end": "23:00",
+     "text": "Bugs Bunny y el Pato Lucas"
+    },
+    {
+     "day": "Martes",
+     "start": "22:30",
+     "end": "23:00",
+     "text": "Bugs Bunny y el Pato Lucas"
+    },
+    {
+     "day": "Miercoles",
+     "start": "22:30",
+     "end": "23:00",
+     "text": "Bugs Bunny y el Pato Lucas"
+    },
+    {
+     "day": "Jueves",
+     "start": "22:30",
+     "end": "23:00",
+     "text": "Bugs Bunny y el Pato Lucas"
+    },
+    {
+     "day": "Viernes",
+     "start": "22:30",
+     "end": "23:00",
+     "text": "Bugs Bunny y el Pato Lucas"
+    },
+    {
+     "day": "Lunes",
+     "start": "23:00",
+     "end": "23:30",
+     "text": "Tom y Jerry"
+    },
+    {
+     "day": "Martes",
+     "start": "23:00",
+     "end": "23:30",
+     "text": "Tom y Jerry"
+    },
+    {
+     "day": "Miercoles",
+     "start": "23:00",
+     "end": "23:30",
+     "text": "Tom y Jerry"
+    },
+    {
+     "day": "Jueves",
+     "start": "23:00",
+     "end": "23:30",
+     "text": "Tom y Jerry"
+    },
+    {
+     "day": "Viernes",
+     "start": "23:00",
+     "end": "23:30",
+     "text": "Tom y Jerry"
+    },
+    {
+     "day": "Sabado",
+     "start": "23:00",
+     "end": "23:30",
+     "text": "Popeye"
+    },
+    {
+     "day": "Domingo",
+     "start": "23:00",
+     "end": "00:00",
+     "text": "Bugs Bunny y el Pato Lucas"
+    },
+    {
+     "day": "Lunes",
+     "start": "23:30",
+     "end": "00:00",
+     "text": "Los Picapiedras"
+    },
+    {
+     "day": "Martes",
+     "start": "23:30",
+     "end": "00:00",
+     "text": "Los Picapiedras"
+    },
+    {
+     "day": "Miercoles",
+     "start": "23:30",
+     "end": "00:00",
+     "text": "Los Picapiedras"
+    },
+    {
+     "day": "Jueves",
+     "start": "23:30",
+     "end": "00:00",
+     "text": "Los Picapiedras"
+    },
+    {
+     "day": "Viernes",
+     "start": "23:30",
+     "end": "00:00",
+     "text": "Pinky y Cerebro"
+    },
+    {
+     "day": "Sabado",
+     "start": "23:30",
+     "end": "00:00",
+     "text": "El Show de Tex Avery"
+    },
+    {
+     "day": "Lunes",
+     "start": "00:00",
+     "end": "00:30",
+     "text": "Shadow Raiders"
+    },
+    {
+     "day": "Martes",
+     "start": "00:00",
+     "end": "00:30",
+     "text": "Shadow Raiders"
+    },
+    {
+     "day": "Miercoles",
+     "start": "00:00",
+     "end": "00:30",
+     "text": "Shadow Raiders"
+    },
+    {
+     "day": "Jueves",
+     "start": "00:00",
+     "end": "00:30",
+     "text": "Shadow Raiders"
+    },
+    {
+     "day": "Viernes",
+     "start": "00:00",
+     "end": "00:30",
+     "text": "Shadow Raiders"
+    },
+    {
+     "day": "Sabado",
+     "start": "00:00",
+     "end": "00:30",
+     "text": "Pokémon"
+    },
+    {
+     "day": "Domingo",
+     "start": "00:00",
+     "end": "01:00",
+     "text": "Droopy D"
+    },
+    {
+     "day": "Lunes",
+     "start": "00:30",
+     "end": "01:00",
+     "text": "J. Quest/Busca del Castillo"
+    },
+    {
+     "day": "Martes",
+     "start": "00:30",
+     "end": "01:00",
+     "text": "J. Quest/Busca del Castillo"
+    },
+    {
+     "day": "Miercoles",
+     "start": "00:30",
+     "end": "01:00",
+     "text": "J. Quest/Busca del Castillo"
+    },
+    {
+     "day": "Jueves",
+     "start": "00:30",
+     "end": "01:00",
+     "text": "J. Quest/Busca del Castillo"
+    },
+    {
+     "day": "Viernes",
+     "start": "00:30",
+     "end": "01:00",
+     "text": "J. Quest/Busca del Castillo"
+    },
+    {
+     "day": "Sabado",
+     "start": "00:30",
+     "end": "01:00",
+     "text": "Fantasma Espacio C a C"
+    },
+    {
+     "day": "Lunes",
+     "start": "01:00",
+     "end": "01:30",
+     "text": "Guerra de Bestias"
+    },
+    {
+     "day": "Martes",
+     "start": "01:00",
+     "end": "01:30",
+     "text": "Guerra de Bestias"
+    },
+    {
+     "day": "Miercoles",
+     "start": "01:00",
+     "end": "01:30",
+     "text": "Guerra de Bestias"
+    },
+    {
+     "day": "Jueves",
+     "start": "01:00",
+     "end": "01:30",
+     "text": "Guerra de Bestias"
+    },
+    {
+     "day": "Viernes",
+     "start": "01:00",
+     "end": "01:30",
+     "text": "Guerra de Bestias"
+    },
+    {
+     "day": "Sabado",
+     "start": "01:00",
+     "end": "01:30",
+     "text": "Guerra de Bestias"
+    },
+    {
+     "day": "Domingo",
+     "start": "01:00",
+     "end": "02:00",
+     "text": "Popeye"
+    },
+    {
+     "day": "Lunes",
+     "start": "01:30",
+     "end": "02:00",
+     "text": "Busca del Castillo/Pokémon"
+    },
+    {
+     "day": "Martes",
+     "start": "01:30",
+     "end": "02:00",
+     "text": "Busca del Castillo/Pokémon"
+    },
+    {
+     "day": "Miercoles",
+     "start": "01:30",
+     "end": "02:00",
+     "text": "Busca del Castillo/Pokémon"
+    },
+    {
+     "day": "Jueves",
+     "start": "01:30",
+     "end": "02:00",
+     "text": "Busca del Castillo/Pokémon"
+    },
+    {
+     "day": "Viernes",
+     "start": "01:30",
+     "end": "02:00",
+     "text": "Busca del Castillo/Pokémon"
+    },
+    {
+     "day": "Sabado",
+     "start": "01:30",
+     "end": "02:00",
+     "text": "La Conspiración Roswell"
+    },
+    {
+     "day": "Lunes",
+     "start": "02:00",
+     "end": "04:00",
+     "text": "Cartoon Cartoons"
+    },
+    {
+     "day": "Martes",
+     "start": "02:00",
+     "end": "04:00",
+     "text": "Cartoon Cartoons"
+    },
+    {
+     "day": "Miercoles",
+     "start": "02:00",
+     "end": "04:00",
+     "text": "Cartoon Cartoons"
+    },
+    {
+     "day": "Jueves",
+     "start": "02:00",
+     "end": "04:00",
+     "text": "Cartoon Cartoons"
+    },
+    {
+     "day": "Viernes",
+     "start": "02:00",
+     "end": "04:00",
+     "text": "Cartoon Cartoons"
+    },
+    {
+     "day": "Sabado",
+     "start": "02:00",
+     "end": "02:30",
+     "text": "Jonny Quest"
+    },
+    {
+     "day": "Domingo",
+     "start": "02:00",
+     "end": "03:00",
+     "text": "Toons Mundialmente Famos"
+    },
+    {
+     "day": "Sabado",
+     "start": "02:30",
+     "end": "03:00",
+     "text": "Increíbles Aventuras J. Quest"
+    },
+    {
+     "day": "Sabado",
+     "start": "03:00",
+     "end": "03:30",
+     "text": "La Máscara"
+    },
+    {
+     "day": "Domingo",
+     "start": "03:00",
+     "end": "03:30",
+     "text": "Maguila Gorila"
+    },
+    {
+     "day": "Sabado",
+     "start": "03:30",
+     "end": "04:00",
+     "text": "La Familia Addams"
+    },
+    {
+     "day": "Domingo",
+     "start": "03:30",
+     "end": "04:00",
+     "text": "Tiro Loco McGraw"
+    },
+    {
+     "day": "Lunes",
+     "start": "04:00",
+     "end": null,
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Martes",
+     "start": "04:00",
+     "end": null,
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Miercoles",
+     "start": "04:00",
+     "end": null,
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Jueves",
+     "start": "04:00",
+     "end": null,
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Viernes",
+     "start": "04:00",
+     "end": null,
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Sabado",
+     "start": "04:00",
+     "end": "04:30",
+     "text": "Beetlejuice"
+    },
+    {
+     "day": "Domingo",
+     "start": "04:00",
+     "end": "04:30",
+     "text": "Canuto y Canito"
+    },
+    {
+     "day": "Sabado",
+     "start": "04:30",
+     "end": "05:00",
+     "text": "Scooby Doo el Cachorro"
+    },
+    {
+     "day": "Domingo",
+     "start": "04:30",
+     "end": "05:00",
+     "text": "Pixie y Dixie"
+    },
+    {
+     "day": "Sabado",
+     "start": "05:00",
+     "end": "05:30",
+     "text": "Las Tres Mellizas"
+    },
+    {
+     "day": "Domingo",
+     "start": "05:00",
+     "end": "05:30",
+     "text": "Leoncio el León"
+    },
+    {
+     "day": "Sabado",
+     "start": "05:30",
+     "end": null,
+     "text": "El Fantástico Máx"
+    },
+    {
+     "day": "Domingo",
+     "start": "05:30",
+     "end": null,
+     "text": "Huck Hound"
+    }
+   ]
+  },
+  {
+   "label": "5:30 El Fantástico Máx Huck Hound CARTOON NETWORK MEXICO 2/10/2000",
+   "days": [
+    "Lunes",
+    "Martes",
+    "Miercoles",
+    "Jueves",
+    "Viernes",
+    "Sabado",
+    "Domingo"
+   ],
+   "slots": [
+    {
+     "day": "Lunes",
+     "start": "06:00",
+     "end": "07:00",
+     "text": "Cartoon-A-Doodle-Doo"
+    },
+    {
+     "day": "Martes",
+     "start": "06:00",
+     "end": "07:00",
+     "text": "Cartoon-A-Doodle-Doo"
+    },
+    {
+     "day": "Miercoles",
+     "start": "06:00",
+     "end": "07:00",
+     "text": "Cartoon-A-Doodle-Doo"
+    },
+    {
+     "day": "Jueves",
+     "start": "06:00",
+     "end": "07:00",
+     "text": "Cartoon-A-Doodle-Doo"
+    },
+    {
+     "day": "Viernes",
+     "start": "06:00",
+     "end": "07:00",
+     "text": "Cartoon-A-Doodle-Doo"
+    },
+    {
+     "day": "Sabado",
+     "start": "06:00",
+     "end": "07:00",
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Domingo",
+     "start": "06:00",
+     "end": "07:00",
+     "text": "Cartoon-A-Doodle-Doo"
+    },
+    {
+     "day": "Lunes",
+     "start": "07:00",
+     "end": "08:00",
+     "text": "Pequeño Mundo"
+    },
+    {
+     "day": "Martes",
+     "start": "07:00",
+     "end": "08:00",
+     "text": "Pequeño Mundo"
+    },
+    {
+     "day": "Miercoles",
+     "start": "07:00",
+     "end": "08:00",
+     "text": "Pequeño Mundo"
+    },
+    {
+     "day": "Jueves",
+     "start": "07:00",
+     "end": "08:00",
+     "text": "Pequeño Mundo"
+    },
+    {
+     "day": "Viernes",
+     "start": "07:00",
+     "end": "08:00",
+     "text": "Pequeño Mundo"
+    },
+    {
+     "day": "Sabado",
+     "start": "07:00",
+     "end": "07:30",
+     "text": "Chicos Tom y Jerry"
+    },
+    {
+     "day": "Domingo",
+     "start": "07:00",
+     "end": "07:30",
+     "text": "Kipper"
+    },
+    {
+     "day": "Sabado",
+     "start": "07:30",
+     "end": "08:00",
+     "text": "Garfield y sus Amigos"
+    },
+    {
+     "day": "Domingo",
+     "start": "07:30",
+     "end": "08:00",
+     "text": "Fievel"
+    },
+    {
+     "day": "Lunes",
+     "start": "08:00",
+     "end": "09:00",
+     "text": "Las Tres Mellizas"
+    },
+    {
+     "day": "Martes",
+     "start": "08:00",
+     "end": "09:00",
+     "text": "Las Tres Mellizas"
+    },
+    {
+     "day": "Miercoles",
+     "start": "08:00",
+     "end": "09:00",
+     "text": "Las Tres Mellizas"
+    },
+    {
+     "day": "Jueves",
+     "start": "08:00",
+     "end": "09:00",
+     "text": "Las Tres Mellizas"
+    },
+    {
+     "day": "Viernes",
+     "start": "08:00",
+     "end": "09:00",
+     "text": "Las Tres Mellizas"
+    },
+    {
+     "day": "Sabado",
+     "start": "08:00",
+     "end": "08:30",
+     "text": "Las Tres Mellizas"
+    },
+    {
+     "day": "Domingo",
+     "start": "08:00",
+     "end": "08:30",
+     "text": "Las Tres Mellizas"
+    },
+    {
+     "day": "Sabado",
+     "start": "08:30",
+     "end": "09:00",
+     "text": "Franklin"
+    },
+    {
+     "day": "Domingo",
+     "start": "08:30",
+     "end": "09:00",
+     "text": "Las Aventuras de Tiny Toons"
+    },
+    {
+     "day": "Lunes",
+     "start": "09:00",
+     "end": "09:30",
+     "text": "Franklin"
+    },
+    {
+     "day": "Martes",
+     "start": "09:00",
+     "end": "09:30",
+     "text": "Franklin"
+    },
+    {
+     "day": "Miercoles",
+     "start": "09:00",
+     "end": "09:30",
+     "text": "Franklin"
+    },
+    {
+     "day": "Jueves",
+     "start": "09:00",
+     "end": "09:30",
+     "text": "Franklin"
+    },
+    {
+     "day": "Viernes",
+     "start": "09:00",
+     "end": "09:30",
+     "text": "Franklin"
+    },
+    {
+     "day": "Sabado",
+     "start": "09:00",
+     "end": "10:00",
+     "text": "Cinetoon"
+    },
+    {
+     "day": "Domingo",
+     "start": "09:00",
+     "end": "09:30",
+     "text": "Chicos Tom y Jerry"
+    },
+    {
+     "day": "Lunes",
+     "start": "09:30",
+     "end": "10:00",
+     "text": "Scooby Doo el Cachorro"
+    },
+    {
+     "day": "Martes",
+     "start": "09:30",
+     "end": "10:00",
+     "text": "Scooby Doo el Cachorro"
+    },
+    {
+     "day": "Miercoles",
+     "start": "09:30",
+     "end": "10:00",
+     "text": "Scooby Doo el Cachorro"
+    },
+    {
+     "day": "Jueves",
+     "start": "09:30",
+     "end": "10:00",
+     "text": "Scooby Doo el Cachorro"
+    },
+    {
+     "day": "Viernes",
+     "start": "09:30",
+     "end": "10:00",
+     "text": "Scooby Doo el Cachorro"
+    },
+    {
+     "day": "Domingo",
+     "start": "09:30",
+     "end": "10:00",
+     "text": "Pequeños Picapiedras"
+    },
+    {
+     "day": "Lunes",
+     "start": "10:00",
+     "end": "10:30",
+     "text": "Los Picapiedras"
+    },
+    {
+     "day": "Martes",
+     "start": "10:00",
+     "end": "10:30",
+     "text": "Los Picapiedras"
+    },
+    {
+     "day": "Miercoles",
+     "start": "10:00",
+     "end": "10:30",
+     "text": "Los Picapiedras"
+    },
+    {
+     "day": "Jueves",
+     "start": "10:00",
+     "end": "10:30",
+     "text": "Los Picapiedras"
+    },
+    {
+     "day": "Viernes",
+     "start": "10:00",
+     "end": "10:30",
+     "text": "Los Picapiedras"
+    },
+    {
+     "day": "Sabado",
+     "start": "10:00",
+     "end": "10:30",
+     "text": "Mike, Lu y Og"
+    },
+    {
+     "day": "Domingo",
+     "start": "10:00",
+     "end": "11:00",
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Lunes",
+     "start": "10:30",
+     "end": "11:00",
+     "text": "Los Supersónicos"
+    },
+    {
+     "day": "Martes",
+     "start": "10:30",
+     "end": "11:00",
+     "text": "Los Supersónicos"
+    },
+    {
+     "day": "Miercoles",
+     "start": "10:30",
+     "end": "11:00",
+     "text": "Los Supersónicos"
+    },
+    {
+     "day": "Jueves",
+     "start": "10:30",
+     "end": "11:00",
+     "text": "Los Supersónicos"
+    },
+    {
+     "day": "Viernes",
+     "start": "10:30",
+     "end": "11:00",
+     "text": "Los Supersónicos"
+    },
+    {
+     "day": "Sabado",
+     "start": "10:30",
+     "end": "11:00",
+     "text": "Las Chicas Superpoderosas"
+    },
+    {
+     "day": "Lunes",
+     "start": "11:00",
+     "end": "12:00",
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Martes",
+     "start": "11:00",
+     "end": "12:00",
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Miercoles",
+     "start": "11:00",
+     "end": "12:00",
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Jueves",
+     "start": "11:00",
+     "end": "12:00",
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Viernes",
+     "start": "11:00",
+     "end": "12:00",
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Sabado",
+     "start": "11:00",
+     "end": "13:00",
+     "text": "Cartoon Cartoons"
+    },
+    {
+     "day": "Domingo",
+     "start": "11:00",
+     "end": "11:30",
+     "text": "Garfield y Amigos"
+    },
+    {
+     "day": "Domingo",
+     "start": "11:30",
+     "end": "12:00",
+     "text": "Don Gato"
+    },
+    {
+     "day": "Lunes",
+     "start": "12:00",
+     "end": "12:30",
+     "text": "El Laboratorio de Dexter"
+    },
+    {
+     "day": "Martes",
+     "start": "12:00",
+     "end": "12:30",
+     "text": "El Laboratorio de Dexter"
+    },
+    {
+     "day": "Miercoles",
+     "start": "12:00",
+     "end": "12:30",
+     "text": "El Laboratorio de Dexter"
+    },
+    {
+     "day": "Jueves",
+     "start": "12:00",
+     "end": "12:30",
+     "text": "El Laboratorio de Dexter"
+    },
+    {
+     "day": "Viernes",
+     "start": "12:00",
+     "end": "12:30",
+     "text": "El Laboratorio de Dexter"
+    },
+    {
+     "day": "Domingo",
+     "start": "12:00",
+     "end": "12:30",
+     "text": "Las Aventuras de Tiny Toons"
+    },
+    {
+     "day": "Lunes",
+     "start": "12:30",
+     "end": "13:00",
+     "text": "Garfield y Amigos"
+    },
+    {
+     "day": "Martes",
+     "start": "12:30",
+     "end": "13:00",
+     "text": "Garfield y Amigos"
+    },
+    {
+     "day": "Miercoles",
+     "start": "12:30",
+     "end": "13:00",
+     "text": "Garfield y Amigos"
+    },
+    {
+     "day": "Jueves",
+     "start": "12:30",
+     "end": "13:00",
+     "text": "Garfield y Amigos"
+    },
+    {
+     "day": "Viernes",
+     "start": "12:30",
+     "end": "13:00",
+     "text": "Garfield y Amigos"
+    },
+    {
+     "day": "Domingo",
+     "start": "12:30",
+     "end": "13:00",
+     "text": "El Lagartijo de Ned"
+    },
+    {
+     "day": "Lunes",
+     "start": "13:00",
+     "end": "13:30",
+     "text": "La Vaca y el Pollito"
+    },
+    {
+     "day": "Martes",
+     "start": "13:00",
+     "end": "13:30",
+     "text": "La Vaca y el Pollito"
+    },
+    {
+     "day": "Miercoles",
+     "start": "13:00",
+     "end": "13:30",
+     "text": "La Vaca y el Pollito"
+    },
+    {
+     "day": "Jueves",
+     "start": "13:00",
+     "end": "13:30",
+     "text": "La Vaca y el Pollito"
+    },
+    {
+     "day": "Viernes",
+     "start": "13:00",
+     "end": "13:30",
+     "text": "La Vaca y el Pollito"
+    },
+    {
+     "day": "Sabado",
+     "start": "13:00",
+     "end": "13:30",
+     "text": "Hombres de Negro"
+    },
+    {
+     "day": "Domingo",
+     "start": "13:00",
+     "end": "13:30",
+     "text": "Nuevos Cuentos Félix el Gato"
+    },
+    {
+     "day": "Lunes",
+     "start": "13:30",
+     "end": "14:00",
+     "text": "Pinky y Cerebro"
+    },
+    {
+     "day": "Martes",
+     "start": "13:30",
+     "end": "14:00",
+     "text": "Pinky y Cerebro"
+    },
+    {
+     "day": "Miercoles",
+     "start": "13:30",
+     "end": "14:00",
+     "text": "Pinky y Cerebro"
+    },
+    {
+     "day": "Jueves",
+     "start": "13:30",
+     "end": "14:00",
+     "text": "Pinky y Cerebro"
+    },
+    {
+     "day": "Viernes",
+     "start": "13:30",
+     "end": "14:00",
+     "text": "Pinky y Cerebro"
+    },
+    {
+     "day": "Sabado",
+     "start": "13:30",
+     "end": "14:00",
+     "text": "La Conspiración Roswell"
+    },
+    {
+     "day": "Domingo",
+     "start": "13:30",
+     "end": "14:00",
+     "text": "Beetlejuice"
+    },
+    {
+     "day": "Lunes",
+     "start": "14:00",
+     "end": "14:30",
+     "text": "Johnny Bravo"
+    },
+    {
+     "day": "Martes",
+     "start": "14:00",
+     "end": "14:30",
+     "text": "Johnny Bravo"
+    },
+    {
+     "day": "Miercoles",
+     "start": "14:00",
+     "end": "14:30",
+     "text": "Johnny Bravo"
+    },
+    {
+     "day": "Jueves",
+     "start": "14:00",
+     "end": "14:30",
+     "text": "Johnny Bravo"
+    },
+    {
+     "day": "Viernes",
+     "start": "14:00",
+     "end": "14:30",
+     "text": "Johnny Bravo"
+    },
+    {
+     "day": "Sabado",
+     "start": "14:00",
+     "end": "14:30",
+     "text": "Guerra de Bestias"
+    },
+    {
+     "day": "Domingo",
+     "start": "14:00",
+     "end": "16:00",
+     "text": "Teatro Cartoon"
+    },
+    {
+     "day": "Lunes",
+     "start": "14:30",
+     "end": "15:00",
+     "text": "La Máscar"
+    },
+    {
+     "day": "Martes",
+     "start": "14:30",
+     "end": "15:00",
+     "text": "La Máscar"
+    },
+    {
+     "day": "Miercoles",
+     "start": "14:30",
+     "end": "15:00",
+     "text": "La Máscar"
+    },
+    {
+     "day": "Jueves",
+     "start": "14:30",
+     "end": "15:00",
+     "text": "La Máscar"
+    },
+    {
+     "day": "Viernes",
+     "start": "14:30",
+     "end": "15:00",
+     "text": "La Máscar"
+    },
+    {
+     "day": "Sabado",
+     "start": "14:30",
+     "end": "15:00",
+     "text": "Pokémon"
+    },
+    {
+     "day": "Lunes",
+     "start": "15:00",
+     "end": "15:30",
+     "text": "Beetlejuice"
+    },
+    {
+     "day": "Martes",
+     "start": "15:00",
+     "end": "15:30",
+     "text": "Beetlejuice"
+    },
+    {
+     "day": "Miercoles",
+     "start": "15:00",
+     "end": "15:30",
+     "text": "Beetlejuice"
+    },
+    {
+     "day": "Jueves",
+     "start": "15:00",
+     "end": "15:30",
+     "text": "Beetlejuice"
+    },
+    {
+     "day": "Viernes",
+     "start": "15:00",
+     "end": "15:30",
+     "text": "Beetlejuice"
+    },
+    {
+     "day": "Sabado",
+     "start": "15:00",
+     "end": "18:00",
+     "text": "Votatoon"
+    },
+    {
+     "day": "Lunes",
+     "start": "15:30",
+     "end": "16:00",
+     "text": "Las Aventuras de Tiny Toons"
+    },
+    {
+     "day": "Martes",
+     "start": "15:30",
+     "end": "16:00",
+     "text": "Las Aventuras de Tiny Toons"
+    },
+    {
+     "day": "Miercoles",
+     "start": "15:30",
+     "end": "16:00",
+     "text": "Las Aventuras de Tiny Toons"
+    },
+    {
+     "day": "Jueves",
+     "start": "15:30",
+     "end": "16:00",
+     "text": "Las Aventuras de Tiny Toons"
+    },
+    {
+     "day": "Viernes",
+     "start": "15:30",
+     "end": "16:00",
+     "text": "Las Aventuras de Tiny Toons"
+    },
+    {
+     "day": "Lunes",
+     "start": "16:00",
+     "end": "16:30",
+     "text": "Scooby Doo Donde Estás?"
+    },
+    {
+     "day": "Martes",
+     "start": "16:00",
+     "end": "16:30",
+     "text": "Scooby Doo Donde Estás?"
+    },
+    {
+     "day": "Miercoles",
+     "start": "16:00",
+     "end": "16:30",
+     "text": "Scooby Doo Donde Estás?"
+    },
+    {
+     "day": "Jueves",
+     "start": "16:00",
+     "end": "16:30",
+     "text": "Scooby Doo Donde Estás?"
+    },
+    {
+     "day": "Viernes",
+     "start": "16:00",
+     "end": "16:30",
+     "text": "Scooby Doo Donde Estás?"
+    },
+    {
+     "day": "Domingo",
+     "start": "16:00",
+     "end": "16:30",
+     "text": "Aventuras Silvestre y Piolín"
+    },
+    {
+     "day": "Lunes",
+     "start": "16:30",
+     "end": "17:00",
+     "text": "Que Historia Tan Maravillosa"
+    },
+    {
+     "day": "Martes",
+     "start": "16:30",
+     "end": "17:00",
+     "text": "Que Historia Tan Maravillosa"
+    },
+    {
+     "day": "Miercoles",
+     "start": "16:30",
+     "end": "17:00",
+     "text": "Que Historia Tan Maravillosa"
+    },
+    {
+     "day": "Jueves",
+     "start": "16:30",
+     "end": "17:00",
+     "text": "Que Historia Tan Maravillosa"
+    },
+    {
+     "day": "Viernes",
+     "start": "16:30",
+     "end": "17:00",
+     "text": "Que Historia Tan Maravillosa"
+    },
+    {
+     "day": "Domingo",
+     "start": "16:30",
+     "end": "17:00",
+     "text": "Bugs Bunny y el Pato Lucas"
+    },
+    {
+     "day": "Lunes",
+     "start": "17:00",
+     "end": "17:30",
+     "text": "Pokémon"
+    },
+    {
+     "day": "Martes",
+     "start": "17:00",
+     "end": "17:30",
+     "text": "Pokémon"
+    },
+    {
+     "day": "Miercoles",
+     "start": "17:00",
+     "end": "17:30",
+     "text": "Pokémon"
+    },
+    {
+     "day": "Jueves",
+     "start": "17:00",
+     "end": "17:30",
+     "text": "Pokémon"
+    },
+    {
+     "day": "Viernes",
+     "start": "17:00",
+     "end": "17:30",
+     "text": "Pokémon"
+    },
+    {
+     "day": "Domingo",
+     "start": "17:00",
+     "end": "17:30",
+     "text": "Tom y Jerry"
+    },
+    {
+     "day": "Lunes",
+     "start": "17:30",
+     "end": "18:00",
+     "text": "Guerra de Bestias"
+    },
+    {
+     "day": "Martes",
+     "start": "17:30",
+     "end": "18:00",
+     "text": "Guerra de Bestias"
+    },
+    {
+     "day": "Miercoles",
+     "start": "17:30",
+     "end": "18:00",
+     "text": "Guerra de Bestias"
+    },
+    {
+     "day": "Jueves",
+     "start": "17:30",
+     "end": "18:00",
+     "text": "Guerra de Bestias"
+    },
+    {
+     "day": "Viernes",
+     "start": "17:30",
+     "end": "18:00",
+     "text": "Guerra de Bestias"
+    },
+    {
+     "day": "Domingo",
+     "start": "17:30",
+     "end": "18:00",
+     "text": "Pinky, Elmyra y Cerebro"
+    },
+    {
+     "day": "Lunes",
+     "start": "18:00",
+     "end": "18:30",
+     "text": "Shadow/Busca del Castillo"
+    },
+    {
+     "day": "Martes",
+     "start": "18:00",
+     "end": "18:30",
+     "text": "Shadow/Busca del Castillo"
+    },
+    {
+     "day": "Miercoles",
+     "start": "18:00",
+     "end": "18:30",
+     "text": "Shadow/Busca del Castillo"
+    },
+    {
+     "day": "Jueves",
+     "start": "18:00",
+     "end": "18:30",
+     "text": "Shadow/Busca del Castillo"
+    },
+    {
+     "day": "Viernes",
+     "start": "18:00",
+     "end": "18:30",
+     "text": "Shadow/Busca del Castillo"
+    },
+    {
+     "day": "Sabado",
+     "start": "18:00",
+     "end": "18:30",
+     "text": "Garfield y Amigos"
+    },
+    {
+     "day": "Domingo",
+     "start": "18:00",
+     "end": "18:30",
+     "text": "Mike, Lu y Og"
+    },
+    {
+     "day": "Lunes",
+     "start": "18:30",
+     "end": "19:00",
+     "text": "Hombres de Negro"
+    },
+    {
+     "day": "Martes",
+     "start": "18:30",
+     "end": "19:00",
+     "text": "Hombres de Negro"
+    },
+    {
+     "day": "Miercoles",
+     "start": "18:30",
+     "end": "19:00",
+     "text": "Hombres de Negro"
+    },
+    {
+     "day": "Jueves",
+     "start": "18:30",
+     "end": "19:00",
+     "text": "Hombres de Negro"
+    },
+    {
+     "day": "Viernes",
+     "start": "18:30",
+     "end": "19:00",
+     "text": "Hombres de Negro"
+    },
+    {
+     "day": "Sabado",
+     "start": "18:30",
+     "end": "19:00",
+     "text": "Aventuras Silvestre y Piolín"
+    },
+    {
+     "day": "Domingo",
+     "start": "18:30",
+     "end": "19:00",
+     "text": "Las Chicas Superpoderosas"
+    },
+    {
+     "day": "Lunes",
+     "start": "19:00",
+     "end": "19:30",
+     "text": "Pinky y Cerebro"
+    },
+    {
+     "day": "Martes",
+     "start": "19:00",
+     "end": "19:30",
+     "text": "Pinky y Cerebro"
+    },
+    {
+     "day": "Miercoles",
+     "start": "19:00",
+     "end": "19:30",
+     "text": "Pinky y Cerebro"
+    },
+    {
+     "day": "Jueves",
+     "start": "19:00",
+     "end": "19:30",
+     "text": "Pinky y Cerebro"
+    },
+    {
+     "day": "Viernes",
+     "start": "19:00",
+     "end": "19:30",
+     "text": "Mike, Lu y Og"
+    },
+    {
+     "day": "Sabado",
+     "start": "19:00",
+     "end": "19:30",
+     "text": "2 Perros Tontos"
+    },
+    {
+     "day": "Domingo",
+     "start": "19:00",
+     "end": "21:00",
+     "text": "Cartoon Cartoons"
+    },
+    {
+     "day": "Lunes",
+     "start": "19:30",
+     "end": "20:00",
+     "text": "Mike, Lu y Og"
+    },
+    {
+     "day": "Martes",
+     "start": "19:30",
+     "end": "20:00",
+     "text": "Mike, Lu y Og"
+    },
+    {
+     "day": "Miercoles",
+     "start": "19:30",
+     "end": "20:00",
+     "text": "Mike, Lu y Og"
+    },
+    {
+     "day": "Jueves",
+     "start": "19:30",
+     "end": "20:00",
+     "text": "Mike, Lu y Og"
+    },
+    {
+     "day": "Viernes",
+     "start": "19:30",
+     "end": "20:00",
+     "text": "Las Chicas Superpoderosas"
+    },
+    {
+     "day": "Sabado",
+     "start": "19:30",
+     "end": "20:00",
+     "text": "Tom y Jerry"
+    },
+    {
+     "day": "Lunes",
+     "start": "20:00",
+     "end": "20:30",
+     "text": "La Vaca y el Pollito"
+    },
+    {
+     "day": "Martes",
+     "start": "20:00",
+     "end": "20:30",
+     "text": "La Vaca y el Pollito"
+    },
+    {
+     "day": "Miercoles",
+     "start": "20:00",
+     "end": "20:30",
+     "text": "La Vaca y el Pollito"
+    },
+    {
+     "day": "Jueves",
+     "start": "20:00",
+     "end": "20:30",
+     "text": "La Vaca y el Pollito"
+    },
+    {
+     "day": "Viernes",
+     "start": "20:00",
+     "end": "22:00",
+     "text": "Cartoon Cartoons"
+    },
+    {
+     "day": "Sabado",
+     "start": "20:00",
+     "end": "20:30",
+     "text": "Los Picapiedras"
+    },
+    {
+     "day": "Lunes",
+     "start": "20:30",
+     "end": "21:00",
+     "text": "Johnny Bravo"
+    },
+    {
+     "day": "Martes",
+     "start": "20:30",
+     "end": "21:00",
+     "text": "Johnny Bravo"
+    },
+    {
+     "day": "Miercoles",
+     "start": "20:30",
+     "end": "21:00",
+     "text": "Johnny Bravo"
+    },
+    {
+     "day": "Jueves",
+     "start": "20:30",
+     "end": "21:00",
+     "text": "Johnny Bravo"
+    },
+    {
+     "day": "Sabado",
+     "start": "20:30",
+     "end": "21:00",
+     "text": "Los Supersónicos"
+    },
+    {
+     "day": "Lunes",
+     "start": "21:00",
+     "end": "21:30",
+     "text": "El Laboratorio de Dexter"
+    },
+    {
+     "day": "Martes",
+     "start": "21:00",
+     "end": "21:30",
+     "text": "El Laboratorio de Dexter"
+    },
+    {
+     "day": "Miercoles",
+     "start": "21:00",
+     "end": "21:30",
+     "text": "El Laboratorio de Dexter"
+    },
+    {
+     "day": "Jueves",
+     "start": "21:00",
+     "end": "21:30",
+     "text": "El Laboratorio de Dexter"
+    },
+    {
+     "day": "Sabado",
+     "start": "21:00",
+     "end": "23:00",
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Domingo",
+     "start": "21:00",
+     "end": "21:30",
+     "text": "Aventuras Silvestre y Piolín"
+    },
+    {
+     "day": "Lunes",
+     "start": "21:30",
+     "end": "22:00",
+     "text": "Que Historia Tan Maravillosa"
+    },
+    {
+     "day": "Martes",
+     "start": "21:30",
+     "end": "22:00",
+     "text": "Que Historia Tan Maravillosa"
+    },
+    {
+     "day": "Miercoles",
+     "start": "21:30",
+     "end": "22:00",
+     "text": "Que Historia Tan Maravillosa"
+    },
+    {
+     "day": "Jueves",
+     "start": "21:30",
+     "end": "22:00",
+     "text": "Que Historia Tan Maravillosa"
+    },
+    {
+     "day": "Domingo",
+     "start": "21:30",
+     "end": "22:00",
+     "text": "Pinky, Elmyra y Cerebro"
+    },
+    {
+     "day": "Lunes",
+     "start": "22:00",
+     "end": "22:30",
+     "text": "Pokémon"
+    },
+    {
+     "day": "Martes",
+     "start": "22:00",
+     "end": "22:30",
+     "text": "Pokémon"
+    },
+    {
+     "day": "Miercoles",
+     "start": "22:00",
+     "end": "22:30",
+     "text": "Pokémon"
+    },
+    {
+     "day": "Jueves",
+     "start": "22:00",
+     "end": "22:30",
+     "text": "Pokémon"
+    },
+    {
+     "day": "Viernes",
+     "start": "22:00",
+     "end": "22:30",
+     "text": "Pokémon"
+    },
+    {
+     "day": "Domingo",
+     "start": "22:00",
+     "end": "23:00",
+     "text": "Tom y Jerry"
+    },
+    {
+     "day": "Lunes",
+     "start": "22:30",
+     "end": "23:00",
+     "text": "Bugs Bunny y el Pato Lucas"
+    },
+    {
+     "day": "Martes",
+     "start": "22:30",
+     "end": "23:00",
+     "text": "Bugs Bunny y el Pato Lucas"
+    },
+    {
+     "day": "Miercoles",
+     "start": "22:30",
+     "end": "23:00",
+     "text": "Bugs Bunny y el Pato Lucas"
+    },
+    {
+     "day": "Jueves",
+     "start": "22:30",
+     "end": "23:00",
+     "text": "Bugs Bunny y el Pato Lucas"
+    },
+    {
+     "day": "Viernes",
+     "start": "22:30",
+     "end": "23:00",
+     "text": "Bugs Bunny y el Pato Lucas"
+    },
+    {
+     "day": "Lunes",
+     "start": "23:00",
+     "end": "23:30",
+     "text": "Tom y Jerry"
+    },
+    {
+     "day": "Martes",
+     "start": "23:00",
+     "end": "23:30",
+     "text": "Tom y Jerry"
+    },
+    {
+     "day": "Miercoles",
+     "start": "23:00",
+     "end": "23:30",
+     "text": "Tom y Jerry"
+    },
+    {
+     "day": "Jueves",
+     "start": "23:00",
+     "end": "23:30",
+     "text": "Tom y Jerry"
+    },
+    {
+     "day": "Viernes",
+     "start": "23:00",
+     "end": "23:30",
+     "text": "Tom y Jerry"
+    },
+    {
+     "day": "Sabado",
+     "start": "23:00",
+     "end": "23:30",
+     "text": "Popeye"
+    },
+    {
+     "day": "Domingo",
+     "start": "23:00",
+     "end": "23:30",
+     "text": "Bugs Bunny y el Pato Lucas"
+    },
+    {
+     "day": "Lunes",
+     "start": "23:30",
+     "end": "00:00",
+     "text": "Los Picapiedras"
+    },
+    {
+     "day": "Martes",
+     "start": "23:30",
+     "end": "00:00",
+     "text": "Los Picapiedras"
+    },
+    {
+     "day": "Miercoles",
+     "start": "23:30",
+     "end": "00:00",
+     "text": "Los Picapiedras"
+    },
+    {
+     "day": "Jueves",
+     "start": "23:30",
+     "end": "00:00",
+     "text": "Los Picapiedras"
+    },
+    {
+     "day": "Viernes",
+     "start": "23:30",
+     "end": "00:00",
+     "text": "Pinky y Cerebro"
+    },
+    {
+     "day": "Sabado",
+     "start": "23:30",
+     "end": "00:00",
+     "text": "El Show de Tex Avery"
+    },
+    {
+     "day": "Domingo",
+     "start": "23:30",
+     "end": "00:00",
+     "text": "Bugs Bunny y el Pato Lucas"
+    },
+    {
+     "day": "Lunes",
+     "start": "00:00",
+     "end": "00:30",
+     "text": "Shadow Raiders"
+    },
+    {
+     "day": "Martes",
+     "start": "00:00",
+     "end": "00:30",
+     "text": "Shadow Raiders"
+    },
+    {
+     "day": "Miercoles",
+     "start": "00:00",
+     "end": "00:30",
+     "text": "Shadow Raiders"
+    },
+    {
+     "day": "Jueves",
+     "start": "00:00",
+     "end": "00:30",
+     "text": "Shadow Raiders"
+    },
+    {
+     "day": "Viernes",
+     "start": "00:00",
+     "end": "00:30",
+     "text": "Shadow Raiders"
+    },
+    {
+     "day": "Sabado",
+     "start": "00:00",
+     "end": "00:30",
+     "text": "Pokémon"
+    },
+    {
+     "day": "Domingo",
+     "start": "00:00",
+     "end": "01:00",
+     "text": "Droopy D"
+    },
+    {
+     "day": "Lunes",
+     "start": "00:30",
+     "end": "01:00",
+     "text": "Hombres de Negro/Busca del Castillo"
+    },
+    {
+     "day": "Martes",
+     "start": "00:30",
+     "end": "01:00",
+     "text": "Hombres de Negro/Busca del Castillo"
+    },
+    {
+     "day": "Miercoles",
+     "start": "00:30",
+     "end": "01:00",
+     "text": "Hombres de Negro/Busca del Castillo"
+    },
+    {
+     "day": "Jueves",
+     "start": "00:30",
+     "end": "01:00",
+     "text": "Hombres de Negro/Busca del Castillo"
+    },
+    {
+     "day": "Viernes",
+     "start": "00:30",
+     "end": "01:00",
+     "text": "Hombres de Negro/Busca del Castillo"
+    },
+    {
+     "day": "Sabado",
+     "start": "00:30",
+     "end": "01:00",
+     "text": "Fantasma Espacio C a C"
+    },
+    {
+     "day": "Lunes",
+     "start": "01:00",
+     "end": "01:30",
+     "text": "Guerra de Bestias"
+    },
+    {
+     "day": "Martes",
+     "start": "01:00",
+     "end": "01:30",
+     "text": "Guerra de Bestias"
+    },
+    {
+     "day": "Miercoles",
+     "start": "01:00",
+     "end": "01:30",
+     "text": "Guerra de Bestias"
+    },
+    {
+     "day": "Jueves",
+     "start": "01:00",
+     "end": "01:30",
+     "text": "Guerra de Bestias"
+    },
+    {
+     "day": "Viernes",
+     "start": "01:00",
+     "end": "01:30",
+     "text": "Guerra de Bestias"
+    },
+    {
+     "day": "Sabado",
+     "start": "01:00",
+     "end": "01:30",
+     "text": "Guerra de Bestias"
+    },
+    {
+     "day": "Domingo",
+     "start": "01:00",
+     "end": "02:00",
+     "text": "Popeye"
+    },
+    {
+     "day": "Lunes",
+     "start": "01:30",
+     "end": "02:00",
+     "text": "Busca del Castillo/Pokémon"
+    },
+    {
+     "day": "Martes",
+     "start": "01:30",
+     "end": "02:00",
+     "text": "Busca del Castillo/Pokémon"
+    },
+    {
+     "day": "Miercoles",
+     "start": "01:30",
+     "end": "02:00",
+     "text": "Busca del Castillo/Pokémon"
+    },
+    {
+     "day": "Jueves",
+     "start": "01:30",
+     "end": "02:00",
+     "text": "Busca del Castillo/Pokémon"
+    },
+    {
+     "day": "Viernes",
+     "start": "01:30",
+     "end": "02:00",
+     "text": "Busca del Castillo/Pokémon"
+    },
+    {
+     "day": "Sabado",
+     "start": "01:30",
+     "end": "02:00",
+     "text": "La Conspiración Roswell"
+    },
+    {
+     "day": "Lunes",
+     "start": "02:00",
+     "end": "04:00",
+     "text": "Cartoon Cartoons"
+    },
+    {
+     "day": "Martes",
+     "start": "02:00",
+     "end": "04:00",
+     "text": "Cartoon Cartoons"
+    },
+    {
+     "day": "Miercoles",
+     "start": "02:00",
+     "end": "04:00",
+     "text": "Cartoon Cartoons"
+    },
+    {
+     "day": "Jueves",
+     "start": "02:00",
+     "end": "04:00",
+     "text": "Cartoon Cartoons"
+    },
+    {
+     "day": "Viernes",
+     "start": "02:00",
+     "end": "04:00",
+     "text": "Cartoon Cartoons"
+    },
+    {
+     "day": "Sabado",
+     "start": "02:00",
+     "end": "02:30",
+     "text": "Jonny Quest"
+    },
+    {
+     "day": "Domingo",
+     "start": "02:00",
+     "end": "03:00",
+     "text": "Toons Mundialmente Famos"
+    },
+    {
+     "day": "Sabado",
+     "start": "02:30",
+     "end": "03:00",
+     "text": "Increíbles Aventuras J. Quest"
+    },
+    {
+     "day": "Sabado",
+     "start": "03:00",
+     "end": "03:30",
+     "text": "La Máscara"
+    },
+    {
+     "day": "Domingo",
+     "start": "03:00",
+     "end": "03:30",
+     "text": "Maguila Gorila"
+    },
+    {
+     "day": "Sabado",
+     "start": "03:30",
+     "end": "04:00",
+     "text": "La Familia Addams"
+    },
+    {
+     "day": "Domingo",
+     "start": "03:30",
+     "end": "04:00",
+     "text": "La Hormiga Atómica"
+    },
+    {
+     "day": "Lunes",
+     "start": "04:00",
+     "end": null,
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Martes",
+     "start": "04:00",
+     "end": null,
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Miercoles",
+     "start": "04:00",
+     "end": null,
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Jueves",
+     "start": "04:00",
+     "end": null,
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Viernes",
+     "start": "04:00",
+     "end": null,
+     "text": "Hora ACME"
+    },
+    {
+     "day": "Sabado",
+     "start": "04:00",
+     "end": "04:30",
+     "text": "Beetlejuice"
+    },
+    {
+     "day": "Domingo",
+     "start": "04:00",
+     "end": "04:30",
+     "text": "El Inspector Ardilla"
+    },
+    {
+     "day": "Sabado",
+     "start": "04:30",
+     "end": "05:00",
+     "text": "Scooby Doo el Cachorro"
+    },
+    {
+     "day": "Domingo",
+     "start": "04:30",
+     "end": "05:00",
+     "text": "Loopy de Loop"
+    },
+    {
+     "day": "Sabado",
+     "start": "05:00",
+     "end": "05:30",
+     "text": "Las Tres Mellizas"
+    },
+    {
+     "day": "Domingo",
+     "start": "05:00",
+     "end": "05:30",
+     "text": "Melquiades"
+    },
+    {
+     "day": "Sabado",
+     "start": "05:30",
+     "end": null,
+     "text": "El Fantástico Máx"
+    },
+    {
+     "day": "Domingo",
+     "start": "05:30",
+     "end": null,
+     "text": "Huck Hound"
+    }
+   ]
+  }
+ ]
+}

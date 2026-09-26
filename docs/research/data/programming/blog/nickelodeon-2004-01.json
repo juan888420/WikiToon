@@ -1,0 +1,1545 @@
+{
+ "source": {
+  "name": "Foro Grilla de Canales: Programación de Nickelodeon | Enero 2004",
+  "url": "https://forogrilladecanales.blogspot.com/2021/02/programacion-de-nickelodeon-enero-2004.html",
+  "published": "2021-02-24"
+ },
+ "title": "Programación de Nickelodeon | Enero 2004",
+ "statedSite": "www.mundonick.com",
+ "days": [
+  {
+   "label": "Lunes",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Invasor Zim",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Galidor",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Ralph el Travieso",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "Kablam",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "La Ventana de Allegra",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "08:30",
+     "text": "Las Pistas de Blue",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "09:00",
+     "text": "Dora la Exploradora",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "09:30",
+     "text": "Juanito Jones",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Stuart Little",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "¡Oye Arnold!",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Yvon del Yukon",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Poochini",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Yu-Gi-Oh!",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "¡Oye Arnold!",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Invasor Zim",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Rugrats Crecidos",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Ginger",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Kenan y Kel",
+     "block": null,
+     "extra": "con Kenan Thompson y Kel Mitchell"
+    },
+    {
+     "start": "19:00",
+     "text": "Sabrina la Bruja Adolescente",
+     "block": null,
+     "extra": "con Melissa Joan Hart, Nick Bakay como la voz de Salem, Elisa Donovan y Soleil Moon Frye"
+    },
+    {
+     "start": "19:30",
+     "text": "El Mundo de Tosh",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "¡Oye Arnold!",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Kenan y Kel",
+     "block": null,
+     "extra": "con Kenan Thompson y Kel Mitchell"
+    },
+    {
+     "start": "22:30",
+     "text": "Yu-Gi-Oh!",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "¡Oye Arnold!",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Rugrats Crecidos",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Ginger",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "Kenan y Kel",
+     "block": null,
+     "extra": "con Kenan Thompson y Kel Mitchell"
+    },
+    {
+     "start": "03:00",
+     "text": "Sabrina la Bruja Adolescente",
+     "block": null,
+     "extra": "con Melissa Joan Hart, Nick Bakay como la voz de Salem, Elisa Donovan y Soleil Moon Frye"
+    },
+    {
+     "start": "03:30",
+     "text": "El Mundo de Tosh",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "¡Oye Arnold!",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Rocket Power",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Martes",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Kenan y Kel",
+     "block": null,
+     "extra": "con Kenan Thompson y Kel Mitchell"
+    },
+    {
+     "start": "06:30",
+     "text": "Yu-Gi-Oh!",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Ralph el Travieso",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "Kablam",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "La Ventana de Allegra",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "08:30",
+     "text": "Las Pistas de Blue",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "09:00",
+     "text": "Dora la Exploradora",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "09:30",
+     "text": "Miniman",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Stuart Little",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "¡Oye Arnold!",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "La Vida Moderna de Rocko",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Yvon del Yukon",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Poochini",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Yu-Gi-Oh!",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Las Aventuras de Jimmy Neutron el Niño Genio",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Rugrats Crecidos",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Ginger",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Kenan y Kel",
+     "block": null,
+     "extra": "con Kenan Thompson y Kel Mitchell"
+    },
+    {
+     "start": "19:00",
+     "text": "Sabrina la Bruja Adolescente",
+     "block": null,
+     "extra": "con Melissa Joan Hart, Nick Bakay como la voz de Salem, Elisa Donovan y Soleil Moon Frye"
+    },
+    {
+     "start": "19:30",
+     "text": "El Mundo de Tosh",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "¡Oye Arnold!",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Kenan y Kel",
+     "block": null,
+     "extra": "con Kenan Thompson y Kel Mitchell"
+    },
+    {
+     "start": "22:30",
+     "text": "Yu-Gi-Oh!",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "Las Aventuras de Jimmy Neutron el Niño Genio",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Rugrats Crecidos",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Ginger",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "Kenan y Kel",
+     "block": null,
+     "extra": "con Kenan Thompson y Kel Mitchell"
+    },
+    {
+     "start": "03:00",
+     "text": "Sabrina la Bruja Adolescente",
+     "block": null,
+     "extra": "con Melissa Joan Hart, Nick Bakay como la voz de Salem, Elisa Donovan y Soleil Moon Frye"
+    },
+    {
+     "start": "03:30",
+     "text": "El Mundo de Tosh",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "Las Aventuras de Jimmy Neutron el Niño Genio",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Rocket Power",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Miercoles",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Kenan y Kel",
+     "block": null,
+     "extra": "con Kenan Thompson y Kel Mitchell"
+    },
+    {
+     "start": "06:30",
+     "text": "Yu-Gi-Oh!",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Ralph el Travieso",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "Kablam",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "La Ventana de Allegra",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "08:30",
+     "text": "Las Pistas de Blue",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "09:00",
+     "text": "Dora la Exploradora",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "09:30",
+     "text": "Juanito Jones",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Stuart Little",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "¡Oye Arnold!",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Yvon del Yukon",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Poochini",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Yu-Gi-Oh!",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "¡Oye Arnold!",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Mighty Morphin Power Rangers",
+     "block": null,
+     "extra": "con Austin St. John, Thuy Trang, Walter Jones, Amy Jo Johnson, David Yost y Jason David Frank"
+    },
+    {
+     "start": "17:00",
+     "text": "Rugrats Crecidos",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Ginger",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Kenan y Kel",
+     "block": null,
+     "extra": "con Kenan Thompson y Kel Mitchell"
+    },
+    {
+     "start": "19:00",
+     "text": "Sabrina la Bruja Adolescente",
+     "block": null,
+     "extra": "con Melissa Joan Hart, Nick Bakay como la voz de Salem, Elisa Donovan y Soleil Moon Frye"
+    },
+    {
+     "start": "19:30",
+     "text": "El Mundo de Tosh",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "Las Aventuras de Jimmy Neutron el Niño Genio",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Kenan y Kel",
+     "block": null,
+     "extra": "con Kenan Thompson y Kel Mitchell"
+    },
+    {
+     "start": "22:30",
+     "text": "Yu-Gi-Oh!",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Rugrats Crecidos",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Ginger",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "Kenan y Kel",
+     "block": null,
+     "extra": "con Kenan Thompson y Kel Mitchell"
+    },
+    {
+     "start": "03:00",
+     "text": "Sabrina la Bruja Adolescente",
+     "block": null,
+     "extra": "con Melissa Joan Hart, Nick Bakay como la voz de Salem, Elisa Donovan y Soleil Moon Frye"
+    },
+    {
+     "start": "03:30",
+     "text": "El Mundo de Tosh",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "Las Aventuras de Jimmy Neutron el Niño Genio",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Rocket Power",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Jueves",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Kenan y Kel",
+     "block": null,
+     "extra": "con Kenan Thompson y Kel Mitchell"
+    },
+    {
+     "start": "06:30",
+     "text": "Yu-Gi-Oh!",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Ralph el Travieso",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "Kablam",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "La Ventana de Allegra",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "08:30",
+     "text": "Las Pistas de Blue",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "09:00",
+     "text": "Dora la Exploradora",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "09:30",
+     "text": "Miniman",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Stuart Little",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "¡Oye Arnold!",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "La Vida Moderna de Rocko",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Yvon del Yukon",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Poochini",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Yu-Gi-Oh!",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "¡Oye Arnold!",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Los Castores Cascarrabias",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Rugrats Crecidos",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Ginger",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Kenan y Kel",
+     "block": null,
+     "extra": "con Kenan Thompson y Kel Mitchell"
+    },
+    {
+     "start": "19:00",
+     "text": "Sabrina la Bruja Adolescente",
+     "block": null,
+     "extra": "con Melissa Joan Hart, Nick Bakay como la voz de Salem, Elisa Donovan y Soleil Moon Frye"
+    },
+    {
+     "start": "19:30",
+     "text": "El Mundo de Tosh",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "Las Aventuras de Jimmy Neutron el Niño Genio",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Kenan y Kel",
+     "block": null,
+     "extra": "con Kenan Thompson y Kel Mitchell"
+    },
+    {
+     "start": "22:30",
+     "text": "Yu-Gi-Oh!",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "¡Oye Arnold!",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Ginger",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "Kenan y Kel",
+     "block": null,
+     "extra": "con Kenan Thompson y Kel Mitchell"
+    },
+    {
+     "start": "03:00",
+     "text": "Sabrina la Bruja Adolescente",
+     "block": null,
+     "extra": "con Melissa Joan Hart, Nick Bakay como la voz de Salem, Elisa Donovan y Soleil Moon Frye"
+    },
+    {
+     "start": "03:30",
+     "text": "El Mundo de Tosh",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "Las Aventuras de Jimmy Neutron el Niño Genio",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Rocket Power",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Viernes",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Kenan y Kel",
+     "block": null,
+     "extra": "con Kenan Thompson y Kel Mitchell"
+    },
+    {
+     "start": "06:30",
+     "text": "Yu-Gi-Oh!",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Ralph el Travieso",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "Kablam",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "La Ventana de Allegra",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "08:30",
+     "text": "Las Pistas de Blue",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "09:00",
+     "text": "Dora la Exploradora",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "09:30",
+     "text": "Juanito Jones",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Stuart Little",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "¡Oye Arnold!",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Yvon del Yukon",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Poochini",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Yu-Gi-Oh!",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "La Vida Moderna de Rocko",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Rugrats Crecidos",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Ginger",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Zona Tiza",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "S Club 7",
+     "block": null,
+     "extra": "con Rachel Stevens, Tina Barrett, Paul Cattermole, Jo O'Meara, Hannah Spearritt, Jon Lee y Bradley McIntosh"
+    },
+    {
+     "start": "19:00",
+     "text": "Sabrina la Bruja Adolescente",
+     "block": null,
+     "extra": "con Melissa Joan Hart, Nick Bakay como la voz de Salem, Elisa Donovan y Soleil Moon Frye"
+    },
+    {
+     "start": "19:30",
+     "text": "Taina",
+     "block": null,
+     "extra": "con Chrisitna Vidal"
+    },
+    {
+     "start": "20:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "Las Aventuras de Jimmy Neutron el Niño Genio",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Kenan y Kel",
+     "block": null,
+     "extra": "con Kenan Thompson y Kel Mitchell"
+    },
+    {
+     "start": "22:30",
+     "text": "Yu-Gi-Oh!",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "¡Oye Arnold!",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "La Vida Moderna de Rocko",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Rugrats Crecidos",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Ginger",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Zona Tiza",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "S Club 7",
+     "block": null,
+     "extra": "con Rachel Stevens, Tina Barrett, Paul Cattermole, Jo O'Meara, Hannah Spearritt, Jon Lee y Bradley McIntosh"
+    },
+    {
+     "start": "03:00",
+     "text": "Sabrina la Bruja Adolescente",
+     "block": null,
+     "extra": "con Melissa Joan Hart, Nick Bakay como la voz de Salem, Elisa Donovan y Soleil Moon Frye"
+    },
+    {
+     "start": "03:30",
+     "text": "Taina",
+     "block": null,
+     "extra": "con Chrisitna Vidal"
+    },
+    {
+     "start": "04:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "¡Oye Arnold!",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Zona Tiza",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Rocket Power",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Sábado",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Kenan y Kel",
+     "block": null,
+     "extra": "con Kenan Thompson y Kel Mitchell"
+    },
+    {
+     "start": "06:30",
+     "text": "Yu-Gi-Oh",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Kablam",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "La Vida Moderna de Rocko",
+     "block": null
+    },
+    {
+     "start": "08:30",
+     "text": "La Vida Moderna de Rocko",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Stuart Little",
+     "block": null
+    },
+    {
+     "start": "09:30",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Poochini",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Generación O!",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "El Show de Amanda",
+     "block": null,
+     "extra": "con Amanda Bynes, Drake Bell, Josh Peck y Nancy Sullivan"
+    },
+    {
+     "start": "12:00",
+     "text": "Slam! - Yakkity Yak",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Invasor Zim",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Galidor",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Las Aventuras de Jimmy Neutron el Niño Genio",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Despistados",
+     "block": null,
+     "extra": "con Rachel Blanchard, Stacey Dash, Donald Faison, Elisa Donovan y Sean Holland"
+    },
+    {
+     "start": "14:30",
+     "text": "Hermana, Hermana",
+     "block": null,
+     "extra": "con Tia Mowry y Tamera Mowry, Jackée Harry, Ronreaco Lee, Deon Richmond y Tim Reid"
+    },
+    {
+     "start": "15:00",
+     "text": "Click Nick",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Weekend Stunt",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Yu-Gi-Oh!",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Invasor Zim",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "Galidor",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Click Nick",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Weekend Stunt",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Yu-Gi-Oh!",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Domingo",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Invasor Zim",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Galidor",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Kablam",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "La Vida Moderna de Rocko",
+     "block": null
+    },
+    {
+     "start": "08:30",
+     "text": "La Vida Moderna de Rocko",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Stuart Little",
+     "block": null
+    },
+    {
+     "start": "09:30",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Poochini",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Generación O!",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "El Show de Amanda",
+     "block": null,
+     "extra": "con Amanda Bynes, Drake Bell, Josh Peck y Nancy Sullivan"
+    },
+    {
+     "start": "12:00",
+     "text": "Yu-Gi-Oh!",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Invasor Zim",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Galidor",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Las Aventuras de Jimmy Neutron el Niño Genio",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Despistados",
+     "block": null,
+     "extra": "con Rachel Blanchard, Stacey Dash, Donald Faison, Elisa Donovan y Sean Holland"
+    },
+    {
+     "start": "14:30",
+     "text": "Hermana, Hermana",
+     "block": null,
+     "extra": "con Tia Mowry y Tamera Mowry, Jackée Harry, Ronreaco Lee, Deon Richmond y Tim Reid"
+    },
+    {
+     "start": "15:00",
+     "text": "Click Nick",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Weekend Stunt",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Yu-Gi-Oh",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Invasor Zim",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "Galidor",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Click Nick",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Weekend Stunt",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Yu-Gi-Oh!",
+     "block": null
+    }
+   ]
+  }
+ ]
+}

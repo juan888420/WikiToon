@@ -1,0 +1,2216 @@
+{
+ "source": {
+  "name": "Foro Grilla de Canales: Programación de Nickelodeon Latinoamérica | Agosto 2001",
+  "url": "https://forogrilladecanales.blogspot.com/2025/01/programacion-de-nickelodeon.html",
+  "published": "2025-01-31"
+ },
+ "title": "Programación de Nickelodeon Latinoamérica | Agosto 2001",
+ "statedSite": null,
+ "days": [
+  {
+   "label": "Lunes",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Los Archivos Secretos de Shelby Woo",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Allen Strange",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "La Vida Moderna de Rocko",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "Escuela del Rinoceronte Volador",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "El Mundo Fantástico de Richard Scarry",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "08:30",
+     "text": "La Ventana de Allegra",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "09:00",
+     "text": "Las Pistas de Blue",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "09:30",
+     "text": "Dora la Exploradora",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "10:00",
+     "text": "Bananas en Pijamas",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "10:30",
+     "text": "Rupert",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "11:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Charlie Brown",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "Los Castores Cascarrabias",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "La Vida Moderna de Rocko",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "3 Amigos y Jerry",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Los Castores Cascarrabias",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "GaS | Leyendas del Templo Escondido",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "GaS | Global Guts",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Kenan y Kel",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "Sabrina la Bruja Adolescente",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "Ginger",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "¡Oye, Arnold!",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Kenan y Kel",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "Hermana, Hermana",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "¿Le Temes a la Oscuridad?",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "Los Castores Cascarrabias",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "GaS | Leyendas del Templo Escondido",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "GaS | Global Guts",
+     "block": null
+    },
+    {
+     "start": "03:00",
+     "text": "Kenan y Kel",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "Sabrina la Bruja Adolescente",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Ginger",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "¡Oye, Arnold!",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Rocket Power",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Martes y Jueves",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Kenan y Kel",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "La Vida Moderna de Rocko",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "Escuela del Rinoceronte Volador",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "El Mundo Fantástico de Richard Scarry",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "08:30",
+     "text": "La Ventana de Allegra",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "09:00",
+     "text": "Las Pistas de Blue",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "09:30",
+     "text": "Dora la Exploradora",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "10:00",
+     "text": "Bananas en Pijamas",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "10:30",
+     "text": "Rupert",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "11:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Charlie Brown",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "Los Castores Cascarrabias",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "La Vida Moderna de Rocko",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "3 Amigos y Jerry",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Los Castores Cascarrabias",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "GaS | Leyendas del Templo Escondido",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "GaS | Global Guts",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Kenan y Kel",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "Sabrina la Bruja Adolescente",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "Generación O!",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "¡Oye, Arnold!",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Kenan y Kel",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "Hermana, Hermana",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "¿Le Temes a la Oscuridad?",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "Los Castores Cascarrabias",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "GaS | Leyendas del Templo Escondido",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "GaS | Global Guts",
+     "block": null
+    },
+    {
+     "start": "03:00",
+     "text": "Kenan y Kel",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "Sabrina la Bruja Adolescente",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Generación O!",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "¡Oye, Arnold!",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Rocket Power",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Miércoles",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Kenan y Kel",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "La Vida Moderna de Rocko",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "Escuela del Rinoceronte Volador",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "El Mundo Fantástico de Richard Scarry",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "08:30",
+     "text": "La Ventana de Allegra",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "09:00",
+     "text": "Las Pistas de Blue",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "09:30",
+     "text": "Dora la Exploradora",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "10:00",
+     "text": "Bananas en Pijamas",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "10:30",
+     "text": "Rupert",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "11:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Charlie Brown",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "Los Castores Cascarrabias",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "La Vida Moderna de Rocko",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "3 Amigos y Jerry",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Los Castores Cascarrabias",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "GaS | Leyendas del Templo Escondido",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "GaS | Global Guts",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Kenan y Kel",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "Sabrina la Bruja Adolescente",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "Ginger",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "¡Oye, Arnold!",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Kenan y Kel",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "Hermana, Hermana",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "¿Le Temes a la Oscuridad?",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "Los Castores Cascarrabias",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "GaS | Leyendas del Templo Escondido",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "GaS | Global Guts",
+     "block": null
+    },
+    {
+     "start": "03:00",
+     "text": "Kenan y Kel",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "Sabrina la Bruja Adolescente",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Ginger",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "¡Oye, Arnold!",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Rocket Power",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Viernes",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Kenan y Kel",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "La Vida Moderna de Rocko",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "Escuela del Rinoceronte Volador",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "El Mundo Fantástico de Richard Scarry",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "08:30",
+     "text": "La Ventana de Allegra",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "09:00",
+     "text": "Las Pistas de Blue",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "09:30",
+     "text": "Dora la Exploradora",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "10:00",
+     "text": "Bananas en Pijamas",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "10:30",
+     "text": "Rupert",
+     "block": "Nick Jr."
+    },
+    {
+     "start": "11:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Charlie Brown",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "Los Castores Cascarrabias",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "La Vida Moderna de Rocko",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "3 Amigos y Jerry",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Los Castores Cascarrabias",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "GaS | Leyendas del Templo Escondido",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "GaS | Global Guts",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "S Club 7",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "DJ Nick",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "Making the Band",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "¡Oye, Arnold!",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Kenan y Kel",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "Hermana, Hermana",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "¿Le Temes a la Oscuridad?",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "Los Castores Cascarrabias",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "GaS | Leyendas del Templo Escondido",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "GaS | Global Guts",
+     "block": null
+    },
+    {
+     "start": "03:00",
+     "text": "Kenan y Kel",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "DJ Nick",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Making the Band",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "¡Oye, Arnold!",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Rocket Power",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Sábado",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Kenan y Kel",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Mi Osito",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "Bananas en Pijamas",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "La Vida Moderna de Rocko",
+     "block": null
+    },
+    {
+     "start": "08:30",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "09:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Los Castores Cascarrabias",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Escuela del Rinoceronte Volador",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Kablam",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "3 Amigos y Jerry",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Charlie Brown",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Primo Skeeter",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Depsistados",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "¿Le Temes a la Oscuridad?",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Los Castores Cascarrabias",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Allen Strange",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "S Club 7",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Hermana, Hermana",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Los Archivos Secretos de Shelby Woo",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "Ralph el Travieso",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "¡Oye, Arnold!",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "¡Aaah, Monstruos!",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "¡Oye, Arnold!",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Los Castores Cascarrabias",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "¡Aaah, Monstruos!",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Allen Strange",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "S Club 7",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Hermana, Hermana",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "Los Archivos Secretos de Shelby Woo",
+     "block": null
+    },
+    {
+     "start": "03:00",
+     "text": "Ralph el Travieso",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "¡Oye, Arnold!",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "¡Aaah, Monstruos!",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Los Thornberrys",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Domingo",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Los Archivos Secretos de Shelby Woo",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Allen Strange",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Mi Osito",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "Bananas en Pijamas",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "La Vida Moderna de Rocko",
+     "block": null
+    },
+    {
+     "start": "08:30",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "09:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Los Castores Cascarrabias",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Escuela del Rinoceronte Volador",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Kablam",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "3 Amigos y Jerry",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Charlie Brown",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Primo Skeeter",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Depsistados",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "¿Le Temes a la Oscuridad?",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Los Castores Cascarrabias",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Allen Strange",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "S Club 7",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Hermana, Hermana",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Los Archivos Secretos de Shelby Woo",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "Ralph el Travieso",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "¡Oye, Arnold!",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "¡Aaah, Monstruos!",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "¡Oye, Arnold!",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Los Castores Cascarrabias",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "¡Aaah, Monstruos!",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Allen Strange",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "S Club 7",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Hermana, Hermana",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "Los Archivos Secretos de Shelby Woo",
+     "block": null
+    },
+    {
+     "start": "03:00",
+     "text": "Ralph el Travieso",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "¡Oye, Arnold!",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "¡Aaah, Monstruos!",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Los Thornberrys",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Domingo 5 de agosto del 2001",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Los Archivos Secretos de Shelby Woo",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Allen Strange",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Mi Osito",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "Bananas en Pijamas",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "Especial del Día del Niño",
+     "block": null
+    },
+    {
+     "start": "08:30",
+     "text": "Especial del Día del Niño",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Especial del Día del Niño",
+     "block": null
+    },
+    {
+     "start": "09:30",
+     "text": "Especial del Día del Niño",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Especial del Día del Niño",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Especial del Día del Niño",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "Especial del Día del Niño",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Especial del Día del Niño",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "Especial del Día del Niño",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Especial del Día del Niño",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Especial del Día del Niño",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Especial del Día del Niño",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Especial del Día del Niño",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Especial del Día del Niño",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Especial del Día del Niño",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Especial del Día del Niño",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Especial del Día del Niño",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Especial del Día del Niño",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Especial del Día del Niño",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Especial del Día del Niño",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Especial del Día del Niño",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Especial del Día del Niño",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "Especial del Día del Niño",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "Especial del Día del Niño",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Nick Cine",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "Nick Cine",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Nick Cine",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "¡Oye, Arnold!",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Los Castores Cascarrabias",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "¡Aaah, Monstruos!",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Allen Strange",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "S Club 7",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Hermana, Hermana",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "Los Archivos Secretos de Shelby Woo",
+     "block": null
+    },
+    {
+     "start": "03:00",
+     "text": "Ralph el Travieso",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "¡Oye, Arnold!",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "¡Aaah, Monstruos!",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Los Thornberrys",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Sábado 25 de agosto del 2001",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Kenan y Kel",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Mi Osito",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "Bananas en Pijamas",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "La Vida Moderna de Rocko",
+     "block": null
+    },
+    {
+     "start": "08:30",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "09:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Los Castores Cascarrabias",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Escuela del Rinoceronte Volador",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Kablam",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "3 Amigos y Jerry",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Charlie Brown",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Primo Skeeter",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Depsistados",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "¿Le Temes a la Oscuridad?",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Click Nick",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Click Nick",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Click Nick",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Click Nick",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Click Nick",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Click Nick",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Hermana, Hermana",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Los Archivos Secretos de Shelby Woo",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "Ralph el Travieso",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "¡Oye, Arnold!",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "¡Aaah, Monstruos!",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "¡Oye, Arnold!",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Los Castores Cascarrabias",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "¡Aaah, Monstruos!",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Allen Strange",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "S Club 7",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Hermana, Hermana",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "Los Archivos Secretos de Shelby Woo",
+     "block": null
+    },
+    {
+     "start": "03:00",
+     "text": "Ralph el Travieso",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "¡Oye, Arnold!",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "¡Aaah, Monstruos!",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Los Thornberrys",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Domingo 26 de agosto del 2001",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Los Archivos Secretos de Shelby Woo",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Allen Strange",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Mi Osito",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "Bananas en Pijamas",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "La Vida Moderna de Rocko",
+     "block": null
+    },
+    {
+     "start": "08:30",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "09:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Los Castores Cascarrabias",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Escuela del Rinoceronte Volador",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Kablam",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "3 Amigos y Jerry",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Charlie Brown",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Primo Skeeter",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Depsistados",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "¿Le Temes a la Oscuridad?",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Click Nick",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Click Nick",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Click Nick",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Click Nick",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Click Nick",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Click Nick",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Hermana, Hermana",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Los Archivos Secretos de Shelby Woo",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "Ralph el Travieso",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "¡Oye, Arnold!",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "¡Aaah, Monstruos!",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Los Thornberrys",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "¡Oye, Arnold!",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "Doug",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Los Castores Cascarrabias",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "¡Aaah, Monstruos!",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "CatDog",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "Bob Esponja",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Allen Strange",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "S Club 7",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Hermana, Hermana",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "Los Archivos Secretos de Shelby Woo",
+     "block": null
+    },
+    {
+     "start": "03:00",
+     "text": "Ralph el Travieso",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "¡Oye, Arnold!",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Rugrats: Aventuras en Pañales",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "¡Aaah, Monstruos!",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Rocket Power",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Los Thornberrys",
+     "block": null
+    }
+   ]
+  }
+ ]
+}

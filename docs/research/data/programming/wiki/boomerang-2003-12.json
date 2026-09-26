@@ -1,0 +1,600 @@
+{
+ "source": {
+  "name": "Cartoon Network Wiki (Fandom): Grilla de Boomerang, Diciembre de 2003",
+  "url": "https://cartoonnetwork.fandom.com/es/wiki/Grilla_de_Boomerang,_Diciembre_de_2003"
+ },
+ "references": [
+  "https://web.archive.org/web/20040219014632/http://www.cartoonnetworkla.com:80/spanish/boomerang/grid.html",
+  "https://web.archive.org/web/20031212124821/http://www.cablevision.com.mx:80/programacion/canales/Canal112.htm",
+  "https://web.archive.org/web/20031226001756/http://www.cablemagico.com.pe:8002/cmagico/owa/programacion?actual=0&tipo_consulta=pc&canal=44",
+  "https://web.archive.org/web/20031212084837/http://www.cablemagico.com.pe:8002/boomerang.htm"
+ ],
+ "tables": [
+  {
+   "feed": "Programación regular",
+   "days": [
+    "Lunes a viernes",
+    "Sábado",
+    "Domingo"
+   ],
+   "slots": [
+    {
+     "day": "Lunes a viernes",
+     "start": "06:00",
+     "end": "07:00",
+     "text": "Tiro Loco McGraw",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "14:00",
+     "end": "15:00",
+     "text": "Tiro Loco McGraw",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "22:00",
+     "end": "23:00",
+     "text": "Tiro Loco McGraw",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "06:00",
+     "end": "08:00",
+     "text": "Los autos locos",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "14:00",
+     "end": "16:00",
+     "text": "Los autos locos",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "22:00",
+     "end": "00:00",
+     "text": "Los autos locos",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "06:00",
+     "end": "08:00",
+     "text": "La Hormiga Atómica",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "14:00",
+     "end": "16:00",
+     "text": "La Hormiga Atómica",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "22:00",
+     "end": "00:00",
+     "text": "La Hormiga Atómica",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "07:00",
+     "end": "08:00",
+     "text": "Ruff y Reddy",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "15:00",
+     "end": "16:00",
+     "text": "Ruff y Reddy",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "23:00",
+     "end": "00:00",
+     "text": "Ruff y Reddy",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "08:00",
+     "end": "08:30",
+     "text": "Frankenstein Jr. y los Imposibles",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "16:00",
+     "end": "16:30",
+     "text": "Frankenstein Jr. y los Imposibles",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "00:00",
+     "end": "00:30",
+     "text": "Frankenstein Jr. y los Imposibles",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "08:00",
+     "end": "10:00",
+     "text": "El inspector Ardilla",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "16:00",
+     "end": "18:00",
+     "text": "El inspector Ardilla",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "00:00",
+     "end": "02:00",
+     "text": "El inspector Ardilla",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "08:00",
+     "end": "10:00",
+     "text": "Yakky Doodle Duck",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "16:00",
+     "end": "18:00",
+     "text": "Yakky Doodle Duck",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "00:00",
+     "end": "02:00",
+     "text": "Yakky Doodle Duck",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "08:30",
+     "end": "09:00",
+     "text": "Birdman y el trío Galaxia",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "16:30",
+     "end": "17:00",
+     "text": "Birdman y el trío Galaxia",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "00:30",
+     "end": "01:00",
+     "text": "Birdman y el trío Galaxia",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "09:00",
+     "end": "10:00",
+     "text": "Pepe Pótamo",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "17:00",
+     "end": "18:00",
+     "text": "Pepe Pótamo",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "01:00",
+     "end": "02:00",
+     "text": "Pepe Pótamo",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "10:00",
+     "end": "11:00",
+     "text": "Los locos Addams",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "18:00",
+     "end": "19:00",
+     "text": "Los locos Addams",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "02:00",
+     "end": "03:00",
+     "text": "Los locos Addams",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "10:00",
+     "end": "10:30",
+     "text": "Frankenstein Jr. y los Imposibles",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "18:00",
+     "end": "18:30",
+     "text": "Frankenstein Jr. y los Imposibles",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "02:00",
+     "end": "02:30",
+     "text": "Frankenstein Jr. y los Imposibles",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "10:00",
+     "end": "10:30",
+     "text": "Frankenstein Jr. y los Imposibles",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "18:00",
+     "end": "18:30",
+     "text": "Frankenstein Jr. y los Imposibles",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "02:00",
+     "end": "02:30",
+     "text": "Frankenstein Jr. y los Imposibles",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "10:30",
+     "end": "11:00",
+     "text": "Birdman y el trío Galaxia",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "18:30",
+     "end": "19:00",
+     "text": "Birdman y el trío Galaxia",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "02:30",
+     "end": "03:00",
+     "text": "Birdman y el trío Galaxia",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "10:30",
+     "end": "11:00",
+     "text": "Birdman y el trío Galaxia",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "18:30",
+     "end": "19:00",
+     "text": "Birdman y el trío Galaxia",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "02:30",
+     "end": "03:00",
+     "text": "Birdman y el trío Galaxia",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "11:00",
+     "end": "11:30",
+     "text": "Shazzan",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "19:00",
+     "end": "19:30",
+     "text": "Shazzan",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "03:00",
+     "end": "03:30",
+     "text": "Shazzan",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "11:00",
+     "end": "11:30",
+     "text": "Shazzan",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "19:00",
+     "end": "19:30",
+     "text": "Shazzan",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "03:00",
+     "end": "03:30",
+     "text": "Shazzan",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "11:00",
+     "end": "11:30",
+     "text": "Shazzan",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "19:00",
+     "end": "19:30",
+     "text": "Shazzan",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "03:00",
+     "end": "03:30",
+     "text": "Shazzan",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "11:30",
+     "end": "12:00",
+     "text": "Ases del Peligro",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "19:30",
+     "end": "20:00",
+     "text": "Ases del Peligro",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "03:30",
+     "end": "04:00",
+     "text": "Ases del Peligro",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "11:30",
+     "end": "12:00",
+     "text": "Ases del Peligro",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "19:30",
+     "end": "20:00",
+     "text": "Ases del Peligro",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "03:30",
+     "end": "04:00",
+     "text": "Ases del Peligro",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "11:30",
+     "end": "12:00",
+     "text": "Ases del Peligro",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "19:30",
+     "end": "20:00",
+     "text": "Ases del Peligro",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "03:30",
+     "end": "04:00",
+     "text": "Ases del Peligro",
+     "block": "Boomeraction",
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "12:00",
+     "end": "13:00",
+     "text": "Conejo Ricochet",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "20:00",
+     "end": "21:00",
+     "text": "Conejo Ricochet",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "04:00",
+     "end": "05:00",
+     "text": "Conejo Ricochet",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "12:00",
+     "end": "14:00",
+     "text": "El oso Yogi",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "20:00",
+     "end": "22:00",
+     "text": "El oso Yogi",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "04:00",
+     "end": "06:00",
+     "text": "El oso Yogi",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "12:00",
+     "end": "14:00",
+     "text": "Los Banana Splits",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "20:00",
+     "end": "22:00",
+     "text": "Los Banana Splits",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "04:00",
+     "end": "06:00",
+     "text": "Los Banana Splits",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "13:00",
+     "end": "14:00",
+     "text": "Pixie, Dixie y el Sr. Jinx",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "21:00",
+     "end": "22:00",
+     "text": "Pixie, Dixie y el Sr. Jinx",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a viernes",
+     "start": "05:00",
+     "end": "06:00",
+     "text": "Pixie, Dixie y el Sr. Jinx",
+     "block": null,
+     "premiere": false
+    }
+   ]
+  }
+ ]
+}

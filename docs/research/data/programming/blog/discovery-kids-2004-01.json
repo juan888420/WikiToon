@@ -1,0 +1,991 @@
+{
+ "source": {
+  "name": "Foro Grilla de Canales: Programación de Discovery Kids | Enero 2004",
+  "url": "https://forogrilladecanales.blogspot.com/2021/03/programacion-de-discovery-kids-enero.html",
+  "published": "2021-03-01"
+ },
+ "title": "Programación de Discovery Kids | Enero 2004",
+ "statedSite": "www.discoverykidslatino.com",
+ "days": [
+  {
+   "label": "Lunes a Miercoles",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Fetch el Veterinario",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Thomas y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Plaza Sésamo",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "El Mundo de Elmo",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "Teletubbies",
+     "block": null
+    },
+    {
+     "start": "08:30",
+     "text": "Connie la Vaquita",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Paz",
+     "block": null
+    },
+    {
+     "start": "09:30",
+     "text": "Teletubbies",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Boo!",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Bob el Constructor",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Zoboomafoo",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "El Mundo de Elmo",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Connie la Vaquita",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Paz",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Boo!",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Jay Jay el Avioncito",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Albie",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Zoboomafoo",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Boo!",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Paz",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "Jay Jay el Avioncito",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "Bob el Constructor",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Zoboomafoo",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Animales Asombrosos",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "Plaza Sésamo",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Plaza Sésamo",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "El Mundo de Elmo",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "Teletubbies",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "Connie la Vaquita",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Paz",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Teletubbies",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Boo!",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "Bob el Constructor",
+     "block": null
+    },
+    {
+     "start": "03:00",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Zoboomafoo",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Animales Asombrosos",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Jueves",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Fetch el Veterinario",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Thomas y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Plaza Sésamo",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "El Mundo de Elmo",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "Teletubbies",
+     "block": null
+    },
+    {
+     "start": "08:30",
+     "text": "Connie la Vaquita",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Paz",
+     "block": null
+    },
+    {
+     "start": "09:30",
+     "text": "Teletubbies",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Boo!",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Bob el Constructor",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Zoboomafoo",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "El Mundo de Elmo",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Connie la Vaquita",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Paz",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Boo!",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Jay Jay el Avioncito",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Albie",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Zoboomafoo",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Boo!",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Paz",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "Jay Jay el Avioncito",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "Bob el Constructor",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Zoboomafoo",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Animales Asombrosos",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "Plaza Sésamo",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Plaza Sésamo",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "El Mundo de Elmo",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "Teletubbies",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "Cubitos",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Paz",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Teletubbies",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Boo!",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "Albie",
+     "block": null
+    },
+    {
+     "start": "03:00",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Zoboomafoo",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Animales Asombrosos",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Viernes a Sábados",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Las Aventuras de Henry",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Thomas y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Plaza Sésamo",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "Pequeños Planetas",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "Teletubbies",
+     "block": null
+    },
+    {
+     "start": "08:30",
+     "text": "Cubitos",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Paz",
+     "block": null
+    },
+    {
+     "start": "09:30",
+     "text": "Teletubbies",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Boo!",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Albie",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Zoboomafoo",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Pequeños Planetas",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Cubitos",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Paz",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Boo!",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Jay Jay el Avioncito",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Bob el Constructor",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Zoboomafoo",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Boo!",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Paz",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "Jay Jay el Avioncito",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "Albie",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Zoboomafoo",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Animales Asombrosos",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "Plaza Sésamo",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Plaza Sésamo",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "Pequeños Planetas",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "Teletubbies",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "Cubitos",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Paz",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Teletubbies",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Boo!",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "Albie",
+     "block": null
+    },
+    {
+     "start": "03:00",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Zoboomafoo",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Animales Asombrosos",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Domingo",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Las Aventuras de Henry",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Thomas y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Plaza Sésamo",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "Pequeños Planetas",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "Teletubbies",
+     "block": null
+    },
+    {
+     "start": "08:30",
+     "text": "Cubitos",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Paz",
+     "block": null
+    },
+    {
+     "start": "09:30",
+     "text": "Teletubbies",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Boo!",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Albie",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Zoboomafoo",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Pequeños Planetas",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Cubitos",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Paz",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Boo!",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Jay Jay el Avioncito",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Bob el Constructor",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Zoboomafoo",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Boo!",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Paz",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "Jay Jay el Avioncito",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "Albie",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Zoboomafoo",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Animales Asombrosos",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "Plaza Sésamo",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Plaza Sésamo",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "Pequeños Planetas",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "Teletubbies",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "Connie la Vaquita",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Paz",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Teletubbies",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Boo!",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "Bob el Constructor",
+     "block": null
+    },
+    {
+     "start": "03:00",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Zoboomafoo",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Animales Asombrosos",
+     "block": null
+    }
+   ]
+  }
+ ]
+}

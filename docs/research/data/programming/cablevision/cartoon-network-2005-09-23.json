@@ -1,0 +1,191 @@
+{
+ "source": {
+  "name": "Cablevisión Monterrey, guía de Cartoon Network",
+  "url": "https://web.archive.org/web/20050924151906/http://www.cablevision.com.mx:80/programacion/canales/canal106.htm"
+ },
+ "channelSlug": "cartoon-network",
+ "channelName": "Cartoon Network",
+ "date": "2005-09-23",
+ "slots": [
+  {
+   "start": "00:00",
+   "text": "InuYasha"
+  },
+  {
+   "start": "00:30",
+   "text": "Gundam Wing"
+  },
+  {
+   "start": "01:00",
+   "text": "Los caballeros del zodiaco"
+  },
+  {
+   "start": "01:30",
+   "text": "Hi Hi Puffy AmiYumi"
+  },
+  {
+   "start": "02:00",
+   "text": "Cartoon Cartoons"
+  },
+  {
+   "start": "03:00",
+   "text": "Liga de la justicia ilimitada"
+  },
+  {
+   "start": "03:30",
+   "text": "Batman"
+  },
+  {
+   "start": "04:00",
+   "text": "Scooby y Scrappy Doo"
+  },
+  {
+   "start": "04:30",
+   "text": "Scooby y Scrappy Doo"
+  },
+  {
+   "start": "05:00",
+   "text": "Las sombrías aventuras de Billy y Mandy"
+  },
+  {
+   "start": "06:00",
+   "text": "Los chicos del barrio"
+  },
+  {
+   "start": "06:30",
+   "text": "Johnny Bravo"
+  },
+  {
+   "start": "07:00",
+   "text": "Pequeño Mundo"
+  },
+  {
+   "start": "08:00",
+   "text": "Sagwa, la gatita siamesa"
+  },
+  {
+   "start": "08:30",
+   "text": "Arthur"
+  },
+  {
+   "start": "09:00",
+   "text": "Los pequeños Looney Tunes"
+  },
+  {
+   "start": "09:30",
+   "text": "Krypto, el superperro"
+  },
+  {
+   "start": "10:00",
+   "text": "Cartoon Cartoons Show"
+  },
+  {
+   "start": "10:30",
+   "text": "Mirmo Zibang"
+  },
+  {
+   "start": "11:00",
+   "text": "Norman Normal"
+  },
+  {
+   "start": "11:30",
+   "text": "Las chicas superpoderosas"
+  },
+  {
+   "start": "12:00",
+   "text": "Los chicos del barrio"
+  },
+  {
+   "start": "12:30",
+   "text": "Mascostas extraterrestres"
+  },
+  {
+   "start": "13:00",
+   "text": "Duelo Xiaolin"
+  },
+  {
+   "start": "13:30",
+   "text": "Coraje, el perro cobarde"
+  },
+  {
+   "start": "14:00",
+   "text": "Mansión Foster para amigos imaginarios"
+  },
+  {
+   "start": "14:30",
+   "text": "Las sombrías aventuras de Billy y Mandy"
+  },
+  {
+   "start": "15:00",
+   "text": "Mirmo Zibang"
+  },
+  {
+   "start": "15:30",
+   "text": "Betty Atómica"
+  },
+  {
+   "start": "16:00",
+   "text": "Ozzy y Drix"
+  },
+  {
+   "start": "16:30",
+   "text": "Corneil y Bernie"
+  },
+  {
+   "start": "17:00",
+   "text": "Pokémon"
+  },
+  {
+   "start": "17:30",
+   "text": "Los Jóvenes Titanes"
+  },
+  {
+   "start": "18:00",
+   "text": "Duck Dogers"
+  },
+  {
+   "start": "18:30",
+   "text": "Batman"
+  },
+  {
+   "start": "19:00",
+   "text": "Hi Hi Puffy AmiYumi"
+  },
+  {
+   "start": "19:30",
+   "text": "Mansión Foster amigos imaginarios"
+  },
+  {
+   "start": "20:00",
+   "text": "Mascostas extraterrestres"
+  },
+  {
+   "start": "20:30",
+   "text": "Ozzy y Drix"
+  },
+  {
+   "start": "21:00",
+   "text": "El laboratorio de dexter"
+  },
+  {
+   "start": "21:30",
+   "text": "Los chicos del barrio"
+  },
+  {
+   "start": "22:00",
+   "text": "Pokémon"
+  },
+  {
+   "start": "22:30",
+   "text": "Bugs Bunny y el Pato Lucas"
+  },
+  {
+   "start": "23:00",
+   "text": "Tom y Jerry"
+  },
+  {
+   "start": "23:30",
+   "text": "Mascostas extraterrestres"
+  }
+ ]
+}

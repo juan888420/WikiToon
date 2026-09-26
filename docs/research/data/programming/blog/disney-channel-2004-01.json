@@ -1,0 +1,446 @@
+{
+ "source": {
+  "name": "Foro Grilla de Canales: Programación de Disney Channel | Enero 2004",
+  "url": "https://forogrilladecanales.blogspot.com/2021/02/programacion-de-disney-channel-enero.html",
+  "published": "2021-02-28"
+ },
+ "title": "Programación de Disney Channel | Enero 2004",
+ "statedSite": "www.disneylatino.com",
+ "days": [
+  {
+   "label": "Lunes a Viernes",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Sabrina, La Brujita",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Recreo",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Doug de Disney",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "Pepper Ann",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "Bear en la Gran Casa Azul",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "08:30",
+     "text": "Oswald",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "09:00",
+     "text": "Las Aventuras de PB&J Otter",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "09:30",
+     "text": "El Libro de Pooh",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "10:00",
+     "text": "Rolie Polie Olie",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "10:30",
+     "text": "Stanley",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "11:00",
+     "text": "Bear en la Gran Casa Azul",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "11:30",
+     "text": "El Libro de Pooh",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "12:00",
+     "text": "El Show del Ratón",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Las Aventuras de Timón y Pumba",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Buzz Lightyear: Comando Estelar",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "La Leyenda de Tarzan",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Pepper Ann",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Doug de Disney",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Sabrina, La Brujita",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Recreo",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Art Attack",
+     "block": null,
+     "extra": "con Rui Torres"
+    },
+    {
+     "start": "16:30",
+     "text": "La Peor Bruja",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Aprendiendo a Vivir",
+     "block": null,
+     "extra": "con Ben Savage, Danielle Fisher y Rider Strong"
+    },
+    {
+     "start": "17:30",
+     "text": "La Familia Proud",
+     "block": null,
+     "extra": "con la voz de Kyla Pratt"
+    },
+    {
+     "start": "18:00",
+     "text": "Zapping Zone",
+     "block": null,
+     "extra": "con Dani Martins, Caro Ibarra, Diego Alcalá, Vero Spinelli, Diego Topa y Javier Zucker"
+    },
+    {
+     "start": "18:30",
+     "text": "Mano a Mano",
+     "block": null,
+     "extra": "con Shia LaBeouf, Christy Carlson Romano y A.J. Trauth"
+    },
+    {
+     "start": "19:00",
+     "text": "Chico Listo",
+     "block": null,
+     "extra": "con Tahj Mowry"
+    },
+    {
+     "start": "19:30",
+     "text": "Lizzie McGuire",
+     "block": null,
+     "extra": "con Hilary Duff, Adam Lamberg, LaLaine y Jake Thomas"
+    },
+    {
+     "start": "20:00",
+     "text": "Pelicula Disney Channel",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Amor Fraternal",
+     "block": null,
+     "extra": "con Joey Lawrence, Matthew Lawrence y Andy Lawrence"
+    },
+    {
+     "start": "22:30",
+     "text": "Aprendiendo a Vivir",
+     "block": null,
+     "extra": "con Ben Savage, Danielle Fisher y Rider Strong"
+    },
+    {
+     "start": "23:00",
+     "text": "Zapping Zone",
+     "block": null,
+     "extra": "con Dani Martins, Caro Ibarra, Diego Alcalá, Vero Spinelli, Diego Topa y Javier Zucker"
+    },
+    {
+     "start": "23:30",
+     "text": "Mano a Mano",
+     "block": null,
+     "extra": "con Shia LaBeouf, Christy Carlson Romano y A.J. Trauth"
+    },
+    {
+     "start": "00:00",
+     "text": "Chico Listo",
+     "block": null,
+     "extra": "con Tahj Mowry"
+    },
+    {
+     "start": "00:30",
+     "text": "Lizzie McGuire",
+     "block": null,
+     "extra": "con Hilary Duff, Adam Lamberg, LaLaine y Jake Thomas"
+    },
+    {
+     "start": "01:00",
+     "text": "Pelicula Disney Channel",
+     "block": null
+    },
+    {
+     "start": "03:00",
+     "text": "Art Attack",
+     "block": null,
+     "extra": "con Rui Torres"
+    },
+    {
+     "start": "03:30",
+     "text": "La Peor Bruja",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "El Show del Ratón",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "Las Aventuras de Timón y Pumba",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Doug de Disney",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Pepper Ann",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Sábado y Domingo",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Las Aventuras de Timón y Pumba",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "El Show de Ratón",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Bear en la Gran Casa Azul",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "07:30",
+     "text": "Las Aventuras de PB&J Otter",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "08:00",
+     "text": "Las Nuevas Aventuras de Madeline",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "08:30",
+     "text": "Rolie Polie Olie",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "09:00",
+     "text": "El Libro de Pooh",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "09:30",
+     "text": "Stanley",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "10:00",
+     "text": "La Pandilla del Fin de Semana",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Teamo Supremo",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "La Leyenda de Tarzan",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Sabrina, La Brujita",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "Disney Princesas - La Sirenita",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Disney Princesas - Aladdin",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Lloyd del Espacio",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "La Mascota de la Clase",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Art Attack",
+     "block": null,
+     "extra": "con Rui Torres"
+    },
+    {
+     "start": "14:30",
+     "text": "Lo Mejor de Zapping Zone",
+     "block": null,
+     "extra": "con Dani Martins, Caro Ibarra, Diego Alcalá, Vero Spinelli, Diego Topa y Javier Zucker"
+    },
+    {
+     "start": "15:00",
+     "text": "Querida, Encogí a los Niños",
+     "block": null,
+     "extra": "con Peter Scolari"
+    },
+    {
+     "start": "16:00",
+     "text": "Mano a Mano",
+     "block": null,
+     "extra": "con Shia LaBeouf, Christy Carlson Romano y A.J. Trauth"
+    },
+    {
+     "start": "16:30",
+     "text": "La Familia Proud",
+     "block": null,
+     "extra": "con la voz de Kyla Pratt"
+    },
+    {
+     "start": "17:00",
+     "text": "Kim Possible",
+     "block": null,
+     "extra": "con la voz de Christy Carlson Romano"
+    },
+    {
+     "start": "17:30",
+     "text": "Es Tan Raven",
+     "block": null,
+     "extra": "con Raven Symone, Orlando Brown, Annellise Van Der Pol y Kyle Massey"
+    },
+    {
+     "start": "18:00",
+     "text": "Mano a Mano",
+     "block": null,
+     "extra": "con Shia LaBeouf, Christy Carlson Romano y A.J. Trauth"
+    },
+    {
+     "start": "18:30",
+     "text": "Lizzie McGuire",
+     "block": null,
+     "extra": "con Hilary Duff, Adam Lamberg, LaLaine y Jake Thomas"
+    },
+    {
+     "start": "19:00",
+     "text": "Pelicula Disney Channel",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "El Maravilloso Mundo de Disney",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Lizzie McGuire",
+     "block": null,
+     "extra": "con Hilary Duff, Adam Lamberg, LaLaine y Jake Thomas"
+    },
+    {
+     "start": "23:30",
+     "text": "Es Tan Raven",
+     "block": null,
+     "extra": "con Raven Symone, Orlando Brown, Annellise Van Der Pol y Kyle Massey"
+    },
+    {
+     "start": "00:00",
+     "text": "Pelicula Disney Channel",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Kim Possible",
+     "block": null,
+     "extra": "con la voz de Christy Carlson Romano"
+    },
+    {
+     "start": "02:30",
+     "text": "Aprendiendo a Vivir",
+     "block": null,
+     "extra": "con Ben Savage, Danielle Fisher y Rider Strong"
+    },
+    {
+     "start": "03:00",
+     "text": "Querida, Encogí a los Niños",
+     "block": null,
+     "extra": "con Peter Scolari"
+    },
+    {
+     "start": "04:00",
+     "text": "Lo Mejor de Zapping Zone",
+     "block": null,
+     "extra": "con Dani Martins, Caro Ibarra, Diego Alcalá, Vero Spinelli, Diego Topa y Javier Zucker"
+    },
+    {
+     "start": "04:30",
+     "text": "Art Attack",
+     "block": null,
+     "extra": "con Rui Torres"
+    },
+    {
+     "start": "05:00",
+     "text": "Sabrina, La Brujita",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "La Pandilla del Fin de Semana",
+     "block": null
+    }
+   ]
+  }
+ ]
+}

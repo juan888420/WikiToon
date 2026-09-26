@@ -1,0 +1,203 @@
+{
+ "source": {
+  "name": "Cablevisión Monterrey, guía de Discovery Kids",
+  "url": "https://web.archive.org/web/20050307054916/http://www.cablevision.com.mx:80/programacion/canales/Canal108.htm"
+ },
+ "channelSlug": "discovery-kids",
+ "channelName": "Discovery Kids",
+ "date": "2005-03-04",
+ "slots": [
+  {
+   "start": "00:00",
+   "text": "Teletubbies"
+  },
+  {
+   "start": "00:30",
+   "text": "Connie"
+  },
+  {
+   "start": "01:00",
+   "text": "Paz"
+  },
+  {
+   "start": "01:30",
+   "text": "Teletubbies"
+  },
+  {
+   "start": "02:00",
+   "text": "¡Boo!"
+  },
+  {
+   "start": "02:30",
+   "text": "Bob"
+  },
+  {
+   "start": "03:00",
+   "text": "Save-Ums!"
+  },
+  {
+   "start": "03:30",
+   "text": "Clifford"
+  },
+  {
+   "start": "04:00",
+   "text": "Barney y sus Amigos"
+  },
+  {
+   "start": "04:30",
+   "text": "Jakers!"
+  },
+  {
+   "start": "05:00",
+   "text": "Zoboomafoo"
+  },
+  {
+   "start": "05:30",
+   "text": "Little Robots"
+  },
+  {
+   "start": "06:00",
+   "text": "Las Aventuras de Henry"
+  },
+  {
+   "start": "06:30",
+   "text": "Teletubbies"
+  },
+  {
+   "start": "07:00",
+   "text": "Plaza Sésamo"
+  },
+  {
+   "start": "07:30",
+   "text": "Little People"
+  },
+  {
+   "start": "08:00",
+   "text": "Paz"
+  },
+  {
+   "start": "08:30",
+   "text": "Jay Jay"
+  },
+  {
+   "start": "09:00",
+   "text": "Toddworld"
+  },
+  {
+   "start": "09:30",
+   "text": "El Mundo Divertido de Peep"
+  },
+  {
+   "start": "10:00",
+   "text": "Poko"
+  },
+  {
+   "start": "10:30",
+   "text": "¡Boo!"
+  },
+  {
+   "start": "11:00",
+   "text": "Caillou"
+  },
+  {
+   "start": "11:30",
+   "text": "Los hermanos Koala"
+  },
+  {
+   "start": "12:00",
+   "text": "Little Robots"
+  },
+  {
+   "start": "12:30",
+   "text": "Las Aventuras de Henry"
+  },
+  {
+   "start": "13:00",
+   "text": "Jakers!"
+  },
+  {
+   "start": "13:30",
+   "text": "Barney y sus amigos"
+  },
+  {
+   "start": "14:00",
+   "text": "Save-Ums!"
+  },
+  {
+   "start": "14:30",
+   "text": "Save-Ums!"
+  },
+  {
+   "start": "15:00",
+   "text": "Jakers!"
+  },
+  {
+   "start": "15:30",
+   "text": "Clifford"
+  },
+  {
+   "start": "16:00",
+   "text": "Clifford"
+  },
+  {
+   "start": "16:30",
+   "text": "Save-Ums!"
+  },
+  {
+   "start": "17:00",
+   "text": "Barney y sus Amigos"
+  },
+  {
+   "start": "17:30",
+   "text": "Zoboomafoo"
+  },
+  {
+   "start": "18:00",
+   "text": "Dragon Tales"
+  },
+  {
+   "start": "18:30",
+   "text": "Los hermanos Koala"
+  },
+  {
+   "start": "19:00",
+   "text": "Bob"
+  },
+  {
+   "start": "19:30",
+   "text": "Engie Benjy"
+  },
+  {
+   "start": "20:00",
+   "text": "Barney y sus amigos"
+  },
+  {
+   "start": "20:30",
+   "text": "Save-Ums!"
+  },
+  {
+   "start": "21:00",
+   "text": "Clifford"
+  },
+  {
+   "start": "21:30",
+   "text": "Jakers!"
+  },
+  {
+   "start": "22:00",
+   "text": "Zoboomafoo"
+  },
+  {
+   "start": "22:30",
+   "text": "Little Robots"
+  },
+  {
+   "start": "23:00",
+   "text": "Jay Jay"
+  },
+  {
+   "start": "23:30",
+   "text": "El Mundo de Elmo"
+  }
+ ]
+}

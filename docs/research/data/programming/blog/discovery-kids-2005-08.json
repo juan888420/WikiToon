@@ -1,0 +1,1516 @@
+{
+ "source": {
+  "name": "Foro Grilla de Canales: Programación de Discovery Kids | Agosto 2005 (celebrando el Día del Niño)",
+  "url": "https://forogrilladecanales.blogspot.com/2023/09/programacion-de-discovery-kids-agosto.html",
+  "published": "2023-09-26"
+ },
+ "title": "Programación de Discovery Kids | Agosto 2005 (celebrando el Día del Niño)",
+ "statedSite": "www.tudiscoverykids.com",
+ "days": [
+  {
+   "label": "Lunes a Miércoles",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Teletubbies en Todas Partes",
+     "block": null
+    },
+    {
+     "start": "06:15",
+     "text": "Edelberto el Tigre",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Paz",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Caillou",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "¡Boo!",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "Plaza Sésamo",
+     "block": null
+    },
+    {
+     "start": "08:30",
+     "text": "Little People",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Rubbadubbers",
+     "block": null
+    },
+    {
+     "start": "09:30",
+     "text": "El Mundo Divertido de Peep",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Toddworld",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Poko",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "Los Hermanos Koala",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "LazyTown",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Las Aventuras de Henry",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "¡Jakers!: Las Aventuras de Piggley Winks",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Dragon Tales",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Engie Benjy",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Backyardigans",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Las Aventuras de Henry",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Los Hermanos Koala",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Backyardigans",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "LazyTown",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "Dragon Tales",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Bob el Constructor",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "Engie Benjy",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "¡Jakers!: Las Aventuras de Piggley Winks",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Zoboomafoo",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "Little Robots",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "Jay, Jay el Avioncito",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "El Mundo de Elmo",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Teletubbies",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Connie la Vaquita",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Paz",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "Teletubbies en Todas Partes",
+     "block": null
+    },
+    {
+     "start": "02:45",
+     "text": "Edelberto el Tigre",
+     "block": null
+    },
+    {
+     "start": "03:00",
+     "text": "¡Boo!",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "Bob el Constructor",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "¡Jakers!: Las Aventuras de Piggley Winks",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Jueves",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Jay, Jay el Avioncito",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Cubitos",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Connie la Vaquita",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "¡Boo!",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "Plaza Sésamo",
+     "block": null
+    },
+    {
+     "start": "08:30",
+     "text": "Little People",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Rubbadubbers",
+     "block": null
+    },
+    {
+     "start": "09:30",
+     "text": "El Mundo Divertido de Peep",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Toddworld",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "El Mundo de Elmo",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "Los Hermanos Koala",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "LazyTown",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Harry y Su Cubeta de Dinosaurios",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "¡Jakers!: Las Aventuras de Piggley Winks",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Dragon Tales",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Engie Benjy",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "El Pequeño Tractor Rojo",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Backyardigans",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Los Hermanos Koala",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Clifford de Cachorrito",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Backyardigans",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "LazyTown",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "Dragon Tales",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Bob el Constructor",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "Engie Benjy",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "¡Jakers!: Las Aventuras de Piggley Winks",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Zoboomafoo",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "Little Robots",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "Jay, Jay el Avioncito",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "El Mundo de Elmo",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Teletubbies",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Connie la Vaquita",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Paz",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "Teletubbies en Todas Partes",
+     "block": null
+    },
+    {
+     "start": "02:45",
+     "text": "Edelberto el Tigre",
+     "block": null
+    },
+    {
+     "start": "03:00",
+     "text": "¡Boo!",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "Bob el Constructor",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "Clifford de Cachorrito",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "¡Jakers!: Las Aventuras de Piggley Winks",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Viernes",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Jay, Jay el Avioncito",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Cubitos",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Connie la Vaquita",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "¡Boo!",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "Plaza Sésamo",
+     "block": null
+    },
+    {
+     "start": "08:30",
+     "text": "Little People",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Rubbadubbers",
+     "block": null
+    },
+    {
+     "start": "09:30",
+     "text": "El Mundo Divertido de Peep",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Toddworld",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "El Mundo de Elmo",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "Los Hermanos Koala",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "LazyTown",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Harry y Su Cubeta de Dinosaurios",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "¡Jakers!: Las Aventuras de Piggley Winks",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Dragon Tales",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Engie Benjy",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "El Pequeño Tractor Rojo",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Backyardigans",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Los Hermanos Koala",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Clifford de Cachorrito",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Backyardigans",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "LazyTown",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "Dragon Tales",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Bob el Constructor",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "Engie Benjy",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "¡Jakers!: Las Aventuras de Piggley Winks",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Zoboomafoo",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "Little Robots",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "Jay, Jay el Avioncito",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "Pequeños Planetas",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Teletubbies",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Cubitos",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Paz",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "Teletubbies en Todas Partes",
+     "block": null
+    },
+    {
+     "start": "02:45",
+     "text": "Edelberto el Tigre",
+     "block": null
+    },
+    {
+     "start": "03:00",
+     "text": "¡Boo!",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "Bob el Constructor",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "Clifford de Cachorrito",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "¡Jakers!: Las Aventuras de Piggley Winks",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Sábado",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Jay, Jay el Avioncito",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Cubitos",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Connie la Vaquita",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "¡Boo!",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "Plaza Sésamo",
+     "block": null
+    },
+    {
+     "start": "08:30",
+     "text": "Little People",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Rubbadubbers",
+     "block": null
+    },
+    {
+     "start": "09:30",
+     "text": "El Mundo Divertido de Peep",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Toddworld",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "El Mundo de Elmo",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "Los Hermanos Koala",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "LazyTown",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Harry y Su Cubeta de Dinosaurios",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Las Aventuras de Henry",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "¡Jakers!: Las Aventuras de Piggley Winks",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Dragon Tales",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Engie Benjy",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "El Pequeño Tractor Rojo",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Backyardigans",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Los Hermanos Koala",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Clifford de Cachorrito",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Thomas y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Backyardigans",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "LazyTown",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "Dragon Tales",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Bob el Constructor",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "Engie Benjy",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "¡Jakers!: Las Aventuras de Piggley Winks",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Zoboomafoo",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "Little Robots",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "Jay, Jay el Avioncito",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "Pequeños Planetas",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Teletubbies",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Cubitos",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Paz",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "Teletubbies en Todas Partes",
+     "block": null
+    },
+    {
+     "start": "02:45",
+     "text": "Edelberto el Tigre",
+     "block": null
+    },
+    {
+     "start": "03:00",
+     "text": "¡Boo!",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "Bob el Constructor",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "Clifford de Cachorrito",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "¡Jakers!: Las Aventuras de Piggley Winks",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Domingo",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Jay, Jay el Avioncito",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Cubitos",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Connie la Vaquita",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "¡Boo!",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "Plaza Sésamo",
+     "block": null
+    },
+    {
+     "start": "08:30",
+     "text": "Little People",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Rubbadubbers",
+     "block": null
+    },
+    {
+     "start": "09:30",
+     "text": "El Mundo Divertido de Peep",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Toddworld",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "El Mundo de Elmo",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "Los Hermanos Koala",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "LazyTown",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Harry y Su Cubeta de Dinosaurios",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Las Aventuras de Henry",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "¡Jakers!: Las Aventuras de Piggley Winks",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Dragon Tales",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Engie Benjy",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "El Pequeño Tractor Rojo",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Backyardigans",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Los Hermanos Koala",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Clifford de Cachorrito",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Thomas y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Backyardigans",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "LazyTown",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "Dragon Tales",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Bob el Constructor",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "Engie Benjy",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "¡Jakers!: Las Aventuras de Piggley Winks",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Zoboomafoo",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "Little Robots",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "Jay, Jay el Avioncito",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "El Mundo de Elmo",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Teletubbies",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Connie la Vaquita",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Paz",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "Teletubbies en Todas Partes",
+     "block": null
+    },
+    {
+     "start": "02:45",
+     "text": "Edelberto el Tigre",
+     "block": null
+    },
+    {
+     "start": "03:00",
+     "text": "¡Boo!",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "Bob el Constructor",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "¡Jakers!: Las Aventuras de Piggley Winks",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Jueves 11 de agosto del 2005",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Jay, Jay el Avioncito",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Cubitos",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Connie la Vaquita",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "¡Boo!",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "Plaza Sésamo",
+     "block": null
+    },
+    {
+     "start": "08:30",
+     "text": "Little People",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Rubbadubbers",
+     "block": null
+    },
+    {
+     "start": "09:30",
+     "text": "El Mundo Divertido de Peep",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Toddworld",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "El Mundo de Elmo",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "Los Hermanos Koala",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "LazyTown",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Harry y Su Cubeta de Dinosaurios",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "¡Jakers!: Las Aventuras de Piggley Winks",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Dragon Tales",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Engie Benjy",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "El Pequeño Tractor Rojo",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Backyardigans",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Los Hermanos Koala",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Especial del Día del Niño en Chile | Dragon Tales",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Especial del Día del Niño en Chile | Dragon Tales",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Especial del Día del Niño en Chile | Dragon Tales",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Especial del Día del Niño en Chile | Dragon Tales",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "LazyTown",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "Dragon Tales",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Bob el Constructor",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "Engie Benjy",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Clifford",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "¡Jakers!: Las Aventuras de Piggley Winks",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Zoboomafoo",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "Little Robots",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "Jay, Jay el Avioncito",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "El Mundo de Elmo",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Teletubbies",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Connie la Vaquita",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Paz",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "Teletubbies en Todas Partes",
+     "block": null
+    },
+    {
+     "start": "02:45",
+     "text": "Edelberto el Tigre",
+     "block": null
+    },
+    {
+     "start": "03:00",
+     "text": "¡Boo!",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "Bob el Constructor",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Save-Ums!",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "Clifford de Cachorrito",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Barney y Sus Amigos",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "¡Jakers!: Las Aventuras de Piggley Winks",
+     "block": null
+    }
+   ]
+  }
+ ]
+}

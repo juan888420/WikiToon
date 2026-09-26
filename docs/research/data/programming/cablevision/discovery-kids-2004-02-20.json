@@ -1,0 +1,203 @@
+{
+ "source": {
+  "name": "Cablevisión Monterrey, guía de Discovery Kids",
+  "url": "https://web.archive.org/web/20040220200612/http://www.cablevision.com.mx:80/programacion/canales/Canal108.htm"
+ },
+ "channelSlug": "discovery-kids",
+ "channelName": "Discovery Kids",
+ "date": "2004-02-20",
+ "slots": [
+  {
+   "start": "00:00",
+   "text": "Teletubbies"
+  },
+  {
+   "start": "00:30",
+   "text": "Cubitos"
+  },
+  {
+   "start": "01:00",
+   "text": "Paz"
+  },
+  {
+   "start": "01:30",
+   "text": "Teletubbies"
+  },
+  {
+   "start": "02:00",
+   "text": "Boo!"
+  },
+  {
+   "start": "02:30",
+   "text": "Albie"
+  },
+  {
+   "start": "03:00",
+   "text": "Save-Ums!"
+  },
+  {
+   "start": "03:30",
+   "text": "Clifford"
+  },
+  {
+   "start": "04:00",
+   "text": "Barney y sus Amigos"
+  },
+  {
+   "start": "04:30",
+   "text": "Barney y sus Amigos"
+  },
+  {
+   "start": "05:00",
+   "text": "Zoboomafoo"
+  },
+  {
+   "start": "05:30",
+   "text": "Animales Asombrosos"
+  },
+  {
+   "start": "06:00",
+   "text": "Las Aventuras de Henry"
+  },
+  {
+   "start": "06:30",
+   "text": "Thomas y sus Amigos"
+  },
+  {
+   "start": "07:00",
+   "text": "Plaza Sésamo"
+  },
+  {
+   "start": "07:30",
+   "text": "Pequeños Planetas"
+  },
+  {
+   "start": "08:00",
+   "text": "Teletubbies"
+  },
+  {
+   "start": "08:30",
+   "text": "Cubitos"
+  },
+  {
+   "start": "09:00",
+   "text": "Paz"
+  },
+  {
+   "start": "09:30",
+   "text": "Teletubbies"
+  },
+  {
+   "start": "10:00",
+   "text": "Boo!"
+  },
+  {
+   "start": "10:30",
+   "text": "Albie"
+  },
+  {
+   "start": "11:00",
+   "text": "Clifford"
+  },
+  {
+   "start": "11:30",
+   "text": "Save-Ums!"
+  },
+  {
+   "start": "12:00",
+   "text": "Barney y sus Amigos"
+  },
+  {
+   "start": "12:30",
+   "text": "Zoboomafoo"
+  },
+  {
+   "start": "13:00",
+   "text": "Pequeños Planetas"
+  },
+  {
+   "start": "13:30",
+   "text": "Cubitos"
+  },
+  {
+   "start": "14:00",
+   "text": "Paz"
+  },
+  {
+   "start": "14:30",
+   "text": "Boo!"
+  },
+  {
+   "start": "15:00",
+   "text": "Jay Jay, El Avioncito"
+  },
+  {
+   "start": "15:30",
+   "text": "Bob, el Constructor"
+  },
+  {
+   "start": "16:00",
+   "text": "Clifford"
+  },
+  {
+   "start": "16:30",
+   "text": "Save-Ums!"
+  },
+  {
+   "start": "17:00",
+   "text": "Barney y sus Amigos"
+  },
+  {
+   "start": "17:30",
+   "text": "Zoboomafoo"
+  },
+  {
+   "start": "18:00",
+   "text": "Boo!"
+  },
+  {
+   "start": "18:30",
+   "text": "Paz"
+  },
+  {
+   "start": "19:00",
+   "text": "Jay Jay, El Avioncito"
+  },
+  {
+   "start": "19:30",
+   "text": "Albie"
+  },
+  {
+   "start": "20:00",
+   "text": "Barney y sus Amigos"
+  },
+  {
+   "start": "20:30",
+   "text": "Save-Ums!"
+  },
+  {
+   "start": "21:00",
+   "text": "Clifford"
+  },
+  {
+   "start": "21:30",
+   "text": "Zoboomafoo"
+  },
+  {
+   "start": "22:00",
+   "text": "Animales Asombrosos"
+  },
+  {
+   "start": "22:30",
+   "text": "Plaza Sésamo"
+  },
+  {
+   "start": "23:00",
+   "text": "Plaza Sésamo"
+  },
+  {
+   "start": "23:30",
+   "text": "Pequeños Planetas"
+  }
+ ]
+}

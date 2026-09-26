@@ -1,0 +1,115 @@
+{
+ "source": {
+  "name": "Cablevisión Monterrey, guía de Boomerang",
+  "url": "https://web.archive.org/web/20050421173755/http://www.cablevision.com.mx:80/programacion/canales/Canal112.htm"
+ },
+ "channelSlug": "boomerang",
+ "channelName": "Boomerang",
+ "date": "2005-04-18",
+ "slots": [
+  {
+   "start": "00:00",
+   "text": "El Show de Underdog"
+  },
+  {
+   "start": "01:00",
+   "text": "James Bond Jr."
+  },
+  {
+   "start": "02:00",
+   "text": "Los Supersónicos"
+  },
+  {
+   "start": "03:00",
+   "text": "Los Picapiedras"
+  },
+  {
+   "start": "04:00",
+   "text": "Don Gato y su Pandilla"
+  },
+  {
+   "start": "05:00",
+   "text": "Érase una vez en Boomerang"
+  },
+  {
+   "start": "06:00",
+   "text": "Maguila Gorila"
+  },
+  {
+   "start": "07:00",
+   "text": "Garfield y sus amigos"
+  },
+  {
+   "start": "08:00",
+   "text": "Tom y Jerry"
+  },
+  {
+   "start": "09:00",
+   "text": "James Bond Jr."
+  },
+  {
+   "start": "09:30",
+   "text": "Los verdaderos Cazafantasmas"
+  },
+  {
+   "start": "10:00",
+   "text": "Los Picapiedras"
+  },
+  {
+   "start": "11:00",
+   "text": "Los Supersónicos"
+  },
+  {
+   "start": "12:00",
+   "text": "Don Gato y su Pandilla"
+  },
+  {
+   "start": "13:00",
+   "text": "Érase una vez en Boomerang"
+  },
+  {
+   "start": "14:00",
+   "text": "Maguila Gorila"
+  },
+  {
+   "start": "15:00",
+   "text": "Garfield y sus amigos"
+  },
+  {
+   "start": "16:00",
+   "text": "Tom y Jerry"
+  },
+  {
+   "start": "17:00",
+   "text": "James Bond Jr."
+  },
+  {
+   "start": "17:30",
+   "text": "Los verdaderos Cazafantasmas"
+  },
+  {
+   "start": "18:00",
+   "text": "Los Picapiedras"
+  },
+  {
+   "start": "19:00",
+   "text": "Los Supersónicos"
+  },
+  {
+   "start": "20:00",
+   "text": "Don Gato y su Pandilla"
+  },
+  {
+   "start": "21:00",
+   "text": "Érase una vez en Boomerang"
+  },
+  {
+   "start": "22:00",
+   "text": "Maguila Gorila"
+  },
+  {
+   "start": "23:00",
+   "text": "Garfield y sus amigos"
+  }
+ ]
+}

@@ -1,0 +1,1701 @@
+{
+ "source": {
+  "name": "Foro Grilla de Canales: Programación de Fox Kids Latinoamérica | Agosto 2001",
+  "url": "https://forogrilladecanales.blogspot.com/2025/03/programacion-de-fox-kids-latinoamerica.html",
+  "published": "2025-03-12"
+ },
+ "title": "Programación de Fox Kids Latinoamérica | Agosto 2001",
+ "statedSite": "http://www.foxkidstv.com",
+ "days": [
+  {
+   "label": "Lunes",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "La Abejita Hutch",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "La Princesa Sissi",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Gasparín",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "La Familia Por Qué?",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "It's Itsy Bitsy Time!",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Gemelas en Apuros",
+     "block": "Girl Power"
+    },
+    {
+     "start": "09:30",
+     "text": "Escuadrón Sobre Ruedas",
+     "block": "Girl Power"
+    },
+    {
+     "start": "10:00",
+     "text": "Dientes de Lata",
+     "block": "Girl Power"
+    },
+    {
+     "start": "10:30",
+     "text": "Angela Anaconda",
+     "block": "Girl Power"
+    },
+    {
+     "start": "11:00",
+     "text": "Súper Cerdita",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "11:30",
+     "text": "Jim Botón",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "12:00",
+     "text": "Oggy y Las Cucarachas",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "12:30",
+     "text": "El Pájaro Loco (Clásico)",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "13:00",
+     "text": "El Nuevo Show del Pájaro Loco",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "13:30",
+     "text": "Los Mega Bebés",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "14:00",
+     "text": "El Mundo de Bobby",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "14:30",
+     "text": "Los Nuevos Locos Addams",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Las Aventuras de Shirley Holmes",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Súper Cerdita",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "El Nuevo Action Man",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Power Rangers: La Galaxia Perdida",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Power Rangers: A la Velocidad de la Luz",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Digimon 02",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "18:00",
+     "text": "Monster Rancher",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "18:30",
+     "text": "Flint: El Detective del Tiempo",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "19:00",
+     "text": "Patlabor",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "19:30",
+     "text": "Dinozaurs",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "20:00",
+     "text": "El Mundo Secreto de Alex Mack",
+     "block": "Mysteria"
+    },
+    {
+     "start": "20:30",
+     "text": "Las Aventuras de Shirley Holmes",
+     "block": "Mysteria"
+    },
+    {
+     "start": "21:00",
+     "text": "Escalofríos",
+     "block": "Mysteria"
+    },
+    {
+     "start": "21:30",
+     "text": "Digimon",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Patlabor",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "Power Rangers: A la Velocidad de la Luz",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "El Hombre Araña y sus Increíbles Amigos",
+     "block": "Clásicos a la Medianoche"
+    },
+    {
+     "start": "23:30",
+     "text": "La Mujer Araña",
+     "block": "Clásicos a la Medianoche"
+    },
+    {
+     "start": "00:00",
+     "text": "Los 4 Fantásticos",
+     "block": "Insomnio"
+    },
+    {
+     "start": "00:30",
+     "text": "Los Tres Chiflados",
+     "block": "Insomnio"
+    },
+    {
+     "start": "01:00",
+     "text": "Batman",
+     "block": "Insomnio"
+    },
+    {
+     "start": "01:30",
+     "text": "El Zorro",
+     "block": "Insomnio"
+    },
+    {
+     "start": "02:00",
+     "text": "El Gordo y El Flaco",
+     "block": "Insomnio"
+    },
+    {
+     "start": "02:30",
+     "text": "Los Locos Addams",
+     "block": "Insomnio"
+    },
+    {
+     "start": "03:00",
+     "text": "Los Munsters",
+     "block": "Insomnio"
+    },
+    {
+     "start": "03:30",
+     "text": "El Hombre Araña y sus Increíbles Amigos",
+     "block": "Insomnio"
+    },
+    {
+     "start": "04:00",
+     "text": "Mortadelo y Filemón",
+     "block": "Insomnio"
+    },
+    {
+     "start": "04:30",
+     "text": "Dilbert",
+     "block": "Insomnio"
+    },
+    {
+     "start": "05:00",
+     "text": "Hulk el Hombre Increíble",
+     "block": "Insomnio"
+    },
+    {
+     "start": "05:30",
+     "text": "Batman",
+     "block": "Insomnio"
+    }
+   ]
+  },
+  {
+   "label": "Martes",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "La Abejita Hutch",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "La Princesa Sissi",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Gasparín",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "La Familia Por Qué?",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "It's Itsy Bitsy Time!",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Hannah y Grace",
+     "block": "Girl Power"
+    },
+    {
+     "start": "09:30",
+     "text": "Escuadrón Sobre Ruedas",
+     "block": "Girl Power"
+    },
+    {
+     "start": "10:00",
+     "text": "Mimi",
+     "block": "Girl Power"
+    },
+    {
+     "start": "10:30",
+     "text": "Angela Anaconda",
+     "block": "Girl Power"
+    },
+    {
+     "start": "11:00",
+     "text": "Súper Cerdita",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "11:30",
+     "text": "Jim Botón",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "12:00",
+     "text": "Toonsylvania",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "12:30",
+     "text": "El Pájaro Loco (Clásico)",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "13:00",
+     "text": "El Nuevo Show del Pájaro Loco",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "13:30",
+     "text": "Wunschpunsch",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "14:00",
+     "text": "Travesuras del Aula 402",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "14:30",
+     "text": "Los Nuevos Locos Addams",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Las Aventuras de Shirley Holmes",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Súper Cerdita",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Kong",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Power Rangers: La Galaxia Perdida",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Power Rangers: A la Velocidad de la Luz",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Digimon 02",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "18:00",
+     "text": "Monster Rancher",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "18:30",
+     "text": "Flint: El Detective del Tiempo",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "19:00",
+     "text": "Patlabor",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "19:30",
+     "text": "Dinozaurs",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "20:00",
+     "text": "El Mundo Secreto de Alex Mack",
+     "block": "Mysteria"
+    },
+    {
+     "start": "20:30",
+     "text": "Las Aventuras de Shirley Holmes",
+     "block": "Mysteria"
+    },
+    {
+     "start": "21:00",
+     "text": "Escalofríos",
+     "block": "Mysteria"
+    },
+    {
+     "start": "21:30",
+     "text": "Digimon",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Patlabor",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "Power Rangers: A la Velocidad de la Luz",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "El Hombre Araña y sus Increíbles Amigos",
+     "block": "Clásicos a la Medianoche"
+    },
+    {
+     "start": "23:30",
+     "text": "El Hombre de Hierro",
+     "block": "Clásicos a la Medianoche"
+    },
+    {
+     "start": "00:00",
+     "text": "Los 4 Fantásticos",
+     "block": "Insomnio"
+    },
+    {
+     "start": "00:30",
+     "text": "Los Tres Chiflados",
+     "block": "Insomnio"
+    },
+    {
+     "start": "01:00",
+     "text": "Batman",
+     "block": "Insomnio"
+    },
+    {
+     "start": "01:30",
+     "text": "El Zorro",
+     "block": "Insomnio"
+    },
+    {
+     "start": "02:00",
+     "text": "El Gordo y El Flaco",
+     "block": "Insomnio"
+    },
+    {
+     "start": "02:30",
+     "text": "Los Locos Addams",
+     "block": "Insomnio"
+    },
+    {
+     "start": "03:00",
+     "text": "Los Munsters",
+     "block": "Insomnio"
+    },
+    {
+     "start": "03:30",
+     "text": "El Hombre Araña y sus Increíbles Amigos",
+     "block": "Insomnio"
+    },
+    {
+     "start": "04:00",
+     "text": "Mortadelo y Filemón",
+     "block": "Insomnio"
+    },
+    {
+     "start": "04:30",
+     "text": "Dilbert",
+     "block": "Insomnio"
+    },
+    {
+     "start": "05:00",
+     "text": "Hulk el Hombre Increíble",
+     "block": "Insomnio"
+    },
+    {
+     "start": "05:30",
+     "text": "Batman",
+     "block": "Insomnio"
+    }
+   ]
+  },
+  {
+   "label": "Miércoles",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "La Abejita Hutch",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "La Princesa Sissi",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Gasparín",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "La Familia Por Qué?",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "It's Itsy Bitsy Time!",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Gemelas en Apuros",
+     "block": "Girl Power"
+    },
+    {
+     "start": "09:30",
+     "text": "Escuadrón Sobre Ruedas",
+     "block": "Girl Power"
+    },
+    {
+     "start": "10:00",
+     "text": "Dientes de Lata",
+     "block": "Girl Power"
+    },
+    {
+     "start": "10:30",
+     "text": "Angela Anaconda",
+     "block": "Girl Power"
+    },
+    {
+     "start": "11:00",
+     "text": "Súper Cerdita",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "11:30",
+     "text": "Jim Botón",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "12:00",
+     "text": "Oggy y Las Cucarachas",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "12:30",
+     "text": "El Pájaro Loco (Clásico)",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "13:00",
+     "text": "El Nuevo Show del Pájaro Loco",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "13:30",
+     "text": "Los Mega Bebés",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "14:00",
+     "text": "El Mundo de Bobby",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "14:30",
+     "text": "Los Nuevos Locos Addams",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Las Aventuras de Shirley Holmes",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Súper Cerdita",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "El Nuevo Action Man",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Power Rangers: La Galaxia Perdida",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Power Rangers: A la Velocidad de la Luz",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Digimon 02",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "18:00",
+     "text": "Monster Rancher",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "18:30",
+     "text": "Flint: El Detective del Tiempo",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "19:00",
+     "text": "Patlabor",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "19:30",
+     "text": "Dinozaurs",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "20:00",
+     "text": "El Mundo Secreto de Alex Mack",
+     "block": "Mysteria"
+    },
+    {
+     "start": "20:30",
+     "text": "Las Aventuras de Shirley Holmes",
+     "block": "Mysteria"
+    },
+    {
+     "start": "21:00",
+     "text": "Escalofríos",
+     "block": "Mysteria"
+    },
+    {
+     "start": "21:30",
+     "text": "Digimon",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Patlabor",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "Power Rangers: A la Velocidad de la Luz",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "El Hombre Araña y sus Increíbles Amigos",
+     "block": "Clásicos a la Medianoche"
+    },
+    {
+     "start": "23:30",
+     "text": "El Poderoso Thor",
+     "block": "Clásicos a la Medianoche"
+    },
+    {
+     "start": "00:00",
+     "text": "Los 4 Fantásticos",
+     "block": "Insomnio"
+    },
+    {
+     "start": "00:30",
+     "text": "Los Tres Chiflados",
+     "block": "Insomnio"
+    },
+    {
+     "start": "01:00",
+     "text": "Batman",
+     "block": "Insomnio"
+    },
+    {
+     "start": "01:30",
+     "text": "El Zorro",
+     "block": "Insomnio"
+    },
+    {
+     "start": "02:00",
+     "text": "El Gordo y El Flaco",
+     "block": "Insomnio"
+    },
+    {
+     "start": "02:30",
+     "text": "Los Locos Addams",
+     "block": "Insomnio"
+    },
+    {
+     "start": "03:00",
+     "text": "Los Munsters",
+     "block": "Insomnio"
+    },
+    {
+     "start": "03:30",
+     "text": "El Hombre Araña y sus Increíbles Amigos",
+     "block": "Insomnio"
+    },
+    {
+     "start": "04:00",
+     "text": "Mortadelo y Filemón",
+     "block": "Insomnio"
+    },
+    {
+     "start": "04:30",
+     "text": "Dilbert",
+     "block": "Insomnio"
+    },
+    {
+     "start": "05:00",
+     "text": "Hulk el Hombre Increíble",
+     "block": "Insomnio"
+    },
+    {
+     "start": "05:30",
+     "text": "Batman",
+     "block": "Insomnio"
+    }
+   ]
+  },
+  {
+   "label": "Jueves",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "La Abejita Hutch",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "La Princesa Sissi",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Gasparín",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "La Familia Por Qué?",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "It's Itsy Bitsy Time!",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Hannah y Grace",
+     "block": "Girl Power"
+    },
+    {
+     "start": "09:30",
+     "text": "Escuadrón Sobre Ruedas",
+     "block": "Girl Power"
+    },
+    {
+     "start": "10:00",
+     "text": "Mimi",
+     "block": "Girl Power"
+    },
+    {
+     "start": "10:30",
+     "text": "Angela Anaconda",
+     "block": "Girl Power"
+    },
+    {
+     "start": "11:00",
+     "text": "Súper Cerdita",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "11:30",
+     "text": "Jim Botón",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "12:00",
+     "text": "Toonsylvania",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "12:30",
+     "text": "El Pájaro Loco (Clásico)",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "13:00",
+     "text": "El Nuevo Show del Pájaro Loco",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "13:30",
+     "text": "Wunschpunsch",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "14:00",
+     "text": "Travesuras del Aula 402",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "14:30",
+     "text": "Los Nuevos Locos Addams",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Las Aventuras de Shirley Holmes",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Súper Cerdita",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Kong",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Power Rangers: La Galaxia Perdida",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Power Rangers: A la Velocidad de la Luz",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Digimon 02",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "18:00",
+     "text": "Monster Rancher",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "18:30",
+     "text": "Flint: El Detective del Tiempo",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "19:00",
+     "text": "Patlabor",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "19:30",
+     "text": "Dinozaurs",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "20:00",
+     "text": "El Mundo Secreto de Alex Mack",
+     "block": "Mysteria"
+    },
+    {
+     "start": "20:30",
+     "text": "Las Aventuras de Shirley Holmes",
+     "block": "Mysteria"
+    },
+    {
+     "start": "21:00",
+     "text": "Escalofríos",
+     "block": "Mysteria"
+    },
+    {
+     "start": "21:30",
+     "text": "Digimon",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Patlabor",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "Power Rangers: A la Velocidad de la Luz",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "El Hombre Araña y sus Increíbles Amigos",
+     "block": "Clásicos a la Medianoche"
+    },
+    {
+     "start": "23:30",
+     "text": "Robocop: La Serie Animada",
+     "block": "Clásicos a la Medianoche"
+    },
+    {
+     "start": "00:00",
+     "text": "Los 4 Fantásticos",
+     "block": "Insomnio"
+    },
+    {
+     "start": "00:30",
+     "text": "Los Tres Chiflados",
+     "block": "Insomnio"
+    },
+    {
+     "start": "01:00",
+     "text": "Batman",
+     "block": "Insomnio"
+    },
+    {
+     "start": "01:30",
+     "text": "El Zorro",
+     "block": "Insomnio"
+    },
+    {
+     "start": "02:00",
+     "text": "El Gordo y El Flaco",
+     "block": "Insomnio"
+    },
+    {
+     "start": "02:30",
+     "text": "Los Locos Addams",
+     "block": "Insomnio"
+    },
+    {
+     "start": "03:00",
+     "text": "Los Munsters",
+     "block": "Insomnio"
+    },
+    {
+     "start": "03:30",
+     "text": "El Hombre Araña y sus Increíbles Amigos",
+     "block": "Insomnio"
+    },
+    {
+     "start": "04:00",
+     "text": "Mortadelo y Filemón",
+     "block": "Insomnio"
+    },
+    {
+     "start": "04:30",
+     "text": "Dilbert",
+     "block": "Insomnio"
+    },
+    {
+     "start": "05:00",
+     "text": "Hulk el Hombre Increíble",
+     "block": "Insomnio"
+    },
+    {
+     "start": "05:30",
+     "text": "Batman",
+     "block": "Insomnio"
+    }
+   ]
+  },
+  {
+   "label": "Viernes",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "La Abejita Hutch",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "La Princesa Sissi",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Gasparín",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "La Familia Por Qué?",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "It's Itsy Bitsy Time!",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Gemelas en Apuros",
+     "block": "Girl Power"
+    },
+    {
+     "start": "09:30",
+     "text": "Escuadrón Sobre Ruedas",
+     "block": "Girl Power"
+    },
+    {
+     "start": "10:00",
+     "text": "Dientes de Lata",
+     "block": "Girl Power"
+    },
+    {
+     "start": "10:30",
+     "text": "Angela Anaconda",
+     "block": "Girl Power"
+    },
+    {
+     "start": "11:00",
+     "text": "Súper Cerdita",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "11:30",
+     "text": "Jim Botón",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "12:00",
+     "text": "Oggy y Las Cucarachas",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "12:30",
+     "text": "El Pájaro Loco (Clásico)",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "13:00",
+     "text": "El Nuevo Show del Pájaro Loco",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "13:30",
+     "text": "Los Mega Bebés",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "14:00",
+     "text": "El Mundo de Bobby",
+     "block": "Súper Chiflados"
+    },
+    {
+     "start": "14:30",
+     "text": "Los Nuevos Locos Addams",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Las Aventuras de Shirley Holmes",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Súper Cerdita",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "El Nuevo Action Man",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Power Rangers: La Galaxia Perdida",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Power Rangers: A la Velocidad de la Luz",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Digimon 02",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "18:00",
+     "text": "Monster Rancher",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "18:30",
+     "text": "Flint: El Detective del Tiempo",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "19:00",
+     "text": "Patlabor",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "19:30",
+     "text": "Dinozaurs",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "20:00",
+     "text": "Historias de Miedo",
+     "block": "Mysteria"
+    },
+    {
+     "start": "20:30",
+     "text": "Las Aventuras de Shirley Holmes",
+     "block": "Mysteria"
+    },
+    {
+     "start": "21:00",
+     "text": "Escalofríos",
+     "block": "Mysteria"
+    },
+    {
+     "start": "21:30",
+     "text": "Digimon",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Patlabor",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "Power Rangers: A la Velocidad de la Luz",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "El Hombre Araña y sus Increíbles Amigos",
+     "block": "Clásicos a la Medianoche"
+    },
+    {
+     "start": "23:30",
+     "text": "El Hombre Araña",
+     "block": "Clásicos a la Medianoche"
+    },
+    {
+     "start": "00:00",
+     "text": "Los 4 Fantásticos",
+     "block": "Insomnio"
+    },
+    {
+     "start": "00:30",
+     "text": "Los Tres Chiflados",
+     "block": "Insomnio"
+    },
+    {
+     "start": "01:00",
+     "text": "Batman",
+     "block": "Insomnio"
+    },
+    {
+     "start": "01:30",
+     "text": "El Zorro",
+     "block": "Insomnio"
+    },
+    {
+     "start": "02:00",
+     "text": "El Gordo y El Flaco",
+     "block": "Insomnio"
+    },
+    {
+     "start": "02:30",
+     "text": "Los Locos Addams",
+     "block": "Insomnio"
+    },
+    {
+     "start": "03:00",
+     "text": "Los Munsters",
+     "block": "Insomnio"
+    },
+    {
+     "start": "03:30",
+     "text": "El Hombre Araña y sus Increíbles Amigos",
+     "block": "Insomnio"
+    },
+    {
+     "start": "04:00",
+     "text": "Mortadelo y Filemón",
+     "block": "Insomnio"
+    },
+    {
+     "start": "04:30",
+     "text": "Dilbert",
+     "block": "Insomnio"
+    },
+    {
+     "start": "05:00",
+     "text": "Hulk el Hombre Increíble",
+     "block": "Insomnio"
+    },
+    {
+     "start": "05:30",
+     "text": "Batman",
+     "block": "Insomnio"
+    }
+   ]
+  },
+  {
+   "label": "Sábado",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "El Mundo de Bobby",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "La Granja de los Monstruos",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "El Pájaro Loco (clásico)",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "Los Mega Bebés",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "Wunschpunsch",
+     "block": null
+    },
+    {
+     "start": "08:30",
+     "text": "Travesuras del Aula 402",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Mimi",
+     "block": null
+    },
+    {
+     "start": "09:30",
+     "text": "Los Cerditos de al Lado",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "La Pareja Dispareja",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Toonsylvania",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "Súper Cerdita",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Angela Anaconda",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "Oggy y Las Cucarachas",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "El Pájaro Loco (clásico)",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "El Nuevo Show del Pájaro Loco",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Los Mega Bebés",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "El Mundo de Bobby",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Los Archivos Secretos de los Perros Espías",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Cineskopio",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Cineskopio",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Cineskopio",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Power Rangers: En el Espacio",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Power Rangers: A la Velocidad de la Luz",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Digimon 02",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "18:00",
+     "text": "Monster Rancher",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "18:30",
+     "text": "Flint: El Detective del Tiempo",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "19:00",
+     "text": "Patlabor",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "19:30",
+     "text": "Dinozaurs",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "20:00",
+     "text": "Historias del Miedo",
+     "block": "Mysteria"
+    },
+    {
+     "start": "20:30",
+     "text": "Historias del Miedo",
+     "block": "Mysteria"
+    },
+    {
+     "start": "21:00",
+     "text": "Historias del Miedo",
+     "block": "Mysteria"
+    },
+    {
+     "start": "21:30",
+     "text": "Historias del Miedo",
+     "block": "Mysteria"
+    },
+    {
+     "start": "22:00",
+     "text": "Escalofríos",
+     "block": "Mysteria"
+    },
+    {
+     "start": "22:30",
+     "text": "Las Aventuras de Shirley Holmes",
+     "block": "Mysteria"
+    },
+    {
+     "start": "23:00",
+     "text": "Historias del Miedo",
+     "block": "Mysteria"
+    },
+    {
+     "start": "23:30",
+     "text": "El Mundo Secreto de Alex Mack",
+     "block": "Mysteria"
+    },
+    {
+     "start": "00:00",
+     "text": "Historias del Miedo",
+     "block": "Mysteria"
+    },
+    {
+     "start": "00:30",
+     "text": "Historias del Miedo",
+     "block": "Mysteria"
+    },
+    {
+     "start": "01:00",
+     "text": "Historias del Miedo",
+     "block": "Mysteria"
+    },
+    {
+     "start": "01:30",
+     "text": "Historias del Miedo",
+     "block": "Mysteria"
+    },
+    {
+     "start": "02:00",
+     "text": "Los 4 Fantásticos",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "El Pájaro Loco (clásico)",
+     "block": null
+    },
+    {
+     "start": "03:00",
+     "text": "El Nuevo Show del Pájaro Loco",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "La Mujer Araña",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Los 4 Fantásticos",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "El Pájaro Loco (clásico)",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Travesuras del Aula 402",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Angela Anaconda",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Domingo",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "¿Quién Tiene el Control?",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "¿Quién Tiene el Control?",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "¿Quién Tiene el Control?",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "¿Quién Tiene el Control?",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "¿Quién Tiene el Control?",
+     "block": null
+    },
+    {
+     "start": "08:30",
+     "text": "¿Quién Tiene el Control?",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "¿Quién Tiene el Control?",
+     "block": null
+    },
+    {
+     "start": "09:30",
+     "text": "¿Quién Tiene el Control?",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Las Travesuras de Barki",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Toonsylvania",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "Súper Cerdita",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Angela Anaconda",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "Oggy y Las Cucarachas",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "El Pájaro Loco (clásico)",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "El Nuevo Show del Pájaro Loco",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Los Mega Bebés",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "El Mundo de Bobby",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "El Nuevo Action Man",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "NASCAR Racers",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Autopista",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Wishbone",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Power Rangers: En el Espacio",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Power Rangers: A la Velocidad de la Luz",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Digimon 02",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "18:00",
+     "text": "Monster Rancher",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "18:30",
+     "text": "Flint: El Detective del Tiempo",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "19:00",
+     "text": "Patlabor",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "19:30",
+     "text": "Dinozaurs",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "20:00",
+     "text": "Autopista",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "20:30",
+     "text": "Shinzo",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "21:00",
+     "text": "Los Luchadores",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Digimon",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Historias de Miedo",
+     "block": null
+    },
+    {
+     "start": "22:30",
+     "text": "Cuentos de la Cripta",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Toonsylvania",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "Eerie, Indiana: La Otra Dimensión",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "X-Men",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "Batman",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Batman",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "El Pájaro Loco (clásico)",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Los 4 Fantásticos",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "El Pájaro Loco (clásico)",
+     "block": null
+    },
+    {
+     "start": "03:00",
+     "text": "El Nuevo Show del Pájaro Loco",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "La Mujer Araña",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Los 4 Fantásticos",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "El Pájaro Loco (clásico)",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Travesuras del Aula 402",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Angela Anaconda",
+     "block": null
+    }
+   ]
+  }
+ ]
+}

@@ -18,6 +18,17 @@ enum TimelineEventType {
   OTHER
 }
 
+/// How well a historical programming record is supported by its source. Uncertain records are
+/// kept, never dropped: they must stay distinguishable, with their provenance.
+enum Certainty {
+  /// Confirmed by a primary source (the channel's own schedule or a cable operator guide).
+  VERIFIED
+  /// Clear secondary source (wiki, blog, news site) not contradicted by a primary one.
+  PROBABLE
+  /// Not enough evidence: unidentified slots and slots whose source flags them as doubtful.
+  UNCERTAIN
+}
+
 /// A Latin American TV channel (e.g. the LatAm feed of Cartoon Network, or a national broadcaster).
 model Channel {
   id         Int      @id @default(autoincrement())
@@ -36,8 +47,37 @@ model Channel {
   seriesChannels SeriesChannel[]
   schedules      Schedule[]
   timelineEvents TimelineEvent[]
+  feeds          Feed[]
+  scheduleGrids  ScheduleGrid[]
 
   @@map("channels")
+}
+
+/// A broadcast feed of a channel (e.g. Fox Kids' "Zona Sur" and "Zona Norte"). The same lineup can
+/// air at different local times on each feed, so schedule records name the feed they belong to.
+model Feed {
+  id                Int      @id @default(autoincrement())
+  channelId         Int      @map("channel_id")
+  /// Unique per channel (e.g. "sur", "norte", "latinoamerica", "mexico").
+  slug              String
+  name              String
+  /// Area covered, as described by the source; null when not documented.
+  region            String?
+  /// IANA time zone the feed's schedules are usually published in; null when not documented.
+  referenceTimeZone String?  @map("reference_time_zone")
+  sourceName        String?  @map("source_name")
+  sourceUrl         String?  @map("source_url")
+  notes             String?
+  createdAt         DateTime @default(now()) @map("created_at")
+  updatedAt         DateTime @updatedAt @map("updated_at")
+
+  /// Restrict, like Channel: a feed with schedule data can't be deleted.
+  channel       Channel        @relation(fields: [channelId], references: [id], onDelete: Restrict)
+  schedules     Schedule[]
+  scheduleGrids ScheduleGrid[]
+
+  @@unique([channelId, slug])
+  @@map("feeds")
 }
 
 model Series {
@@ -59,11 +99,12 @@ model Series {
   createdAt     DateTime  @default(now()) @map("created_at")
   updatedAt     DateTime  @updatedAt @map("updated_at")
 
-  seasons        Season[]
-  seriesChannels SeriesChannel[]
-  seriesBlocks   SeriesBlock[]
-  schedules      Schedule[]
-  timelineEvents TimelineEvent[]
+  seasons           Season[]
+  seriesChannels    SeriesChannel[]
+  seriesBlocks      SeriesBlock[]
+  schedules         Schedule[]
+  timelineEvents    TimelineEvent[]
+  scheduleGridSlots ScheduleGridSlot[]
 
   @@map("series")
 }
@@ -149,10 +190,11 @@ model Block {
   createdAt   DateTime @default(now()) @map("created_at")
   updatedAt   DateTime @updatedAt @map("updated_at")
 
-  blockChannels  BlockChannel[]
-  seriesBlocks   SeriesBlock[]
-  schedules      Schedule[]
-  timelineEvents TimelineEvent[]
+  blockChannels     BlockChannel[]
+  seriesBlocks      SeriesBlock[]
+  schedules         Schedule[]
+  timelineEvents    TimelineEvent[]
+  scheduleGridSlots ScheduleGridSlot[]
 
   @@map("blocks")
 }
@@ -195,27 +237,34 @@ model SeriesBlock {
 
 /// A concrete historical airing slot. Dates and times are local wall-clock as published by the source.
 model Schedule {
-  id          Int      @id @default(autoincrement())
-  channelId   Int      @map("channel_id")
-  seriesId    Int?     @map("series_id")
-  blockId     Int?     @map("block_id")
+  id          Int       @id @default(autoincrement())
+  channelId   Int       @map("channel_id")
+  seriesId    Int?      @map("series_id")
+  blockId     Int?      @map("block_id")
   /// YYYY-MM-DD
-  airDate     String   @map("air_date")
+  airDate     String    @map("air_date")
   /// HH:MM (24h)
-  startTime   String   @map("start_time")
+  startTime   String    @map("start_time")
   /// HH:MM (24h)
-  endTime     String?  @map("end_time")
-  /// Free-form feed/region code (e.g. "MX", "Sur"); null means unknown or pan-regional.
+  endTime     String?   @map("end_time")
+  /// Deprecated: free-form feed code, kept only until the UI reads `feedId`. New data never sets it.
   feed        String?
+  /// The feed this day belongs to; null when the source doesn't document it.
+  feedId      Int?      @map("feed_id")
+  /// IANA time zone of the clock the source publishes times in (e.g. "America/Monterrey").
+  timeZone    String?   @map("time_zone")
   /// Title exactly as listed in the source; required in practice when seriesId is null.
-  listedTitle String?  @map("listed_title")
-  sourceName  String?  @map("source_name")
-  sourceUrl   String?  @map("source_url")
+  listedTitle String?   @map("listed_title")
+  /// The default only makes the migration safe for existing rows; loaders always set it.
+  certainty   Certainty @default(UNCERTAIN)
+  sourceName  String?   @map("source_name")
+  sourceUrl   String?   @map("source_url")
   notes       String?
-  createdAt   DateTime @default(now()) @map("created_at")
-  updatedAt   DateTime @updatedAt @map("updated_at")
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
 
   channel Channel @relation(fields: [channelId], references: [id], onDelete: Restrict)
+  feedRef Feed?   @relation(fields: [feedId], references: [id], onDelete: Restrict)
   series  Series? @relation(fields: [seriesId], references: [id], onDelete: SetNull)
   block   Block?  @relation(fields: [blockId], references: [id], onDelete: SetNull)
 
@@ -223,7 +272,70 @@ model Schedule {
   @@index([seriesId, airDate])
   @@index([blockId, airDate])
   @@index([airDate, startTime])
+  @@index([feedId])
   @@map("schedules")
+}
+
+/// A recurring weekly grid as published by one source, for one channel (and feed) and period. It
+/// only states what that source states: it is never expanded into dated Schedule rows. Two sources
+/// for the same period are two grids, so their differences stay visible.
+model ScheduleGrid {
+  id                Int      @id @default(autoincrement())
+  /// Stable key used by the loader (e.g. "cartoon-network-2000-10-latinoamerica-wiki").
+  slug              String   @unique
+  channelId         Int      @map("channel_id")
+  feedId            Int?     @map("feed_id")
+  /// "YYYY-MM" or "YYYY-MM-DD", TEXT like every historical date; no Date conversion.
+  validFrom         String   @map("valid_from")
+  validTo           String   @map("valid_to")
+  /// IANA time zone of the clock the source publishes times in; null when not documented.
+  timeZone          String?  @map("time_zone")
+  /// "HH:MM". Slots before it belong to the night of the listed weekday (a 01:00 Monday slot airs
+  /// in the early hours of Tuesday).
+  broadcastDayStart String   @map("broadcast_day_start")
+  sourceName        String   @map("source_name")
+  sourceUrl         String?  @map("source_url")
+  notes             String?
+  createdAt         DateTime @default(now()) @map("created_at")
+  updatedAt         DateTime @updatedAt @map("updated_at")
+
+  channel Channel            @relation(fields: [channelId], references: [id], onDelete: Restrict)
+  feed    Feed?              @relation(fields: [feedId], references: [id], onDelete: Restrict)
+  slots   ScheduleGridSlot[]
+
+  @@index([channelId, validFrom])
+  @@index([feedId])
+  @@map("schedule_grids")
+}
+
+/// One weekday slot of a ScheduleGrid. A source's "Lunes a viernes" row is stored as five rows, so
+/// each weekday can carry its own certainty.
+model ScheduleGridSlot {
+  id          Int       @id @default(autoincrement())
+  gridId      Int       @map("grid_id")
+  /// ISO weekday of the broadcast day: 1 = Monday ... 7 = Sunday.
+  weekday     Int
+  /// HH:MM (24h), local to the grid's time zone.
+  startTime   String    @map("start_time")
+  endTime     String?   @map("end_time")
+  /// Title exactly as listed in the source; null when the source marks the slot unidentified.
+  listedTitle String?   @map("listed_title")
+  /// Block label exactly as listed in the source, kept even when it maps to no catalog block.
+  listedBlock String?   @map("listed_block")
+  /// Set only through the curated title aliases or an explicit override; never guessed.
+  seriesId    Int?      @map("series_id")
+  blockId     Int?      @map("block_id")
+  certainty   Certainty
+  notes       String?
+
+  grid   ScheduleGrid @relation(fields: [gridId], references: [id], onDelete: Cascade)
+  series Series?      @relation(fields: [seriesId], references: [id], onDelete: SetNull)
+  block  Block?       @relation(fields: [blockId], references: [id], onDelete: SetNull)
+
+  @@unique([gridId, weekday, startTime])
+  @@index([seriesId])
+  @@index([blockId])
+  @@map("schedule_grid_slots")
 }
 
 model TimelineEvent {
@@ -238,6 +350,8 @@ model TimelineEvent {
   channelId   Int?              @map("channel_id")
   seriesId    Int?              @map("series_id")
   blockId     Int?              @map("block_id")
+  /// The default only makes the migration safe for existing rows; loaders always set it.
+  certainty   Certainty         @default(UNCERTAIN)
   sourceName  String?           @map("source_name")
   sourceUrl   String?           @map("source_url")
   notes       String?

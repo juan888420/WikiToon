@@ -1,0 +1,946 @@
+{
+ "source": {
+  "name": "Foro Grilla de Canales: Programación de Fox Kids | Enero 2003",
+  "url": "https://forogrilladecanales.blogspot.com/2022/12/programacion-de-fox-kids-enero-2003.html",
+  "published": "2022-12-29"
+ },
+ "title": "Programación de Fox Kids | Enero 2003",
+ "statedSite": "www.foxkidstv.com",
+ "days": [
+  {
+   "label": "Lunes, Miércoles y Viernes",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "El Pájaro Loco",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "El Escuadrón Sobre Ruedas",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "Dientes de Lata",
+     "block": "Girl Power"
+    },
+    {
+     "start": "08:00",
+     "text": "Gemelas en Apuros",
+     "block": "Girl Power"
+    },
+    {
+     "start": "08:30",
+     "text": "Ángela Anaconda",
+     "block": "Girl Power"
+    },
+    {
+     "start": "09:00",
+     "text": "Los Súper Sumos",
+     "block": null
+    },
+    {
+     "start": "09:30",
+     "text": "El Nuevo Show del Pájaro Loco",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Los Padrinos Mágicos",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Las Locuras de Andy",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "Los Patos Extremos",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Travesuras del Aula 402",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "Ángela Anaconda",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "El Hombre Araña",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Heavy Gear",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Power Rangers: Fuerza del Tiempo",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Power Rangers: Fuerza Salvaje",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Digimon 3",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "15:00",
+     "text": "Beyblade",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "15:30",
+     "text": "Medabots",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "16:00",
+     "text": "Shaman King",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "16:30",
+     "text": "Shinzo",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "17:00",
+     "text": "Los Caballeros del Mundo Mon",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "17:30",
+     "text": "Transformers: Nueva Generación",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "18:00",
+     "text": "Digimon 2",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "18:30",
+     "text": "Digimon 3",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "19:00",
+     "text": "Shin-Chan",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "19:30",
+     "text": "Power Rangers: Fuerza Salvaje",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Los Tres Chiflados",
+     "block": "Insomnio"
+    },
+    {
+     "start": "20:30",
+     "text": "El Zorro",
+     "block": "Insomnio"
+    },
+    {
+     "start": "21:00",
+     "text": "Batman",
+     "block": "Insomnio"
+    },
+    {
+     "start": "21:30",
+     "text": "Hulk: El Hombre Increible",
+     "block": "Insomnio"
+    },
+    {
+     "start": "22:00",
+     "text": "El Hombre Araña",
+     "block": "Insomnio"
+    },
+    {
+     "start": "22:30",
+     "text": "El Zorro",
+     "block": "Insomnio"
+    },
+    {
+     "start": "23:00",
+     "text": "Los Tres Chiflados",
+     "block": "Insomnio"
+    },
+    {
+     "start": "23:30",
+     "text": "Digimon 3",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "00:00",
+     "text": "Beyblade",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "00:30",
+     "text": "Medabots",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "01:00",
+     "text": "Shaman King",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "01:30",
+     "text": "Shinzo",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "02:00",
+     "text": "Los Caballeros del Mundo Mon",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "02:30",
+     "text": "Transformers: Nueva Generación",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "03:00",
+     "text": "Escuadrón al Aire",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "Kong",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "El Escuadrón Sobre Ruedas",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "Digimon 2",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Power Rangers: Fuerza del Tiempo",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Power Rangers: Fuerza Salvaje",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Martes y Jueves",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "El Pájaro Loco",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "El Escuadrón Sobre Ruedas",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "Dientes de Lata",
+     "block": "Girl Power"
+    },
+    {
+     "start": "08:00",
+     "text": "Mary Kate y Ashley: ¡En Acción!",
+     "block": "Girl Power"
+    },
+    {
+     "start": "08:30",
+     "text": "Ángela Anaconda",
+     "block": "Girl Power"
+    },
+    {
+     "start": "09:00",
+     "text": "Mellizos Cramp",
+     "block": null
+    },
+    {
+     "start": "09:30",
+     "text": "El Nuevo Show del Pájaro Loco",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Los Padrinos Mágicos",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Las Locuras de Andy",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "Los Patos Extremos",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Travesuras del Aula 402",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "Ángela Anaconda",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "El Hombre Araña",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Autopista",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Power Rangers: Fuerza del Tiempo",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Power Rangers: Fuerza Salvaje",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Digimon 3",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "15:00",
+     "text": "Beyblade",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "15:30",
+     "text": "Medabots",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "16:00",
+     "text": "Shaman King",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "16:30",
+     "text": "Shinzo",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "17:00",
+     "text": "Los Caballeros del Mundo Mon",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "17:30",
+     "text": "Transformers: Nueva Generación",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "18:00",
+     "text": "Digimon 2",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "18:30",
+     "text": "Digimon 3",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "19:00",
+     "text": "Shin-Chan",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "19:30",
+     "text": "Power Rangers: Fuerza Salvaje",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Los Tres Chiflados",
+     "block": "Insomnio"
+    },
+    {
+     "start": "20:30",
+     "text": "El Zorro",
+     "block": "Insomnio"
+    },
+    {
+     "start": "21:00",
+     "text": "Batman",
+     "block": "Insomnio"
+    },
+    {
+     "start": "21:30",
+     "text": "Hulk: El Hombre Increible",
+     "block": "Insomnio"
+    },
+    {
+     "start": "22:00",
+     "text": "El Hombre Araña",
+     "block": "Insomnio"
+    },
+    {
+     "start": "22:30",
+     "text": "El Zorro",
+     "block": "Insomnio"
+    },
+    {
+     "start": "23:00",
+     "text": "Los Tres Chiflados",
+     "block": "Insomnio"
+    },
+    {
+     "start": "23:30",
+     "text": "Digimon 3",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "00:00",
+     "text": "Beyblade",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "00:30",
+     "text": "Medabots",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "01:00",
+     "text": "Shaman King",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "01:30",
+     "text": "Shinzo",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "02:00",
+     "text": "Los Caballeros del Mundo Mon",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "02:30",
+     "text": "Transformers: Nueva Generación",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "03:00",
+     "text": "Escuadrón al Aire",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "Kong",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "El Escuadrón Sobre Ruedas",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "Digimon 2",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Power Rangers: Fuerza del Tiempo",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Power Rangers: Fuerza Salvaje",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Sábado",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "El Pájaro Loco",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Monster Rancher",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "El Hombre Araña sin Limites",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "La Momia",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "¿Quién Tiene el Control?",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "Tres Espías sin Limite",
+     "block": "Girl Power"
+    },
+    {
+     "start": "12:30",
+     "text": "Dientes de Lata",
+     "block": "Girl Power"
+    },
+    {
+     "start": "13:00",
+     "text": "Mary Kate y Ashley: ¡En Acción",
+     "block": "Girl Power"
+    },
+    {
+     "start": "13:30",
+     "text": "Power Rangers: Fuerza del Tiempo",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Power Rangers: Fuerza Salvaje",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Digimon 3",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "15:00",
+     "text": "Beyblade",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "15:30",
+     "text": "Medabots",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "16:00",
+     "text": "Shaman King",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "16:30",
+     "text": "Shinzo",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "17:00",
+     "text": "Escalofríos",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Escalofríos",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Escalofríos",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Escalofríos",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "Escalofríos",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "Gárgolas: Héroes Góticos",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Evolución",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "Los Nuevos Locos Addams",
+     "block": "Insomnio"
+    },
+    {
+     "start": "21:00",
+     "text": "Los Nuevos Locos Addams",
+     "block": "Insomnio"
+    },
+    {
+     "start": "21:30",
+     "text": "Los Tres Chiflados",
+     "block": "Insomnio"
+    },
+    {
+     "start": "22:00",
+     "text": "Los Tres Chiflados",
+     "block": "Insomnio"
+    },
+    {
+     "start": "22:30",
+     "text": "Batman",
+     "block": "Insomnio"
+    },
+    {
+     "start": "23:00",
+     "text": "Dilbert",
+     "block": "Insomnio"
+    },
+    {
+     "start": "23:30",
+     "text": "Power Rangers: Fuerza del Tiempo",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "Power Rangers: Fuerza Salvaje",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "Digimon 3",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "01:00",
+     "text": "Beyblade",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "01:30",
+     "text": "Medabots",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "02:00",
+     "text": "Shaman King",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "02:30",
+     "text": "Shinzo",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "03:00",
+     "text": "Toonsylvania",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "Travesuras del Aula 402",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Mellizos Cramp",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "Los Súper Sumos",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Los Súper Sumos",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "El Pájaro Loco",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Domingo",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "El Pájaro Loco",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Monster Rancher",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "El Hombre Araña sin Limites",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "La Momia",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "Power Rangers: Fuerza del Tiempo",
+     "block": null
+    },
+    {
+     "start": "08:30",
+     "text": "Power Rangers: Fuerza Salvaje",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Patlabor",
+     "block": null
+    },
+    {
+     "start": "09:30",
+     "text": "Flint: El Detective del Tiempo",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "Autopista",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Masked Rider",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "Digimon 2",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Digimon 3",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "Tres Espías sin Limite",
+     "block": "Girl Power"
+    },
+    {
+     "start": "12:30",
+     "text": "Dientes de Lata",
+     "block": "Girl Power"
+    },
+    {
+     "start": "13:00",
+     "text": "Mary Kate y Ashley: ¡En Acción!",
+     "block": "Girl Power"
+    },
+    {
+     "start": "13:30",
+     "text": "Power Rangers: Fuerza del Tiempo",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Power Rangers: Fuerza Salvaje",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Digimon 3",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "15:00",
+     "text": "Beyblade",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "15:30",
+     "text": "Medabots",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "16:00",
+     "text": "Shaman King",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "16:30",
+     "text": "Shinzo",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "17:00",
+     "text": "Escalofríos",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Escalofríos",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Escalofríos",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Escalofríos",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "Escalofríos",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "Gárgolas: Héroes Góticos",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Evolución",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "Los Nuevos Locos Addams",
+     "block": "Insomnio"
+    },
+    {
+     "start": "21:00",
+     "text": "Los Nuevos Locos Addams",
+     "block": "Insomnio"
+    },
+    {
+     "start": "21:30",
+     "text": "Los Tres Chiflados",
+     "block": "Insomnio"
+    },
+    {
+     "start": "22:00",
+     "text": "Los Tres Chiflados",
+     "block": "Insomnio"
+    },
+    {
+     "start": "22:30",
+     "text": "Batman",
+     "block": "Insomnio"
+    },
+    {
+     "start": "23:00",
+     "text": "Dilbert",
+     "block": "Insomnio"
+    },
+    {
+     "start": "23:30",
+     "text": "Power Rangers: Fuerza del Tiempo",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "Power Rangers: Fuerza Salvaje",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "Digimon 3",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "01:00",
+     "text": "Beyblade",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "01:30",
+     "text": "Medabots",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "02:00",
+     "text": "Shaman King",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "02:30",
+     "text": "Shinzo",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "03:00",
+     "text": "Toonsylvania",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "Travesuras del Aula 402",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Mellizos Cramp",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "Los Súper Sumos",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Los Súper Sumos",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "El Pájaro Loco",
+     "block": null
+    }
+   ]
+  }
+ ]
+}

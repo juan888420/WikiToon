@@ -1,0 +1,203 @@
+{
+ "source": {
+  "name": "Cablevisión Monterrey, guía de Fox kids",
+  "url": "https://web.archive.org/web/20031212124226/http://www.cablevision.com.mx:80/programacion/canales/Canal107.htm"
+ },
+ "channelSlug": "fox-kids",
+ "channelName": "Fox kids",
+ "date": "2003-12-11",
+ "slots": [
+  {
+   "start": "00:00",
+   "text": "El hombre Araña"
+  },
+  {
+   "start": "00:30",
+   "text": "X-Men"
+  },
+  {
+   "start": "01:00",
+   "text": "Power Rangers fuerza de tiempo"
+  },
+  {
+   "start": "01:30",
+   "text": "Power Rangers fuerza salvaje"
+  },
+  {
+   "start": "02:00",
+   "text": "Digimon IV"
+  },
+  {
+   "start": "02:30",
+   "text": "Beyblade"
+  },
+  {
+   "start": "03:00",
+   "text": "Medabots"
+  },
+  {
+   "start": "03:30",
+   "text": "Shaman King"
+  },
+  {
+   "start": "04:00",
+   "text": "Kid Músculo"
+  },
+  {
+   "start": "04:30",
+   "text": "Kirby"
+  },
+  {
+   "start": "05:00",
+   "text": "Transformers Armada"
+  },
+  {
+   "start": "05:30",
+   "text": "Digimon II"
+  },
+  {
+   "start": "06:00",
+   "text": "Digimon III"
+  },
+  {
+   "start": "06:30",
+   "text": "Los Padrinos Mágicos"
+  },
+  {
+   "start": "07:00",
+   "text": "Kirby"
+  },
+  {
+   "start": "07:30",
+   "text": "Medabots"
+  },
+  {
+   "start": "08:00",
+   "text": "Beyblade"
+  },
+  {
+   "start": "08:30",
+   "text": "Digimon IV"
+  },
+  {
+   "start": "09:00",
+   "text": "Power Rangers fuerza de tiempo"
+  },
+  {
+   "start": "09:30",
+   "text": "Power Rangers fuerza salvaje"
+  },
+  {
+   "start": "10:00",
+   "text": "Pájaro Loco"
+  },
+  {
+   "start": "10:30",
+   "text": "Wheel Squad"
+  },
+  {
+   "start": "11:00",
+   "text": "Tres espías sin límite"
+  },
+  {
+   "start": "11:30",
+   "text": "Dientes de Lata"
+  },
+  {
+   "start": "12:00",
+   "text": "Mary-Kate y Ashley en acción!"
+  },
+  {
+   "start": "12:30",
+   "text": "Angela Anaconda"
+  },
+  {
+   "start": "13:00",
+   "text": "Mellizos Carmp"
+  },
+  {
+   "start": "13:30",
+   "text": "Pájaro Loco"
+  },
+  {
+   "start": "14:00",
+   "text": "Los Padrinos Mágicos"
+  },
+  {
+   "start": "14:30",
+   "text": "Las locuras de Andy"
+  },
+  {
+   "start": "15:00",
+   "text": "Kirby"
+  },
+  {
+   "start": "15:30",
+   "text": "Travesuras del aula 402"
+  },
+  {
+   "start": "16:00",
+   "text": "Angela Anaconda"
+  },
+  {
+   "start": "16:30",
+   "text": "Hombre Araña"
+  },
+  {
+   "start": "17:00",
+   "text": "X-Men"
+  },
+  {
+   "start": "17:30",
+   "text": "Power Rangers fuerza de tiempo"
+  },
+  {
+   "start": "18:00",
+   "text": "Power Rangers fuerza salvaje"
+  },
+  {
+   "start": "18:30",
+   "text": "Digimon IV"
+  },
+  {
+   "start": "19:00",
+   "text": "Beyblade"
+  },
+  {
+   "start": "19:30",
+   "text": "Medabots"
+  },
+  {
+   "start": "20:00",
+   "text": "Shaman King"
+  },
+  {
+   "start": "20:30",
+   "text": "Kid Músculo"
+  },
+  {
+   "start": "21:00",
+   "text": "Kirby"
+  },
+  {
+   "start": "21:30",
+   "text": "Transformers Armada"
+  },
+  {
+   "start": "22:00",
+   "text": "Digimon II"
+  },
+  {
+   "start": "22:30",
+   "text": "Digimon III"
+  },
+  {
+   "start": "23:00",
+   "text": "Shaman King"
+  },
+  {
+   "start": "23:30",
+   "text": "Power Rangers fuerza salvaje"
+  }
+ ]
+}

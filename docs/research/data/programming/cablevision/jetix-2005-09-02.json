@@ -1,0 +1,199 @@
+{
+ "source": {
+  "name": "Cablevisión Monterrey, guía de Jetix",
+  "url": "https://web.archive.org/web/20050903202309/http://www.cablevision.com.mx:80/programacion/canales/Canal107.htm"
+ },
+ "channelSlug": "jetix",
+ "channelName": "Jetix",
+ "date": "2005-09-02",
+ "slots": [
+  {
+   "start": "00:00",
+   "text": "Los padrinos mágicos"
+  },
+  {
+   "start": "00:30",
+   "text": "El pájaro loco"
+  },
+  {
+   "start": "01:00",
+   "text": "Las locuras Andy"
+  },
+  {
+   "start": "01:30",
+   "text": "Los nuevos locos Addams"
+  },
+  {
+   "start": "02:00",
+   "text": "Los misterios de Moville"
+  },
+  {
+   "start": "02:30",
+   "text": "Colegio del agujero negro"
+  },
+  {
+   "start": "03:00",
+   "text": "Qué raro"
+  },
+  {
+   "start": "03:30",
+   "text": "Ciencia traviesa"
+  },
+  {
+   "start": "04:00",
+   "text": "Escalofríos"
+  },
+  {
+   "start": "04:30",
+   "text": "MegaMan NT warrior"
+  },
+  {
+   "start": "05:00",
+   "text": "Beyblade G revolution"
+  },
+  {
+   "start": "05:30",
+   "text": "Medabots"
+  },
+  {
+   "start": "06:00",
+   "text": "Digimon 4"
+  },
+  {
+   "start": "06:30",
+   "text": "Kirby"
+  },
+  {
+   "start": "07:00",
+   "text": "Transformers armada"
+  },
+  {
+   "start": "07:30",
+   "text": "Medabots"
+  },
+  {
+   "start": "08:00",
+   "text": "Beyblade G revolution"
+  },
+  {
+   "start": "08:30",
+   "text": "Power Rangers fuerza salvaje"
+  },
+  {
+   "start": "09:00",
+   "text": "Power Rangers tormenta ninja"
+  },
+  {
+   "start": "09:30",
+   "text": "Power Rangers dino trueno"
+  },
+  {
+   "start": "10:00",
+   "text": "El pájaro loco"
+  },
+  {
+   "start": "10:30",
+   "text": "Los padrinos mágicos"
+  },
+  {
+   "start": "11:00",
+   "text": "Las tortugas ninja"
+  },
+  {
+   "start": "11:30",
+   "text": "Tres espías sin límite"
+  },
+  {
+   "start": "12:00",
+   "text": "Tres espías sin límite"
+  },
+  {
+   "start": "12:30",
+   "text": "Gadget y los Gadgetinis"
+  },
+  {
+   "start": "13:00",
+   "text": "Dave el Bárbaro"
+  },
+  {
+   "start": "13:30",
+   "text": "Los padrinos mágicos"
+  },
+  {
+   "start": "14:00",
+   "text": "Los padrinos mágicos"
+  },
+  {
+   "start": "14:30",
+   "text": "Fillmore"
+  },
+  {
+   "start": "15:00",
+   "text": "Generación Power Rangers"
+  },
+  {
+   "start": "16:00",
+   "text": "Sonic X"
+  },
+  {
+   "start": "16:30",
+   "text": "Dragon Booster"
+  },
+  {
+   "start": "17:00",
+   "text": "Power Rangers fuerza salvaje"
+  },
+  {
+   "start": "17:30",
+   "text": "Power Rangers tormenta ninja"
+  },
+  {
+   "start": "18:00",
+   "text": "Power Rangers dino trueno"
+  },
+  {
+   "start": "18:30",
+   "text": "Súper escuadrón ciber monos HF"
+  },
+  {
+   "start": "19:00",
+   "text": "Digimon"
+  },
+  {
+   "start": "19:30",
+   "text": "Battle B Daman"
+  },
+  {
+   "start": "20:00",
+   "text": "Dragon Booster"
+  },
+  {
+   "start": "20:30",
+   "text": "MegaMan NT warrior"
+  },
+  {
+   "start": "21:00",
+   "text": "Fairly Odd parents"
+  },
+  {
+   "start": "21:30",
+   "text": "Fairly Odd parents"
+  },
+  {
+   "start": "22:00",
+   "text": "Colegio del agujero negro"
+  },
+  {
+   "start": "22:30",
+   "text": "Ciencia traviesa"
+  },
+  {
+   "start": "23:00",
+   "text": "Qué raro"
+  },
+  {
+   "start": "23:30",
+   "text": "Escalofríos"
+  }
+ ]
+}

@@ -1,0 +1,131 @@
+{
+ "source": {
+  "name": "Cablevisión Monterrey, guía de Boomerang",
+  "url": "https://web.archive.org/web/20031212124821/http://www.cablevision.com.mx:80/programacion/canales/Canal112.htm"
+ },
+ "channelSlug": "boomerang",
+ "channelName": "Boomerang",
+ "date": "2003-12-11",
+ "slots": [
+  {
+   "start": "00:00",
+   "text": "Shazzan"
+  },
+  {
+   "start": "00:30",
+   "text": "Aces del Peligro"
+  },
+  {
+   "start": "01:00",
+   "text": "Ricochet Rabbit"
+  },
+  {
+   "start": "02:00",
+   "text": "Pixie y Dixie"
+  },
+  {
+   "start": "03:00",
+   "text": "Tiro Loco Mcgraw"
+  },
+  {
+   "start": "04:00",
+   "text": "Ruff y Reddy"
+  },
+  {
+   "start": "05:00",
+   "text": "Frankenstein Jr. y los imposibles"
+  },
+  {
+   "start": "05:30",
+   "text": "Birdman y el Trío Galaxia"
+  },
+  {
+   "start": "06:00",
+   "text": "Pepe Pótamo"
+  },
+  {
+   "start": "07:00",
+   "text": "Los Locos Addams"
+  },
+  {
+   "start": "08:00",
+   "text": "Shazzan"
+  },
+  {
+   "start": "08:30",
+   "text": "Aces del Peligro"
+  },
+  {
+   "start": "09:00",
+   "text": "Ricochet Rabbit"
+  },
+  {
+   "start": "10:00",
+   "text": "Pixie y Dixie"
+  },
+  {
+   "start": "11:00",
+   "text": "Tiro Loco Mcgraw"
+  },
+  {
+   "start": "12:00",
+   "text": "Ruff y Reddy"
+  },
+  {
+   "start": "13:00",
+   "text": "Frankenstein Jr. y los imposibles"
+  },
+  {
+   "start": "13:30",
+   "text": "Birdman y el Trío Galaxia"
+  },
+  {
+   "start": "14:00",
+   "text": "Pepe Pótamo"
+  },
+  {
+   "start": "15:00",
+   "text": "Los Locos Addams"
+  },
+  {
+   "start": "16:00",
+   "text": "Shazzan"
+  },
+  {
+   "start": "16:30",
+   "text": "Aces del Peligro"
+  },
+  {
+   "start": "17:00",
+   "text": "Ricochet Rabbit"
+  },
+  {
+   "start": "18:00",
+   "text": "Pixie y Dixie"
+  },
+  {
+   "start": "19:00",
+   "text": "Tiro Loco Mcgraw"
+  },
+  {
+   "start": "20:00",
+   "text": "Ruff y Reddy"
+  },
+  {
+   "start": "21:00",
+   "text": "Frankenstein Jr. y los imposibles"
+  },
+  {
+   "start": "21:30",
+   "text": "Birdman y el Trío Galaxia"
+  },
+  {
+   "start": "22:00",
+   "text": "Pepe Pótamo"
+  },
+  {
+   "start": "23:00",
+   "text": "Los Locos Addams"
+  }
+ ]
+}

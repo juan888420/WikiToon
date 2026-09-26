@@ -18,7 +18,12 @@
     "db:import:series": "tsx --env-file=.env scripts/import-series.ts",
     "db:load:series": "tsx --env-file=.env scripts/load-series.ts",
     "db:load:blocks": "tsx --env-file=.env scripts/load-blocks.ts",
-    "db:studio": "prisma studio"
+    "db:load:programming": "tsx --env-file=.env scripts/load-programming.ts",
+    "db:report:programming": "tsx --env-file=.env scripts/report-programming.ts",
+    "db:studio": "prisma studio",
+    "research:programming:fetch": "tsx scripts/research/programming/fetch.ts",
+    "research:programming:extract": "tsx scripts/research/programming/extract.ts",
+    "research:programming:build": "tsx --env-file=.env scripts/research/programming/build-dataset.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.8.0",

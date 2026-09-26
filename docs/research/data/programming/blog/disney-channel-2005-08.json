@@ -1,0 +1,1996 @@
+{
+ "source": {
+  "name": "Foro Grilla de Canales: Programación de Disney Channel | Agosto 2005 (celebrando el Día del Niño)",
+  "url": "https://forogrilladecanales.blogspot.com/2023/10/programacion-de-disney-channel-agosto.html",
+  "published": "2023-10-15"
+ },
+ "title": "Programación de Disney Channel | Agosto 2005 (celebrando el Día del Niño)",
+ "statedSite": "www.disneylatino.com",
+ "days": [
+  {
+   "label": "Lunes y Miércoles",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Art Attack de Disney",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Kim Possible",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Las Aventuras de PB&J Otter",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "07:30",
+     "text": "Las Nuevas Aventuras de Winnie Pooh",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "08:00",
+     "text": "Bear en la Gran Casa Azul",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "08:30",
+     "text": "El Libro de Pooh",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "09:00",
+     "text": "El Circo de Jojo",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "09:30",
+     "text": "Los Héroes de la Ciudad",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "10:00",
+     "text": "Rolie Polie Olie y su Familia",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "10:30",
+     "text": "Stanley",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "11:00",
+     "text": "El Librito de la Selva",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Quack Pack",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "El Show del Ratón",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "101 Dálmatas de Disney",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "La Leyenda de Tarzán",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Art Attack de Disney",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Teamo Supremo",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "La Mascota de la Clase",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Hora Toon | Lilo y Stitch de Disney",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Hora Toon | Las Aventuras de Brandy y el Sr. Bigotes",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Hora Toon | Jake Long: El Dragón Occidental",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Hora Toon | Recreo",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Hora Toon | La Familia Proud",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Hora Toon | Kim Possible",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Zapping Zone",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Es Tan Raven",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "Mano a Mano",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "Lizzie McGuire",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "El Maravilloso Mundo de Disney",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Floricienta",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Phil del Futuro",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "La Peor Bruja",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "Zapping Zone",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "Es Tan Raven",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Mano a Mano",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Lizzie McGuire",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "El Maravilloso Mundo de Disney",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Art Attack de Disney",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "La Familia Proud",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "La Mascota de la Clase",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Kim Possible",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Martes",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Art Attack de Disney",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Kim Possible",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Las Aventuras de PB&J Otter",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "07:30",
+     "text": "Las Nuevas Aventuras de Winnie Pooh",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "08:00",
+     "text": "Bear en la Gran Casa Azul",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "08:30",
+     "text": "El Libro de Pooh",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "09:00",
+     "text": "El Circo de Jojo",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "09:30",
+     "text": "Los Héroes de la Ciudad",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "10:00",
+     "text": "Rolie Polie Olie y su Familia",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "10:30",
+     "text": "Stanley",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "11:00",
+     "text": "El Librito de la Selva",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Quack Pack",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "El Show del Ratón",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "101 Dálmatas de Disney",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "La Leyenda de Tarzán",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Art Attack de Disney",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Teamo Supremo",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "La Mascota de la Clase",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Hora Toon | Lilo y Stitch de Disney",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Hora Toon | Las Aventuras de Brandy y el Sr. Bigotes",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Hora Toon | Jake Long: El Dragón Occidental",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Hora Toon | Recreo",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Hora Toon | La Familia Proud",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Hora Toon | Kim Possible",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Zapping Zone",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Es Tan Raven",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "Mano a Mano",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "Lizzie McGuire",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Disney Movie",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Zapping Music",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Floricienta",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Phil del Futuro",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "La Facultad Abracadabra",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "Zapping Zone",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "Es Tan Raven",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Mano a Mano",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Lizzie McGuire",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Disney Movie",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "Zapping Music",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Art Attack de Disney",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "La Familia Proud",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "La Mascota de la Clase",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Kim Possible",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Jueves",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Art Attack de Disney",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Kim Possible",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Las Aventuras de PB&J Otter",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "07:30",
+     "text": "Las Nuevas Aventuras de Winnie Pooh",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "08:00",
+     "text": "Bear en la Gran Casa Azul",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "08:30",
+     "text": "El Libro de Pooh",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "09:00",
+     "text": "El Circo de Jojo",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "09:30",
+     "text": "Los Héroes de la Ciudad",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "10:00",
+     "text": "Rolie Polie Olie y su Familia",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "10:30",
+     "text": "Stanley",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "11:00",
+     "text": "El Librito de la Selva",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Quack Pack",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "El Show del Ratón",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "101 Dálmatas de Disney",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "La Leyenda de Tarzán",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Art Attack de Disney",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Teamo Supremo",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "La Mascota de la Clase",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Hora Toon | Lilo y Stitch de Disney",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Hora Toon | Las Aventuras de Brandy y el Sr. Bigotes",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Hora Toon | Jake Long: El Dragón Occidental",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Hora Toon | Recreo",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Hora Toon | La Familia Proud",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Hora Toon | Kim Possible",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Zapping Zone",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Es Tan Raven",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "Mano a Mano",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "Lizzie McGuire",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "El Maravilloso Mundo de Disney",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Zapping Sports",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Floricienta",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Phil del Futuro",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "La Facultad Abracadabra",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "Zapping Zone",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "Es Tan Raven",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Mano a Mano",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Lizzie McGuire",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "El Maravilloso Mundo de Disney",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "Zapping Sports",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Art Attack de Disney",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "La Familia Proud",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "La Mascota de la Clase",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Kim Possible",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Viernes",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Art Attack de Disney",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Kim Possible",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Las Aventuras de PB&J Otter",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "07:30",
+     "text": "Las Nuevas Aventuras de Winnie Pooh",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "08:00",
+     "text": "Bear en la Gran Casa Azul",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "08:30",
+     "text": "El Libro de Pooh",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "09:00",
+     "text": "El Circo de Jojo",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "09:30",
+     "text": "Los Héroes de la Ciudad",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "10:00",
+     "text": "Rolie Polie Olie y su Familia",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "10:30",
+     "text": "Stanley",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "11:00",
+     "text": "El Librito de la Selva",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Quack Pack",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "El Show del Ratón",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "101 Dálmatas de Disney",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "La Leyenda de Tarzán",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Art Attack de Disney",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Teamo Supremo",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "La Mascota de la Clase",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Hora Toon | Lilo y Stitch de Disney",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Hora Toon | Las Aventuras de Brandy y el Sr. Bigotes",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Hora Toon | Jake Long: El Dragón Occidental",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Hora Toon | Recreo",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Hora Toon | La Familia Proud",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Hora Toon | Kim Possible",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Zapping Zone",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Es Tan Raven",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "Mano a Mano",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "Lizzie McGuire",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Disney Movie",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Floricienta",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Phil del Futuro",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "La Peor Bruja",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "Zapping Zone",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "Es Tan Raven",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Mano a Mano",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Lizzie McGuire",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Disney Movie",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Art Attack de Disney",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "La Familia Proud",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "La Mascota de la Clase",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Kim Possible",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Sábado",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Art Attack de Disney",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Kim Possible",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Bear en la Gran Casa Azul",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "07:30",
+     "text": "Las Nuevas Aventuras de Madeline",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "08:00",
+     "text": "El Circo de Jojo",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "08:30",
+     "text": "El Libro de Pooh",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "09:00",
+     "text": "Rolie Polie Olie y su Familia",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "09:30",
+     "text": "Stanley",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "10:00",
+     "text": "Bear en la Gran Casa Azul",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "10:30",
+     "text": "El Libro de Pooh",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "11:00",
+     "text": "El Librito de la Selva",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Quack Pack",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "Disney Princesas | La Sirenita de Disney",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Disney Princesas | Aladdin de Disney",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Lilo y Stitch de Disney",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Recreo",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Pepper Ann",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Kim Possible",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Las Aventuras de Timón y Pumba",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Buzz Lightyear: Comando Estelar",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Sabrina: Secretos de la Brujita",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Hércules de Disney",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "La Familia Proud",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Art Attack de Disney",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Es Tan Raven",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Mano a Mano",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "Phil del Futuro",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "Lizzie McGuire",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "El Maravilloso Mundo de Disney",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "El Maravilloso Mundo de Disney",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "Lo Mejor de Zapping Zone",
+     "block": null
+    },
+    {
+     "start": "00:00",
+     "text": "Aprendiendo a Vivir",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "Chico Listo",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "El Maravilloso Mundo de Disney",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "El Maravilloso Mundo de Disney",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "Lo Mejor de Zapping Zone",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Disney Princesas | La Sirenita de Disney",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Disney Princesas | Aladdin de Disney",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Domingo",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Art Attack de Disney",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Kim Possible",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Bear en la Gran Casa Azul",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "07:30",
+     "text": "Las Nuevas Aventuras de Madeline",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "08:00",
+     "text": "El Circo de Jojo",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "08:30",
+     "text": "El Libro de Pooh",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "09:00",
+     "text": "Rolie Polie Olie y su Familia",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "09:30",
+     "text": "Stanley",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "10:00",
+     "text": "Bear en la Gran Casa Azul",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "10:30",
+     "text": "El Libro de Pooh",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "11:00",
+     "text": "El Librito de la Selva",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Quack Pack",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "Disney Princesas | La Sirenita de Disney",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Disney Princesas | Aladdin de Disney",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Lilo y Stitch de Disney",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Recreo",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Pepper Ann",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Kim Possible",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "El Maravilloso Mundo de Disney",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Golazo: La Copa Jetix en Disney Channel",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "La Familia Proud",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Art Attack de Disney",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Mejorando la Casa",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Película Disney Channel",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Mouse, Cámara, Acción",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "Mouse, Cámara, Acción",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Mouse, Cámara, Acción",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "El Maravilloso Mundo de Disney",
+     "block": null
+    },
+    {
+     "start": "23:30",
+     "text": "Querida, Encogí a los Niños: La Serie",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "Amor Fraternal",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Mouse, Cámara, Acción",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Mouse, Cámara, Acción",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Mouse, Cámara, Acción",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "El Maravilloso Mundo de Disney",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "Kim Possible",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Disney Princesas | La Sirenita de Disney",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Disney Princesas | Aladdin de Disney",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Domingo 7 de agosto del 2005 (Semana del Niño)",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Art Attack de Disney",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Kim Possible",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Bear en la Gran Casa Azul",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "07:30",
+     "text": "Las Nuevas Aventuras de Madeline",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "08:00",
+     "text": "El Circo de Jojo",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "08:30",
+     "text": "El Libro de Pooh",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "09:00",
+     "text": "Rolie Polie Olie y su Familia",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "09:30",
+     "text": "Stanley",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "10:00",
+     "text": "Los Héroes de la Ciudad",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "10:30",
+     "text": "Las Aventuras de PB&J Otter",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "11:00",
+     "text": "Las Nuevas Aventuras de Winnie the Pooh",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "11:30",
+     "text": "Bear en la Gran Casa Azul",
+     "block": "Playhouse Disney"
+    },
+    {
+     "start": "12:00",
+     "text": "Fanaticódigo | Lilo y Stitch de Disney",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Fanaticódigo | Recreo",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Fanaticódigo | Jake Long: El Dragón Occidental",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Fanaticódigo | Lilo y Stitch de Disney",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Fanaticódigo | Recreo",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Fanaticódigo | Jake Long: El Dragón Occidental",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "El Maravilloso Mundo de Disney | Atlantis: El Imperio Perdido",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Risas Inc. | Monsters, Inc.",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "Risas Inc. | Toy Story",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Risas Inc. | Bichos: Una Aventura en Miniatura",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Risas Inc. | Toy Story 2",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "El Maravilloso Mundo de Disney | Atlantis: El Imperio Perdido",
+     "block": null
+    },
+    {
+     "start": "03:00",
+     "text": "Fanaticódigo | Jake Long: El Dragón Occidental",
+     "block": null
+    },
+    {
+     "start": "03:30",
+     "text": "Fanaticódigo | Lilo y Stitch de Disney",
+     "block": null
+    },
+    {
+     "start": "04:00",
+     "text": "Fanaticódigo | Recreo",
+     "block": null
+    },
+    {
+     "start": "04:30",
+     "text": "Kim Possible",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Disney Princesas | La Sirenita de Disney",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Disney Princesas | Aladdin de Disney",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Lunes 1 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "Semana del Niño | Peter Pan: El Regreso al País de Nunca Jamás",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Semana del Niño | Peter Pan: El Regreso al País de Nunca Jamás",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Martes 2 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "Semana del Niño | Hércules",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Semana del Niño | Hércules",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Miércoles 3 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "Semana del Niño | Jim y El Durazno Gigante",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Semana del Niño | Jim y El Durazno Gigante",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Jueves 4 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "Semana del Niño | Aladdin y Los 40 Ladrones",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Semana del Niño | Aladdin y Los 40 Ladrones",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Viernes 5 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "Semana del Niño | Lilo y Stitch de Disney",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Semana del Niño | Lilo y Stitch de Disney",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Sábado 6 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "Semana del Niño | Pocahontas",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Semana del Niño | 102 Dálmatas",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Semana del Niño | Pocahontas",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "Semana del Niño | 102 Dálmatas",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Domingo 7 de agosto de 2005",
+   "slots": [
+    {
+     "start": "15:00",
+     "text": "Semana del Niño | Atlantis: El Imperio Perdido",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Risas Inc. | Monsters, Inc.",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "Risas Inc. | Toy Story",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Risas Inc. | Bichos: Una Aventura en Miniatura",
+     "block": null
+    },
+    {
+     "start": "23:00",
+     "text": "Risas Inc. | Toy Story 2",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Semana del Niño | Atlantis: El Imperio Perdido",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Lunes 8 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "La Cenicienta",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "La Cenicienta",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Martes 9 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "Mi Otro Yo",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Mi Otro Yo",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Miércoles 10 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "Juego de Gemelas",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Juego de Gemelas",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Jueves 11 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "Las Nuevas Aventuras de Winnie the Pooh",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Las Nuevas Aventuras de Winnie the Pooh",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Viernes 12 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "Ya Quisieras",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Ya Quisieras",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Sábado 13 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "Los Aristogatos",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Dinosaurio",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Los Aristogatos",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "Dinosaurio",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Domingo 14 de agosto de 2005",
+   "slots": [
+    {
+     "start": "15:00",
+     "text": "El Maravilloso Mundo de Disney | La Sirenita",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Disney Movie | Zenon: La Secuela",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Mouse, Cámara, Acción | Mickey, Donald y Goofy: Los Tres Mosqueteros (Ganador)",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "El Maravilloso Mundo de Disney | Aladdin: El Retorno de Jafar",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Mouse, Cámara, Acción | Mickey, Donald y Goofy: Los Tres Mosqueteros (Ganador)",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "El Maravilloso Mundo de Disney | Aladdin: El Retorno de Jafar",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Lunes 15 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "Jumanji",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Jumanji",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Martes 16 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "Por Partida Doble",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Por Partida Doble",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Miércoles 17 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "Tarzán",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Tarzán",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Jueves 18 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "George de la Selva",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "George de la Selva",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Viernes 19 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "Zenón: La Chica del Siglo XXI",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Zenón: La Chica del Siglo XXI",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Sábado 20 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "Mulan",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "El Inspector Gadget",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Mulan",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "El Inspector Gadget",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Domingo 21 de agosto de 2005",
+   "slots": [
+    {
+     "start": "15:00",
+     "text": "El Maravilloso Mundo de Disney | El Jorobado de Notre Dame",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Disney Movie | Pixelada Perfecta",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Mouse, Cámara, Acción | Vacas Vaqueras (Ganador)",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "El Maravilloso Mundo de Disney | Stuart Little",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Mouse, Cámara, Acción | Vacas Vaqueras (Ganador)",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "El Maravilloso Mundo de Disney | Stuart Little",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Lunes 22 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "Por Partida Doble",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Por Partida Doble",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Martes 23 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "Bambi",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Bambi",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Miércoles 24 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "Mickey Celebra la Navidad",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Mickey Celebra la Navidad",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Jueves 25 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "Por Partida Doble",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Por Partida Doble",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Viernes 26 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "Fantasía 2000",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Fantasía 2000",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Sábado 27 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "Llegó el Recreo",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "El Inspector Gadget 2",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Llegó el Recreo",
+     "block": null
+    },
+    {
+     "start": "02:30",
+     "text": "El Inspector Gadget 2",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Domingo 28 de agosto de 2005",
+   "slots": [
+    {
+     "start": "15:00",
+     "text": "El Maravilloso Mundo de Disney | La Espada en la Piedra",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Disney Movie | The Cheetah Girls",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "Mouse, Cámara, Acción | George de la Selva (Ganador)",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "El Maravilloso Mundo de Disney | Santa Cláusula",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Mouse, Cámara, Acción | George de la Selva (Ganador)",
+     "block": null
+    },
+    {
+     "start": "03:00",
+     "text": "El Maravilloso Mundo de Disney | Santa Cláusula",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Lunes 29 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "Jumanji",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Jumanji",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Martes 30 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "Un Sueño de un Campeón 2",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Un Sueño de un Campeón 2",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Miércoles 31 de agosto de 2005",
+   "slots": [
+    {
+     "start": "20:00",
+     "text": "Peter Pan: El Regreso al País de Nunca Jamás",
+     "block": null
+    },
+    {
+     "start": "02:00",
+     "text": "Peter Pan: El Regreso al País de Nunca Jamás",
+     "block": null
+    }
+   ]
+  }
+ ]
+}

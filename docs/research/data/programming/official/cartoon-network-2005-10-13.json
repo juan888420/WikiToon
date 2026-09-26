@@ -1,0 +1,197 @@
+{
+ "source": {
+  "name": "Sitio oficial del canal (Wayback Machine)",
+  "url": "https://web.archive.org/web/20051013061542/http://alt.cartoonnetworkla.com:80/english/schedule"
+ },
+ "statedTimeZone": "America/Argentina/Buenos_Aires",
+ "slots": [
+  {
+   "start": "06:00",
+   "text": "Courage the Cowardly Dog"
+  },
+  {
+   "start": "06:30",
+   "text": "The Grim Adventures of Billy & Mandy"
+  },
+  {
+   "start": "07:00",
+   "text": "Small World"
+  },
+  {
+   "start": "08:00",
+   "text": "Sagwa, the Chinese Siamese Cat"
+  },
+  {
+   "start": "08:30",
+   "text": "Berenstein Bears"
+  },
+  {
+   "start": "09:00",
+   "text": "Jacob Two Two"
+  },
+  {
+   "start": "09:30",
+   "text": "Powerpuff Girls"
+  },
+  {
+   "start": "10:00",
+   "text": "Cartoon Cartoons Show"
+  },
+  {
+   "start": "10:30",
+   "text": "Codename: Kids Next Door"
+  },
+  {
+   "start": "11:00",
+   "text": "Ed, Edd 'N Eddy"
+  },
+  {
+   "start": "11:30",
+   "text": "Hi Hi Puffy AmiYumi"
+  },
+  {
+   "start": "12:00",
+   "text": "Evil con Carne"
+  },
+  {
+   "start": "12:30",
+   "text": "Mucha Lucha"
+  },
+  {
+   "start": "13:00",
+   "text": "Xiaolin Showdown"
+  },
+  {
+   "start": "13:30",
+   "text": "Courage the Cowardly Dog"
+  },
+  {
+   "start": "14:00",
+   "text": "What's New Scooby Doo?"
+  },
+  {
+   "start": "14:30",
+   "text": "The Grim Adventures of Billy & Mandy"
+  },
+  {
+   "start": "15:00",
+   "text": "Winx Club, The"
+  },
+  {
+   "start": "15:30",
+   "text": "Hi Hi Puffy AmiYumi"
+  },
+  {
+   "start": "16:00",
+   "text": "Pet Alien"
+  },
+  {
+   "start": "16:30",
+   "text": "Evil con Carne"
+  },
+  {
+   "start": "17:00",
+   "text": "Ed, Edd 'N Eddy"
+  },
+  {
+   "start": "17:30",
+   "text": "The Grim Adventures of Billy & Mandy"
+  },
+  {
+   "start": "18:00",
+   "text": "Phantom Investigators"
+  },
+  {
+   "start": "18:30",
+   "text": "What's New Scooby Doo?"
+  },
+  {
+   "start": "19:00",
+   "text": "Evil con Carne"
+  },
+  {
+   "start": "19:30",
+   "text": "Courage the Cowardly Dog"
+  },
+  {
+   "start": "20:00",
+   "text": "Codename: Kids Next Door"
+  },
+  {
+   "start": "20:30",
+   "text": "Ed, Edd 'N Eddy"
+  },
+  {
+   "start": "21:00",
+   "text": "The Grim Adventures of Billy & Mandy"
+  },
+  {
+   "start": "21:30",
+   "text": "What's New Scooby Doo?"
+  },
+  {
+   "start": "22:00",
+   "text": "Pokémon"
+  },
+  {
+   "start": "22:30",
+   "text": "Bugs & Daffy"
+  },
+  {
+   "start": "23:00",
+   "text": "Tom & Jerry"
+  },
+  {
+   "start": "23:30",
+   "text": "Ghost Stories"
+  },
+  {
+   "start": "00:00",
+   "text": "Samurai Jack"
+  },
+  {
+   "start": "00:30",
+   "text": "Yu- Yu Hakusho"
+  },
+  {
+   "start": "01:00",
+   "text": "Knights of the Zodiac"
+  },
+  {
+   "start": "01:30",
+   "text": "Sakura Wars"
+  },
+  {
+   "start": "02:00",
+   "text": "Batman of the Future"
+  },
+  {
+   "start": "02:30",
+   "text": "Teen Titans"
+  },
+  {
+   "start": "03:00",
+   "text": "Superman: The Animated Series"
+  },
+  {
+   "start": "03:30",
+   "text": "X-Men Evolution"
+  },
+  {
+   "start": "03:45",
+   "text": "Batman: The Animated Series"
+  },
+  {
+   "start": "04:00",
+   "text": "Samurai Jack"
+  },
+  {
+   "start": "04:30",
+   "text": "Jackie Chan Adventures"
+  },
+  {
+   "start": "05:00",
+   "text": "Acme Hour"
+  }
+ ]
+}

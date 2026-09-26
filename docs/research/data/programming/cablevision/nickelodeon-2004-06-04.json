@@ -1,0 +1,203 @@
+{
+ "source": {
+  "name": "Cablevisión Monterrey, guía de Nickelodeon",
+  "url": "https://web.archive.org/web/20040605163146/http://www.cablevision.com.mx:80/programacion/canales/Canal109.htm"
+ },
+ "channelSlug": "nickelodeon",
+ "channelName": "Nickelodeon",
+ "date": "2004-06-04",
+ "slots": [
+  {
+   "start": "00:00",
+   "text": "Catdog"
+  },
+  {
+   "start": "00:30",
+   "text": "Bob Esponja"
+  },
+  {
+   "start": "01:00",
+   "text": "Rugrats crecidos"
+  },
+  {
+   "start": "01:30",
+   "text": "Martin Mystery"
+  },
+  {
+   "start": "02:00",
+   "text": "Bob Esponja"
+  },
+  {
+   "start": "02:30",
+   "text": "Kenan & Kel"
+  },
+  {
+   "start": "03:00",
+   "text": "Sabrina la Bruja Adolescente"
+  },
+  {
+   "start": "03:30",
+   "text": "Yakkity Yak"
+  },
+  {
+   "start": "04:00",
+   "text": "Rugrats"
+  },
+  {
+   "start": "04:30",
+   "text": "¡Oye Arnold!"
+  },
+  {
+   "start": "05:00",
+   "text": "Bob Esponja"
+  },
+  {
+   "start": "05:30",
+   "text": "Rocket Power"
+  },
+  {
+   "start": "06:00",
+   "text": "Kenan & Kel"
+  },
+  {
+   "start": "06:30",
+   "text": "Yu-Gi-Oh!"
+  },
+  {
+   "start": "07:00",
+   "text": "Los Castores Cascarrabias"
+  },
+  {
+   "start": "07:30",
+   "text": "Kablam"
+  },
+  {
+   "start": "08:00",
+   "text": "La ventana de Allegra"
+  },
+  {
+   "start": "08:30",
+   "text": "Las Pistas de Blue"
+  },
+  {
+   "start": "09:00",
+   "text": "Dora la Exploradora"
+  },
+  {
+   "start": "09:30",
+   "text": "Juanito Jones"
+  },
+  {
+   "start": "10:00",
+   "text": "Stuart Little"
+  },
+  {
+   "start": "10:30",
+   "text": "Rugrats"
+  },
+  {
+   "start": "11:00",
+   "text": "¡Oye Arnold!"
+  },
+  {
+   "start": "11:30",
+   "text": "Cat dog"
+  },
+  {
+   "start": "12:00",
+   "text": "Poochini"
+  },
+  {
+   "start": "12:30",
+   "text": "Yvon of the Yunkon"
+  },
+  {
+   "start": "13:00",
+   "text": "Ginger"
+  },
+  {
+   "start": "13:30",
+   "text": "Rocket Power"
+  },
+  {
+   "start": "14:00",
+   "text": "Bob Esponja"
+  },
+  {
+   "start": "14:30",
+   "text": "Yu-Gi-Oh!"
+  },
+  {
+   "start": "15:00",
+   "text": "Rugrats"
+  },
+  {
+   "start": "15:30",
+   "text": "Doug"
+  },
+  {
+   "start": "16:00",
+   "text": "Catdog"
+  },
+  {
+   "start": "16:30",
+   "text": "Rocko"
+  },
+  {
+   "start": "17:00",
+   "text": "Jimmy Neutrón"
+  },
+  {
+   "start": "17:30",
+   "text": "Martin Mystery"
+  },
+  {
+   "start": "18:00",
+   "text": "Chalkzone"
+  },
+  {
+   "start": "18:30",
+   "text": "My life as a teen age robot"
+  },
+  {
+   "start": "19:00",
+   "text": "Sabrina la Bruja Adolescente"
+  },
+  {
+   "start": "19:30",
+   "text": "Taina"
+  },
+  {
+   "start": "20:00",
+   "text": "Rugrats"
+  },
+  {
+   "start": "20:30",
+   "text": "¡Oye Arnold!"
+  },
+  {
+   "start": "21:00",
+   "text": "Bob Esponja"
+  },
+  {
+   "start": "21:30",
+   "text": "Spiderman"
+  },
+  {
+   "start": "22:00",
+   "text": "Kenan & Kel"
+  },
+  {
+   "start": "22:30",
+   "text": "Yu-Gi-Oh!"
+  },
+  {
+   "start": "23:00",
+   "text": "Rugrats"
+  },
+  {
+   "start": "23:30",
+   "text": "Rocko"
+  }
+ ]
+}

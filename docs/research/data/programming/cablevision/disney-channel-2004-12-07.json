@@ -1,0 +1,179 @@
+{
+ "source": {
+  "name": "Cablevisión Monterrey, guía de Disney Channel",
+  "url": "https://web.archive.org/web/20041207195901/http://www.cablevision.com.mx:80/programacion/canales/Canal114.htm"
+ },
+ "channelSlug": "disney-channel",
+ "channelName": "Disney Channel",
+ "date": "2004-12-07",
+ "slots": [
+  {
+   "start": "00:00",
+   "text": "Es tan Raven"
+  },
+  {
+   "start": "00:30",
+   "text": "Lizzie McGuire"
+  },
+  {
+   "start": "01:00",
+   "text": "El extraño mundo de Jack"
+  },
+  {
+   "start": "03:00",
+   "text": "La familia Proud"
+  },
+  {
+   "start": "03:30",
+   "text": "Aprendiendo a vivir"
+  },
+  {
+   "start": "04:00",
+   "text": "La mascota de la clase"
+  },
+  {
+   "start": "04:30",
+   "text": "Recreo"
+  },
+  {
+   "start": "05:00",
+   "text": "Sabrina, la brujita"
+  },
+  {
+   "start": "05:30",
+   "text": "Kim imposible"
+  },
+  {
+   "start": "06:00",
+   "text": "Recreo"
+  },
+  {
+   "start": "06:30",
+   "text": "Pepper Ann"
+  },
+  {
+   "start": "07:00",
+   "text": "Bear en la gran casa azul"
+  },
+  {
+   "start": "07:30",
+   "text": "Las aventuras de Winnie Pooh"
+  },
+  {
+   "start": "08:00",
+   "text": "El circo de Jojo"
+  },
+  {
+   "start": "08:30",
+   "text": "El libro de Pooh"
+  },
+  {
+   "start": "09:00",
+   "text": "Rolie Polie Olie"
+  },
+  {
+   "start": "09:30",
+   "text": "Stanley"
+  },
+  {
+   "start": "10:00",
+   "text": "Bear en la gran casa azul"
+  },
+  {
+   "start": "10:30",
+   "text": "El libro de Pooh"
+  },
+  {
+   "start": "11:00",
+   "text": "El Show del Ratón"
+  },
+  {
+   "start": "11:30",
+   "text": "Las aventuras de Timón y Pumba"
+  },
+  {
+   "start": "12:00",
+   "text": "Lilo y Stitch"
+  },
+  {
+   "start": "12:30",
+   "text": "Hércules"
+  },
+  {
+   "start": "13:00",
+   "text": "Buzz Lightyear: Comando Estelar"
+  },
+  {
+   "start": "13:30",
+   "text": "La Leyenda de Tarzán"
+  },
+  {
+   "start": "14:00",
+   "text": "Lilo y Stitch"
+  },
+  {
+   "start": "14:30",
+   "text": "Teamo Supremo"
+  },
+  {
+   "start": "15:00",
+   "text": "La mascota de la clase"
+  },
+  {
+   "start": "15:30",
+   "text": "Recreo"
+  },
+  {
+   "start": "16:00",
+   "text": "Sabrina, la brujita"
+  },
+  {
+   "start": "16:30",
+   "text": "Kim imposible"
+  },
+  {
+   "start": "17:00",
+   "text": "La peor bruja"
+  },
+  {
+   "start": "17:30",
+   "text": "Aprendiendo a vivir"
+  },
+  {
+   "start": "18:00",
+   "text": "Zapping Zone"
+  },
+  {
+   "start": "18:30",
+   "text": "Mano a mano"
+  },
+  {
+   "start": "19:00",
+   "text": "Es Tan Raven"
+  },
+  {
+   "start": "19:30",
+   "text": "Lizzie McGuire"
+  },
+  {
+   "start": "20:00",
+   "text": "Érase una noche"
+  },
+  {
+   "start": "22:00",
+   "text": "La familia Proud"
+  },
+  {
+   "start": "22:30",
+   "text": "Aprendiendo a vivir"
+  },
+  {
+   "start": "23:00",
+   "text": "Zapping Zone"
+  },
+  {
+   "start": "23:30",
+   "text": "Mano a mano"
+  }
+ ]
+}

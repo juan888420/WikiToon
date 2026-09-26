@@ -1,0 +1,131 @@
+{
+ "source": {
+  "name": "Cablevisión Monterrey, guía de Boomerang",
+  "url": "https://web.archive.org/web/20050905125334/http://www.cablevision.com.mx:80/programacion/canales/Canal112.htm"
+ },
+ "channelSlug": "boomerang",
+ "channelName": "Boomerang",
+ "date": "2005-09-02",
+ "slots": [
+  {
+   "start": "00:00",
+   "text": "Popeye el marino"
+  },
+  {
+   "start": "01:00",
+   "text": "La Mole"
+  },
+  {
+   "start": "01:30",
+   "text": "Pegajoso y los verdaderos cazafantasmas"
+  },
+  {
+   "start": "02:00",
+   "text": "Los Picapiedras"
+  },
+  {
+   "start": "03:00",
+   "text": "Karate Kid"
+  },
+  {
+   "start": "04:00",
+   "text": "Rodeo Cartoon de Hanna Barbera"
+  },
+  {
+   "start": "05:00",
+   "text": "Kimba, el león blanco"
+  },
+  {
+   "start": "05:30",
+   "text": "El show de Underdog"
+  },
+  {
+   "start": "06:00",
+   "text": "CineBoom"
+  },
+  {
+   "start": "07:00",
+   "text": "Garfield y sus amigos"
+  },
+  {
+   "start": "08:00",
+   "text": "Popeye el marino"
+  },
+  {
+   "start": "09:00",
+   "text": "La Mole"
+  },
+  {
+   "start": "09:30",
+   "text": "Pegajoso y los verdaderos cazafantasmas"
+  },
+  {
+   "start": "10:00",
+   "text": "Los Picapiedras"
+  },
+  {
+   "start": "11:00",
+   "text": "Karate Kid"
+  },
+  {
+   "start": "12:00",
+   "text": "Rodeo Cartoon de Hanna Barbera"
+  },
+  {
+   "start": "13:00",
+   "text": "Kimba, el león blanco"
+  },
+  {
+   "start": "13:30",
+   "text": "El show de Underdog"
+  },
+  {
+   "start": "14:00",
+   "text": "CineBoom"
+  },
+  {
+   "start": "15:00",
+   "text": "Garfield y sus amigos"
+  },
+  {
+   "start": "16:00",
+   "text": "Popeye el marino"
+  },
+  {
+   "start": "17:00",
+   "text": "La Mole"
+  },
+  {
+   "start": "17:30",
+   "text": "Pegajoso y los verdaderos cazafantasmas"
+  },
+  {
+   "start": "18:00",
+   "text": "Los Picapiedras"
+  },
+  {
+   "start": "19:00",
+   "text": "Karate Kid"
+  },
+  {
+   "start": "20:00",
+   "text": "Rodeo Cartoon de Hanna Barbera"
+  },
+  {
+   "start": "21:00",
+   "text": "Kimba, el león blanco"
+  },
+  {
+   "start": "21:30",
+   "text": "El show de Underdog"
+  },
+  {
+   "start": "22:00",
+   "text": "CineBoom"
+  },
+  {
+   "start": "23:00",
+   "text": "Garfield y sus amigos"
+  }
+ ]
+}

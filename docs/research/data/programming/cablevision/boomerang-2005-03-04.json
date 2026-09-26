@@ -1,0 +1,131 @@
+{
+ "source": {
+  "name": "Cablevisión Monterrey, guía de Boomerang",
+  "url": "https://web.archive.org/web/20050307055630/http://www.cablevision.com.mx:80/programacion/canales/Canal112.htm"
+ },
+ "channelSlug": "boomerang",
+ "channelName": "Boomerang",
+ "date": "2005-03-04",
+ "slots": [
+  {
+   "start": "00:00",
+   "text": "James Bond Jr."
+  },
+  {
+   "start": "00:30",
+   "text": "Los verdaderos Cazafantasmas"
+  },
+  {
+   "start": "01:00",
+   "text": "Los Picapiedras"
+  },
+  {
+   "start": "02:00",
+   "text": "Los hijos de la Pantera Rosa"
+  },
+  {
+   "start": "03:00",
+   "text": "Don Gato y su Pandilla"
+  },
+  {
+   "start": "04:00",
+   "text": "Pound Puppies"
+  },
+  {
+   "start": "04:30",
+   "text": "Los cariñositos"
+  },
+  {
+   "start": "05:00",
+   "text": "El Oso Yogi"
+  },
+  {
+   "start": "06:00",
+   "text": "Garfield y sus amigos"
+  },
+  {
+   "start": "07:00",
+   "text": "La Zorra y el Cuervo"
+  },
+  {
+   "start": "08:00",
+   "text": "James Bond Jr."
+  },
+  {
+   "start": "08:30",
+   "text": "Los verdaderos Cazafantasmas"
+  },
+  {
+   "start": "09:00",
+   "text": "Los Picapiedras"
+  },
+  {
+   "start": "10:00",
+   "text": "Los hijos de la Pantera Rosa"
+  },
+  {
+   "start": "11:00",
+   "text": "Don Gato y su Pandilla"
+  },
+  {
+   "start": "12:00",
+   "text": "Pound Puppies"
+  },
+  {
+   "start": "12:30",
+   "text": "Los cariñositos"
+  },
+  {
+   "start": "13:00",
+   "text": "El Oso Yogi"
+  },
+  {
+   "start": "14:00",
+   "text": "Garfield y sus amigos"
+  },
+  {
+   "start": "15:00",
+   "text": "La Zorra y el Cuervo"
+  },
+  {
+   "start": "16:00",
+   "text": "James Bond Jr."
+  },
+  {
+   "start": "16:30",
+   "text": "Los verdaderos Cazafantasmas"
+  },
+  {
+   "start": "17:00",
+   "text": "Los Picapiedras"
+  },
+  {
+   "start": "18:00",
+   "text": "Los hijos de la Pantera Rosa"
+  },
+  {
+   "start": "19:00",
+   "text": "Don Gato y su Pandilla"
+  },
+  {
+   "start": "20:00",
+   "text": "Pound Puppies"
+  },
+  {
+   "start": "20:30",
+   "text": "Los cariñositos"
+  },
+  {
+   "start": "21:00",
+   "text": "El Oso Yogi"
+  },
+  {
+   "start": "22:00",
+   "text": "Garfield y sus amigos"
+  },
+  {
+   "start": "23:00",
+   "text": "La Zorra y el Cuervo"
+  }
+ ]
+}

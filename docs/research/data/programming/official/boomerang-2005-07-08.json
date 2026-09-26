@@ -1,0 +1,129 @@
+{
+ "source": {
+  "name": "Sitio oficial del canal (Wayback Machine)",
+  "url": "https://web.archive.org/web/20050708073627/http://alt.cartoonnetworkla.com/english/boomerang/schedule"
+ },
+ "statedTimeZone": "America/Argentina/Buenos_Aires",
+ "slots": [
+  {
+   "start": "06:00",
+   "text": "Hanna Barbera Cartoon Rodeo"
+  },
+  {
+   "start": "07:00",
+   "text": "Kimba, the While Lion"
+  },
+  {
+   "start": "07:30",
+   "text": "The Underdog Show"
+  },
+  {
+   "start": "08:00",
+   "text": "CineBoom"
+  },
+  {
+   "start": "09:00",
+   "text": "Garfield and Friends"
+  },
+  {
+   "start": "10:00",
+   "text": "Boomerang Hour Featuring Popeye, the Sailor"
+  },
+  {
+   "start": "11:00",
+   "text": "Boomeraction - Speed Racer"
+  },
+  {
+   "start": "11:30",
+   "text": "Boomeraction - Extreme Ghostbusters"
+  },
+  {
+   "start": "12:00",
+   "text": "The Flintstones"
+  },
+  {
+   "start": "13:00",
+   "text": "The Jetsons"
+  },
+  {
+   "start": "14:00",
+   "text": "Hanna Barbera Cartoon Rodeo"
+  },
+  {
+   "start": "15:00",
+   "text": "Kimba, the While Lion"
+  },
+  {
+   "start": "15:30",
+   "text": "The Underdog Show"
+  },
+  {
+   "start": "16:00",
+   "text": "CineBoom"
+  },
+  {
+   "start": "17:00",
+   "text": "Garfield and Friends"
+  },
+  {
+   "start": "18:00",
+   "text": "Boomerang Hour Featuring Popeye, the Sailor"
+  },
+  {
+   "start": "19:00",
+   "text": "Boomeraction - Speed Racer"
+  },
+  {
+   "start": "19:30",
+   "text": "Boomeraction - Extreme Ghostbusters"
+  },
+  {
+   "start": "20:00",
+   "text": "The Flintstones"
+  },
+  {
+   "start": "21:00",
+   "text": "The Jetsons"
+  },
+  {
+   "start": "22:00",
+   "text": "Hanna Barbera Cartoon Rodeo"
+  },
+  {
+   "start": "23:00",
+   "text": "Kimba, the While Lion"
+  },
+  {
+   "start": "23:30",
+   "text": "The Underdog Show"
+  },
+  {
+   "start": "00:00",
+   "text": "CineBoom"
+  },
+  {
+   "start": "01:00",
+   "text": "Garfield and Friends"
+  },
+  {
+   "start": "02:00",
+   "text": "Boomerang Hour Featuring Popeye, the Sailor"
+  },
+  {
+   "start": "03:00",
+   "text": "Boomeraction - Speed Racer"
+  },
+  {
+   "start": "03:30",
+   "text": "Boomeraction - Extreme Ghostbusters"
+  },
+  {
+   "start": "04:00",
+   "text": "The Flintstones"
+  },
+  {
+   "start": "05:00",
+   "text": "The Jetsons"
+  }
+ ]
+}

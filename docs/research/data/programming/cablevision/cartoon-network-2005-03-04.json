@@ -1,0 +1,187 @@
+{
+ "source": {
+  "name": "Cablevisión Monterrey, guía de Cartoon Network",
+  "url": "https://web.archive.org/web/20050307054519/http://www.cablevision.com.mx:80/programacion/canales/canal106.htm"
+ },
+ "channelSlug": "cartoon-network",
+ "channelName": "Cartoon Network",
+ "date": "2005-03-04",
+ "slots": [
+  {
+   "start": "00:00",
+   "text": "Súper Campeones"
+  },
+  {
+   "start": "00:30",
+   "text": "Transformers Energon"
+  },
+  {
+   "start": "01:00",
+   "text": "Zoids Fuzors"
+  },
+  {
+   "start": "01:30",
+   "text": "Pokémon"
+  },
+  {
+   "start": "02:00",
+   "text": "Cartoon Cartoons"
+  },
+  {
+   "start": "03:00",
+   "text": "Liga de la Justicia"
+  },
+  {
+   "start": "03:30",
+   "text": "Batman del Futuro"
+  },
+  {
+   "start": "04:00",
+   "text": "Superman"
+  },
+  {
+   "start": "04:30",
+   "text": "Las Aventuras de Jackie Chan"
+  },
+  {
+   "start": "05:00",
+   "text": "Hora ACME"
+  },
+  {
+   "start": "06:00",
+   "text": "Billy y Mandy"
+  },
+  {
+   "start": "06:30",
+   "text": "Ed, Edd y Eddy"
+  },
+  {
+   "start": "07:00",
+   "text": "Pequeño Mundo"
+  },
+  {
+   "start": "08:00",
+   "text": "Las Tres Mellizas"
+  },
+  {
+   "start": "08:30",
+   "text": "Franklin"
+  },
+  {
+   "start": "09:00",
+   "text": "Jacobo Dos Dos"
+  },
+  {
+   "start": "09:30",
+   "text": "Mona the Vampire"
+  },
+  {
+   "start": "10:00",
+   "text": "Cartoon Cartoons Show"
+  },
+  {
+   "start": "10:30",
+   "text": "Tom y Jerry"
+  },
+  {
+   "start": "11:00",
+   "text": "Corneil y Bernie"
+  },
+  {
+   "start": "11:30",
+   "text": "Las Chicas Superpoderosas"
+  },
+  {
+   "start": "12:00",
+   "text": "Los Chicos del Barrio"
+  },
+  {
+   "start": "12:30",
+   "text": "Cosas de Chicos y Chicas"
+  },
+  {
+   "start": "13:00",
+   "text": "Ed, Edd y Eddy"
+  },
+  {
+   "start": "13:30",
+   "text": "Ratz"
+  },
+  {
+   "start": "14:00",
+   "text": "Scooby Doo"
+  },
+  {
+   "start": "14:30",
+   "text": "El Laboratorio de Dexter"
+  },
+  {
+   "start": "15:00",
+   "text": "Mirmo Zibang"
+  },
+  {
+   "start": "15:30",
+   "text": "Los Jóvenes Titanes"
+  },
+  {
+   "start": "16:00",
+   "text": "Las Aventuras de Jackie Chan"
+  },
+  {
+   "start": "16:30",
+   "text": "Mucha Lucha"
+  },
+  {
+   "start": "17:00",
+   "text": "Pokémon"
+  },
+  {
+   "start": "17:30",
+   "text": "Las Chicas Superpoderosas"
+  },
+  {
+   "start": "18:00",
+   "text": "Liga de la Justicia"
+  },
+  {
+   "start": "18:30",
+   "text": "Batman del Futuro"
+  },
+  {
+   "start": "19:00",
+   "text": "Megas XLR"
+  },
+  {
+   "start": "19:30",
+   "text": "Mansión Foster"
+  },
+  {
+   "start": "20:00",
+   "text": "Cartoon Cartoons"
+  },
+  {
+   "start": "21:00",
+   "text": "Ratz"
+  },
+  {
+   "start": "21:30",
+   "text": "Scooby Doo"
+  },
+  {
+   "start": "22:00",
+   "text": "Pokémon"
+  },
+  {
+   "start": "22:30",
+   "text": "Bugs Bunny y el Pato Lucas"
+  },
+  {
+   "start": "23:00",
+   "text": "Tom y Jerry"
+  },
+  {
+   "start": "23:30",
+   "text": "Duck Dodgers"
+  }
+ ]
+}

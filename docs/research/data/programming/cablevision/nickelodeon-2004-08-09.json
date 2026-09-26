@@ -1,0 +1,203 @@
+{
+ "source": {
+  "name": "Cablevisión Monterrey, guía de Nickelodeon",
+  "url": "https://web.archive.org/web/20040809225103/http://www.cablevision.com.mx:80/programacion/canales/Canal109.htm"
+ },
+ "channelSlug": "nickelodeon",
+ "channelName": "Nickelodeon",
+ "date": "2004-08-09",
+ "slots": [
+  {
+   "start": "00:00",
+   "text": "Martin Mystery"
+  },
+  {
+   "start": "00:30",
+   "text": "Ginger"
+  },
+  {
+   "start": "01:00",
+   "text": "Despistados"
+  },
+  {
+   "start": "01:30",
+   "text": "Sabrina"
+  },
+  {
+   "start": "02:00",
+   "text": "Hermana Hermana"
+  },
+  {
+   "start": "02:30",
+   "text": "Yakkity Yak"
+  },
+  {
+   "start": "03:00",
+   "text": "Rugrats"
+  },
+  {
+   "start": "03:30",
+   "text": "Rocko"
+  },
+  {
+   "start": "04:00",
+   "text": "Catdog"
+  },
+  {
+   "start": "04:30",
+   "text": "Castores cascarrabias"
+  },
+  {
+   "start": "05:00",
+   "text": "Yvon of the Yunkon"
+  },
+  {
+   "start": "05:30",
+   "text": "Yu-Gi-Oh!"
+  },
+  {
+   "start": "06:00",
+   "text": "Invasor Zim"
+  },
+  {
+   "start": "06:30",
+   "text": "Martin Mystery"
+  },
+  {
+   "start": "07:00",
+   "text": "Los Castores Cascarrabias"
+  },
+  {
+   "start": "07:30",
+   "text": "Kablam"
+  },
+  {
+   "start": "08:00",
+   "text": "Pequeño Bill"
+  },
+  {
+   "start": "08:30",
+   "text": "Las Pistas de Blue"
+  },
+  {
+   "start": "09:00",
+   "text": "Dora, la Exploradora"
+  },
+  {
+   "start": "09:30",
+   "text": "Juanito Jones"
+  },
+  {
+   "start": "10:00",
+   "text": "Stuart Little"
+  },
+  {
+   "start": "10:30",
+   "text": "Rugrats"
+  },
+  {
+   "start": "11:00",
+   "text": "¡Oye Arnold!"
+  },
+  {
+   "start": "11:30",
+   "text": "Cat dog"
+  },
+  {
+   "start": "12:00",
+   "text": "Poochini"
+  },
+  {
+   "start": "12:30",
+   "text": "Oh Yaeh Cartoon"
+  },
+  {
+   "start": "13:00",
+   "text": "Ginger"
+  },
+  {
+   "start": "13:30",
+   "text": "RocketPower"
+  },
+  {
+   "start": "14:00",
+   "text": "Bob Esponja"
+  },
+  {
+   "start": "14:30",
+   "text": "Yu-Gi-Oh!"
+  },
+  {
+   "start": "15:00",
+   "text": "Nicktoons Mix"
+  },
+  {
+   "start": "15:30",
+   "text": "Nicktoons Mix"
+  },
+  {
+   "start": "16:00",
+   "text": "Nicktoons Mix"
+  },
+  {
+   "start": "16:30",
+   "text": "Nicktoons Mix"
+  },
+  {
+   "start": "17:00",
+   "text": "Jimmy Neutrón"
+  },
+  {
+   "start": "17:30",
+   "text": "Martin Mystery"
+  },
+  {
+   "start": "18:00",
+   "text": "Bob Esponja"
+  },
+  {
+   "start": "18:30",
+   "text": "Kenan & Kel"
+  },
+  {
+   "start": "19:00",
+   "text": "Sabrina, la Bruja Adolescente"
+  },
+  {
+   "start": "19:30",
+   "text": "Yakkity Yak"
+  },
+  {
+   "start": "20:00",
+   "text": "Rugrats"
+  },
+  {
+   "start": "20:30",
+   "text": "¡Oye Arnold!"
+  },
+  {
+   "start": "21:00",
+   "text": "Bob Esponja"
+  },
+  {
+   "start": "21:30",
+   "text": "RocketPower"
+  },
+  {
+   "start": "22:00",
+   "text": "Kenan & Kel"
+  },
+  {
+   "start": "22:30",
+   "text": "Yu-Gi-Oh!"
+  },
+  {
+   "start": "23:00",
+   "text": "Nicktoons Mix"
+  },
+  {
+   "start": "23:30",
+   "text": "Nicktoons Mix"
+  }
+ ]
+}

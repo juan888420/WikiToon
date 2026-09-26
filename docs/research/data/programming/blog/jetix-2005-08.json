@@ -1,0 +1,726 @@
+{
+ "source": {
+  "name": "Foro Grilla de Canales: Programación de Jetix | Agosto 2005 (celebrando el Día del Niño)",
+  "url": "https://forogrilladecanales.blogspot.com/2023/10/programacion-de-jetix-agosto-2005.html",
+  "published": "2023-10-15"
+ },
+ "title": "Programación de Jetix | Agosto 2005 (celebrando el Día del Niño)",
+ "statedSite": "www.jetixtv.com",
+ "days": [
+  {
+   "label": "Lunes a Viernes",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Digimon 4",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Kirby",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Transformers: Armada",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "Medabots",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "Beyblade G Revolution",
+     "block": null
+    },
+    {
+     "start": "08:30",
+     "text": "Power Rangers Fuerza Salvaje",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Power Rangers Tormenta Ninja",
+     "block": null
+    },
+    {
+     "start": "09:30",
+     "text": "Power Rangers Dino Trueno",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "El Pájaro Loco",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Los Padrinos Mágicos",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "Las Tortugas Ninja",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "Espías sin Límite",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "Dientes de Lata",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "Gadget y Los Gadgetinis",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Dave el Bárbaro",
+     "block": null
+    },
+    {
+     "start": "13:30",
+     "text": "Los Padrinos Mágicos",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Los Padrinos Mágicos",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "Fillmore",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Generación Power Rangers",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Generación Power Rangers",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Sonic X",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "Dragon Booster",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Power Rangers Fuerza Salvaje",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Power Rangers Tormenta Ninja",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Power Rangers Dino Trueno",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Súper Escuadrón Ciber Monos Híper Fuerza Ya!",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "19:00",
+     "text": "Digimon 1",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "19:30",
+     "text": "Battle B-Daman",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "20:00",
+     "text": "Dragon Booster",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "MegaMan NT Warrior",
+     "block": "Invasión Animé"
+    },
+    {
+     "start": "21:00",
+     "text": "Los Padrinos Mágicos",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Los Padrinos Mágicos",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Colegio del Agujero Negro",
+     "block": "Mysteria"
+    },
+    {
+     "start": "22:30",
+     "text": "Ciencia Traviesa",
+     "block": "Mysteria"
+    },
+    {
+     "start": "23:00",
+     "text": "Que Raro",
+     "block": "Mysteria"
+    },
+    {
+     "start": "23:30",
+     "text": "Escalofríos",
+     "block": "Mysteria"
+    },
+    {
+     "start": "00:00",
+     "text": "Los Padrinos Mágicos",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "El Pájaro Loco (Clásico)",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Las Locuras de Andy",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Los Nuevos Locos Addams",
+     "block": "Mysteria"
+    },
+    {
+     "start": "02:00",
+     "text": "Los Misterios de Moville",
+     "block": "Mysteria"
+    },
+    {
+     "start": "02:30",
+     "text": "Colegio del Agujero Negro",
+     "block": "Mysteria"
+    },
+    {
+     "start": "03:00",
+     "text": "Qué Raro",
+     "block": "Mysteria"
+    },
+    {
+     "start": "03:30",
+     "text": "Ciencia Traviesa",
+     "block": "Mysteria"
+    },
+    {
+     "start": "04:00",
+     "text": "Escalofríos",
+     "block": "Mysteria"
+    },
+    {
+     "start": "04:30",
+     "text": "MegaMan NT Warrior",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Beyblade G Revolution",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Medabots",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Sábado",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Digimon 4",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Kirby",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Hulk: El Hombre Increible",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "Medabots",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "Beyblade G Revolution",
+     "block": null
+    },
+    {
+     "start": "08:30",
+     "text": "Power Rangers Fuerza Salvaje",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Power Rangers Tormenta Ninja",
+     "block": null
+    },
+    {
+     "start": "09:30",
+     "text": "Power Rangers Dino Trueno",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "A.T.O.M.",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Silverwing",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "¿Quién Tiene el Control?",
+     "block": null
+    },
+    {
+     "start": "11:30",
+     "text": "¿Quién Tiene el Control?",
+     "block": null
+    },
+    {
+     "start": "12:00",
+     "text": "¿Quién Tiene el Control?",
+     "block": null
+    },
+    {
+     "start": "12:30",
+     "text": "¿Quién Tiene el Control?",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Copa Jetix",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Los Padrinos Mágicos",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "El Zorro",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Generación Power Rangers",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Generación Power Rangers",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Los 4 Fantásticos",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "X-Men",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Power Rangers Fuerza Salvaje",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Power Rangers Tormenta Ninja",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Power Rangers Dino Trueno",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Code Lyoko",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "Digimon 4",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "Kid Músculo",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "El Hombre Araña",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "La Momia",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Power Rangers Tormenta Ninja",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Power Rangers Dino Trueno",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Colegio del Agujero Negro",
+     "block": "Mysteria"
+    },
+    {
+     "start": "22:30",
+     "text": "Ciencia Traviesa",
+     "block": "Mysteria"
+    },
+    {
+     "start": "23:00",
+     "text": "Que Raro",
+     "block": "Mysteria"
+    },
+    {
+     "start": "23:30",
+     "text": "Escalofríos",
+     "block": "Mysteria"
+    },
+    {
+     "start": "00:00",
+     "text": "Los Padrinos Mágicos",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "El Pájaro Loco (Clásico)",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Las Locuras de Andy",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Los Nuevos Locos Addams",
+     "block": "Mysteria"
+    },
+    {
+     "start": "02:00",
+     "text": "Los Misterios de Moville",
+     "block": "Mysteria"
+    },
+    {
+     "start": "02:30",
+     "text": "Colegio del Agujero Negro",
+     "block": "Mysteria"
+    },
+    {
+     "start": "03:00",
+     "text": "Qué Raro",
+     "block": "Mysteria"
+    },
+    {
+     "start": "03:30",
+     "text": "Ciencia Traviesa",
+     "block": "Mysteria"
+    },
+    {
+     "start": "04:00",
+     "text": "Escalofríos",
+     "block": "Mysteria"
+    },
+    {
+     "start": "04:30",
+     "text": "MegaMan NT Warrior",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Beyblade G Revolution",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Medabots",
+     "block": null
+    }
+   ]
+  },
+  {
+   "label": "Domingo",
+   "slots": [
+    {
+     "start": "06:00",
+     "text": "Digimon 4",
+     "block": null
+    },
+    {
+     "start": "06:30",
+     "text": "Kirby",
+     "block": null
+    },
+    {
+     "start": "07:00",
+     "text": "Hulk: El Hombre Increible",
+     "block": null
+    },
+    {
+     "start": "07:30",
+     "text": "Medabots",
+     "block": null
+    },
+    {
+     "start": "08:00",
+     "text": "Beyblade G Revolution",
+     "block": null
+    },
+    {
+     "start": "08:30",
+     "text": "Power Rangers Fuerza Salvaje",
+     "block": null
+    },
+    {
+     "start": "09:00",
+     "text": "Power Rangers Tormenta Ninja",
+     "block": null
+    },
+    {
+     "start": "09:30",
+     "text": "Power Rangers Dino Trueno",
+     "block": null
+    },
+    {
+     "start": "10:00",
+     "text": "A.T.O.M.",
+     "block": null
+    },
+    {
+     "start": "10:30",
+     "text": "Silverwing",
+     "block": null
+    },
+    {
+     "start": "11:00",
+     "text": "Cineskopio",
+     "block": null
+    },
+    {
+     "start": "12:45",
+     "text": "Extra Bonus",
+     "block": null
+    },
+    {
+     "start": "13:00",
+     "text": "Copa Jetix",
+     "block": null
+    },
+    {
+     "start": "14:00",
+     "text": "Los Padrinos Mágicos",
+     "block": null
+    },
+    {
+     "start": "14:30",
+     "text": "El Zorro",
+     "block": null
+    },
+    {
+     "start": "15:00",
+     "text": "Generación Power Rangers",
+     "block": null
+    },
+    {
+     "start": "15:30",
+     "text": "Generación Power Rangers",
+     "block": null
+    },
+    {
+     "start": "16:00",
+     "text": "Los 4 Fantásticos",
+     "block": null
+    },
+    {
+     "start": "16:30",
+     "text": "X-Men",
+     "block": null
+    },
+    {
+     "start": "17:00",
+     "text": "Power Rangers Fuerza Salvaje",
+     "block": null
+    },
+    {
+     "start": "17:30",
+     "text": "Power Rangers Tormenta Ninja",
+     "block": null
+    },
+    {
+     "start": "18:00",
+     "text": "Power Rangers Dino Trueno",
+     "block": null
+    },
+    {
+     "start": "18:30",
+     "text": "Code Lyoko",
+     "block": null
+    },
+    {
+     "start": "19:00",
+     "text": "Digimon 4",
+     "block": null
+    },
+    {
+     "start": "19:30",
+     "text": "Kid Músculo",
+     "block": null
+    },
+    {
+     "start": "20:00",
+     "text": "El Hombre Araña",
+     "block": null
+    },
+    {
+     "start": "20:30",
+     "text": "La Momia",
+     "block": null
+    },
+    {
+     "start": "21:00",
+     "text": "Power Rangers Tormenta Ninja",
+     "block": null
+    },
+    {
+     "start": "21:30",
+     "text": "Power Rangers Dino Trueno",
+     "block": null
+    },
+    {
+     "start": "22:00",
+     "text": "Colegio del Agujero Negro",
+     "block": "Mysteria"
+    },
+    {
+     "start": "22:30",
+     "text": "Ciencia Traviesa",
+     "block": "Mysteria"
+    },
+    {
+     "start": "23:00",
+     "text": "Que Raro",
+     "block": "Mysteria"
+    },
+    {
+     "start": "23:30",
+     "text": "Escalofríos",
+     "block": "Mysteria"
+    },
+    {
+     "start": "00:00",
+     "text": "Los Padrinos Mágicos",
+     "block": null
+    },
+    {
+     "start": "00:30",
+     "text": "El Pájaro Loco (Clásico)",
+     "block": null
+    },
+    {
+     "start": "01:00",
+     "text": "Las Locuras de Andy",
+     "block": null
+    },
+    {
+     "start": "01:30",
+     "text": "Los Nuevos Locos Addams",
+     "block": "Mysteria"
+    },
+    {
+     "start": "02:00",
+     "text": "Los Misterios de Moville",
+     "block": "Mysteria"
+    },
+    {
+     "start": "02:30",
+     "text": "Colegio del Agujero Negro",
+     "block": "Mysteria"
+    },
+    {
+     "start": "03:00",
+     "text": "Qué Raro",
+     "block": "Mysteria"
+    },
+    {
+     "start": "03:30",
+     "text": "Ciencia Traviesa",
+     "block": "Mysteria"
+    },
+    {
+     "start": "04:00",
+     "text": "Escalofríos",
+     "block": "Mysteria"
+    },
+    {
+     "start": "04:30",
+     "text": "MegaMan NT Warrior",
+     "block": null
+    },
+    {
+     "start": "05:00",
+     "text": "Beyblade G Revolution",
+     "block": null
+    },
+    {
+     "start": "05:30",
+     "text": "Medabots",
+     "block": null
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1224 @@
+{
+ "source": {
+  "name": "Cartoon Network Wiki (Fandom): Grilla de Cartoon Network, Noviembre de 2002",
+  "url": "https://cartoonnetwork.fandom.com/es/wiki/Grilla_de_Cartoon_Network,_Noviembre_de_2002"
+ },
+ "references": [
+  "https://forogrilladecanales.blogspot.com/2023/01/programacion-de-cartoon-network_3.html",
+  "https://web.archive.org/web/20030205160749/http://www.cartoonnetworkla.com/spanish/toonin/",
+  "https://web.archive.org/web/20080704025523/http://www.geocities.com/karvac/htm/news2002-06.html"
+ ],
+ "tables": [
+  {
+   "feed": "Programación regular",
+   "days": [
+    "Lunes a jueves",
+    "Viernes",
+    "Sábado",
+    "Domingo"
+   ],
+   "slots": [
+    {
+     "day": "Lunes a jueves",
+     "start": "06:00",
+     "end": "06:30",
+     "text": "Los pequeños Picapiedra",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "06:00",
+     "end": "06:30",
+     "text": "Los pequeños Picapiedra",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "06:00",
+     "end": "07:00",
+     "text": "Hora ACME",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "06:00",
+     "end": "07:00",
+     "text": "Porky Pig",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "06:30",
+     "end": "07:00",
+     "text": "Tiny Toons",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "06:30",
+     "end": "07:00",
+     "text": "Tiny Toons",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "07:00",
+     "end": "08:00",
+     "text": "Pequeño Mundo",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "07:00",
+     "end": "08:00",
+     "text": "Pequeño Mundo",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "07:00",
+     "end": "07:30",
+     "text": "Sagwa, la gatita siamesa",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Domingo",
+     "start": "07:00",
+     "end": "07:30",
+     "text": "Kipper",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "07:30",
+     "end": "08:00",
+     "text": "Garfield y sus amigos",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "07:30",
+     "end": "08:00",
+     "text": "Popolocrois",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "08:00",
+     "end": "08:30",
+     "text": "Las tres mellizas",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "08:00",
+     "end": "08:30",
+     "text": "Las tres mellizas",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "08:00",
+     "end": "08:30",
+     "text": "Las tres mellizas",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "08:00",
+     "end": "08:30",
+     "text": "Las tres mellizas",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "08:30",
+     "end": "09:00",
+     "text": "Hamtaro",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "08:30",
+     "end": "09:00",
+     "text": "Hamtaro",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "08:30",
+     "end": "09:00",
+     "text": "Franklin",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "08:30",
+     "end": "09:00",
+     "text": "Hamtaro",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "09:00",
+     "end": "09:30",
+     "text": "Franklin",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "09:00",
+     "end": "09:30",
+     "text": "Franklin",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "09:00",
+     "end": "10:00",
+     "text": "Cinetoon",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "09:00",
+     "end": "09:30",
+     "text": "Percy, el guardabosques",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "09:30",
+     "end": "10:00",
+     "text": "Scooby-Doo y Scrappy-Doo",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "09:30",
+     "end": "10:00",
+     "text": "Scooby-Doo y Scrappy-Doo",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "09:30",
+     "end": "10:00",
+     "text": "La pequeña Lulú",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "10:00",
+     "end": "10:30",
+     "text": "Los Picapiedra",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "10:00",
+     "end": "10:30",
+     "text": "Los Picapiedra",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "10:00",
+     "end": "10:30",
+     "text": "Samurai Jack",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "10:00",
+     "end": "11:00",
+     "text": "Hora ACME",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "10:30",
+     "end": "11:00",
+     "text": "Tom y Jerry",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "10:30",
+     "end": "11:00",
+     "text": "Tom y Jerry",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "10:30",
+     "end": "11:00",
+     "text": "El show del malo y siniestro",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "11:00",
+     "end": "12:00",
+     "text": "Hora ACME",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "11:00",
+     "end": "12:00",
+     "text": "Hora ACME",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "11:00",
+     "end": "13:00",
+     "text": "Cartoon Cartoons",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "11:00",
+     "end": "11:30",
+     "text": "Garfield y sus amigos",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "11:30",
+     "end": "12:00",
+     "text": "Sheep en la gran ciudad",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "12:00",
+     "end": "12:30",
+     "text": "El laboratorio de Dexter",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "12:00",
+     "end": "12:30",
+     "text": "El laboratorio de Dexter",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "12:00",
+     "end": "12:30",
+     "text": "Mike, Lu y Og",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "12:30",
+     "end": "13:00",
+     "text": "Garfield y sus amigos",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "12:30",
+     "end": "13:00",
+     "text": "Garfield y sus amigos",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "12:30",
+     "end": "13:00",
+     "text": "Tiny Toons",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "13:00",
+     "end": "13:30",
+     "text": "La vaca y el pollito",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "13:00",
+     "end": "13:30",
+     "text": "La vaca y el pollito",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "13:00",
+     "end": "13:30",
+     "text": "Las aventuras de Jackie Chan",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "13:00",
+     "end": "13:30",
+     "text": "Los nuevos cuentos de Félix el gato",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "13:30",
+     "end": "14:00",
+     "text": "Beetlejuice",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "13:30",
+     "end": "14:00",
+     "text": "Beetlejuice",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "13:30",
+     "end": "14:00",
+     "text": "Proyecto Zeta",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "13:30",
+     "end": "14:00",
+     "text": "Los patos astutos",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "14:00",
+     "end": "14:30",
+     "text": "Ed, Edd y Eddy",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "14:00",
+     "end": "14:30",
+     "text": "Ed, Edd y Eddy",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "14:00",
+     "end": "14:30",
+     "text": "Liga de la justicia",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "14:00",
+     "end": "16:00",
+     "text": "Teatro Cartoon",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "14:30",
+     "end": "15:00",
+     "text": "El lagartijo de Ned",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "14:30",
+     "end": "15:00",
+     "text": "El lagartijo de Ned",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "14:30",
+     "end": "15:00",
+     "text": "Pokémon",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "15:00",
+     "end": "15:30",
+     "text": "Los 13 fantasmas de Scooby-Doo",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "15:00",
+     "end": "15:30",
+     "text": "Los 13 fantasmas de Scooby-Doo",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "15:00",
+     "end": "18:00",
+     "text": "Votatoon",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "15:30",
+     "end": "16:00",
+     "text": "Hamtaro",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "15:30",
+     "end": "16:00",
+     "text": "Hamtaro",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "16:00",
+     "end": "16:30",
+     "text": "Las chicas superpoderosas",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "16:00",
+     "end": "16:30",
+     "text": "Las chicas superpoderosas",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "16:00",
+     "end": "16:30",
+     "text": "Droopy D",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "16:30",
+     "end": "17:00",
+     "text": "Super Doll Licca Chan",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Viernes",
+     "start": "16:30",
+     "end": "17:00",
+     "text": "Super Doll Licca Chan",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Domingo",
+     "start": "16:30",
+     "end": "17:00",
+     "text": "Bugs Bunny y el Pato Lucas",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "17:00",
+     "end": "17:30",
+     "text": "Pokémon",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "17:00",
+     "end": "17:30",
+     "text": "Pokémon",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "17:00",
+     "end": "17:30",
+     "text": "Tom y Jerry",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "17:30",
+     "end": "18:00",
+     "text": "Gundam Wing",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "17:30",
+     "end": "18:00",
+     "text": "Gundam Wing",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "17:30",
+     "end": "18:00",
+     "text": "Pinky y Cerebro",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "18:00",
+     "end": "18:30",
+     "text": "Street Fighter II-V",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "18:00",
+     "end": "18:30",
+     "text": "Street Fighter II-V",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "18:00",
+     "end": "18:30",
+     "text": "Scooby-Doo",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "18:00",
+     "end": "18:30",
+     "text": "Samurai Jack",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "18:30",
+     "end": "19:00",
+     "text": "Dragon Ball Z",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "18:30",
+     "end": "19:00",
+     "text": "Dragon Ball Z",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "18:30",
+     "end": "19:00",
+     "text": "Las aventuras de Silvestre y Piolín",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "18:30",
+     "end": "19:00",
+     "text": "El show del malo y siniestro",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "19:00",
+     "end": "19:30",
+     "text": "Las chicas superpoderosas",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "19:00",
+     "end": "19:30",
+     "text": "Samurai Jack",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "19:00",
+     "end": "19:30",
+     "text": "El show de los Looney Tunes",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "19:00",
+     "end": "21:00",
+     "text": "Cartoon Cartoons",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "19:30",
+     "end": "20:00",
+     "text": "Coraje, el perro cobarde",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "19:30",
+     "end": "20:00",
+     "text": "El show del malo y siniestro",
+     "block": null,
+     "premiere": true
+    },
+    {
+     "day": "Sábado",
+     "start": "19:30",
+     "end": "20:00",
+     "text": "Tom y Jerry",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "20:00",
+     "end": "20:30",
+     "text": "¡Qué historia tan maravillosa!",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "20:00",
+     "end": "22:00",
+     "text": "Cartoon Cartoons",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "20:00",
+     "end": "20:30",
+     "text": "Los Picapiedra",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "20:30",
+     "end": "21:00",
+     "text": "Johnny Bravo",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "20:30",
+     "end": "21:00",
+     "text": "Los Supersónicos",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "21:00",
+     "end": "21:30",
+     "text": "El laboratorio de Dexter",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "21:00",
+     "end": "23:00",
+     "text": "Hora ACME",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "21:00",
+     "end": "21:30",
+     "text": "Pinky y Cerebro",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "21:30",
+     "end": "22:00",
+     "text": "Soy la comadreja",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "21:30",
+     "end": "22:00",
+     "text": "Bobo y tonto",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "22:00",
+     "end": "22:30",
+     "text": "Pokémon",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "22:00",
+     "end": "22:30",
+     "text": "Pokémon",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "22:00",
+     "end": "23:00",
+     "text": "Tom y Jerry",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "22:30",
+     "end": "23:00",
+     "text": "Bugs Bunny y el Pato Lucas",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "22:30",
+     "end": "23:00",
+     "text": "Bugs Bunny y el Pato Lucas",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "23:00",
+     "end": "23:30",
+     "text": "Tom y Jerry",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "23:00",
+     "end": "23:30",
+     "text": "Tom y Jerry",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "23:00",
+     "end": "00:45",
+     "text": "Pokémon",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "23:00",
+     "end": "00:00",
+     "text": "Bugs Bunny y el Pato Lucas",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "23:30",
+     "end": "00:00",
+     "text": "Los Picapiedra",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "23:30",
+     "end": "00:00",
+     "text": "Los Picapiedra",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "00:00",
+     "end": "00:30",
+     "text": "Samurai X",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "00:00",
+     "end": "00:30",
+     "text": "Samurai X",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "00:00",
+     "end": "01:00",
+     "text": "Hora ACME",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "00:30",
+     "end": "01:00",
+     "text": "Hombres X: Evolución",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "00:30",
+     "end": "01:00",
+     "text": "Hombres X: Evolución",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "00:45",
+     "end": "01:00",
+     "text": "Fantasma del espacio de costa a costa",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "01:00",
+     "end": "01:30",
+     "text": "Corrector Yui",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "01:00",
+     "end": "01:30",
+     "text": "Corrector Yui",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "01:00",
+     "end": "03:00",
+     "text": "Dragon Ball Z",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "01:00",
+     "end": "02:00",
+     "text": "Popeye",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "01:30",
+     "end": "02:00",
+     "text": "Pokémon",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "01:30",
+     "end": "02:00",
+     "text": "Pokémon",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "02:00",
+     "end": "03:00",
+     "text": "Cartoon Cartoons",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "02:00",
+     "end": "03:00",
+     "text": "Cartoon Cartoons",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "02:00",
+     "end": "03:00",
+     "text": "Porky Pig",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "03:00",
+     "end": "03:30",
+     "text": "Mister Magoo",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "03:00",
+     "end": "03:30",
+     "text": "Mister Magoo",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "03:00",
+     "end": "03:30",
+     "text": "Meteoro",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "03:00",
+     "end": "03:30",
+     "text": "Karate Kid",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "03:30",
+     "end": "04:00",
+     "text": "La pantera rosa",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "03:30",
+     "end": "04:00",
+     "text": "La pantera rosa",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "03:30",
+     "end": "04:00",
+     "text": "Fuerza G",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "03:30",
+     "end": "04:00",
+     "text": "Los verdaderos cazafantasmas",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "04:00",
+     "end": "04:30",
+     "text": "Rocky y Bullwinkle",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "04:00",
+     "end": "04:30",
+     "text": "Rocky y Bullwinkle",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "04:00",
+     "end": "04:30",
+     "text": "En busca del castillo Lavender",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "04:00",
+     "end": "04:30",
+     "text": "Familia Partridge",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "04:30",
+     "end": "05:00",
+     "text": "Popeye",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "04:30",
+     "end": "05:00",
+     "text": "Popeye",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "04:30",
+     "end": "05:00",
+     "text": "Sakura Card Captors",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "04:30",
+     "end": "05:00",
+     "text": "Jeannie (animado)",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Lunes a jueves",
+     "start": "05:00",
+     "end": null,
+     "text": "Hora ACME",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Viernes",
+     "start": "05:00",
+     "end": null,
+     "text": "Hora ACME",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "05:00",
+     "end": "05:30",
+     "text": "Proyecto Zeta",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "05:00",
+     "end": "05:30",
+     "text": "Los Supersónicos",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Sábado",
+     "start": "05:30",
+     "end": null,
+     "text": "Las aventuras de Jackie Chan",
+     "block": null,
+     "premiere": false
+    },
+    {
+     "day": "Domingo",
+     "start": "05:30",
+     "end": null,
+     "text": "Los Picapiedra",
+     "block": null,
+     "premiere": false
+    }
+   ]
+  }
+ ]
+}

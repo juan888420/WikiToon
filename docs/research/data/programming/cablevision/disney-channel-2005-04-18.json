@@ -1,0 +1,171 @@
+{
+ "source": {
+  "name": "Cablevisión Monterrey, guía de Disney Channel",
+  "url": "https://web.archive.org/web/20050421173902/http://www.cablevision.com.mx:80/programacion/canales/Canal114.htm"
+ },
+ "channelSlug": "disney-channel",
+ "channelName": "Disney Channel",
+ "date": "2005-04-18",
+ "slots": [
+  {
+   "start": "00:00",
+   "text": "Aladdín y los 40 ladrones"
+  },
+  {
+   "start": "01:30",
+   "text": "Lilo y Stitch"
+  },
+  {
+   "start": "02:00",
+   "text": "Primates en acción"
+  },
+  {
+   "start": "04:00",
+   "text": "La sirenita"
+  },
+  {
+   "start": "04:30",
+   "text": "Aladdín"
+  },
+  {
+   "start": "05:00",
+   "text": "Lilo y Stitch"
+  },
+  {
+   "start": "05:30",
+   "text": "Recreo"
+  },
+  {
+   "start": "06:00",
+   "text": "Recreo"
+  },
+  {
+   "start": "06:30",
+   "text": "Pepper Ann"
+  },
+  {
+   "start": "07:00",
+   "text": "Bear en la gran casa azul"
+  },
+  {
+   "start": "07:30",
+   "text": "Las aventuras de Winnie Pooh"
+  },
+  {
+   "start": "08:00",
+   "text": "El circo de Jojo"
+  },
+  {
+   "start": "08:30",
+   "text": "Los héroes de la ciudad"
+  },
+  {
+   "start": "09:00",
+   "text": "Rolie Polie Olie"
+  },
+  {
+   "start": "09:30",
+   "text": "Stanley"
+  },
+  {
+   "start": "10:00",
+   "text": "Bear en la gran casa azul"
+  },
+  {
+   "start": "10:30",
+   "text": "El libro de Pooh"
+  },
+  {
+   "start": "11:00",
+   "text": "El show del ratón"
+  },
+  {
+   "start": "11:30",
+   "text": "Las aventuras de Timón y Pumba"
+  },
+  {
+   "start": "12:00",
+   "text": "101 dálmatas"
+  },
+  {
+   "start": "12:30",
+   "text": "Hércules"
+  },
+  {
+   "start": "13:00",
+   "text": "Buzz Lightyear: comando estelar"
+  },
+  {
+   "start": "13:30",
+   "text": "La leyenda de Tarzán"
+  },
+  {
+   "start": "14:00",
+   "text": "Lilo y Stitch"
+  },
+  {
+   "start": "14:30",
+   "text": "Teamo supremo"
+  },
+  {
+   "start": "15:00",
+   "text": "La mascota de la clase"
+  },
+  {
+   "start": "15:30",
+   "text": "Recreo"
+  },
+  {
+   "start": "16:00",
+   "text": "Art attack"
+  },
+  {
+   "start": "16:30",
+   "text": "Recreo"
+  },
+  {
+   "start": "17:00",
+   "text": "Kim possible"
+  },
+  {
+   "start": "17:30",
+   "text": "Aprendiendo a vivir"
+  },
+  {
+   "start": "18:00",
+   "text": "Zapping Zone"
+  },
+  {
+   "start": "18:30",
+   "text": "Mano a mano"
+  },
+  {
+   "start": "19:00",
+   "text": "Es tan Raven"
+  },
+  {
+   "start": "19:30",
+   "text": "Lizzie McGuire"
+  },
+  {
+   "start": "20:00",
+   "text": "El diario de la princesa"
+  },
+  {
+   "start": "22:00",
+   "text": "Floricienta"
+  },
+  {
+   "start": "22:30",
+   "text": "Aprendiendo a vivir"
+  },
+  {
+   "start": "23:00",
+   "text": "Zapping Zone"
+  },
+  {
+   "start": "23:30",
+   "text": "Mano a mano"
+  }
+ ]
+}
