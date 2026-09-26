@@ -11,7 +11,7 @@ Rule for adding a logo:
 Otherwise the block keeps `logoPath = null` and shows initials. A logo from another region is never used as a substitute. The rule applies to every logo sourced for the project; the exception below is the project owner's own call, recorded so it isn't mistaken for a sourced file.
 
 - **Evidence of Latin American use:** [Logopedia](https://logos.fandom.com). Its files have no free license, so they are used only to identify the version, never copied.
-- **Files and licenses:** [Wikimedia Commons](https://commons.wikimedia.org). Both logos below are tagged `PD-textlogo` (public domain, below the threshold of originality) and `Trademarked`. They remain trademarks of their owners and are used only to identify the block in a historical archive, with no endorsement implied.
+- **Files and licenses:** [Wikimedia Commons](https://commons.wikimedia.org). The logos below are tagged `PD-textlogo` (public domain, below the threshold of originality) and `Trademarked`. They remain trademarks of their owners and are used only to identify the block in a historical archive, with no endorsement implied.
 - **Comparison:** Logopedia's files are behind a bot challenge, so their archived copies on the [Wayback Machine](https://web.archive.org) were used to compare against Commons. Checked on 2026-09-24.
 
 ## Logos in use
@@ -19,6 +19,7 @@ Otherwise the block keeps `logoPath = null` and shows initials. A logo from anot
 | File | Block | Latin American evidence | Commons file | Credited author / original source | Changes |
 |---|---|---|---|---|---|
 | `toonami.svg` | Toonami (Cartoon Network) | [Logopedia: Toonami (Latin America)](https://logos.fandom.com/wiki/Toonami_(Latin_America)) documents this logo for 2002-2005 (the block launched on December 2, 2002). Matches the Logopedia file `Toonami logo.svg` ([archived copy](https://web.archive.org/web/20250528180422/https://static.wikia.nocookie.net/logopedia/images/b/b7/Toonami_logo.svg/revision/latest)). | [Toonami logo.svg](https://commons.wikimedia.org/wiki/File:Toonami_logo.svg) (Public domain) | Cartoon Network / Toonami | None: byte-identical to the Commons file. Legible on the dark tile as is (white outline). |
+| `adult-swim.svg` | Adult Swim (Cartoon Network) | [Logopedia: Adult Swim (Latin America)](https://logos.fandom.com/wiki/Adult_Swim_(Latin_America)) documents the bracketed `[adult swim]` wordmark as the only logo for the block (2005-2010, launched on Cartoon Network on October 7, 2005) and its later runs. Matches the Logopedia file `Adult_Swim.svg` ([archived page](https://web.archive.org/web/20260614085024/https://logos.fandom.com/wiki/Adult_Swim_(Latin_America)), checked on 2026-09-25). | [Adult Swim 2003 logo.svg](https://commons.wikimedia.org/wiki/File:Adult_Swim_2003_logo.svg) (`PD-textlogo`) | Cartoon Network / Time Warner (archived timewarner.com) | **Modified variant, for contrast only:** the dark fills (`#221e1f`) recolored to white so the wordmark is legible on the app's dark background. Shapes are unchanged. |
 | `nick-at-nite.svg` | Nick at Nite (Nickelodeon) | [Logopedia: Nick at Nite (Latin America)](https://logos.fandom.com/wiki/Nick_at_Nite_(Latin_America)) documents this logo for 2008-2010. The Latin American launch logo (2006-2008) has no free source. Matches the Logopedia file `Nick_at_Nite_2007.svg` ([archived copy](https://web.archive.org/web/20240719234403/https://static.wikia.nocookie.net/logopedia/images/b/bb/Nick_at_Nite_2007.svg)). | [Nick at Nite logo 2007.svg](https://commons.wikimedia.org/wiki/File:Nick_at_Nite_logo_2007.svg) (Public domain) | Viacom International Inc. / Logopedia | None: byte-identical to the Commons file. |
 
 ## Assets provided by the project owner
@@ -43,7 +44,7 @@ Every one of them is a candidate for replacement if a properly licensed file eve
 
 ## Pending blocks (`logoPath = null`)
 
-None: all 13 blocks in the catalog have a logo. The rejected candidates below are kept as a record, so the same files are not proposed again.
+None: all 14 blocks in the catalog have a logo. The rejected candidates below are kept as a record, so the same files are not proposed again.
 
 | Block | Why a sourced logo was rejected |
 |---|---|

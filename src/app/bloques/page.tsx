@@ -31,7 +31,7 @@ export default async function BlocksPage() {
             description="Los bloques de programación aparecerán aquí cuando se registren con su fuente."
           />
         ) : (
-          <ul className="grid gap-3 sm:grid-cols-2">
+          <ul className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
             {blocks.map((block) => (
               <li key={block.id}>
                 <BlockCard block={block} />

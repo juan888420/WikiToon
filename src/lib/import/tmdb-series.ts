@@ -19,7 +19,7 @@ function normalizeTitle(title: string) {
     .trim();
 }
 
-function slugify(title: string) {
+export function slugify(title: string) {
   return normalizeTitle(title).replace(/ /g, "-");
 }
 
@@ -69,23 +69,53 @@ export type TmdbSeriesPayload = {
   syncedAt: Date;
 };
 
-/** Fetches a TMDB series with every season (and its episodes). Makes no DB writes. */
-export async function fetchTmdbSeries(tmdbSeriesId: number): Promise<TmdbSeriesPayload> {
-  const details = await getTvSeriesDetails(tmdbSeriesId);
+/**
+ * Fetches a TMDB series with its seasons (and their episodes). Makes no DB writes. `seasons`
+ * limits the fetch to those season numbers, for TMDB entries that group runs outside the catalog's
+ * scope; the payload's last air date then comes from the kept episodes, not from TMDB's whole run.
+ * A requested season TMDB doesn't have is an error.
+ */
+export async function fetchTmdbSeries(
+  tmdbSeriesId: number,
+  { seasons: seasonNumbers }: { seasons?: number[] } = {},
+): Promise<TmdbSeriesPayload> {
+  let details = await getTvSeriesDetails(tmdbSeriesId);
+  if (seasonNumbers) {
+    const missing = seasonNumbers.filter(
+      (number) => !details.seasons.some((season) => season.season_number === number),
+    );
+    if (missing.length > 0) {
+      throw new Error(`TMDB series ${tmdbSeriesId} has no season ${missing.join(", ")}.`);
+    }
+    details = {
+      ...details,
+      seasons: details.seasons.filter((season) => seasonNumbers.includes(season.season_number)),
+    };
+  }
   const seasons = await Promise.all(
     details.seasons.map((season) => getTvSeasonDetails(tmdbSeriesId, season.season_number)),
   );
+  if (seasonNumbers) {
+    const lastAirDate = seasons
+      .flatMap((season) => [season.air_date, ...season.episodes.map((episode) => episode.air_date)])
+      .filter((date): date is string => Boolean(date))
+      .sort()
+      .at(-1);
+    details = { ...details, last_air_date: lastAirDate ?? null };
+  }
   return { details, seasons, syncedAt: new Date() };
 }
 
 /**
  * Upserts a fetched series with its seasons and episodes by TMDB id, inside the caller's
  * transaction. `Series.title` and `slug` are only set on create: they are curated by WikiToon
- * afterwards and must not be overwritten by later syncs.
+ * afterwards and must not be overwritten by later syncs. `title` replaces TMDB's name on create,
+ * and the slug is built from it.
  */
 export async function writeTmdbSeries(
   tx: Prisma.TransactionClient,
   { details, seasons, syncedAt }: TmdbSeriesPayload,
+  { title = details.name }: { title?: string } = {},
 ) {
   const seriesData = {
     overview: textOrNull(details.overview),
@@ -105,10 +135,10 @@ export async function writeTmdbSeries(
         data: {
           ...seriesData,
           tmdbId: details.id,
-          title: details.name,
+          title,
           slug: await resolveSeriesSlug(
             {
-              baseSlug: slugify(details.name),
+              baseSlug: slugify(title),
               firstAirYear: seriesData.firstAirYear,
               tmdbId: details.id,
             },

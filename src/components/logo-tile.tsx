@@ -16,10 +16,12 @@ type LogoTileProps = {
   name: string;
   sizes: string;
   className?: string;
+  /** Overrides the logo's inset, for tiles larger than the default square. */
+  imageClassName?: string;
 };
 
 /** Square logo tile for channels and blocks, with the name's initials as fallback. */
-export function LogoTile({ logoPath, name, sizes, className }: LogoTileProps) {
+export function LogoTile({ logoPath, name, sizes, className, imageClassName }: LogoTileProps) {
   return (
     <div
       className={cn(
@@ -28,7 +30,13 @@ export function LogoTile({ logoPath, name, sizes, className }: LogoTileProps) {
       )}
     >
       {logoPath ? (
-        <Image src={logoPath} alt={`Logo de ${name}`} fill sizes={sizes} className="object-contain p-2" />
+        <Image
+          src={logoPath}
+          alt={`Logo de ${name}`}
+          fill
+          sizes={sizes}
+          className={cn("object-contain p-2", imageClassName)}
+        />
       ) : (
         <span aria-hidden className="font-mono text-sm font-medium text-muted-foreground">
           {initials(name)}

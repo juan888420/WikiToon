@@ -8,19 +8,21 @@ async function main() {
 
   const loaded = await loadSeriesCatalog(seriesCatalog, { refresh: values.refresh });
   for (const series of loaded) {
+    const retitled = series.retitled ? ", retitled" : "";
     const links = series.linkedChannels.length
       ? `, linked to ${series.linkedChannels.join(", ")}`
       : "";
     console.log(
-      `${series.status.padEnd(9)} "${series.title}" (series ${series.seriesId}, TMDB ${series.tmdbId})${links}`,
+      `${series.status.padEnd(9)} "${series.title}" (series ${series.seriesId}, TMDB ${series.tmdbId})${retitled}${links}`,
     );
   }
 
   const count = (status: string) => loaded.filter((series) => series.status === status).length;
   const links = loaded.reduce((total, series) => total + series.linkedChannels.length, 0);
+  const retitled = loaded.filter((series) => series.retitled).length;
   console.log(
     `\n${loaded.length} series: ${count("imported")} imported, ${count("refreshed")} refreshed, ` +
-      `${count("unchanged")} unchanged; ${links} channel links created.`,
+      `${count("unchanged")} unchanged; ${retitled} retitled; ${links} channel links created.`,
   );
 }
 

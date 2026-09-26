@@ -25,17 +25,19 @@ export async function listChannels() {
         slug: true,
         name: true,
         logoPath: true,
-        _count: { select: { blockChannels: true } },
+        blockChannels: { select: { block: { select: { name: true } } } },
       },
     }),
     countSeriesByChannel(),
   ]);
 
   return channels
-    .map(({ id, _count, ...channel }) => ({
+    .map(({ id, blockChannels, ...channel }) => ({
       ...channel,
       seriesCount: seriesCounts.get(id) ?? 0,
-      blockCount: _count.blockChannels,
+      blockNames: blockChannels
+        .map(({ block }) => block.name)
+        .sort((a, b) => nameCollator.compare(a, b)),
     }))
     .sort((a, b) => nameCollator.compare(a.name, b.name));
 }
@@ -55,7 +57,7 @@ export const getChannelBySlug = cache(async (slug: string) => {
       slug: true,
       name: true,
       logoPath: true,
-      _count: { select: { blockChannels: true, schedules: true } },
+      _count: { select: { schedules: true } },
     },
   });
   if (!channel) return null;
@@ -69,7 +71,6 @@ export const getChannelBySlug = cache(async (slug: string) => {
     ...rest,
     counts: {
       series: seriesCounts.get(channel.id) ?? 0,
-      blocks: _count.blockChannels,
       schedules: _count.schedules,
       timelineEvents,
     },
@@ -78,12 +79,32 @@ export const getChannelBySlug = cache(async (slug: string) => {
 
 export type ChannelDetail = NonNullable<Awaited<ReturnType<typeof getChannelBySlug>>>;
 
-/** Series linked to the channel, with every documented run (years stay null until sourced). */
+/**
+ * Series linked to the channel, with every documented run (years stay null until sourced) and the
+ * slugs of the channel's blocks each one is in.
+ */
 export async function listChannelSeries(channelId: number) {
-  const links = await prisma.seriesChannel.findMany({
-    where: { channelId },
-    orderBy: [{ startYear: "asc" }, { id: "asc" }],
-    select: { startYear: true, endYear: true, series: { select: seriesCardSelect } },
-  });
-  return groupSeriesRuns(links);
+  const [links, blockLinks] = await Promise.all([
+    prisma.seriesChannel.findMany({
+      where: { channelId },
+      orderBy: [{ startYear: "asc" }, { id: "asc" }],
+      select: { startYear: true, endYear: true, series: { select: seriesCardSelect } },
+    }),
+    // Only blocks that ran on this channel: a series can also be in another channel's blocks.
+    prisma.seriesBlock.findMany({
+      where: { block: { blockChannels: { some: { channelId } } } },
+      select: { series: { select: { slug: true } }, block: { select: { slug: true } } },
+    }),
+  ]);
+
+  const blockSlugsBySeries = new Map<string, Set<string>>();
+  for (const { series, block } of blockLinks) {
+    const slugs = blockSlugsBySeries.get(series.slug) ?? new Set<string>();
+    slugs.add(block.slug);
+    blockSlugsBySeries.set(series.slug, slugs);
+  }
+  return groupSeriesRuns(links).map((entry) => ({
+    ...entry,
+    blockSlugs: [...(blockSlugsBySeries.get(entry.series.slug) ?? [])],
+  }));
 }

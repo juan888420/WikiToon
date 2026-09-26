@@ -17,8 +17,8 @@ export default async function ChannelLayout({ children, params }: LayoutProps<"/
   const channel = await requireChannel(params);
   const base = `/canales/${channel.slug}`;
   const sections = [
+    // Blocks are filters in the Series section, by name, rather than a section of their own.
     { href: base, label: "Series", count: channel.counts.series },
-    { href: `${base}/bloques`, label: "Bloques", count: channel.counts.blocks },
     { href: `${base}/programacion`, label: "Programación", count: channel.counts.schedules },
     { href: `${base}/timeline`, label: "Timeline", count: channel.counts.timelineEvents },
   ];

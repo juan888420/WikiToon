@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/container";
-import { SeriesCard } from "@/components/series/series-card";
-import { listSeries } from "@/lib/data/series";
+import { SeriesBrowser } from "@/components/series/series-browser";
+import { blockHref, listBlocks } from "@/lib/data/blocks";
+import { listChannels } from "@/lib/data/channels";
+import { listSeriesWithLinks } from "@/lib/data/series";
 import { pluralize } from "@/lib/format";
 
 export const metadata: Metadata = {
@@ -10,7 +12,11 @@ export const metadata: Metadata = {
 };
 
 export default async function SeriesPage() {
-  const series = await listSeries();
+  const [items, channels, blocks] = await Promise.all([
+    listSeriesWithLinks(),
+    listChannels(),
+    listBlocks(),
+  ]);
 
   return (
     <Container className="py-10 sm:py-14">
@@ -18,11 +24,11 @@ export default async function SeriesPage() {
         <p className="text-xs font-medium tracking-wider text-primary uppercase">Catálogo</p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">Series</h1>
         <p className="mt-2 text-sm text-muted-foreground">
-          {pluralize(series.length, "serie", "series")} en el archivo.
+          {pluralize(items.length, "serie", "series")} en el archivo.
         </p>
       </header>
 
-      {series.length === 0 ? (
+      {items.length === 0 ? (
         <div className="rounded-xl border border-dashed border-border px-6 py-16 text-center">
           <p className="text-sm font-medium">Todavía no hay series en el archivo.</p>
           <p className="mt-1 text-sm text-muted-foreground">
@@ -30,13 +36,17 @@ export default async function SeriesPage() {
           </p>
         </div>
       ) : (
-        <ul className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-          {series.map((item) => (
-            <li key={item.slug}>
-              <SeriesCard series={item} />
-            </li>
-          ))}
-        </ul>
+        <SeriesBrowser
+          items={items}
+          channels={channels.map(({ slug, name }) => ({ slug, name }))}
+          blocks={blocks.map((block) => ({
+            slug: block.slug,
+            name: block.name,
+            description: block.description,
+            href: blockHref(block),
+            channelSlugs: block.channels.map((channel) => channel.slug),
+          }))}
+        />
       )}
     </Container>
   );

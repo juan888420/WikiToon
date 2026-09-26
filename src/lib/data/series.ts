@@ -20,6 +20,25 @@ export async function listSeries() {
 
 export type SeriesListItem = Awaited<ReturnType<typeof listSeries>>[number];
 
+/** Every series with the slugs of its channels and blocks, for the filterable catalog. */
+export async function listSeriesWithLinks() {
+  const series = await prisma.series.findMany({
+    select: {
+      ...seriesCardSelect,
+      seriesChannels: { select: { channel: { select: { slug: true } } } },
+      seriesBlocks: { select: { block: { select: { slug: true } } } },
+    },
+  });
+  return series
+    .map(({ seriesChannels, seriesBlocks, ...card }) => ({
+      series: card,
+      // A pair can have several rows (separate runs), hence the Sets.
+      channelSlugs: [...new Set(seriesChannels.map(({ channel }) => channel.slug))],
+      blockSlugs: [...new Set(seriesBlocks.map(({ block }) => block.slug))],
+    }))
+    .sort((a, b) => titleCollator.compare(a.series.title, b.series.title));
+}
+
 export type YearRun = { startYear: number | null; endYear: number | null };
 
 /**

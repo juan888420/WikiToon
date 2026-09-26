@@ -12,17 +12,32 @@ const tempDir = mkdtempSync(path.join(tmpdir(), "wikitoon-test-"));
 process.env.DATABASE_URL = `file:${path.join(tempDir, "test.db")}`;
 process.env.TMDB_READ_ACCESS_TOKEN = "test-token";
 
-type Fixture = { details: TmdbTvSeriesDetails; season: TmdbTvSeasonDetails };
+type Fixture = { details: TmdbTvSeriesDetails; seasons: TmdbTvSeasonDetails[] };
 
-function fixture(tmdbId: number, name: string): Fixture {
-  const season = {
-    id: tmdbId * 10,
-    season_number: 1,
-    name: "Temporada 1",
-    overview: "",
-    air_date: "2000-01-01",
-    poster_path: null,
-  };
+function fixture(tmdbId: number, name: string, seasonCount = 1): Fixture {
+  const seasons = Array.from({ length: seasonCount }, (_, index) => {
+    const number = index + 1;
+    const year = 2000 + index;
+    return {
+      id: tmdbId * 10 + index,
+      season_number: number,
+      name: `Temporada ${number}`,
+      overview: "",
+      air_date: `${year}-01-01`,
+      poster_path: null,
+      episodes: [
+        {
+          id: tmdbId * 100 + index,
+          episode_number: 1,
+          season_number: number,
+          name: "Episodio 1",
+          overview: "",
+          air_date: `${year}-01-01`,
+          still_path: null,
+        },
+      ],
+    };
+  });
   return {
     details: {
       id: tmdbId,
@@ -30,43 +45,36 @@ function fixture(tmdbId: number, name: string): Fixture {
       original_name: name,
       overview: "",
       first_air_date: "2000-01-01",
-      last_air_date: "2000-01-01",
+      last_air_date: `${2000 + seasonCount - 1}-01-01`,
       poster_path: null,
       backdrop_path: null,
-      number_of_seasons: 1,
-      number_of_episodes: 1,
-      seasons: [{ ...season, episode_count: 1 }],
+      number_of_seasons: seasonCount,
+      number_of_episodes: seasonCount,
+      seasons: seasons.map(({ episodes, ...season }) => ({ ...season, episode_count: episodes.length })),
       origin_country: ["US"],
       original_language: "en",
       status: "Ended",
     },
-    season: {
-      ...season,
-      episodes: [
-        {
-          id: tmdbId * 100,
-          episode_number: 1,
-          season_number: 1,
-          name: "Episodio 1",
-          overview: "",
-          air_date: "2000-01-01",
-          still_path: null,
-        },
-      ],
-    },
+    seasons,
   };
 }
 
 // No fixture for TMDB id 999, so requests for it fail with a TMDB 404.
 const fixtures = new Map<number, Fixture>(
-  [1, 2, 3, 4].map((tmdbId) => [tmdbId, fixture(tmdbId, `Series ${tmdbId}`)]),
+  [1, 2, 3, 4].map((tmdbId): [number, Fixture] => [tmdbId, fixture(tmdbId, `Series ${tmdbId}`)]),
 );
+// Three seasons, for the `seasons` filter.
+fixtures.set(8, fixture(8, "Series 8", 3));
 
 function mockTmdbFetch(input: string | URL | Request) {
   const { pathname } = new URL(input instanceof Request ? input.url : input);
   const match = pathname.match(/^\/3\/tv\/(\d+)(?:\/season\/(\d+))?$/);
   const found = match && fixtures.get(Number(match[1]));
-  const body = found && (match[2] === undefined ? found.details : found.season);
+  const body =
+    found &&
+    (match[2] === undefined
+      ? found.details
+      : found.seasons.find((season) => season.season_number === Number(match[2])));
   return Promise.resolve(
     body
       ? Response.json(body)
@@ -173,6 +181,19 @@ describe("loadSeriesCatalog", () => {
     }
   });
 
+  it("retitles an existing series from the catalog without changing its slug", async () => {
+    fetchMock.mock.resetCalls();
+    const [loaded] = await loadSeriesCatalog([{ tmdbId: 2, title: "Serie dos" }]);
+
+    assert.equal(fetchMock.mock.callCount(), 0);
+    assert.deepEqual([loaded.status, loaded.retitled, loaded.title], ["unchanged", true, "Serie dos"]);
+    const series = await prisma.series.findUniqueOrThrow({ where: { tmdbId: 2 } });
+    assert.deepEqual([series.title, series.slug], ["Serie dos", "series-2"]);
+
+    const [again] = await loadSeriesCatalog([{ tmdbId: 2, title: "Serie dos" }]);
+    assert.equal(again.retitled, false);
+  });
+
   it("rejects invalid entries without calling TMDB or writing", async () => {
     const snapshot = await counts();
     fetchMock.mock.resetCalls();
@@ -183,12 +204,16 @@ describe("loadSeriesCatalog", () => {
         { tmdbId: 1 },
         { tmdbId: 1 },
         { tmdbId: 5, channelSlugs: ["cartoon-network", "cartoon-network"] },
+        { tmdbId: 6, title: " " },
+        { tmdbId: 7, title: "キン肉マン" },
       ]),
       (error: Error) => {
         assert.match(error.message, /nothing was written/);
         assert.match(error.message, /channel "unknown" not found/);
         assert.match(error.message, /TMDB id 1 is listed more than once/);
         assert.match(error.message, /TMDB id 5 lists a channel more than once/);
+        assert.match(error.message, /TMDB id 6 has a blank, untrimmed or slug-unsafe title/);
+        assert.match(error.message, /TMDB id 7 has a blank, untrimmed or slug-unsafe title/);
         return true;
       },
     );
@@ -204,6 +229,55 @@ describe("loadSeriesCatalog", () => {
       /TMDB request for series 999 failed, nothing was written/,
     );
     assert.equal(await prisma.series.findUnique({ where: { tmdbId: 4 } }), null);
+    assert.deepEqual(await counts(), snapshot);
+  });
+
+  it("creates a series with the catalog title and a slug built from it", async () => {
+    const [loaded] = await loadSeriesCatalog([{ tmdbId: 4, title: "Serie cuatro" }]);
+
+    assert.deepEqual([loaded.status, loaded.retitled], ["imported", false]);
+    const series = await prisma.series.findUniqueOrThrow({ where: { tmdbId: 4 } });
+    assert.deepEqual([series.title, series.slug], ["Serie cuatro", "serie-cuatro"]);
+  });
+
+  it("imports only the listed seasons and dates the run from them", async () => {
+    fetchMock.mock.resetCalls();
+    const [loaded] = await loadSeriesCatalog([{ tmdbId: 8, seasons: [1, 2] }]);
+
+    assert.equal(loaded.status, "imported");
+    // Details plus the two listed seasons; season 3 is never requested.
+    assert.equal(fetchMock.mock.callCount(), 3);
+    const series = await prisma.series.findUniqueOrThrow({
+      where: { tmdbId: 8 },
+      include: { seasons: { select: { number: true }, orderBy: { number: "asc" } } },
+    });
+    assert.deepEqual(series.seasons.map((season) => season.number), [1, 2]);
+    assert.equal(series.lastAirYear, 2001);
+
+    const [again] = await loadSeriesCatalog([{ tmdbId: 8, seasons: [1, 2] }]);
+    assert.equal(again.status, "unchanged");
+  });
+
+  it("rejects invalid season lists and stored seasons outside the list, writing nothing", async () => {
+    const snapshot = await counts();
+
+    await assert.rejects(
+      loadSeriesCatalog([
+        { tmdbId: 8, seasons: [1] },
+        { tmdbId: 1, seasons: [] },
+        { tmdbId: 2, seasons: [1, 1] },
+      ]),
+      (error: Error) => {
+        assert.match(error.message, /TMDB id 8 already has seasons outside its list \(2\)/);
+        assert.match(error.message, /TMDB id 1 has an empty, repeated or invalid season list/);
+        assert.match(error.message, /TMDB id 2 has an empty, repeated or invalid season list/);
+        return true;
+      },
+    );
+    await assert.rejects(
+      loadSeriesCatalog([{ tmdbId: 3, seasons: [1] }, { tmdbId: 999, seasons: [1] }]),
+      /TMDB request for series 999 failed, nothing was written/,
+    );
     assert.deepEqual(await counts(), snapshot);
   });
 });

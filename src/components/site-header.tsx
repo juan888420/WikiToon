@@ -7,7 +7,6 @@ import { Container } from "@/components/container";
 import { cn } from "@/lib/utils";
 
 const NAV_ITEMS = [
-  { href: "/", label: "Inicio" },
   { href: "/canales", label: "Canales" },
   { href: "/series", label: "Series" },
   { href: "/bloques", label: "Bloques" },
@@ -16,7 +15,7 @@ const NAV_ITEMS = [
 ] as const;
 
 function isActive(pathname: string, href: string) {
-  return href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(`${href}/`);
+  return pathname === href || pathname.startsWith(`${href}/`);
 }
 
 export function SiteHeader() {
@@ -26,7 +25,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <Container className="flex flex-col sm:h-14 sm:flex-row sm:items-center sm:gap-8">
         <Link
-          href="/"
+          href="/canales"
           className="flex h-12 shrink-0 items-center gap-2 text-[15px] font-semibold tracking-tight sm:h-auto"
         >
           <span aria-hidden className="size-2 rounded-full bg-primary" />

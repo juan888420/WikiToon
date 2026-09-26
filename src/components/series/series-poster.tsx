@@ -1,6 +1,8 @@
 import { TvIcon } from "lucide-react";
 import Image from "next/image";
-import { tmdbImageUrl } from "@/lib/tmdb";
+// Not the `@/lib/tmdb` barrel: this also renders in Client Components, which must not pull in the
+// API client.
+import { tmdbImageUrl } from "@/lib/tmdb/images";
 import { cn } from "@/lib/utils";
 
 type SeriesPosterProps = {

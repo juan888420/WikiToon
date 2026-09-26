@@ -13,9 +13,13 @@ export function ChannelCard({ channel }: { channel: ChannelListItem }) {
       <div className="min-w-0">
         <h2 className="truncate font-medium">{channel.name}</h2>
         <p className="mt-0.5 text-xs text-muted-foreground tabular-nums">
-          {pluralize(channel.seriesCount, "serie", "series")} ·{" "}
-          {pluralize(channel.blockCount, "bloque", "bloques")}
+          {pluralize(channel.seriesCount, "serie", "series")}
         </p>
+        {channel.blockNames.length > 0 && (
+          <p className="mt-1 line-clamp-2 text-xs text-muted-foreground">
+            {channel.blockNames.join(" · ")}
+          </p>
+        )}
       </div>
     </Link>
   );
