@@ -1,34 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WikiToon
 
-## Getting Started
+An archive of Latin American children's and teen TV from the 90s and 2000s: the channels, the
+series they aired, their programming blocks and documented schedules. WikiToon is a reference
+site, not a streaming service: it hosts no video. The UI is in Spanish.
 
-First, run the development server:
+Built with Next.js (App Router), TypeScript, Tailwind CSS, Prisma 7 with SQLite, and series
+metadata from [TMDB](https://www.themoviedb.org). Every page is prerendered at build time.
+
+> This product uses TMDB and the TMDB APIs but is not endorsed, certified, or otherwise approved
+> by TMDB. Channel and block logos are trademarks of their owners.
+
+## Local development
+
+Requires Node 24.
 
 ```bash
+npm install
+cp .env.example .env   # set TMDB_READ_ACCESS_TOKEN to load series from TMDB
+npm run db:deploy      # create dev.db from the committed migrations
+npm run db:seed        # channels
+npm run db:load:series # series catalog (calls TMDB)
+npm run db:load:blocks
+npm run db:load:programming
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The order matters: each loader needs the data of the previous one. All loaders are idempotent.
+The curated data lives in `prisma/data/`; see `CLAUDE.md` for the data model and the rules
+behind each dataset.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Checks: `npm test`, `npm run typecheck`, `npm run lint`, `npm run build`.
 
-## Learn More
+## Production data
 
-To learn more about Next.js, take a look at the following resources:
+The catalog database is **not** in this repository: it contains TMDB content, and TMDB's API
+terms don't allow publishing it as a dataset or caching it for more than six months. The
+production build downloads it from private storage before prerendering:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Load or refresh the local database (`npm run db:load:series -- --refresh` re-syncs TMDB data;
+   do it at least every six months), then run `npm run db:snapshot`. It writes
+   `.data/catalog.db` (gitignored) and prints its checksum.
+2. Upload that file to private storage that serves it over HTTPS, optionally behind a bearer
+   token. For example, a release asset in a private GitHub repository, fetched through the API
+   URL `https://api.github.com/repos/<owner>/<repo>/releases/assets/<id>` with a fine-grained
+   token that can only read that repository. Uploading a new file changes the asset id, so
+   update `CATALOG_DB_URL` too.
+3. Redeploy. `npm run build` runs `scripts/fetch-db.ts` first: it downloads the file, checks that
+   it is a SQLite database with every committed migration applied and a loaded catalog, and
+   stops the build otherwise.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Environment variables for the production build (Vercel):
 
-## Deploy on Vercel
+| Variable | Value |
+|---|---|
+| `DATABASE_URL` | `file:./.data/catalog.db` |
+| `CATALOG_DB_URL` | URL of the uploaded snapshot |
+| `CATALOG_DB_TOKEN` | Bearer token for that URL, if the storage needs one |
+| `NEXT_PUBLIC_SITE_URL` | Production origin, e.g. `https://wikitoon.example` (canonical URLs, sitemap, previews) |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`TMDB_READ_ACCESS_TOKEN` is only needed locally, by the loaders. The deployed site never queries
+the database or TMDB at runtime, so content changes need a new snapshot and a redeploy.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Credits
+
+- Series metadata and posters: [TMDB](https://www.themoviedb.org).
+- Logo lettering: Luckiest Guy by Astigmatic (Apache License 2.0). Asset sources and licenses:
+  `public/brand/SOURCES.md`, `public/logos/SOURCES.md`, `public/logos/blocks/SOURCES.md`.

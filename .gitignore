@@ -50,3 +50,6 @@ next-env.d.ts
 
 # research downloads (raw third-party copies stay out of the repo)
 /.cache/
+
+# Catalog database snapshot for the production build (holds TMDB content; never commit it)
+/.data/

@@ -2,8 +2,12 @@
   "name": "wikitoon",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "next dev",
+    "prebuild": "tsx scripts/fetch-db.ts",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
@@ -21,6 +25,7 @@
     "db:load:programming": "tsx --env-file=.env scripts/load-programming.ts",
     "db:report:programming": "tsx --env-file=.env scripts/report-programming.ts",
     "db:studio": "prisma studio",
+    "db:snapshot": "tsx --env-file=.env scripts/snapshot-db.ts",
     "research:programming:fetch": "tsx scripts/research/programming/fetch.ts",
     "research:programming:extract": "tsx scripts/research/programming/extract.ts",
     "research:programming:build": "tsx --env-file=.env scripts/research/programming/build-dataset.ts"
