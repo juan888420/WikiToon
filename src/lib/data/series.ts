@@ -1,7 +1,12 @@
 import { cache } from "react";
 import { prisma } from "@/lib/prisma";
 
-const titleCollator = new Intl.Collator("es", { sensitivity: "base", numeric: true });
+// Leading "¡" and "¿" are ignored, so "¡Oye, Arnold!" sorts under O.
+const titleCollator = new Intl.Collator("es", {
+  sensitivity: "base",
+  numeric: true,
+  ignorePunctuation: true,
+});
 
 /** Fields a `SeriesCard` needs; shared by every list that renders series cards. */
 export const seriesCardSelect = {
