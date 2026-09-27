@@ -30,7 +30,16 @@ async function download(url: string, target: string) {
     signal: AbortSignal.timeout(120_000),
   });
   if (!response.ok) {
-    throw new Error(`Downloading the catalog database failed: HTTP ${response.status}.`);
+    // GitHub answers 404 both without credentials and for a token without access to the repo;
+    // its rate limit header tells them apart (60 anonymous, 5000 authenticated). No secrets logged.
+    const limit = response.headers.get("x-ratelimit-limit");
+    const permissions = response.headers.get("x-accepted-github-permissions");
+    throw new Error(
+      `Downloading the catalog database failed: HTTP ${response.status} ` +
+        `(token sent: ${token ? "yes" : "no"}` +
+        `${limit ? `; rate limit ${limit}, ${limit === "60" ? "anonymous" : "authenticated"}` : ""}` +
+        `${permissions ? `; required permissions: ${permissions}` : ""}).`,
+    );
   }
   const bytes = Buffer.from(await response.arrayBuffer());
   if (bytes.subarray(0, SQLITE_HEADER.length).toString("latin1") !== SQLITE_HEADER) {

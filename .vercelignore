@@ -1,0 +1,12 @@
+# `vercel` CLI deploys upload the local folder and don't read .gitignore. Keep secrets, local
+# databases (they hold TMDB content) and generated files out of the upload; the build downloads
+# the catalog database itself (scripts/fetch-db.ts) and regenerates the rest.
+.env*
+!.env.example
+*.db
+*.db-journal
+/.data/
+/.cache/
+/src/generated/
+*.tsbuildinfo
+next-env.d.ts
