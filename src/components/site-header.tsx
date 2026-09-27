@@ -11,7 +11,6 @@ const NAV_ITEMS = [
   { href: "/series", label: "Series" },
   { href: "/bloques", label: "Bloques" },
   { href: "/programacion", label: "Programación" },
-  { href: "/timeline", label: "Timeline" },
 ] as const;
 
 function isActive(pathname: string, href: string) {

@@ -1,6 +1,5 @@
 import { cache } from "react";
 import { groupSeriesRuns, seriesCardSelect } from "@/lib/data/series";
-import { channelTimelineWhere } from "@/lib/data/timeline";
 import { prisma } from "@/lib/prisma";
 
 const nameCollator = new Intl.Collator("es", { sensitivity: "base", numeric: true });
@@ -63,16 +62,12 @@ export const getChannelBySlug = cache(async (slug: string) => {
   if (!channel) return null;
 
   const { _count, ...rest } = channel;
-  const [seriesCounts, timelineEvents] = await Promise.all([
-    countSeriesByChannel(channel.id),
-    prisma.timelineEvent.count({ where: channelTimelineWhere(channel.id) }),
-  ]);
+  const seriesCounts = await countSeriesByChannel(channel.id);
   return {
     ...rest,
     counts: {
       series: seriesCounts.get(channel.id) ?? 0,
       schedules: _count.schedules,
-      timelineEvents,
     },
   };
 });

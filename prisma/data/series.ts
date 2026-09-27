@@ -164,10 +164,11 @@ export const seriesCatalog: SeriesCatalogEntry[] = [
   { tmdbId: 178, channelSlugs: ["nickelodeon"] }, // La robot adolescente
   { tmdbId: 130, channelSlugs: ["nickelodeon"] }, // Rugrats Crecidos
   { tmdbId: 3805, channelSlugs: ["nickelodeon"] }, // Catscratch
-  { tmdbId: 4511, channelSlugs: ["nickelodeon"] }, // The X's
+  // Titled in the fifteenth batch from Doblaje Wiki (TMDB es-MX kept the English or a misspelled name).
+  { tmdbId: 4511, title: "Los Equis", channelSlugs: ["nickelodeon"] }, // The X's
   { tmdbId: 6046, channelSlugs: ["nickelodeon"] }, // El Tigre: las aventuras de Manny Rivera
   { tmdbId: 9921, channelSlugs: ["nickelodeon"] }, // La granja
-  { tmdbId: 5340, channelSlugs: ["nickelodeon"] }, // Tak
+  { tmdbId: 5340, title: "Tak y el poder de Juju", channelSlugs: ["nickelodeon"] }, // Tak and the Power of Juju
   { tmdbId: 15641, channelSlugs: ["nickelodeon"] }, // The Mighty B!
   { tmdbId: 7869, channelSlugs: ["nickelodeon"] }, // Los Pingüinos de Madagascar
 
@@ -198,7 +199,8 @@ export const seriesCatalog: SeriesCatalogEntry[] = [
   { tmdbId: 10079, channelSlugs: ["fox-kids"] }, // El Hombre-Araña: Sin Límites
   { tmdbId: 1300, channelSlugs: ["fox-kids"] }, // Los Vengadores (United They Stand)
   { tmdbId: 21175, channelSlugs: ["fox-kids"] }, // Shinzo
-  { tmdbId: 11235, channelSlugs: ["fox-kids"] }, // Medabots
+  // Jetix added in the fourteenth batch: in the Jetix August 2005 grid (Foro Grilla de Canales).
+  { tmdbId: 11235, channelSlugs: ["fox-kids", "jetix"] }, // Medabots
   { tmdbId: 54728, channelSlugs: ["fox-kids"] }, // BeyBlade
   { tmdbId: 40143, channelSlugs: ["fox-kids"] }, // Shaman King
   { tmdbId: 14891, channelSlugs: ["fox-kids"] }, // Kirby de las Estrellas
@@ -220,7 +222,10 @@ export const seriesCatalog: SeriesCatalogEntry[] = [
   { tmdbId: 962, channelSlugs: ["boomerang"] }, // Jonny Quest
   { tmdbId: 3303, channelSlugs: ["boomerang"] }, // Fantasma del Espacio (Space Ghost and Dino Boy)
   { tmdbId: 3578, channelSlugs: ["boomerang"] }, // Los Herculoides
-  { tmdbId: 10097, channelSlugs: ["boomerang"] }, // Pierre Nodoyuna y Patán en sus máquinas voladoras
+  // Retitled in the fifteenth batch by the project owner's decision: "El escuadrón diabólico" is the
+  // 1969 dub's title. Doblaje Wiki: Boomerang aired Turner's 2001 redub, titled "Pierre Nodoyuna y
+  // Patán en sus máquinas voladoras", and two episodes of the original dub in Rodeo Cartoon (2005-2006).
+  { tmdbId: 10097, title: "El escuadrón diabólico", channelSlugs: ["boomerang"] }, // Dastardly and Muttley in Their Flying Machines
   { tmdbId: 1765, channelSlugs: ["boomerang"] }, // Los peligros de Penélope Glamour
   { tmdbId: 4489, channelSlugs: ["boomerang"] }, // Josie y sus Gatimelódicas
   { tmdbId: 10106, channelSlugs: ["boomerang"] }, // Hong Kong Phooey
@@ -248,7 +253,8 @@ export const seriesCatalog: SeriesCatalogEntry[] = [
   { tmdbId: 12225, channelSlugs: ["discovery-kids"] }, // Peppa Pig
   { tmdbId: 10107, title: "Jay Jay el avioncito", channelSlugs: ["discovery-kids"] }, // Jay Jay the Jet Plane
   { tmdbId: 35225, channelSlugs: ["discovery-kids"] }, // Harry y su cubeta de dinosaurios
-  { tmdbId: 13605, channelSlugs: ["discovery-kids"] }, // Jakers! Las aventuras de Piggley Winks
+  // TMDB es-MX misspells it "Jackers"; titled in the fifteenth batch.
+  { tmdbId: 13605, title: "Jakers! Las aventuras de Piggley Winks", channelSlugs: ["discovery-kids"] },
   { tmdbId: 11133, channelSlugs: ["discovery-kids"] }, // Little Robots
   { tmdbId: 13871, channelSlugs: ["discovery-kids"] }, // Los hermanos Koala
   { tmdbId: 656, title: "Jorge el curioso", channelSlugs: ["discovery-kids"] }, // Jorge el curioso
@@ -485,7 +491,8 @@ export const seriesCatalog: SeriesCatalogEntry[] = [
   // Twelfth batch: Boomeraction series in Boomerang Latin America's schedules (2003-2006, Cartoon
   // Network Wiki grids citing the channel's site), identified with Doblaje Wiki's list of series
   // aired by Boomerang. TMDB has La Mole only inside Fred and Barney Meet the Thing (1979).
-  { tmdbId: 30986, title: "Meteoro", channelSlugs: ["boomerang"] }, // Speed Racer (1967)
+  // Cartoon Network added in the fourteenth batch: in the Cartoon Network Wiki grid of November 2002.
+  { tmdbId: 30986, title: "Meteoro", channelSlugs: ["boomerang", "cartoon-network"] }, // Speed Racer (1967)
   { tmdbId: 1651, title: "Los 4 Fantásticos", channelSlugs: ["boomerang"] }, // 1967
   { tmdbId: 42245, title: "James Bond Jr.", channelSlugs: ["boomerang"] },
   { tmdbId: 2650, title: "Los Centuriones", channelSlugs: ["boomerang"] },
@@ -508,6 +515,67 @@ export const seriesCatalog: SeriesCatalogEntry[] = [
   { tmdbId: 17519, title: "Zeke y Luther", channelSlugs: ["disney-channel"] },
   { tmdbId: 2352, title: "La niñera", channelSlugs: ["nickelodeon"] },
   { tmdbId: 52, title: "El show de los 70", channelSlugs: ["nickelodeon"] },
+
+  // Fourteenth batch, the last catalog batch before the programming work. Titles are
+  // the Latin American ones in Doblaje Wiki. Channels come from the programming grids
+  // (docs/research/programming-grids.md) or from Doblaje Wiki's "Transmisión" tables:
+  // - Cartoon Network 2000-10 grids (official site and Cartoon Network Wiki): Guerra de Bestias and
+  //   Hombres de negro (in its Talismán block, not in the catalog), Dos perros tontos and Félix.
+  //   Doblaje Wiki: Guerra de Bestias from 1 November 1999, Hombres de negro from November 1998.
+  // - Jetix for Guerra de Bestias and Hombres de negro: project owner's decision (remembered, not in
+  //   the sources).
+  // - Cartoon Network: Mucha Lucha (2005-10 grid; Doblaje Wiki 2003-2011), Loonatics (2006-2007),
+  //   Titán Sim-Biónico (2010-2012) and Samurai Champloo (Toonami, September 2006 to February 2007).
+  // - Fox Kids 2001-08 grid: RoboCop, as "Robocop: La Serie Animada" (Clásicos a la Medianoche).
+  // - Nickelodeon 2001-08 grid and 2004 days: Sabrina (Doblaje Wiki: 1997-2006).
+  // - Boomerang: El mundo de Beakman (Doblaje Wiki, 2006-2008 era; it also aired on Warner Channel).
+  // - Disney Channel: Aladdín (Doblaje Wiki: from 27 July 2000).
+  // Las Tortugas Ninja (1987), ThunderCats (1985) and Halcones Galácticos have no documented airing
+  // on a catalog channel (Doblaje Wiki lists Locomotion, I.Sat, Warner Channel, Tooncast and
+  // broadcast TV), so they have no channel until one is documented or the owner decides.
+  { tmdbId: 288, title: "¡Mucha Lucha!", channelSlugs: ["cartoon-network"] },
+  { tmdbId: 32315, title: "Titán Sim-Biónico", channelSlugs: ["cartoon-network"] },
+  { tmdbId: 11187, title: "Los nuevos cuentos de Félix el gato", channelSlugs: ["cartoon-network"] },
+  { tmdbId: 1977, title: "Loonatics", channelSlugs: ["cartoon-network"] }, // Loonatics Unleashed
+  { tmdbId: 1916, title: "Dos perros tontos", channelSlugs: ["cartoon-network"] }, // 2 Stupid Dogs
+  { tmdbId: 1153, title: "Hombres de negro: La serie", channelSlugs: ["cartoon-network", "jetix"] },
+  { tmdbId: 1063, title: "Samurai Champloo", channelSlugs: ["cartoon-network"] },
+  { tmdbId: 958, title: "Guerra de Bestias: Transformers", channelSlugs: ["cartoon-network", "jetix"] },
+  { tmdbId: 3411, title: "RoboCop", channelSlugs: ["fox-kids"] }, // RoboCop: The Animated Series (1988)
+  { tmdbId: 605, title: "Sabrina, la bruja adolescente", channelSlugs: ["nickelodeon"] },
+  { tmdbId: 5343, title: "El mundo de Beakman", channelSlugs: ["boomerang"] },
+  { tmdbId: 2745, title: "Aladdín: La serie", channelSlugs: ["disney-channel"] }, // 1994
+  { tmdbId: 160, title: "Los Ninja Tortugas Adolescentes Mutantes" }, // 1987
+  { tmdbId: 1988, title: "ThunderCats, los felinos cósmicos" }, // 1985
+  { tmdbId: 12504, title: "Halcones Galácticos" }, // SilverHawks
+
+  // Fifteenth batch (2026-09-27), the last catalog pass before deploy. Boomerang for every series
+  // is the project owner's decision; Doblaje Wiki lists all of them as aired by Boomerang Latin
+  // America except Aquaman, which it doesn't document. Titles are Doblaje Wiki's. Most are
+  // Hanna-Barbera segments that TMDB also has as standalone series; their umbrella shows (Tiro
+  // Loco McGraw, El Inspector Ardilla, La hormiga atómica, El Show de Huckleberry Hound, El Show
+  // del Oso Yogui) stay in the catalog. Birdman and El Trío Galaxia have no standalone TMDB entry:
+  // they are Birdman y el Trío Galaxia (1029), already here. The Pink Panther Show (1969, Boomerang
+  // 2004-2008 in Doblaje Wiki) has no TMDB entry either; the 1978 series is the one Doblaje Wiki
+  // also lists on Boomerang. TMDB's Loopy De Loop lists only one of the 48 shorts.
+  { tmdbId: 19053, title: "Canuto y Canito", channelSlugs: ["boomerang"] }, // Augie Doggie and Doggie Daddy
+  { tmdbId: 322135, title: "Dino Boy en el valle perdido", channelSlugs: ["boomerang"] },
+  { tmdbId: 319126, title: "Loopy De Loop", channelSlugs: ["boomerang"] },
+  { tmdbId: 331557, title: "El pulpo Manotas", channelSlugs: ["boomerang"] }, // Squiddly Diddly
+  { tmdbId: 12947, title: "Travesuras de los Picapiedra", channelSlugs: ["boomerang"] }, // The Flintstone Comedy Show (1980)
+  { tmdbId: 331532, title: "La tonta bruja", channelSlugs: ["boomerang"] }, // Winsome Witch
+  { tmdbId: 114772, title: "El completamente nuevo show de la Pantera Rosa", channelSlugs: ["boomerang"] }, // 1978
+  { tmdbId: 305861, title: "Los osos montañeses", channelSlugs: ["boomerang"] }, // The Hillbilly Bears
+  { tmdbId: 5172, title: "BraveStarr", channelSlugs: ["boomerang"] },
+  { tmdbId: 272160, title: "El león Melquíades", channelSlugs: ["boomerang"] }, // Snagglepuss
+  { tmdbId: 303388, title: "Lindo pulgoso", channelSlugs: ["boomerang"] }, // Precious Pupp
+  { tmdbId: 10724, title: "Aquaman", channelSlugs: ["boomerang"] }, // Filmation, 1967
+  { tmdbId: 21471, title: "Pixie, Dixie y el Sr. Jinks", channelSlugs: ["boomerang"] },
+  { tmdbId: 590, title: "SWAT Kats", channelSlugs: ["boomerang"] }, // SWAT Kats: The Radical Squadron
+  { tmdbId: 12462, title: "Súper Fisgón y Despistado", channelSlugs: ["boomerang"] }, // Snooper and Blabber
+  { tmdbId: 306971, title: "La hormiga y el oso hormiguero", channelSlugs: ["boomerang"] }, // The Ant and the Aardvark
+  // Doblaje Wiki: Cartoon Network aired it in Toonami from 2001 to 2007 (94 of its 95 episodes).
+  { tmdbId: 28136, title: "Samurái X", channelSlugs: ["cartoon-network"] }, // Rurouni Kenshin (1996)
 ];
 
 function range(from: number, to: number) {

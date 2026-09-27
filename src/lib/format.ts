@@ -66,15 +66,49 @@ export function formatTimeRange(start: string, end: string | null) {
 }
 
 /**
- * Partial historical dates (`TimelineEvent` year + optional month/day), built from the numbers
- * only, with no `Date` or timezone: "1997", "mar 1997" or "4 mar 1997". An out-of-range month
- * falls back to the year alone.
+ * The "HH:MM" ranges of one schedule line, one string each ("11:00–12:00"; "desde 00:00" when
+ * open), so the UI can keep every range on one line.
  */
-export function formatPartialDate(year: number, month: number | null, day: number | null) {
-  const monthName = month === null ? undefined : MONTHS[month - 1];
-  if (!monthName) return String(year);
-  const short = `${monthName.slice(0, 3)} ${year}`;
-  return day === null ? short : `${day} ${short}`;
+export function formatTimeRanges(times: { startTime: string; endTime: string | null }[]) {
+  return times.map(({ startTime, endTime }) =>
+    endTime ? formatTimeRange(startTime, endTime) : `desde ${startTime}`,
+  );
+}
+
+const WEEKDAYS = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"];
+
+function capitalize(text: string) {
+  return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
+/**
+ * ISO weekdays (1 = Monday), ascending, as a recurring schedule: "Lunes a viernes", "Sábados",
+ * "Sábados y domingos", "Lunes, miércoles y viernes" or "Todos los días".
+ */
+export function formatWeekdays(weekdays: number[]) {
+  const names = weekdays.map((day) => WEEKDAYS[day - 1]).filter((name) => name !== undefined);
+  if (names.length === 0) return "";
+  if (names.length === 7) return "Todos los días";
+  const consecutive = weekdays.every((day, i) => i === 0 || day === weekdays[i - 1]! + 1);
+  if (consecutive && names.length >= 3) return capitalize(`${names[0]} a ${names.at(-1)}`);
+  // "sábado" and "domingo" take an "s" in the plural; the other weekday names don't change.
+  const plural = names.map((name) => (name.endsWith("o") ? `${name}s` : name));
+  const list =
+    plural.length === 1 ? plural[0]! : `${plural.slice(0, -1).join(", ")} y ${plural.at(-1)}`;
+  return capitalize(list);
+}
+
+/** "2005-10" -> "oct 2005", from the digits only; returns other input unchanged. */
+export function formatYearMonth(period: string) {
+  const match = /^(\d{4})-(\d{2})$/.exec(period);
+  const month = match ? MONTHS[Number(match[2]) - 1] : undefined;
+  return match && month ? `${month.slice(0, 3)} ${match[1]}` : period;
+}
+
+/** IANA zone as a reader-facing clock: "America/Argentina/Buenos_Aires" -> "hora de Buenos Aires". */
+export function formatTimeZone(timeZone: string) {
+  const city = timeZone.split("/").at(-1)?.replaceAll("_", " ");
+  return city ? `hora de ${city}` : timeZone;
 }
 
 export function formatDate(date: Date) {

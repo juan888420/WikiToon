@@ -1,4 +1,45 @@
-import type { BlockData } from "../../src/lib/import/blocks";
+import type { BlockAiringData, BlockData } from "../../src/lib/import/blocks";
+
+// Programming grids the block airings are summarised from (see docs/research/programming-grids.md
+// and prisma/data/programming/grids). Each airing merges a grid's consecutive slots of the block
+// into one time range per weekday group. Times are the grid's, in its time zone (omitted when the
+// source doesn't document it), counted on the broadcast day: a 01:00 slot on Friday airs in the
+// early hours of Saturday.
+type GridSource = Pick<BlockAiringData, "period" | "timeZone" | "sourceName" | "sourceUrl">;
+
+const cartoonNetwork2000Official: GridSource = {
+  period: "2000-10",
+  sourceName: "Sitio oficial de Cartoon Network Latinoamérica (Wayback Machine)",
+  sourceUrl:
+    "https://web.archive.org/web/20001018141410/http://www.cartoonnetworkla.com/spanish/toonin/grid.html",
+};
+const boomerang2005: GridSource = {
+  period: "2005-07",
+  timeZone: "America/Argentina/Buenos_Aires",
+  sourceName: "Cartoon Network Wiki (Fandom): Grilla de Boomerang, Julio de 2005",
+  sourceUrl: "https://cartoonnetwork.fandom.com/es/wiki/Grilla_de_Boomerang,_Julio_de_2005",
+};
+const foxKids2001: GridSource = {
+  period: "2001-08",
+  sourceName: "Foro Grilla de Canales: Programación de Fox Kids Latinoamérica | Agosto 2001",
+  sourceUrl:
+    "https://forogrilladecanales.blogspot.com/2025/03/programacion-de-fox-kids-latinoamerica.html",
+};
+const jetix2005: GridSource = {
+  period: "2005-08",
+  sourceName: "Foro Grilla de Canales: Programación de Jetix | Agosto 2005",
+  sourceUrl: "https://forogrilladecanales.blogspot.com/2023/10/programacion-de-jetix-agosto-2005.html",
+};
+
+const weekdays = [1, 2, 3, 4, 5];
+const weekend = [6, 7];
+const everyDay = [1, 2, 3, 4, 5, 6, 7];
+
+// Slots the project owner set on 2026-09-27. They have no source or period and apply to every
+// channel of the block; where they replace a grid slot, the block says which.
+const ownerDecision = {
+  notes: "Project owner's decision (2026-09-27); no source documents this slot.",
+};
 
 // Curated blocks, loaded with `npm run db:load:blocks` after the seed and series imports.
 // Years and sources stay out until they are documented; series are referenced by TMDB id.
@@ -11,6 +52,9 @@ import type { BlockData } from "../../src/lib/import/blocks";
 // `logoPath` is optional and must point to a local asset under `public/logos/blocks/`, named
 // `{block-slug}`. Document its source in `public/logos/blocks/SOURCES.md`, which also lists why
 // each pending block has no logo yet. Blocks without it show initials.
+// `airings` are the block's time slots, in display order (the first ones go on the block card):
+// slots a source shows, or the project owner's (`ownerDecision`), which replace the grid slots of
+// Toonami, Adult Swim, Zapping Zone and Insomnio. A block without them shows no schedule.
 export const blocks: BlockData[] = [
   {
     slug: "cartoon-cartoons",
@@ -35,6 +79,25 @@ export const blocks: BlockData[] = [
       4246, // Malo Con Carne
       1789, // Jones, El Robot
       2660, // KND: Los chicos del barrio
+      // Added by the project owner's decision (2026-09-27): Cartoon Network originals from after
+      // the moniker was retired in 2004, which no source lists as Cartoon Cartoons.
+      1720, // Mansión Foster para amigos imaginarios
+      9907, // Chowder
+      4686, // Ben 10
+      557, // El Campamento de Lazlo
+      446, // Vida y obra de Juniper Lee
+      234, // Mi compañero de clase es un mono
+      262, // Niño Ardilla
+      2094, // Class of 3000
+      255, // Hi Hi Puffy AmiYumi
+      6673, // Las maravillosas desventuras de Flapjack
+    ],
+    // October 2000 official grid (the Cartoon Network Wiki grid agrees).
+    airings: [
+      { channelSlug: "cartoon-network", weekdays, startTime: "02:00", endTime: "04:00", ...cartoonNetwork2000Official },
+      { channelSlug: "cartoon-network", weekdays: [5], startTime: "20:00", endTime: "22:00", ...cartoonNetwork2000Official },
+      { channelSlug: "cartoon-network", weekdays: [6], startTime: "11:00", endTime: "13:00", ...cartoonNetwork2000Official },
+      { channelSlug: "cartoon-network", weekdays: [7], startTime: "19:00", endTime: "21:00", ...cartoonNetwork2000Official },
     ],
   },
   {
@@ -68,6 +131,15 @@ export const blocks: BlockData[] = [
       13916, // Death Note
       30984, // Bleach
       95479, // Jujutsu Kaisen
+      // Fourteenth batch. Doblaje Wiki: premiered in Latin America "en el bloque Toonami de Cartoon
+      // Network" on 18 September 2006, at 01:00.
+      1063, // Samurai Champloo
+      // Fifteenth batch. Doblaje Wiki: aired in Cartoon Network's Toonami from 2001 to 2007.
+      28136, // Samurái X
+    ],
+    // Replaces the midnight slot of the October 2005 grid (Monday to Thursday, 00:00-02:00).
+    airings: [
+      { weekdays, startTime: "17:00", endTime: "19:00", ...ownerDecision },
     ],
   },
   {
@@ -107,6 +179,10 @@ export const blocks: BlockData[] = [
       40064, // Black Dynamite
       30991, // Cowboy Bebop
     ],
+    // The October 2005 Cartoon Network Wiki grid starts it at 01:00; the owner's slot replaces it.
+    airings: [
+      { weekdays: [5, 6, 7], startTime: "23:00", endTime: "05:00", ...ownerDecision },
+    ],
   },
   {
     slug: "nicktoons",
@@ -138,12 +214,15 @@ export const blocks: BlockData[] = [
       130, // Rugrats Crecidos
       178, // La robot adolescente
       3805, // Catscratch
-      4511, // The X's
+      4511, // Los Equis
       6046, // El Tigre: las aventuras de Manny Rivera
       9921, // La granja
-      5340, // Tak
+      5340, // Tak y el poder de Juju
       15641, // The Mighty B!
       7869, // Los Pingüinos de Madagascar
+    ],
+    airings: [
+      { weekdays: everyDay, startTime: "14:00", endTime: "19:00", ...ownerDecision },
     ],
   },
   {
@@ -178,6 +257,10 @@ export const blocks: BlockData[] = [
       // Added by the project owner's decision.
       2352, // La niñera
       52, // El show de los 70
+      605, // Sabrina, la bruja adolescente (1996 live-action series)
+    ],
+    airings: [
+      { weekdays, startTime: "22:00", endTime: "06:00", ...ownerDecision },
     ],
   },
   {
@@ -206,6 +289,10 @@ export const blocks: BlockData[] = [
       31628, // Par de Reyes
       17519, // Zeke y Luther
     ],
+    airings: [
+      { weekdays, startTime: "17:00", endTime: "18:00", ...ownerDecision },
+      { weekdays: [6], startTime: "23:00", endTime: "05:00", ...ownerDecision },
+    ],
   },
   // Fox Kids was succeeded by Jetix, and these blocks continued across the rebrand, so each one is
   // a single block on both channels rather than two independent blocks. Which catalog series aired
@@ -233,6 +320,12 @@ export const blocks: BlockData[] = [
       635, // Las aventuras de Shirley Holmes
       4045, // Eerie, Indiana
       2928, // The Hardy Boys y Nancy Drew
+    ],
+    airings: [
+      { channelSlug: "fox-kids", weekdays: [6], startTime: "20:00", endTime: "02:00", ...foxKids2001 },
+      { channelSlug: "jetix", weekdays: everyDay, startTime: "22:00", endTime: "00:00", ...jetix2005 },
+      { channelSlug: "jetix", weekdays: everyDay, startTime: "01:30", endTime: "04:30", ...jetix2005 },
+      { channelSlug: "fox-kids", weekdays, startTime: "20:00", endTime: "21:30", ...foxKids2001 },
     ],
   },
   {
@@ -277,6 +370,10 @@ export const blocks: BlockData[] = [
       14891, // Kirby de las Estrellas
       9550, // Kid Músculo
       5653, // Megaman NT Warrior
+    ],
+    // Replaces the grid slots (Fox Kids 2001-08 from 00:00, Zona Sur 2003-01 from 20:00).
+    airings: [
+      { weekdays: everyDay, startTime: "23:00", endTime: "06:00", ...ownerDecision },
     ],
   },
   {
@@ -323,6 +420,10 @@ export const blocks: BlockData[] = [
       4335, // Oban Star Racers
       3428, // Súper Escuadrón Ciber Monos Hiper Fuerza ¡Ya!
       240, // Las aventuras de Jackie Chan
+    ],
+    airings: [
+      { channelSlug: "fox-kids", weekdays: [7], startTime: "06:00", endTime: "10:00", ...foxKids2001 },
+      { channelSlug: "jetix", weekdays: [6], startTime: "11:00", endTime: "13:00", ...jetix2005 },
     ],
   },
   {
@@ -389,6 +490,13 @@ export const blocks: BlockData[] = [
       19260, // Los Caballeros del Mundo Mon
       8908, // Flint, el detective del tiempo
       1762, // Las locuras de Andy
+      // Fourteenth batch, by the same genre rule: animated action series the project owner placed
+      // on Jetix.
+      958, // Guerra de Bestias: Transformers
+      1153, // Hombres de negro: La serie
+    ],
+    airings: [
+      { weekdays: weekend, startTime: "11:00", endTime: "14:00", ...ownerDecision },
     ],
   },
   {
@@ -414,6 +522,12 @@ export const blocks: BlockData[] = [
       9550, // Kid Músculo
       5653, // Megaman NT Warrior
       137, // W.I.T.C.H.
+    ],
+    airings: [
+      { channelSlug: "fox-kids", weekdays: [1, 2, 3, 4, 5, 6], startTime: "17:30", endTime: "20:00", ...foxKids2001 },
+      { channelSlug: "jetix", weekdays, startTime: "18:30", endTime: "20:00", ...jetix2005 },
+      { channelSlug: "jetix", weekdays, startTime: "20:30", endTime: "21:00", ...jetix2005 },
+      { channelSlug: "fox-kids", weekdays: [7], startTime: "17:30", endTime: "21:00", ...foxKids2001 },
     ],
   },
   // Boomerang blocks provided by the project owner by name only; years and sources stay null. Their
@@ -477,6 +591,23 @@ export const blocks: BlockData[] = [
       4274, // Los pequeños Tom y Jerry
       10442, // Yo Yogui!
       11040, // Droopy, el gran detective
+      // Fifteenth series batch, by the same rule. Doblaje Wiki documents El escuadrón diabólico
+      // (10097, above) in this block in 2005-2006.
+      19053, // Canuto y Canito
+      319126, // Loopy De Loop
+      331557, // El pulpo Manotas
+      12947, // Travesuras de los Picapiedra
+      331532, // La tonta bruja
+      305861, // Los osos montañeses
+      272160, // El león Melquíades
+      303388, // Lindo pulgoso
+      21471, // Pixie, Dixie y el Sr. Jinks
+      12462, // Súper Fisgón y Despistado
+    ],
+    airings: [
+      { channelSlug: "boomerang", weekdays, startTime: "06:00", endTime: "07:00", ...boomerang2005 },
+      { channelSlug: "boomerang", weekdays, startTime: "14:00", endTime: "15:00", ...boomerang2005 },
+      { channelSlug: "boomerang", weekdays, startTime: "22:00", endTime: "23:00", ...boomerang2005 },
     ],
   },
   {
@@ -528,6 +659,19 @@ export const blocks: BlockData[] = [
       302676, // Dinamita, el perro maravilla
       6059, // El poderoso Hércules
       4979, // El show de Underdog
+      // Fifteenth series batch: action series the project owner placed on Boomerang, added by genre.
+      322135, // Dino Boy en el valle perdido
+      590, // SWAT Kats
+      5172, // BraveStarr
+      10724, // Aquaman
+    ],
+    airings: [
+      { channelSlug: "boomerang", weekdays, startTime: "11:00", endTime: "12:00", ...boomerang2005 },
+      { channelSlug: "boomerang", weekdays, startTime: "19:00", endTime: "20:00", ...boomerang2005 },
+      { channelSlug: "boomerang", weekdays, startTime: "03:00", endTime: "04:00", ...boomerang2005 },
+      { channelSlug: "boomerang", weekdays: weekend, startTime: "10:00", endTime: "12:00", ...boomerang2005 },
+      { channelSlug: "boomerang", weekdays: weekend, startTime: "18:00", endTime: "20:00", ...boomerang2005 },
+      { channelSlug: "boomerang", weekdays: weekend, startTime: "02:00", endTime: "04:00", ...boomerang2005 },
     ],
   },
   {
@@ -547,6 +691,9 @@ export const blocks: BlockData[] = [
       10518, // Club siguepistas
       2451, // El Show de Pebbles y Bamm-Bamm
       1010, // La hora de los Picapiedra
+    ],
+    airings: [
+      { weekdays, startTime: "14:00", endTime: "16:00", ...ownerDecision },
     ],
   },
 ];

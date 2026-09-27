@@ -8,7 +8,8 @@ async function main() {
     console.log(
       `${block.blockCreated ? "Created" : "Updated"} block ${block.slug} (id ${block.blockId}): ` +
         `${block.channelsCreated} channels linked, ${block.channelsExisting} already linked, ` +
-        `${block.linksCreated} series linked, ${block.linksExisting} already linked.`,
+        `${block.linksCreated} series linked, ${block.linksExisting} already linked, ` +
+        `${block.airingsCount} airings (${block.airingsReplaced ? "rewritten" : "unchanged"}).`,
     );
   }
 }

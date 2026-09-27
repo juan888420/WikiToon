@@ -1,6 +1,6 @@
 # Investigación: grillas históricas de programación en Latinoamérica
 
-Documento de investigación para la futura sección de **Programación** y **Timeline** de WikiToon. Reúne las grillas encontradas, cómo se verificaron, qué períodos se pueden reconstruir y una propuesta para convertirlas en datos.
+Documento de investigación para la sección de **Programación** de WikiToon (también se escribió para un Timeline, que se eliminó del proyecto el 2026-09-27). Reúne las grillas encontradas, cómo se verificaron, qué períodos se pueden reconstruir y una propuesta para convertirlas en datos.
 
 > **Actualización (2026-09-26): primer dataset cargado.** Un subconjunto de estas grillas ya está en la base (`prisma/data/programming`, ver "Programming data" en `CLAUDE.md`). Las tablas de este documento son la foto de la investigación. Para cada franja, la fuente de verdad son los datos cargados y [programming-review.md](programming-review.md). Cambios respecto de este documento:
 >
@@ -2443,12 +2443,12 @@ Complementos que no salen en la tabla porque F1 los pone en una tabla aparte:
 - **Rotación de madrugada.** De 00:00 a 06:00 se repiten series del día (Cartoon Network, Fox Kids), se emiten bloques de clásicos (Clásicos a la Medianoche, Insomnio) o se programa para adultos (Adult Swim, Toonami desde 2005, Nick@Nite).
 - **Ciclos.** Boomerang (2001-2006) repetía 8 horas tres veces al día. Nick@Nite repite una rotación de 7-8 sitcoms durante toda la noche.
 - **Franjas estables durante años:** Votatoon (sábados 15:00–18:00, 2000–2008), Teatro Cartoon (domingos 14:00–16:00, 1999–2008), Cinetoon (sábados 09:00–10:00, 1998–2004), Hora ACME (de mañana en 1998-2003 y en la última franja de la madrugada, 05:00–06:00, en 2004-2007).
-- **Maratones y especiales.** Están fechados en las notas de F1 y F4; por ejemplo, 59 horas de Pokémon del 30/12/2000 al 1/1/2001 y la Semana del Niño de agosto 2005 en todos los canales. Son eventos del Timeline, no parte de la grilla regular.
+- **Maratones y especiales.** Están fechados en las notas de F1 y F4; por ejemplo, 59 horas de Pokémon del 30/12/2000 al 1/1/2001 y la Semana del Niño de agosto 2005 en todos los canales. Son eventos puntuales, no parte de la grilla regular.
 - **Cambios de grilla.** Suelen coincidir con el primer día hábil del mes o con relanzamientos: Cartoon Network en enero 2005 (nueva imagen), Boomerang el 3/4/2006, Jetix el 31/7/2004.
 
-## Eventos para el Timeline
+## Eventos fechados
 
-Fechas encontradas durante la investigación. Todas pueden cargarse como `TimelineEvent` con fecha parcial.
+Fechas encontradas durante la investigación. Se registraron para un Timeline que se eliminó del proyecto el 2026-09-27 (junto con el modelo `TimelineEvent`); quedan solo como notas de investigación.
 
 | Fecha | Canal | Evento | Tipo sugerido | Fuente | Certeza |
 | ----- | ----- | ------ | ------------- | ------ | ------- |

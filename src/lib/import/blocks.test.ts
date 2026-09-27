@@ -159,6 +159,59 @@ describe("loadBlocks", () => {
     assert.deepEqual(await counts(), { blocks: 2, blockChannels: 3, seriesBlocks: 3 });
   });
 
+  it("stores airings in order, skips unchanged reloads and rewrites changed ones", async () => {
+    const airing = {
+      channelSlug: "cartoon-network",
+      weekdays: [1, 2, 3, 4, 5],
+      startTime: "17:00",
+      endTime: "19:00",
+      period: "2002-11",
+      sourceName: "Grid",
+      sourceUrl: "https://example.com/grid",
+    };
+    const withAirings: BlockData = {
+      ...cartoonCartoons,
+      airings: [
+        airing,
+        { ...airing, weekdays: [6, 7], startTime: "23:00", endTime: null },
+        // The project owner's slot: no channel (every channel of the block), source or period.
+        { weekdays: [7], startTime: "10:00", endTime: "12:00", notes: "Owner's decision." },
+      ],
+    };
+
+    const [first] = await loadBlocks([withAirings]);
+    assert.deepEqual([first.airingsReplaced, first.airingsCount], [true, 3]);
+    const rows = await prisma.blockAiring.findMany({
+      where: { blockId: first.blockId },
+      orderBy: { position: "asc" },
+    });
+    assert.deepEqual(
+      rows.map((row) => [row.position, row.weekdays, row.startTime, row.endTime, row.timeZone]),
+      [
+        [0, "1,2,3,4,5", "17:00", "19:00", null],
+        [1, "6,7", "23:00", null, null],
+        [2, "7", "10:00", "12:00", null],
+      ],
+    );
+    assert.deepEqual(
+      [rows[2]!.channelId, rows[2]!.period, rows[2]!.sourceUrl, rows[2]!.notes],
+      [null, null, null, "Owner's decision."],
+    );
+
+    const [second] = await loadBlocks([withAirings]);
+    assert.equal(second.airingsReplaced, false);
+    const reloaded = await prisma.blockAiring.findMany({ where: { blockId: first.blockId } });
+    assert.deepEqual(
+      reloaded.map((row) => row.id).sort(),
+      rows.map((row) => row.id).sort(),
+    );
+
+    // The data owns the airings: omitting them removes the block's rows.
+    const [third] = await loadBlocks([cartoonCartoons]);
+    assert.deepEqual([third.airingsReplaced, third.airingsCount], [true, 0]);
+    assert.equal(await prisma.blockAiring.count({ where: { blockId: first.blockId } }), 0);
+  });
+
   it("rejects invalid data without writing anything", async () => {
     const before = await counts();
     const valid: BlockData = { ...cartoonCartoons, slug: "valid-new", seriesTmdbIds: [1] };
@@ -173,6 +226,22 @@ describe("loadBlocks", () => {
         { ...cartoonCartoons, slug: "repeated-channel", channelSlugs: ["boomerang", "boomerang"] },
         { ...cartoonCartoons, slug: "valid-new", seriesTmdbIds: [1, 1] },
         { ...cartoonCartoons, slug: "remote-logo", logoPath: "https://example.com/logo.svg" },
+        {
+          ...cartoonCartoons,
+          slug: "bad-airing",
+          airings: [
+            {
+              channelSlug: "boomerang",
+              weekdays: [5, 1],
+              startTime: "25:00",
+              endTime: null,
+              period: "2005",
+              sourceName: "",
+              sourceUrl: "grid",
+            },
+            { weekdays: [1], startTime: "10:00", endTime: "11:00" },
+          ],
+        },
       ]),
       (error: Error) => {
         assert.match(error.message, /nothing was written/);
@@ -184,6 +253,12 @@ describe("loadBlocks", () => {
         assert.match(error.message, /valid-new is listed more than once/);
         assert.match(error.message, /lists a series more than once/);
         assert.match(error.message, /remote-logo: logoPath must be a local path/);
+        assert.match(error.message, /bad-airing, airing 1: channel "boomerang" is not one/);
+        assert.match(error.message, /airing 1: weekdays must be ascending/);
+        assert.match(error.message, /airing 1: times must be "HH:MM"/);
+        assert.match(error.message, /airing 1: period must be "YYYY-MM"/);
+        assert.match(error.message, /airing 1: a source name and an http\(s\) source URL/);
+        assert.match(error.message, /airing 2: a slot without a source must explain it in notes/);
         return true;
       },
     );

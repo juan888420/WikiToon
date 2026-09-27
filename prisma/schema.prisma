@@ -7,17 +7,6 @@ datasource db {
   provider = "sqlite"
 }
 
-enum TimelineEventType {
-  CHANNEL_LAUNCH
-  CHANNEL_CLOSURE
-  REBRAND
-  BLOCK_LAUNCH
-  BLOCK_END
-  SERIES_PREMIERE
-  SERIES_FINALE
-  OTHER
-}
-
 /// How well a historical programming record is supported by its source. Uncertain records are
 /// kept, never dropped: they must stay distinguishable, with their provenance.
 enum Certainty {
@@ -46,9 +35,9 @@ model Channel {
   blockChannels  BlockChannel[]
   seriesChannels SeriesChannel[]
   schedules      Schedule[]
-  timelineEvents TimelineEvent[]
   feeds          Feed[]
   scheduleGrids  ScheduleGrid[]
+  blockAirings   BlockAiring[]
 
   @@map("channels")
 }
@@ -103,7 +92,6 @@ model Series {
   seriesChannels    SeriesChannel[]
   seriesBlocks      SeriesBlock[]
   schedules         Schedule[]
-  timelineEvents    TimelineEvent[]
   scheduleGridSlots ScheduleGridSlot[]
 
   @@map("series")
@@ -193,8 +181,8 @@ model Block {
   blockChannels     BlockChannel[]
   seriesBlocks      SeriesBlock[]
   schedules         Schedule[]
-  timelineEvents    TimelineEvent[]
   scheduleGridSlots ScheduleGridSlot[]
+  blockAirings      BlockAiring[]
 
   @@map("blocks")
 }
@@ -212,6 +200,41 @@ model BlockChannel {
   @@id([blockId, channelId])
   @@index([channelId])
   @@map("block_channels")
+}
+
+/// A time slot of a Block: the weekdays and hours it aired on, either as a source shows it for one
+/// month or as the project owner decided (then without source or period, and `notes` says so). A
+/// block can have several (separate slots, periods or channels); none means its schedule is not
+/// documented. Written by hand in `prisma/data/blocks.ts`, which owns them.
+model BlockAiring {
+  id         Int     @id @default(autoincrement())
+  blockId    Int     @map("block_id")
+  /// Null means every channel the block ran on.
+  channelId  Int?    @map("channel_id")
+  /// Display order within the block; the first ones are the ones shown on the block card.
+  position   Int
+  /// ISO weekdays of the broadcast day, ascending and comma-separated ("1,2,3,4,5" = Monday to
+  /// Friday). As in ScheduleGridSlot, a 01:00 slot on Monday airs in the early hours of Tuesday.
+  weekdays   String
+  /// HH:MM (24h), local to `timeZone`.
+  startTime  String  @map("start_time")
+  /// Null when the source doesn't say when the block ends.
+  endTime    String? @map("end_time")
+  /// "YYYY-MM": the month the source documents. Not a claim that the slot was permanent. Null for
+  /// the owner's slots, which have no source.
+  period     String?
+  /// IANA zone of the clock the source publishes in; null when not documented.
+  timeZone   String? @map("time_zone")
+  sourceName String? @map("source_name")
+  sourceUrl  String? @map("source_url")
+  notes      String?
+
+  block   Block    @relation(fields: [blockId], references: [id], onDelete: Cascade)
+  channel Channel? @relation(fields: [channelId], references: [id], onDelete: Restrict)
+
+  @@unique([blockId, position])
+  @@index([channelId])
+  @@map("block_airings")
 }
 
 /// A Series being part of a Block's lineup. Multiple rows allowed for separate periods.
@@ -336,35 +359,4 @@ model ScheduleGridSlot {
   @@index([seriesId])
   @@index([blockId])
   @@map("schedule_grid_slots")
-}
-
-model TimelineEvent {
-  id          Int               @id @default(autoincrement())
-  type        TimelineEventType @default(OTHER)
-  title       String
-  description String?
-  /// Partial-date support: month and day are optional when the source only gives a year or month.
-  year        Int
-  month       Int?
-  day         Int?
-  channelId   Int?              @map("channel_id")
-  seriesId    Int?              @map("series_id")
-  blockId     Int?              @map("block_id")
-  /// The default only makes the migration safe for existing rows; loaders always set it.
-  certainty   Certainty         @default(UNCERTAIN)
-  sourceName  String?           @map("source_name")
-  sourceUrl   String?           @map("source_url")
-  notes       String?
-  createdAt   DateTime          @default(now()) @map("created_at")
-  updatedAt   DateTime          @updatedAt @map("updated_at")
-
-  channel Channel? @relation(fields: [channelId], references: [id], onDelete: SetNull)
-  series  Series?  @relation(fields: [seriesId], references: [id], onDelete: SetNull)
-  block   Block?   @relation(fields: [blockId], references: [id], onDelete: SetNull)
-
-  @@index([year, month, day])
-  @@index([channelId, year])
-  @@index([seriesId, year])
-  @@index([blockId, year])
-  @@map("timeline_events")
 }

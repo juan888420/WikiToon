@@ -175,6 +175,11 @@ export const titleAliases: TitleAlias[] = [
   { title: "Yu-Yu Hakusho", tmdbId: 30669, channelSlugs: ["cartoon-network"] },
   { title: "Zoboomafoo", tmdbId: 4217, channelSlugs: ["discovery-kids"] },
   { title: "Zona Tiza", tmdbId: 4413, channelSlugs: ["nickelodeon"] },
+  // Series of the fifteenth catalog batch (2026-09-27).
+  { title: "Samurai X", tmdbId: 28136, channelSlugs: ["cartoon-network"] },
+  { title: "Canuto y Canito", tmdbId: 19053, channelSlugs: ["cartoon-network"] },
+  { title: "El león Melquiades", tmdbId: 272160, channelSlugs: ["cartoon-network"] },
+  { title: "Loopy de Loop", tmdbId: 319126, channelSlugs: ["cartoon-network"] },
 
   // Variants of catalog titles, each checked by hand.
   { title: "Rugrats", tmdbId: 3022, channelSlugs: ["nickelodeon"] },
@@ -192,6 +197,8 @@ export const titleAliases: TitleAlias[] = [
   { title: "Pepe Pótamo", tmdbId: 12350, channelSlugs: ["boomerang"] },
   { title: "Aces del Peligro", tmdbId: 14365, channelSlugs: ["boomerang"] },
   { title: "Los autos locos", tmdbId: 985, channelSlugs: ["boomerang"] },
+  { title: "Pixie, Dixie y el Sr. Jinx", tmdbId: 21471, channelSlugs: ["boomerang"] },
+  { title: "Pixie y Dixie", tmdbId: 21471, channelSlugs: ["boomerang", "cartoon-network"] },
   // Slimer! was billed as part of The Real Ghostbusters, the TMDB entry that covers it.
   { title: "Pegajoso y los verdaderos cazafantasmas", tmdbId: 2286, channelSlugs: ["boomerang"] },
   { title: "Scooby-Doo, el cachorro", tmdbId: 418, channelSlugs: ["cartoon-network"] },

@@ -2,6 +2,7 @@ import { ArrowLeftIcon } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { BlockSchedule } from "@/components/blocks/block-schedule";
 import { ChannelLogo } from "@/components/channels/channel-logo";
 import { Container } from "@/components/container";
 import { EmptyState } from "@/components/empty-state";
@@ -95,6 +96,19 @@ export default async function BlockPage({ params }: PageProps<"/bloques/[slug]">
             <dd className="mt-0.5 text-sm font-medium tabular-nums">{block.series.length}</dd>
           </div>
         </dl>
+
+        <section className="mt-8">
+          <h2 className="text-xs font-medium tracking-wider text-muted-foreground uppercase">
+            Horario
+          </h2>
+          {block.schedule.length === 0 ? (
+            <p className="mt-2 text-sm text-muted-foreground">
+              Todavía no hay un horario documentado para este bloque.
+            </p>
+          ) : (
+            <BlockSchedule lines={block.schedule} showChannel={block.channels.length > 1} />
+          )}
+        </section>
 
         {block.description && (
           <section className="mt-8">

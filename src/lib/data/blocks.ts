@@ -3,7 +3,59 @@ import type { Prisma } from "@/generated/prisma/client";
 import { groupSeriesRuns, seriesCardSelect } from "@/lib/data/series";
 import { prisma } from "@/lib/prisma";
 
-const nameCollator = new Intl.Collator("es", { sensitivity: "base", numeric: true });
+// Ignores punctuation, so "¿Quién tiene el control?" sorts under Q.
+const nameCollator = new Intl.Collator("es", {
+  sensitivity: "base",
+  numeric: true,
+  ignorePunctuation: true,
+});
+
+const airingSelect = {
+  orderBy: { position: "asc" },
+  select: {
+    weekdays: true,
+    startTime: true,
+    endTime: true,
+    period: true,
+    timeZone: true,
+    sourceName: true,
+    sourceUrl: true,
+    channel: { select: { slug: true, name: true } },
+  },
+} satisfies Prisma.Block$blockAiringsArgs;
+
+type AiringRow = Prisma.BlockAiringGetPayload<typeof airingSelect>;
+
+/**
+ * Groups a block's airings into schedule lines: one per channel, weekdays, period and source, with
+ * its time ranges in data order. Keeps the order of each line's first airing, so the first lines
+ * are the ones the data puts first (the card shows those).
+ */
+function toScheduleLines(airings: AiringRow[]) {
+  const lines = new Map<
+    string,
+    Omit<AiringRow, "weekdays" | "startTime" | "endTime"> & {
+      weekdays: number[];
+      times: { startTime: string; endTime: string | null }[];
+    }
+  >();
+  for (const { weekdays, startTime, endTime, ...airing } of airings) {
+    const key = [airing.channel?.slug, weekdays, airing.period, airing.sourceUrl].join("|");
+    const line = lines.get(key);
+    if (line) {
+      line.times.push({ startTime, endTime });
+    } else {
+      lines.set(key, {
+        ...airing,
+        weekdays: weekdays.split(",").map(Number),
+        times: [{ startTime, endTime }],
+      });
+    }
+  }
+  return [...lines.values()];
+}
+
+export type BlockScheduleLine = ReturnType<typeof toScheduleLines>[number];
 
 /** Shared by the global catalog and the channel section, so both render the same `BlockCard`. */
 const blockSummarySelect = {
@@ -18,13 +70,15 @@ const blockSummarySelect = {
   blockChannels: { select: { channel: { select: { slug: true, name: true } } } },
   // Distinct series: a series can have several SeriesBlock rows (separate periods).
   seriesBlocks: { distinct: ["seriesId"], select: { seriesId: true } },
+  blockAirings: airingSelect,
 } satisfies Prisma.BlockSelect;
 
 type BlockSummaryRow = Prisma.BlockGetPayload<{ select: typeof blockSummarySelect }>;
 
-function toSummary({ blockChannels, seriesBlocks, ...block }: BlockSummaryRow) {
+function toSummary({ blockChannels, seriesBlocks, blockAirings, ...block }: BlockSummaryRow) {
   return {
     ...block,
+    schedule: toScheduleLines(blockAirings),
     channels: blockChannels
       .map(({ channel }) => channel)
       .sort((a, b) => nameCollator.compare(a.name, b.name)),
@@ -73,6 +127,7 @@ export const getBlock = cache(async (blockSlug: string) => {
       blockChannels: {
         select: { channel: { select: { slug: true, name: true, logoPath: true } } },
       },
+      blockAirings: airingSelect,
       seriesBlocks: {
         orderBy: [{ startYear: "asc" }, { id: "asc" }],
         select: { startYear: true, endYear: true, series: { select: seriesCardSelect } },
@@ -81,9 +136,10 @@ export const getBlock = cache(async (blockSlug: string) => {
   });
   if (!block) return null;
 
-  const { blockChannels, seriesBlocks, ...rest } = block;
+  const { blockChannels, seriesBlocks, blockAirings, ...rest } = block;
   return {
     ...rest,
+    schedule: toScheduleLines(blockAirings),
     channels: blockChannels
       .map(({ channel }) => channel)
       .sort((a, b) => nameCollator.compare(a.name, b.name)),

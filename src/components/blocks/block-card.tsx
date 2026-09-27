@@ -1,10 +1,17 @@
 import Link from "next/link";
+import { TimeRanges } from "@/components/blocks/time-ranges";
 import { LogoTile } from "@/components/logo-tile";
 import { blockHref, type BlockSummary } from "@/lib/data/blocks";
-import { formatYearRange, pluralize } from "@/lib/format";
+import { formatWeekdays } from "@/lib/format";
+
+// The card shows the block's main schedule; the rest (and the description) live on its page.
+const CARD_LINES = 2;
 
 export function BlockCard({ block }: { block: BlockSummary }) {
-  const years = formatYearRange(block.startYear, block.endYear);
+  const lines = block.schedule.slice(0, CARD_LINES);
+  const hidden = block.schedule.length - lines.length;
+  // A block shared by Fox Kids and Jetix aired at different times on each, so name the channel.
+  const showChannel = block.channels.length > 1;
 
   return (
     <Link
@@ -20,18 +27,26 @@ export function BlockCard({ block }: { block: BlockSummary }) {
       />
       <div className="mt-3 flex min-w-0 flex-1 flex-col">
         <h3 className="leading-snug font-medium">{block.name}</h3>
-        <p className="mt-0.5 text-sm text-muted-foreground">
-          {block.channels.map((channel) => channel.name).join(" · ")}
-        </p>
-        {block.description && (
-          <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-muted-foreground">
-            {block.description}
+        {lines.length === 0 ? (
+          <p className="mt-1 text-sm text-muted-foreground">Horario no documentado</p>
+        ) : (
+          <ul className="mt-2 space-y-2">
+            {lines.map((line) => (
+              <li key={`${line.channel?.slug} ${line.weekdays} ${line.period} ${line.sourceUrl}`} className="text-sm">
+                <p>{formatWeekdays(line.weekdays)}</p>
+                <p className="text-muted-foreground tabular-nums">
+                  <TimeRanges times={line.times} />
+                  {showChannel && line.channel && ` · ${line.channel.name}`}
+                </p>
+              </li>
+            ))}
+          </ul>
+        )}
+        {hidden > 0 && (
+          <p className="mt-auto pt-3 text-xs text-muted-foreground">
+            {hidden === 1 ? "1 horario más" : `${hidden} horarios más`}
           </p>
         )}
-        <p className="mt-auto flex flex-wrap gap-x-2 pt-3 text-xs text-muted-foreground tabular-nums">
-          <span>{pluralize(block.seriesCount, "serie", "series")}</span>
-          {years && <span>{years}</span>}
-        </p>
       </div>
     </Link>
   );

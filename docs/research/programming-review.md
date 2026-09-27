@@ -66,21 +66,24 @@ La fuente las ubica en el canal, pero el catálogo no tiene `SeriesChannel` para
 | ----- | ---: | ----- | ------- |
 | Garfield y sus Amigos | 4606 | boomerang | boomerang-2005-07-latinoamerica-wiki, boomerang 2005-03-04, boomerang 2005-04-18, boomerang 2005-09-02 |
 | ¡Scooby-Doo, dónde estás! | 926 | cartoon-network | cartoon-network-2000-10-latinoamerica-oficial |
+| Canuto y Canito | 19053 | cartoon-network | cartoon-network-2000-10-latinoamerica-wiki, cartoon-network-2000-10-latinoamerica-oficial |
 | Don Gato y su Pandilla | 4232 | cartoon-network | cartoon-network-2000-10-latinoamerica-wiki, cartoon-network-2000-10-latinoamerica-oficial |
 | El Inspector Ardilla | 4752 | cartoon-network | cartoon-network-2000-10-mexico-wiki |
+| El león Melquíades | 272160 | cartoon-network | cartoon-network-2000-10-mexico-wiki |
 | El Show de Maguila Gorila | 11167 | cartoon-network | cartoon-network-2000-10-latinoamerica-wiki, cartoon-network-2000-10-latinoamerica-oficial |
 | El show de Scooby-Doo y Scrappy-Doo | 6005 | cartoon-network | cartoon-network 2005-09-23 |
 | Franklin | 1458 | cartoon-network | cartoon-network-2000-10-latinoamerica-wiki, cartoon-network-2000-10-latinoamerica-oficial, cartoon-network-2002-11-wiki, cartoon-network 2005-03-04, cartoon-network 2005-04-21 |
 | Jonny Quest | 962 | cartoon-network | cartoon-network-2000-10-latinoamerica-wiki, cartoon-network-2000-10-latinoamerica-oficial |
 | La hormiga atómica | 22172 | cartoon-network | cartoon-network-2000-10-mexico-wiki |
 | Las aventuras de Jackie Chan | 240 | cartoon-network | cartoon-network-2002-11-wiki, cartoon-network-2005-10-latinoamerica-wiki, cartoon-network 2005-03-04, cartoon-network 2005-04-21 |
+| Loopy De Loop | 319126 | cartoon-network | cartoon-network-2000-10-mexico-wiki |
 | Los 13 fantasmas de Scooby-Doo | 1069 | cartoon-network | cartoon-network-2002-11-wiki |
 | Los Pequeños Picapiedra | 4167 | cartoon-network | cartoon-network-2000-10-latinoamerica-wiki, cartoon-network-2002-11-wiki |
 | Los pequeños Tom y Jerry | 4274 | cartoon-network | cartoon-network-2000-10-latinoamerica-wiki |
 | Los Picapiedra | 1996 | cartoon-network | cartoon-network-2000-10-latinoamerica-wiki, cartoon-network-2000-10-latinoamerica-oficial, cartoon-network-2002-11-wiki |
 | Los supersónicos | 2362 | cartoon-network | cartoon-network-2000-10-latinoamerica-wiki, cartoon-network-2000-10-latinoamerica-oficial, cartoon-network-2002-11-wiki |
 | Los verdaderos Cazafantasmas | 2286 | cartoon-network | cartoon-network-2002-11-wiki |
-| Meteoro | 30986 | cartoon-network | cartoon-network-2002-11-wiki |
+| Pixie, Dixie y el Sr. Jinks | 21471 | cartoon-network | cartoon-network-2000-10-latinoamerica-wiki, cartoon-network-2000-10-latinoamerica-oficial |
 | Tiro Loco McGraw | 38960 | cartoon-network | cartoon-network-2000-10-latinoamerica-wiki, cartoon-network-2000-10-latinoamerica-oficial |
 | Un cachorro llamado Scooby-Doo | 418 | cartoon-network | cartoon-network-2000-10-latinoamerica-wiki, cartoon-network-2000-10-latinoamerica-oficial |
 | BeyBlade | 54728 | jetix | jetix-2005-08-blog, jetix 2005-03-04, jetix 2005-04-18, jetix 2005-09-02 |
@@ -98,7 +101,6 @@ La fuente las ubica en el canal, pero el catálogo no tiene `SeriesChannel` para
 | Los Misterios de Moville | 43219 | jetix | jetix-2005-08-blog, jetix 2005-03-04, jetix 2005-04-18, jetix 2005-09-02 |
 | Los nuevos locos Addams | 21036 | jetix | jetix-2005-08-blog, jetix 2005-03-04, jetix 2005-04-18, jetix 2005-09-02 |
 | Los Padrinos Mágicos | 4630 | jetix | jetix-2005-08-blog, jetix 2005-03-04, jetix 2005-04-18, jetix 2005-09-02 |
-| Medabots | 11235 | jetix | jetix-2005-08-blog, jetix 2005-03-04, jetix 2005-04-18, jetix 2005-09-02 |
 | Megaman NT Warrior | 5653 | jetix | jetix-2005-08-blog, jetix 2005-03-04, jetix 2005-04-18, jetix 2005-09-02 |
 | Qué raro | 1954 | jetix | jetix-2005-08-blog, jetix 2005-03-04, jetix 2005-04-18, jetix 2005-09-02 |
 | Shaman King | 40143 | jetix | jetix 2005-03-04, jetix 2005-04-18 |
@@ -127,7 +129,7 @@ Se conservan literalmente en `listedBlock`. No se crea ningún bloque.
 
 ## Títulos sin resolver
 
-347 títulos sin alias: la franja conserva el título literal y queda sin serie. Para resolver uno, agregar un alias en `prisma/data/programming/title-aliases.ts` (serie del catálogo, bloque o `notASeries`) y recargar. Nunca se crea una serie desde aquí.
+341 títulos sin alias: la franja conserva el título literal y queda sin serie. Para resolver uno, agregar un alias en `prisma/data/programming/title-aliases.ts` (serie del catálogo, bloque o `notASeries`) y recargar. Nunca se crea una serie desde aquí.
 
 | Título | Canales | Franjas | Dónde |
 | ------ | ------- | ------: | ----- |
@@ -174,7 +176,6 @@ Se conservan literalmente en `listedBlock`. No se crea ningún bloque.
 | Rolie Polie Olie | disney-channel | 16 | disney-channel-2004-01-blog (lun 10:00, mar 10:00, mié 10:00…); disney-channel 2004-02-20 (10:00); disney-channel 2004-04-07 (10:00); disney-channel 2004-06-04 (10:00); disney-channel 2004-08-09 (10:00); disney-channel 2004-10-21 (10:00); disney-channel 2004-12-07 (09:00); disney-channel 2005-03-04 (09:00); disney-channel 2005-04-18 (09:00); disney-channel 2005-09-02 (09:00) |
 | Conejo Ricochet | boomerang | 15 | boomerang-2003-12-latinoamerica-wiki (lun 12:00, mar 12:00, mié 12:00…) |
 | La Leyenda de Tarzan | disney-channel | 15 | disney-channel-2004-01-blog (lun 13:30, mar 13:30, mié 13:30…); disney-channel-2005-08-blog (lun 13:00, mar 13:00, mié 13:00…); disney-channel 2004-12-07 (13:30); disney-channel 2005-03-04 (13:30); disney-channel 2005-04-18 (13:30) |
-| Pixie, Dixie y el Sr. Jinx | boomerang | 15 | boomerang-2003-12-latinoamerica-wiki (lun 13:00, mar 13:00, mié 13:00…) |
 | Shadow Raiders | cartoon-network | 15 | cartoon-network-2000-10-latinoamerica-wiki (lun 00:00, mar 00:00, mié 00:00…); cartoon-network-2000-10-latinoamerica-oficial (lun 00:00, mar 00:00, mié 00:00…); cartoon-network-2000-10-mexico-wiki (lun 18:00, mar 18:00, mié 18:00…) |
 | Beetlejuice | cartoon-network | 14 | cartoon-network-2000-10-latinoamerica-wiki (sáb 04:00, dom 13:30); cartoon-network-2000-10-latinoamerica-oficial (lun 15:00, mar 15:00, mié 15:00…); cartoon-network-2002-11-wiki (lun 13:30, mar 13:30, mié 13:30…) |
 | Buzz Lightyear: Comando Estelar | disney-channel | 14 | disney-channel-2004-01-blog (lun 13:00, mar 13:00, mié 13:00…); disney-channel-2005-08-blog (sáb 15:30); disney-channel 2004-02-20 (13:00); disney-channel 2004-04-07 (13:00); disney-channel 2004-06-04 (13:00); disney-channel 2004-08-09 (13:00); disney-channel 2004-10-21 (13:00); disney-channel 2004-12-07 (13:00); disney-channel 2005-03-04 (13:00); disney-channel 2005-04-18 (13:00) |
@@ -282,12 +283,10 @@ Se conservan literalmente en `listedBlock`. No se crea ningún bloque.
 | Las aventuras de Winnie Pooh | disney-channel | 5 | disney-channel 2004-10-21 (08:30); disney-channel 2004-12-07 (07:30); disney-channel 2005-03-04 (07:30); disney-channel 2005-04-18 (07:30); disney-channel 2005-09-02 (06:30) |
 | Las Nuevas Aventuras de Winnie Pooh | disney-channel | 5 | disney-channel-2005-08-blog (lun 07:30, mar 07:30, mié 07:30…) |
 | Mister Magoo | cartoon-network | 5 | cartoon-network-2002-11-wiki (lun 03:00, mar 03:00, mié 03:00…) |
-| Pixie y Dixie | cartoon-network, boomerang | 5 | cartoon-network-2000-10-latinoamerica-wiki (dom 04:30); cartoon-network-2000-10-latinoamerica-oficial (dom 04:30); boomerang 2003-12-11 (02:00, 10:00, 18:00) |
 | Poko | discovery-kids | 5 | discovery-kids-2005-08-blog (lun 10:30, mar 10:30, mié 10:30); discovery-kids 2005-03-04 (10:00); discovery-kids 2005-04-18 (10:00) |
 | Power Rangers: La Galaxia Perdida | fox-kids | 5 | fox-kids-2001-08-blog (lun 16:30, mar 16:30, mié 16:30…) |
 | Querida, Encogí a los Niños | disney-channel | 5 | disney-channel-2004-01-blog (sáb 15:00, dom 15:00, sáb 03:00…); disney-channel 2004-08-09 (03:00) |
 | Rupert | nickelodeon | 5 | nickelodeon-2001-08-blog (lun 10:30, mar 10:30, mié 10:30…) |
-| Samurai X | cartoon-network | 5 | cartoon-network-2002-11-wiki (lun 00:00, mar 00:00, mié 00:00…) |
 | Scooby-Doo y Scrappy-Doo | cartoon-network | 5 | cartoon-network-2002-11-wiki (lun 09:30, mar 09:30, mié 09:30…) |
 | Shin-Chan | fox-kids | 5 | fox-kids-2003-01-sur-blog (lun 19:00, mar 19:00, mié 19:00…) |
 | Street Fighter II-V | cartoon-network | 5 | cartoon-network-2002-11-wiki (lun 18:00, mar 18:00, mié 18:00…) |
@@ -341,7 +340,6 @@ Se conservan literalmente en `listedBlock`. No se crea ningún bloque.
 | Wunschpunsch | fox-kids | 3 | fox-kids-2001-08-blog (mar 13:30, jue 13:30, sáb 08:00) |
 | Yakky Doodle Duck | boomerang | 3 | boomerang-2003-12-latinoamerica-wiki (dom 08:00, dom 16:00, dom 00:00) |
 | Batman | cartoon-network | 2 | cartoon-network 2005-09-23 (03:30, 18:30) |
-| Canuto y Canito | cartoon-network | 2 | cartoon-network-2000-10-latinoamerica-wiki (dom 04:00); cartoon-network-2000-10-latinoamerica-oficial (dom 04:00) |
 | Chicos Tom y Jerry | cartoon-network | 2 | cartoon-network-2000-10-latinoamerica-oficial (sáb 07:00, dom 09:00) |
 | Copa Jetix | jetix | 2 | jetix-2005-08-blog (sáb 13:00, dom 13:00) |
 | Corneil y Bernie | cartoon-network | 2 | cartoon-network 2005-03-04 (11:00); cartoon-network 2005-09-23 (16:30) |
@@ -399,7 +397,6 @@ Se conservan literalmente en `listedBlock`. No se crea ningún bloque.
 | Eerie, Indiana: La Otra Dimensión | fox-kids | 1 | fox-kids-2001-08-blog (dom 23:30) |
 | El diario de la princesa | disney-channel | 1 | disney-channel 2005-04-18 (20:00) |
 | El Hombre de Hierro | fox-kids | 1 | fox-kids-2001-08-blog (mar 23:30) |
-| El león Melquiades | cartoon-network | 1 | cartoon-network-2000-10-mexico-wiki (dom 05:00) |
 | El novato | disney-channel | 1 | disney-channel 2005-09-02 (19:00) |
 | El Poderoso Thor | fox-kids | 1 | fox-kids-2001-08-blog (mié 23:30) |
 | El Show de Tex Avery | cartoon-network | 1 | cartoon-network-2000-10-latinoamerica-oficial (sáb 23:30) |
@@ -429,7 +426,6 @@ Se conservan literalmente en `listedBlock`. No se crea ningún bloque.
 | Las Travesuras de Barki | fox-kids | 1 | fox-kids-2001-08-blog (dom 10:00) |
 | Liga de la Justicia Ilimitada → Hombres X: Evolución | cartoon-network | 1 | cartoon-network-2005-10-latinoamerica-wiki (sáb 14:00) |
 | Lo Mejor del Zapping Zone | disney-channel | 1 | disney-channel 2004-08-09 (04:00) |
-| Loopy de Loop | cartoon-network | 1 | cartoon-network-2000-10-mexico-wiki (dom 04:30) |
 | Los Archivos Secretos de los Perros Espías | fox-kids | 1 | fox-kids-2001-08-blog (sáb 14:30) |
 | Los cuentos de Fievel | cartoon-network | 1 | cartoon-network-2000-10-latinoamerica-wiki (dom 07:30) |
 | Los Luchadores | fox-kids | 1 | fox-kids-2001-08-blog (dom 21:00) |
