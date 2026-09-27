@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { OG_IMAGE } from "@/lib/brand";
 
 export const SITE_NAME = "WikiToon";
 
@@ -30,7 +31,7 @@ type PageMetadataInput = {
   description: string;
   /** Canonical path, e.g. "/series/samurai-x". */
   path: string;
-  /** Absolute image URL for link previews (e.g. a TMDB poster). */
+  /** Image for link previews (e.g. a TMDB poster); defaults to the brand image. */
   image?: { url: string; alt: string; width?: number; height?: number };
   /** Keeps the page out of search results (it still passes links). */
   noIndex?: boolean;
@@ -42,7 +43,7 @@ type PageMetadataInput = {
  */
 export function pageMetadata({ title, description, path, image, noIndex }: PageMetadataInput): Metadata {
   const fullTitle = `${title} · ${SITE_NAME}`;
-  const images = image ? [image] : undefined;
+  const images = [image ?? OG_IMAGE];
   return {
     title,
     description,
@@ -56,7 +57,8 @@ export function pageMetadata({ title, description, path, image, noIndex }: PageM
       description,
       images,
     },
-    twitter: { card: "summary", title: fullTitle, description, images },
+    // Portrait posters fit the small card; the landscape brand image, the large one.
+    twitter: { card: image ? "summary" : "summary_large_image", title: fullTitle, description, images },
     ...(noIndex && { robots: { index: false, follow: true } }),
   };
 }

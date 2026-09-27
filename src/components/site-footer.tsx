@@ -1,6 +1,8 @@
 import { ArrowUpRightIcon } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/container";
+import { WORDMARK } from "@/lib/brand";
 
 const NAV_ITEMS = [
   { href: "/", label: "Inicio" },
@@ -20,12 +22,14 @@ export function SiteFooter() {
       <Container className="py-10 sm:py-12">
         <div className="grid gap-8 sm:grid-cols-[minmax(0,1fr)_auto_auto] sm:gap-12">
           <div className="max-w-sm">
-            <Link
-              href="/canales"
-              className="inline-flex items-center gap-2 text-[15px] font-semibold tracking-tight"
-            >
-              <span aria-hidden className="size-2 rounded-full bg-primary" />
-              WikiToon
+            <Link href="/canales" className="inline-flex">
+              <Image
+                src={WORDMARK.src}
+                alt="WikiToon"
+                width={WORDMARK.width}
+                height={WORDMARK.height}
+                className="h-9 w-auto"
+              />
             </Link>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
               Archivo de las series, los bloques y la programación de los canales infantiles y
@@ -67,18 +71,19 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-10 space-y-2 border-t border-border/60 pt-6 text-xs leading-relaxed text-muted-foreground">
+          {/* TMDB's terms require its logo, less prominent than the site's own brand, and this notice. */}
+          <a
+            href="https://www.themoviedb.org"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex py-1 opacity-80 transition-opacity hover:opacity-100"
+          >
+            <Image src="/logos/tmdb.svg" alt="TMDB" width={274} height={36} className="h-3 w-auto" />
+          </a>
           <p className="max-w-3xl text-pretty">
-            Metadata e imágenes de series:{" "}
-            <a
-              href="https://www.themoviedb.org"
-              target="_blank"
-              rel="noreferrer"
-              className="underline underline-offset-3 hover:text-foreground"
-            >
-              TMDB
-            </a>
-            . Este producto usa la API de TMDB pero no está respaldado ni certificado por TMDB. Las
-            marcas y logos de canales y bloques pertenecen a sus respectivos dueños.
+            Metadata e imágenes de series: TMDB. Este sitio usa TMDB y las API de TMDB, pero no está
+            respaldado, certificado ni aprobado de ningún modo por TMDB. Las marcas y logos de canales
+            y bloques pertenecen a sus respectivos dueños.
           </p>
           <p>© {new Date().getFullYear()} WikiToon</p>
         </div>

@@ -1,9 +1,11 @@
 "use client";
 
 import { motion } from "motion/react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Container } from "@/components/container";
+import { WORDMARK } from "@/lib/brand";
 import { cn } from "@/lib/utils";
 
 const NAV_ITEMS = [
@@ -23,12 +25,15 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <Container className="flex flex-col sm:h-14 sm:flex-row sm:items-center sm:gap-8">
-        <Link
-          href="/canales"
-          className="flex h-12 shrink-0 items-center gap-2 text-[15px] font-semibold tracking-tight sm:h-auto"
-        >
-          <span aria-hidden className="size-2 rounded-full bg-primary" />
-          WikiToon
+        <Link href="/canales" className="flex h-12 shrink-0 items-center sm:h-auto">
+          <Image
+            src={WORDMARK.src}
+            alt="WikiToon"
+            width={WORDMARK.width}
+            height={WORDMARK.height}
+            priority
+            className="h-7 w-auto"
+          />
         </Link>
 
         <nav

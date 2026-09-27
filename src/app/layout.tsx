@@ -3,6 +3,7 @@ import "./globals.css";
 import { Geist } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { OG_IMAGE } from "@/lib/brand";
 import { jsonLd, SITE_DESCRIPTION, SITE_NAME, siteUrl } from "@/lib/seo";
 import { cn } from "@/lib/utils";
 
@@ -21,8 +22,14 @@ export const metadata: Metadata = {
     locale: "es_419",
     title: SITE_NAME,
     description: SITE_DESCRIPTION,
+    images: [OG_IMAGE],
   },
-  twitter: { card: "summary", title: SITE_NAME, description: SITE_DESCRIPTION },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    images: [OG_IMAGE],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

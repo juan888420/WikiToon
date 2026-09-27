@@ -18,3 +18,7 @@ Notes:
 
 - Boomerang Latin America's exact logo history per year is not verified here; the 2000 logo was chosen for its official source and era.
 - Downloaded on 2026-09-24. If a file is replaced, update this table and the matching `logoPath` in the seed.
+
+## TMDB attribution logo
+
+`tmdb.svg` is TMDB's "Alt short (blue)" logo, downloaded on 2026-09-27 from TMDB's [logos and attribution page](https://www.themoviedb.org/about/logos-attribution) without changes. TMDB's API terms require it to identify the use of TMDB data, less prominent than the site's own brand; it is shown in the footer next to the required notice.
