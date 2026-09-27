@@ -5,8 +5,9 @@ import { notFound } from "next/navigation";
 import { ChannelLogo } from "@/components/channels/channel-logo";
 import { Container } from "@/components/container";
 import { ScheduleSlotList } from "@/components/schedule/schedule-slot-list";
-import { getScheduleDay, listScheduleDayParams } from "@/lib/data/schedules";
+import { getScheduleDay, listScheduleDayParams, scheduleDayHref } from "@/lib/data/schedules";
 import { formatScheduleDate, pluralize } from "@/lib/format";
+import { pageMetadata } from "@/lib/seo";
 
 // Only dates with real schedule rows are generated; any other channel/date pair is a 404.
 export const dynamicParams = false;
@@ -27,7 +28,11 @@ export async function generateMetadata({
 }: PageProps<"/programacion/[canal]/[fecha]">): Promise<Metadata> {
   const day = await loadDay(params);
   if (!day) return {};
-  return { title: `Programación de ${day.channel.name} · ${formatScheduleDate(day.airDate)}` };
+  return pageMetadata({
+    title: `Programación de ${day.channel.name} · ${formatScheduleDate(day.airDate)}`,
+    description: `Programación de ${day.channel.name} del ${formatScheduleDate(day.airDate, "long")}: ${pluralize(day.slots.length, "emisión", "emisiones")}, con los horarios tal como los publicó la fuente.`,
+    path: scheduleDayHref(day.channel.slug, day.airDate),
+  });
 }
 
 export default async function ScheduleDayPage({ params }: PageProps<"/programacion/[canal]/[fecha]">) {

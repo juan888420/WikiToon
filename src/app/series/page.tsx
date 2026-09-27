@@ -5,11 +5,14 @@ import { blockHref, listBlocks } from "@/lib/data/blocks";
 import { listChannels } from "@/lib/data/channels";
 import { listSeriesWithLinks } from "@/lib/data/series";
 import { pluralize } from "@/lib/format";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Series",
-  description: "Series animadas del archivo de WikiToon.",
-};
+export const metadata: Metadata = pageMetadata({
+  title: "Series de la TV infantil de Latinoamérica",
+  description:
+    "Catálogo de series animadas y de acción en vivo de los canales infantiles de Latinoamérica en los 90 y 2000, con sus temporadas y episodios.",
+  path: "/series",
+});
 
 export default async function SeriesPage() {
   const [items, channels, blocks] = await Promise.all([

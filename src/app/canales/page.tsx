@@ -3,12 +3,18 @@ import { ChannelCard } from "@/components/channels/channel-card";
 import { Container } from "@/components/container";
 import { EmptyState } from "@/components/empty-state";
 import { listChannels } from "@/lib/data/channels";
-import { pluralize } from "@/lib/format";
+import { formatList, pluralize } from "@/lib/format";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Canales",
-  description: "Canales de televisión infantil del archivo de WikiToon.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const channels = await listChannels();
+  const names = channels.map((channel) => channel.name);
+  return pageMetadata({
+    title: "Canales infantiles de Latinoamérica",
+    description: `${formatList(names)}: series y bloques de su señal latinoamericana en los 90 y 2000.`,
+    path: "/canales",
+  });
+}
 
 export default async function ChannelsPage() {
   const channels = await listChannels();

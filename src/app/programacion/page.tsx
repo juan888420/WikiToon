@@ -6,11 +6,14 @@ import { EmptyState } from "@/components/empty-state";
 import { ScheduleDayLinks } from "@/components/schedule/schedule-day-links";
 import { listScheduleChannels } from "@/lib/data/schedules";
 import { pluralize } from "@/lib/format";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Programación",
-  description: "Parrillas históricas documentadas en el archivo de WikiToon.",
-};
+export const metadata: Metadata = pageMetadata({
+  title: "Programación histórica",
+  description:
+    "Parrillas diarias documentadas de los canales infantiles de Latinoamérica, con los horarios tal como los publicó cada fuente.",
+  path: "/programacion",
+});
 
 export default async function SchedulePage() {
   const channels = await listScheduleChannels();

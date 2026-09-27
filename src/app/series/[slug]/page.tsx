@@ -7,6 +7,8 @@ import { SeriesPoster } from "@/components/series/series-poster";
 import { SeriesSeasons } from "@/components/series/series-seasons";
 import { getSeriesBySlug, listSeriesSlugs } from "@/lib/data/series";
 import { formatDate, formatYearRange } from "@/lib/format";
+import { absoluteUrl, jsonLd, pageMetadata, truncateDescription } from "@/lib/seo";
+import { tmdbImageUrl } from "@/lib/tmdb/images";
 
 // Series only change through import scripts, so every known slug is prerendered at build time.
 // Unknown slugs get a real 404 status; rendering them on demand would stream a 200 before
@@ -22,7 +24,21 @@ export async function generateMetadata({
 }: PageProps<"/series/[slug]">): Promise<Metadata> {
   const series = await getSeriesBySlug((await params).slug);
   if (!series) return {};
-  return { title: series.title, description: series.overview ?? undefined };
+  const years = formatYearRange(series.firstAirYear, series.lastAirYear);
+  const poster = tmdbImageUrl(series.posterPath, "w500");
+  return pageMetadata({
+    // The first air year tells apart series that share a Spanish title (Los 4 Fantásticos).
+    title: series.firstAirYear ? `${series.title} (${series.firstAirYear})` : series.title,
+    // TMDB overviews can be missing; the fallback states only what the page shows.
+    description: series.overview
+      ? truncateDescription(series.overview)
+      : `${series.title}${years ? ` (${years})` : ""}: temporadas y episodios en WikiToon, el archivo de la TV infantil de Latinoamérica.`,
+    path: `/series/${series.slug}`,
+    // TMDB w500 posters are 500x750.
+    image: poster
+      ? { url: poster, alt: `Póster de ${series.title}`, width: 500, height: 750 }
+      : undefined,
+  });
 }
 
 export default async function SeriesDetailPage({ params }: PageProps<"/series/[slug]">) {
@@ -31,21 +47,38 @@ export default async function SeriesDetailPage({ params }: PageProps<"/series/[s
 
   const regularSeasons = series.seasons.filter((season) => season.number > 0);
   const specials = series.seasons.find((season) => season.number === 0);
+  const episodeCount = regularSeasons.reduce((total, season) => total + season.episodes.length, 0);
+  const poster = tmdbImageUrl(series.posterPath, "w500");
   const facts = [
     {
       label: "Emisión original",
       value: formatYearRange(series.firstAirYear, series.lastAirYear) ?? "Sin dato",
     },
     { label: "Temporadas", value: regularSeasons.length },
-    {
-      label: "Episodios",
-      value: regularSeasons.reduce((total, season) => total + season.episodes.length, 0),
-    },
+    { label: "Episodios", value: episodeCount },
     ...(specials ? [{ label: "Especiales", value: specials.episodes.length }] : []),
   ];
 
   return (
     <Container className="py-8 sm:py-12">
+      {/* Only what the page shows: years and counts are TMDB's original run. */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLd({
+          "@type": "TVSeries",
+          name: series.title,
+          url: absoluteUrl(`/series/${series.slug}`),
+          ...(series.overview && { description: series.overview }),
+          ...(poster && { image: poster }),
+          ...(series.firstAirYear && { startDate: String(series.firstAirYear) }),
+          ...(series.lastAirYear && { endDate: String(series.lastAirYear) }),
+          numberOfSeasons: regularSeasons.length,
+          numberOfEpisodes: episodeCount,
+          ...(series.tmdbId !== null && {
+            sameAs: `https://www.themoviedb.org/tv/${series.tmdbId}`,
+          }),
+        })}
+      />
       <Link
         href="/series"
         className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"

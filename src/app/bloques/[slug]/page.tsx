@@ -9,8 +9,9 @@ import { EmptyState } from "@/components/empty-state";
 import { LogoTile } from "@/components/logo-tile";
 import { SeriesCard } from "@/components/series/series-card";
 import { SourceNote } from "@/components/source-note";
-import { getBlock, listBlockParams } from "@/lib/data/blocks";
-import { formatRuns, formatYearRange, pluralize } from "@/lib/format";
+import { blockHref, getBlock, listBlockParams } from "@/lib/data/blocks";
+import { formatList, formatRuns, formatYearRange, pluralize } from "@/lib/format";
+import { pageMetadata } from "@/lib/seo";
 
 // Blocks only change through data scripts, so every known block is prerendered and unknown ones 404.
 export const dynamicParams = false;
@@ -23,10 +24,17 @@ export async function generateMetadata({ params }: PageProps<"/bloques/[slug]">)
   const { slug } = await params;
   const block = await getBlock(slug);
   if (!block) return {};
-  return {
-    title: `${block.name} · ${block.channels.map((channel) => channel.name).join(", ")}`,
-    description: block.description ?? undefined,
-  };
+  const channels = block.channels.map((channel) => channel.name);
+  return pageMetadata({
+    title: `${block.name} · ${channels.join(", ")}`,
+    description: [
+      block.description,
+      `${formatList(channels)}, ${pluralize(block.series.length, "serie", "series")}.`,
+    ]
+      .filter(Boolean)
+      .join(" "),
+    path: blockHref({ slug }),
+  });
 }
 
 export default async function BlockPage({ params }: PageProps<"/bloques/[slug]">) {

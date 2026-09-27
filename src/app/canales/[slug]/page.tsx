@@ -3,12 +3,22 @@ import { EmptyState } from "@/components/empty-state";
 import { SeriesBrowser } from "@/components/series/series-browser";
 import { blockHref, listChannelBlocks } from "@/lib/data/blocks";
 import { getChannelBySlug, listChannelSeries } from "@/lib/data/channels";
-import { formatRuns } from "@/lib/format";
+import { formatList, formatRuns, pluralize } from "@/lib/format";
+import { pageMetadata } from "@/lib/seo";
 import { requireChannel } from "./require-channel";
 
 export async function generateMetadata({ params }: PageProps<"/canales/[slug]">): Promise<Metadata> {
   const channel = await getChannelBySlug((await params).slug);
-  return channel ? { title: channel.name } : {};
+  if (!channel) return {};
+  const blocks = await listChannelBlocks(channel.id);
+  const blockText = blocks.length
+    ? ` y sus bloques ${formatList(blocks.map((block) => block.name))}`
+    : "";
+  return pageMetadata({
+    title: blocks.length ? `${channel.name}: series y bloques` : `Series de ${channel.name}`,
+    description: `${pluralize(channel.counts.series, "serie", "series")} de ${channel.name} en Latinoamérica${blockText}, en el archivo de WikiToon.`,
+    path: `/canales/${channel.slug}`,
+  });
 }
 
 export default async function ChannelSeriesPage({ params }: PageProps<"/canales/[slug]">) {

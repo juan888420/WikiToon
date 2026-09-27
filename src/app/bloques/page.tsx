@@ -4,11 +4,14 @@ import { Container } from "@/components/container";
 import { EmptyState } from "@/components/empty-state";
 import { listBlocks } from "@/lib/data/blocks";
 import { pluralize } from "@/lib/format";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Bloques",
-  description: "Bloques de programación del archivo de WikiToon.",
-};
+export const metadata: Metadata = pageMetadata({
+  title: "Bloques de programación",
+  description:
+    "Los bloques de programación de los canales infantiles de Latinoamérica en los 90 y 2000, con sus horarios documentados y las series que emitieron.",
+  path: "/bloques",
+});
 
 export default async function BlocksPage() {
   const blocks = await listBlocks();

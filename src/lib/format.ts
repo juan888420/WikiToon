@@ -115,6 +115,13 @@ export function formatDate(date: Date) {
   return airDateFormat.format(date);
 }
 
+const listFormat = new Intl.ListFormat("es", { type: "conjunction" });
+
+/** "Boomerang, Fox Kids y Jetix". */
+export function formatList(items: string[]) {
+  return listFormat.format(items);
+}
+
 export function pluralize(count: number, singular: string, plural: string) {
   return `${count} ${count === 1 ? singular : plural}`;
 }
